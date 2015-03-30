@@ -107,6 +107,13 @@
             <artifactId>junit</artifactId>
             <version>4.0</version>    
         </dependency>
+        
+        <!--  JasperReport 5.0.1 -->
+        <dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>5.0.1</version>
+        </dependency>
 	</dependencies>
 
 	<build>
