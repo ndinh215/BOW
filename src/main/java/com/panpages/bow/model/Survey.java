@@ -13,18 +13,19 @@ import javax.validation.constraints.Size;
 public class Survey {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int survey_id;
+	@Column(name = "SURVEY_ID", nullable = false)
+	private int id;
 
 	@Size(min=3, max=50)
 	@Column(name = "NAME", nullable = false)
 	private String name;
 
 	public int getId() {
-		return survey_id;
+		return id;
 	}
 
 	public void setId(int id) {
-		this.survey_id = id;
+		this.id = id;
 	}
 
 	public String getName() {
