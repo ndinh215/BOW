@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.panpages.bow.model.Survey;
+import com.panpages.bow.service.ReportService;
 import com.panpages.bow.service.SurveyService;
 
 @Controller
@@ -16,12 +17,15 @@ import com.panpages.bow.service.SurveyService;
 public class AppController {
 
 	@Autowired
-	SurveyService service;
+	SurveyService surveySvc;
+	
+	@Autowired
+	ReportService reportSvc;
 
 	@RequestMapping(value = { "/", "/list" }, method = RequestMethod.GET)
 	public String listSurveys(ModelMap model) {
 
-		List<Survey> surveys = service.findAllSurveys();
+		List<Survey> surveys = surveySvc.findAllSurveys();
 		model.addAttribute("surveys", surveys);
 		return "surveys";
 	}
