@@ -2,6 +2,7 @@ package com.panpages.bow.controller;
 
 import java.io.File;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
@@ -24,6 +25,8 @@ public class AppController {
 	
 	@Autowired
 	ReportService reportSvc;
+	
+	private static final Logger logger = Logger.getLogger(AppController.class);
 
 	@RequestMapping(value = { "/", "/index.html" }, method = RequestMethod.GET)
 	public String home(ModelMap model) {
@@ -41,7 +44,8 @@ public class AppController {
 		String prefixName = ctx.getEnvironment().getProperty("prefix_template_name");
 		String surveyName = String.format("%1$s%2$s", prefixName, surveyId);
 		String surveyPath = String.format("%1$s%2$s%3$s", templatePath, File.separator, surveyName);
-				
+		
+		logger.info("Process the survey " + surveyName);
 		return surveyPath;
 	}
 	
