@@ -6,7 +6,7 @@ public class SurveyTest extends TestCase {
 	
 	public void testFunction() throws Exception {
 		String survey = "";
-		assertEquals("Hello world!", survey);
+		assertEquals("Test string", survey);
 	}
 
 }
