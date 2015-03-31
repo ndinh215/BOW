@@ -7,5 +7,6 @@
 </head>
 <body>
 	Survey template 1
+	<jsp:include page="section_template_1.jsp"></jsp:include>
 </body>
 </html>
