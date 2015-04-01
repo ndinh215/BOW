@@ -42,8 +42,10 @@ public class AppController {
 	public String survey(@PathVariable int surveyId) {
 		String templatePath = ctx.getEnvironment().getProperty("template_path");
 		String prefixName = ctx.getEnvironment().getProperty("prefix_template_name");
+		String prefixTemplateDirName = ctx.getEnvironment().getProperty("template_folder_name_prefix");
+		String surveyDirName = String.format("%1$s%2$s", prefixTemplateDirName, surveyId);
 		String surveyName = String.format("%1$s%2$s", prefixName, surveyId);
-		String surveyPath = String.format("%1$s%2$s%3$s", templatePath, File.separator, surveyName);
+		String surveyPath = String.format("%1$s%2$s%3$s%4$s%5$s", templatePath, File.separator, surveyDirName, File.separator, surveyName);
 		
 		logger.info("Process the survey " + surveyName);
 		return surveyPath;
