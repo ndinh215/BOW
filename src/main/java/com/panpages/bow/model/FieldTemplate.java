@@ -6,22 +6,20 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.Size;
 
 @Entity
-@Table(name="Survey")
-public class Survey {
+@Table(name="Field_Template")
+public class FieldTemplate {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "SURVEY_ID", nullable = false)
+	@Column(name = "FIELD_ID", nullable = false)
 	private int id;
 
-	@Column(name = "SURVEY_TEMPLATE_ID", nullable = false)
-	private int surveyTemplateId;
-	
-	@Size(min=3, max=50)
 	@Column(name = "NAME", nullable = false)
 	private String name;
+	
+	@Column(name = "TYPE", nullable = false)
+	private String type;
 	
 	@Column(name = "DESC", nullable = false)
 	private String desc;
@@ -42,11 +40,11 @@ public class Survey {
 		this.name = name;
 	}
 
-	public String getDesc() {
-		return desc;
+	public String getType() {
+		return type;
 	}
 
-	public void setDesc(String desc) {
-		this.desc = desc;
+	public void setType(String type) {
+		this.type = type;
 	}
 }

@@ -6,22 +6,23 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.validation.constraints.Size;
 
 @Entity
-@Table(name="Survey")
-public class Survey {
+@Table(name="Section")
+public class Section {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "SURVEY_ID", nullable = false)
+	@Column(name = "SECTION_ID", nullable = false)
 	private int id;
 
-	@Column(name = "SURVEY_TEMPLATE_ID", nullable = false)
-	private int surveyTemplateId;
+	@Column(name = "SECTION_TEMPLATE_ID", nullable = false)
+	private int sectionTemplateId;
 	
-	@Size(min=3, max=50)
 	@Column(name = "NAME", nullable = false)
 	private String name;
+	
+	@Column(name = "PATH", nullable = true)
+	private String path;
 	
 	@Column(name = "DESC", nullable = false)
 	private String desc;
@@ -40,6 +41,22 @@ public class Survey {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+	public int getSectionTemplateId() {
+		return sectionTemplateId;
+	}
+
+	public void setSectionTemplateId(int sectionTemplateId) {
+		this.sectionTemplateId = sectionTemplateId;
 	}
 
 	public String getDesc() {
