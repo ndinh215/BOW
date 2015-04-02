@@ -33,7 +33,7 @@ public class SectionTemplate {
 	private String desc;
 	
 	@Autowired
-	@ManyToMany(fetch = FetchType.EAGER)
+	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(
 			name = "Field_Section_Relation_In_Template",
 			joinColumns =  { @JoinColumn(name = "SECTION_ID", referencedColumnName = "SECTION_ID") }, 

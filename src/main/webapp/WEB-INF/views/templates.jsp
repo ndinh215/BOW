@@ -21,10 +21,15 @@
 			</tr>
 			<c:forEach items="${template.sectionTemplates}" var="section">
 				<tr>
-					<td></td>
-					<td></td>
+					<td colspan="2">Section</td>
 					<td>${section.name}</td>
 				</tr>
+				<c:forEach items="${section.fieldTemplates}" var="field">
+					<tr>
+						<td colspan="2">Field</td>
+						<td>${field.name}</td>
+					</tr>
+				</c:forEach>
 			</c:forEach>
 		</c:forEach>
 	</table>

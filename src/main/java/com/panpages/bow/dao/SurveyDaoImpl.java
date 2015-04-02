@@ -29,14 +29,11 @@ public class SurveyDaoImpl extends AbstractDao implements SurveyDao{
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<SurveyTemplate> findAllSurveyTemplates() {
-		//SessionFactory sessionFac = new Configuration().configure().buildSessionFactory();
-		 
 		Session session = HibernateConfiguration.getSessionFactory().getObject().openSession();
-
 		session.beginTransaction();
 		Criteria criteria = session.createCriteria(SurveyTemplate.class);
-		
 		session.getTransaction().commit();
+		
 		return (List<SurveyTemplate>) criteria.list();
 	}
 	
