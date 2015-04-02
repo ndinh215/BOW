@@ -24,6 +24,12 @@ public class HibernateConfiguration {
 
     @Autowired
     private Environment environment;
+    
+    private static LocalSessionFactoryBean sessionFactory = null;
+    
+    public static LocalSessionFactoryBean getSessionFactory() {
+    	return sessionFactory;
+    }
 
     @Bean
     public LocalSessionFactoryBean sessionFactory() {
@@ -31,24 +37,29 @@ public class HibernateConfiguration {
         sessionFactory.setDataSource(dataSource());
         sessionFactory.setPackagesToScan(new String[] { "com.panpages.bow.model" });
         sessionFactory.setHibernateProperties(hibernateProperties());
+        
+        if (HibernateConfiguration.sessionFactory == null) {
+        	HibernateConfiguration.sessionFactory = sessionFactory;
+        }
+        
         return sessionFactory;
      }
 	
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(environment.getRequiredProperty("jdbc.driverClassName"));
-        dataSource.setUrl(environment.getRequiredProperty("jdbc.url"));
-        dataSource.setUsername(environment.getRequiredProperty("jdbc.username"));
-        dataSource.setPassword(environment.getRequiredProperty("jdbc.password"));
+        dataSource.setDriverClassName(getEnvironment().getRequiredProperty("jdbc.driverClassName"));
+        dataSource.setUrl(getEnvironment().getRequiredProperty("jdbc.url"));
+        dataSource.setUsername(getEnvironment().getRequiredProperty("jdbc.username"));
+        dataSource.setPassword(getEnvironment().getRequiredProperty("jdbc.password"));
         return dataSource;
     }
     
     private Properties hibernateProperties() {
         Properties properties = new Properties();
-        properties.put("hibernate.dialect", environment.getRequiredProperty("hibernate.dialect"));
-        properties.put("hibernate.show_sql", environment.getRequiredProperty("hibernate.show_sql"));
-        properties.put("hibernate.format_sql", environment.getRequiredProperty("hibernate.format_sql"));
+        properties.put("hibernate.dialect", getEnvironment().getRequiredProperty("hibernate.dialect"));
+        properties.put("hibernate.show_sql", getEnvironment().getRequiredProperty("hibernate.show_sql"));
+        properties.put("hibernate.format_sql", getEnvironment().getRequiredProperty("hibernate.format_sql"));
         return properties;        
     }
     
@@ -59,5 +70,13 @@ public class HibernateConfiguration {
        txManager.setSessionFactory(s);
        return txManager;
     }
+
+	public Environment getEnvironment() {
+		return environment;
+	}
+
+	public void setEnvironment(Environment environment) {
+		this.environment = environment;
+	}
 }
 
