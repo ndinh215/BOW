@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.panpages.bow.dao.SurveyDao;
 import com.panpages.bow.model.Survey;
+import com.panpages.bow.model.SurveyTemplate;
 
 @Service("surveyService")
 @Transactional
@@ -22,6 +23,11 @@ public class SurveyServiceImpl implements SurveyService{
 
 	public List<Survey> findAllSurveys() {
 		return dao.findAllSurveys();
+	}
+
+	@Override
+	public List<SurveyTemplate> findAllSurveyTemplates() {
+		return dao.findAllSurveyTemplates();
 	}
 
 }

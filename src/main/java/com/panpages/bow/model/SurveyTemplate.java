@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class SurveyTemplate {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "SECTION_ID", nullable = false)
+	@Column(name = "SURVEY_ID", nullable = false)
 	private int id;
 
 	@Column(name = "NAME", nullable = false)
