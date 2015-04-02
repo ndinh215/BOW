@@ -7,21 +7,11 @@
 <%@ taglib prefix="sql" uri="http://java.sun.com/jstl/sql" %>
 <html>
 <head>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
 	Section 3
-	<img src="<c:url value="/assets/images/panpages_logo.jpg" />" alt="" />
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -83,7 +73,7 @@
 						<td></td> 
 					</tr>
 					<tr>
-						<td><input name="html" type="checkbox" value="html"/>Google AdWords Search & Mobile</td>
+						<td><input name="html" type="checkbox" value="html"/>Google AdWords Search &amp; Mobile</td>
 						<td></td> 
 					</tr>
 					<tr>
@@ -147,7 +137,7 @@
 						<td></td> 
 					</tr>
 					<tr>
-						<td><input name="html" type="checkbox" value="html"/>Google AdWords Search & Mobile</td>
+						<td><input name="html" type="checkbox" value="html"/>Google AdWords Search &amp; Mobile</td>
 						<td></td> 
 					</tr>
 					<tr>
@@ -202,14 +192,14 @@
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<h3>Terms & Conditions:-</h3>
+			<h3>Terms &amp; Conditions:-</h3>
 			<p>1. The above mentioned proposal would be due on ___________________ (PanPages Online Sdn Bhd reserved the right on the rate changes after promotion due date).</p>
 			<p>2. 50% payment shall be made upon sign confirmation date and the balance 50% payment shall be made within 60 days after sign confirmation date.</p>
 			<p>3. The above advertiser listing page will be activated within 30 working days upon receiving complete product materials and minimum of 50% payment.</p>
 			<p>4. Key Phrases or Classifications selected for guaranteed positions are based on a First Come First Serve basis upon receiving complete job sheet.</p>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<h2>TRADITIONAL MEDIA COST & REACH</h2>
+			<h2>TRADITIONAL MEDIA COST &amp; REACH</h2>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<input name="html" type="checkbox" value="html"/>Yahoo! Search
@@ -278,7 +268,7 @@
 			<input name="html" type="checkbox" value="html"/>Timely Response To Enquiry
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Tracking On Calls & Walk In
+			<input name="html" type="checkbox" value="html"/>Tracking On Calls &amp; Walk In
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<input name="html" type="checkbox" value="html"/>Highlight Unique Selling Point
@@ -372,7 +362,7 @@
 			<input name="html" type="checkbox" value="html"/>Malaysia PanPages
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Google AdWords Search & Mobile
+			<input name="html" type="checkbox" value="html"/>Google AdWords Search &amp; Mobile
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<input name="html" type="checkbox" value="html"/>Google Display Network
@@ -399,5 +389,6 @@
 			<input name="html" type="checkbox" value="html"/>Super Pages
 		</div>
 	</div>
+	<hr>
 </body>
 </html>
