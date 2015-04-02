@@ -7,7 +7,10 @@
 </head>
 <body>
 	Survey template 1
-	<jsp:include page="section_template_1.jsp"></jsp:include>
+	<jsp:include page="section_1_template_1.jsp"></jsp:include>
+	<jsp:include page="section_2_template_1.jsp"></jsp:include>
+	<jsp:include page="section_3_template_1.jsp"></jsp:include>
+	<jsp:include page="section_4_template_1.jsp"></jsp:include>
 	<img src="<c:url value="/assets/images/panpages_logo.jpg" />" alt="" />
 </body>
 </html>
