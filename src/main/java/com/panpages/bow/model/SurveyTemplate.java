@@ -33,7 +33,7 @@ public class SurveyTemplate {
 	private String desc;
 	
 	@Autowired
-	@ManyToMany(fetch = FetchType.EAGER)
+	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(
 			name = "Section_Survey_Relation_In_Template",
 			joinColumns =  { @JoinColumn(name = "SURVEY_ID", referencedColumnName = "SURVEY_ID") }, 
