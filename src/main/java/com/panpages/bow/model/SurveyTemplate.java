@@ -1,11 +1,19 @@
 package com.panpages.bow.model;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 @Table(name="Survey_Template")
@@ -23,6 +31,14 @@ public class SurveyTemplate {
 	
 	@Column(name = "DESC", nullable = false)
 	private String desc;
+	
+	@Autowired
+	@ManyToMany(fetch = FetchType.EAGER)
+	@JoinTable(
+			name = "Section_Survey_Relation_In_Template",
+			joinColumns =  { @JoinColumn(name = "SURVEY_ID", referencedColumnName = "SURVEY_ID") }, 
+			inverseJoinColumns = { @JoinColumn(name = "SECTION_ID", table = "Section_Template", referencedColumnName = "SECTION_ID") })
+	private Set<SectionTemplate> sectionTemplates; 
 
 	public int getId() {
 		return id;
@@ -54,5 +70,13 @@ public class SurveyTemplate {
 
 	public void setDesc(String desc) {
 		this.desc = desc;
+	}
+
+	public Set<SectionTemplate> getSectionTemplates() {
+		return sectionTemplates;
+	}
+
+	public void setSectionTemplates(Set<SectionTemplate> sectionTemplates) {
+		this.sectionTemplates = sectionTemplates;
 	}
 }

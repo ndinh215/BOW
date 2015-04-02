@@ -43,7 +43,7 @@ public class AppController {
 		return "templates";
 	}
 	
-	@RequestMapping(value = { "/survey/{surveyId}" }, method = RequestMethod.GET)
+	@RequestMapping(value = { "/survey_{surveyId}.html" }, method = RequestMethod.GET)
 	public String survey(@PathVariable int surveyId) {
 		String templatePath = ctx.getEnvironment().getProperty("template_path");
 		String prefixName = ctx.getEnvironment().getProperty("prefix_template_name");

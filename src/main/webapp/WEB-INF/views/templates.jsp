@@ -8,7 +8,7 @@
 <title>Surveys Templates</title>
 </head>
 <body>
-	<h2>List of Employees</h2>	
+	<h2>List of Templates</h2>	
 	<table>
 		<tr>
 			<th>Id</th><th>Survey Name</th><th>Description</th>
@@ -17,8 +17,15 @@
 			<tr>
 				<td>${template.id}</td>
 				<td>${template.name}</td>
-				<td>${employee.desc}</td>
+				<td>${template.desc}</td>
 			</tr>
+			<c:forEach items="${template.sectionTemplates}" var="section">
+				<tr>
+					<td></td>
+					<td></td>
+					<td>${section.name}</td>
+				</tr>
+			</c:forEach>
 		</c:forEach>
 	</table>
 </body>
