@@ -25,31 +25,34 @@
 			<h2>2014 MARKETING CAMPAIGN</h2>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Malaysia PanPages
+			<input name="malaysia-panpages-2014-marketing-campaign" type="checkbox"/>Malaysia PanPages
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Google AdWords Search &amp; Mobile
+			<input name="google-adWords-search-mobile-2014-marketing-campaign" type="checkbox"/>Google AdWords Search &amp; Mobile
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Google Display Network
+			<input name="google-display-network-2014-marketing-campaign" type="checkbox"/>Google Display Network
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Yahoo! Search
+			<input name="yahoo-search-2014-marketing-campaign" type="checkbox"/>Yahoo! Search
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Yahoo! Display
+			<input name="yahoo-display-2014-marketing-campaign" type="checkbox"/>Yahoo! Display
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>YouTube Ads
+			<input name="youtube-ads-2014-marketing-campaign" type="checkbox"/>YouTube Ads
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Pan 360°
+			<input name="facebook-ads-2014-marketing-campaign" type="checkbox"/>Facebook Ads
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Alibaba.com
+			<input name="pan-360-2014-marketing-campaign" type="checkbox"/>Pan 360°
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Super Pages
+			<input name="alibaba-com-2014-marketing-campaign" type="checkbox"/>Alibaba.com
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<input name="super-pages-2014-marketing-campaign" type="checkbox"/>Super Pages
 		</div>
 		<div class="row">
 			<h3>2014 MARKETING CAMPAIGN RESULT OVERVIEW</h3>
@@ -70,51 +73,51 @@
 			<h2>2015 ACTION PLAN FOR IMPROVEMENT</h2>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Enhance Text Content
+			<input name="enhance-text-content" type="checkbox"/>Enhance Text Content
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Add On Relevant Product Picture
+			<input name="add-on-relevant-product-picture" type="checkbox"/>Add On Relevant Product Picture
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Add On Product Description
+			<input name="add-on-product-description" type="checkbox"/>Add On Product Description
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Include Product Price
+			<input name="include-product-price" type="checkbox"/>Include Product Price
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Include Product Specification
+			<input name="include-product-specification" type="checkbox"/>Include Product Specification
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Include Company Details
+			<input name="include-company-details" type="checkbox"/>Include Company Details
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Include Delivery Information
+			<input name="include-delivery-information" type="checkbox"/>Include Delivery Information
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Include Payment Options
+			<input name="include-payment-options" type="checkbox"/>Include Payment Options
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Frequently Your Website
+			<input name="frequently-your-website" type="checkbox"/>Frequently Your Website
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Timely Response To Enquiry
+			<input name="timely-response-to-enquiry" type="checkbox"/>Timely Response To Enquiry
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Tracking On Calls &amp; Walk In
+			<input name="tracking-on-calls-walk-in" type="checkbox"/>Tracking On Calls &amp; Walk In
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Highlight Unique Selling Point
+			<input name="highlight-unique-selling-point" type="checkbox"/>Highlight Unique Selling Point
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Include Certification For Better Credential
+			<input name="include-certification-for-better-credential" type="checkbox"/>Include Certification For Better Credential
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Enhance Product Picture Quality
+			<input name="enhance-product-picture-quality" type="checkbox"/>Enhance Product Picture Quality
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Others:
+			<input name="others-2015-action-plan-for-improvement" type="checkbox"/>Others:
 		</div>
-		<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<form>
 				<fieldset>
 					<legend>Remarks:</legend>
@@ -132,14 +135,14 @@
 					<th>Examples</th>	
 				</tr>
 				<tr>
-					<td><input name="html" type="checkbox" value="html"/>Increase Website Traffic</td>
+					<td><input name="increase-website-traffic" type="checkbox"/>Increase Website Traffic</td>
 					<td>
 						<p>1. Show current offers/promotions</p>
 						<p>2. Want People to better understand their business</p>
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="html" type="checkbox" value="html"/>Increase Brand Awareness</td>
+					<td><input name="increase-brand-awareness" type="checkbox"/>Increase Brand Awareness</td>
 					<td>
 						<p>1. Ensure your brand is always on top of mind</p>
 						<p>2. Promote brand loyalty</p>
@@ -147,7 +150,7 @@
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="html" type="checkbox" value="html"/>Increase Online Forms Submission</td>
+					<td><input name="increase-online-forms-submission" type="checkbox"/>Increase Online Forms Submission</td>
 					<td>
 						<p>1. Want to reach new customers</p>
 						<p>2. Make reservation online</p>
@@ -155,32 +158,32 @@
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="html" type="checkbox" value="html"/>Increase Store Visits</td>
+					<td><input name="increase-store-visits" type="checkbox"/>Increase Store Visits</td>
 					<td>
 						<p>1. Want people to walk in</p>
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="html" type="checkbox" value="html"/>Increase Phones Calls</td>
+					<td><input name="increase-phones-calls" type="checkbox"/>Increase Phones Calls</td>
 					<td>
 						<p>1. Want people to call directly</p>
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="html" type="checkbox" value="html"/>Increase Online Purchase (Subject to website feasibility)</td>
+					<td><input name="increase-online-purchase" type="checkbox"/>Increase Online Purchase (Subject to website feasibility)</td>
 					<td>
 						<p>1. Want people to purchase directly from website</p>
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="html" type="checkbox" value="html"/>Retargeting Visitors</td>
+					<td><input name="retargeting-visitors" type="checkbox"/>Retargeting Visitors</td>
 					<td>
 						<p>1. Want to reach existing customers</p>
 						<p>2. Want to generate repeat business from existing customers</p>
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="html" type="checkbox" value="html"/>Increase Geographical Coverage</td>
+					<td><input name="increase-geographical-coverage" type="checkbox"/>Increase Geographical Coverage</td>
 					<td>
 						<p>1. Want to expand your business to oversea countries</p>
 					</td>	
@@ -191,34 +194,34 @@
 			<h2>RECOMMENDED SOLUTIONS</h2>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Malaysia PanPages
+			<input name="malaysia-panpages-recommended-solutions" type="checkbox"/>Malaysia PanPages
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Google AdWords Search &amp; Mobile
+			<input name="google-adWords-search-mobile-recommended-solutions" type="checkbox"/>Google AdWords Search &amp; Mobile
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Google Display Network
+			<input name="google-display-network-recommended-solutions" type="checkbox"/>Google Display Network
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Yahoo! Search
+			<input name="yahoo-search-recommended-solutions" type="checkbox"/>Yahoo! Search
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Yahoo! Display
+			<input name="yahoo-display-recommended-solutions" type="checkbox"/>Yahoo! Display
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>YouTube Ads
+			<input name="youtube-ads-recommended-solutions" type="checkbox"/>YouTube Ads
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Facebook Ads
+			<input name="facebook-ads-recommended-solutions" type="checkbox"/>Facebook Ads
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Pan 360°
+			<input name="pan-360-recommended-solutions" type="checkbox"/>Pan 360°
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Alibaba.com 
+			<input name="alibaba-com-recommended-solutions" type="checkbox"/>Alibaba.com
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Super Pages
+			<input name="super-pages-recommended-solutions" type="checkbox"/>Super Pages
 		</div>
 	</div>
 	<hr>

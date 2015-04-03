@@ -27,7 +27,7 @@
 					<p>Revenue Increased:</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<p><input type="text" name="revenueIncreased"></p>
+					<p><input type="text" name="revenue-increased"></p>
 				</div>
 			</div>
 			<div class="row">
@@ -35,7 +35,7 @@
 					<p>No. Of Advertiser:</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<p><input type="text" name="noofAdvertiser"></p>
+					<p><input type="text" name="no-of-advertiser"></p>
 				</div>
 			</div>
 			<div class="row">
@@ -51,7 +51,7 @@
 					<p>Closing Rate:</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<p><input type="text" name="closingRate"></p>
+					<p><input type="text" name="closing-rate"></p>
 				</div>
 			</div>
 			<div class="row">
@@ -59,7 +59,7 @@
 					<p>Leads Conversion Rate:</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<p><input type="text" name="leadsConversionrate"></p>
+					<p><input type="text" name="leads-conversion-rate"></p>
 				</div>
 			</div>
 			<div class="row">
@@ -67,14 +67,9 @@
 					<p>Campaign Period:</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<p><input type="text" name="campaignPeriod"></p>
+					<p><input type="text" name="campaign-period"></p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<p><input type="submit" value="OK" name="okButton"></p>
-				</div>
-			</div>	
 		</form>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -157,64 +152,64 @@
 			<h2>GEOGRAPHICAL COVERAGE</h2>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Nationwide
+			<input name="nationwide" type="checkbox"/>Nationwide
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Kuala Lumpur
+			<input name="kuala-lumpur" type="checkbox"/>Kuala Lumpur
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Klang Valley
+			<input name="klang-valley" type="checkbox"/>Klang Valley
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Perlis
+			<input name="perlis" type="checkbox"/>Perlis
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Kedah
+			<input name="kedah" type="checkbox"/>Kedah
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Kelantan
+			<input name="kelantan" type="checkbox"/>Kelantan
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Penang
+			<input name="penang" type="checkbox"/>Penang
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Perak
+			<input name="perak" type="checkbox"/>Perak
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Terengganu
+			<input name="terengganu" type="checkbox"/>Terengganu
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Pahang
+			<input name="pahang" type="checkbox"/>Pahang
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Negeri Sembilan
+			<input name="negeri-sembilan" type="checkbox"/>Negeri Sembilan
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Melaka
+			<input name="melaka" type="checkbox"/>Melaka
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Johor
+			<input name="johor" type="checkbox"/>Johor
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Sabah
+			<input name="sabah" type="checkbox"/>Sabah
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Sarawak
+			<input name="sarawak" type="checkbox"/>Sarawak
 		</div>
 		<div class="row">
 			<h3>Other Countries:</h3>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Thailand
+			<input name="thailand" type="checkbox"/>Thailand
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Singapore
+			<input name="singapore" type="checkbox"/>Singapore
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Indonesia
+			<input name="indonesia" type="checkbox"/>Indonesia
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Others:
+			<input name="others-countries" type="checkbox"/>Others:
 		</div>
 		<div class="row">
 			<h2>TARGETED AUDIENCE</h2>
@@ -223,88 +218,88 @@
 			<h3>Profession:</h3>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Accounting/Finance
+			<input name="accounting-finance" type="checkbox"/>Accounting/Finance
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Admin/HR
+			<input name="admin-HR" type="checkbox"/>Admin/HR
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Arts/Communication
+			<input name="arts-communication" type="checkbox"/>Arts/Communication
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Building/Construction
+			<input name="building-construction" type="checkbox"/>Building/Construction
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Computer/IT
+			<input name="computer-IT" type="checkbox"/>Computer/IT
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Education/Training
+			<input name="education-training" type="checkbox"/>Education/Training
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Engineering
+			<input name="engineering" type="checkbox"/>Engineering
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Healthcare
+			<input name="healthcare" type="checkbox"/>Healthcare
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Hotel/Restaurant
+			<input name="hotel-restaurant" type="checkbox"/>Hotel/Restaurant
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Manufacturing
+			<input name="manufacturing" type="checkbox"/>Manufacturing
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Sales/Marketing
+			<input name="sales-marketing" type="checkbox"/>Sales/Marketing
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Science
+			<input name="science" type="checkbox"/>Science
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Services
+			<input name="services" type="checkbox"/>Services
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Others:
+			<input name="others-targeted-audience" type="checkbox"/>Others:
 		</div>
 		<div class="row">
 			<h3>Preferred Language:</h3>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>English
+			<input name="english" type="checkbox"/>English
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Malay
+			<input name="malay" type="checkbox"/>Malay
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Chinese
+			<input name="chinese" type="checkbox"/>Chinese
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Tamil
+			<input name="tamil" type="checkbox"/>Tamil
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Others:
+			<input name="others-preferred-language" type="checkbox"/>Others:
 		</div>
 		<div class="row">
 			<h3>Age:</h3>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>18 - 29
+			<input name="18-29-age" type="checkbox"/>18 - 29
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>30 - 49
+			<input name="30-49-age" type="checkbox"/>30 - 49
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>50 - 64
+			<input name="50-64-age" type="checkbox"/>50 - 64
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Others:
+			<input name="others-age" type="checkbox"/>Others:
 		</div>
 		<div class="row">
 			<h3>Gender:</h3>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Male
+			<input name="male" type="checkbox"/>Male
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<input name="html" type="checkbox" value="html"/>Female
+			<input name="female" type="checkbox"/>Female
 		</div>
 	</div>
 	<hr>
