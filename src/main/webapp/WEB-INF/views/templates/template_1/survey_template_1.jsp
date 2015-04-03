@@ -11,11 +11,47 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+	<link href="<c:url value="/template_assets/template_1/assets/css/template_1.css" />" rel="stylesheet">
+	
+	<script src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />/>"></script>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 </head>
 <body>
 	Survey template 1
+	<div class="container">
+		<section class="tabs">
+			<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+			<label for="tab-1" class="tab-label-1">Section 1</label>
+	
+			<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+			<label for="tab-2" class="tab-label-2">Section 2</label>
+	
+			<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+			<label for="tab-3" class="tab-label-3">Section 3</label>
+		
+			<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+			<label for="tab-4" class="tab-label-4">Section 4</label>
+		
+			<div class="clear-shadow"></div>
+			
+			<div class="row content">
+				<div class="content-1">
+					<jsp:include page="section_1_template_1.jsp"></jsp:include>
+				</div>
+				<div class="content-2">
+					<jsp:include page="section_2_template_1.jsp"></jsp:include>
+				</div>
+				<div class="content-3">
+					<jsp:include page="section_3_template_1.jsp"></jsp:include>
+				</div>
+				<div class="content-4">
+					<jsp:include page="section_4_template_1.jsp"></jsp:include>
+				</div>
+			</div>
+		</section>
+	</div>
 	<jsp:include page="section_1_template_1.jsp"></jsp:include>
 	<jsp:include page="section_2_template_1.jsp"></jsp:include>
 	<jsp:include page="section_3_template_1.jsp"></jsp:include>
