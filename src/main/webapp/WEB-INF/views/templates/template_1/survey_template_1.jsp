@@ -4,13 +4,13 @@
 <html>
 <head>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<c:url value="/template_assets/template_1/assets/css/bootstrap.min_v3.3.4.css" />">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="<c:url value="/template_assets/template_1/assets/css/bootstrap-theme.min_v3.3.4.css" />">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="<c:url value="/template_assets/template_1/assets/js/jquery.min_v2.1.3.js" />"></script>
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="<c:url value="/template_assets/template_1/assets/js/bootstrap.min_v3.3.4.js" />"></script>
 	
 	<link href="<c:url value="/template_assets/template_1/assets/css/template_1.css" />" rel="stylesheet">
 	
@@ -52,9 +52,5 @@
 			</div>
 		</section>
 	</div>
-	<jsp:include page="section_1_template_1.jsp"></jsp:include>
-	<jsp:include page="section_2_template_1.jsp"></jsp:include>
-	<jsp:include page="section_3_template_1.jsp"></jsp:include>
-	<jsp:include page="section_4_template_1.jsp"></jsp:include>
 </body>
 </html>
