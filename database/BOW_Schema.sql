@@ -25,10 +25,11 @@ DROP TABLE IF EXISTS `field`;
 CREATE TABLE `field` (
   `field_id` int(11) NOT NULL AUTO_INCREMENT,
   `field_template_id` int(11) NOT NULL,
-  `field_value` varchar(45) DEFAULT NULL,
+  `value` varchar(45) DEFAULT NULL,
   `desc` varchar(45) DEFAULT NULL,
+  `name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`field_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,7 +44,7 @@ CREATE TABLE `field_section_relation` (
   `field_id` int(11) NOT NULL,
   `section_id` int(11) NOT NULL,
   PRIMARY KEY (`relation_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -91,8 +92,9 @@ CREATE TABLE `section` (
   `section_id` int(11) NOT NULL AUTO_INCREMENT,
   `section_template_id` int(11) NOT NULL,
   `desc` varchar(45) DEFAULT NULL,
+  `name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`section_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -108,7 +110,7 @@ CREATE TABLE `section_survey_relation` (
   `survey_id` int(11) NOT NULL,
   `desc` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`relation_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -160,7 +162,7 @@ CREATE TABLE `survey` (
   `name` varchar(45) NOT NULL,
   `storage_path` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`survey_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -175,6 +177,7 @@ CREATE TABLE `survey_template` (
   `name` varchar(45) CHARACTER SET utf8mb4 NOT NULL,
   `desc` varchar(45) CHARACTER SET utf8mb4 DEFAULT NULL,
   `path` varchar(45) DEFAULT NULL,
+  `slug_name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`survey_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -188,4 +191,4 @@ CREATE TABLE `survey_template` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-04-02 17:12:18
+-- Dump completed on 2015-04-04 13:03:21
