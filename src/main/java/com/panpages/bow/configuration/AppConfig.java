@@ -30,7 +30,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
 	@Bean(name = "messageSource")
     public ReloadableResourceBundleMessageSource getMessageSource() {
         ReloadableResourceBundleMessageSource resource = new ReloadableResourceBundleMessageSource();
-        resource.setBasename("classpath:messages");
+        resource.setBasename("classpath:messages.properties");
         resource.setDefaultEncoding("UTF-8");
         
         return resource;

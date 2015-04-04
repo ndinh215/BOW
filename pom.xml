@@ -108,11 +108,11 @@
             <version>4.0</version>    
         </dependency>
         
-        <!--  JasperReport 5.0.1 -->
+        <!--  JasperReport 5.6.0 -->
         <dependency>
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
-            <version>5.0.1</version>
+            <version>5.6.0</version>
         </dependency>
         
         <!-- Log4j 1.2.17 -->
@@ -127,6 +127,13 @@
 		   <groupId>commons-fileupload</groupId>
 		   <artifactId>commons-fileupload</artifactId>
 		   <version>1.2.1</version>
+		</dependency>
+		
+		<!-- Groovy 2.3.7 -->
+		<dependency>
+		    <groupId>org.codehaus.groovy</groupId>
+		    <artifactId>groovy-all</artifactId>
+		    <version>2.3.7</version>
 		</dependency>
 	</dependencies>
 

@@ -21,8 +21,11 @@ public class FieldTemplate {
 	@Column(name = "TYPE", nullable = false)
 	private String type;
 	
-	@Column(name = "DESC", nullable = false)
+	@Column(name = "DESC", nullable = true)
 	private String desc;
+	
+	@Column(name = "SLUG_NAME", nullable = false)
+	private String slugName;
 
 	public int getId() {
 		return id;
@@ -46,5 +49,13 @@ public class FieldTemplate {
 
 	public void setType(String type) {
 		this.type = type;
+	}
+
+	public String getSlugName() {
+		return slugName;
+	}
+
+	public void setSlugName(String slugName) {
+		this.slugName = slugName;
 	}
 }

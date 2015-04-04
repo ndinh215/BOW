@@ -24,10 +24,37 @@
 					<td colspan="2">Section</td>
 					<td>${section.name}</td>
 				</tr>
-				<c:forEach items="${section.fieldTemplates}" var="field">
+				<c:forEach items="${section.fieldTemplates}" var="fieldTemplate">
+					<tr>
+						<td colspan="2">Field</td>
+						<td>${fieldTemplate.name}</td>
+					</tr>
+				</c:forEach>
+			</c:forEach>
+		</c:forEach>
+	</table>
+	
+	<h2>List of Surveys</h2>	
+	<table>
+		<tr>
+			<th>Id</th><th>Survey Name</th><th>Description</th>
+		</tr>
+		<c:forEach items="${surveys}" var="survey">
+			<tr>
+				<td>${survey.id}</td>
+				<td>${survey.name}</td>
+				<td>${survey.desc}</td>
+			</tr>
+			<c:forEach items="${survey.sections}" var="section">
+				<tr>
+					<td colspan="2">Section</td>
+					<td>${section.name}</td>
+				</tr>
+				<c:forEach items="${section.fields}" var="field">
 					<tr>
 						<td colspan="2">Field</td>
 						<td>${field.name}</td>
+						<td>${field.value}</td>
 					</tr>
 				</c:forEach>
 			</c:forEach>

@@ -1,7 +1,6 @@
 package com.panpages.bow.model;
 
-import java.util.Set;
-
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -12,8 +11,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 @Table(name="Section_Template")
@@ -29,16 +26,18 @@ public class SectionTemplate {
 	@Column(name = "PATH", nullable = true)
 	private String path;
 	
-	@Column(name = "DESC", nullable = false)
+	@Column(name = "DESC", nullable = true)
 	private String desc;
 	
-	@Autowired
-	@ManyToMany(fetch = FetchType.LAZY)
+	@Column(name = "SLUG_NAME", nullable = false)
+	private String slugName;
+	
+	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(
 			name = "Field_Section_Relation_In_Template",
 			joinColumns =  { @JoinColumn(name = "SECTION_ID", referencedColumnName = "SECTION_ID") }, 
 			inverseJoinColumns = { @JoinColumn(name = "FIELD_ID", table = "Field_Template", referencedColumnName = "FIELD_ID") })
-	private Set<FieldTemplate> fieldTemplates; 
+	private List<FieldTemplate> fieldTemplates; 
 
 	public int getId() {
 		return id;
@@ -72,11 +71,19 @@ public class SectionTemplate {
 		this.desc = desc;
 	}
 
-	public Set<FieldTemplate> getFieldTemplates() {
+	public List<FieldTemplate> getFieldTemplates() {
 		return fieldTemplates;
 	}
 
-	public void setFieldTemplates(Set<FieldTemplate> fieldTemplates) {
+	public void setFieldTemplates(List<FieldTemplate> fieldTemplates) {
 		this.fieldTemplates = fieldTemplates;
+	}
+
+	public String getSlugName() {
+		return slugName;
+	}
+
+	public void setSlugName(String slugName) {
+		this.slugName = slugName;
 	}
 }
