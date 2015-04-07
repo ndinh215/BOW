@@ -169,6 +169,24 @@ public class SurveyDaoImpl extends AbstractDao implements SurveyDao{
 					
 					saveFieldAndSectionRelation(relation);
 				}
+				
+				if (fieldValue instanceof String[]) {
+					for (String fieldValueItem : (String[])fieldValue) {
+						// Add new field
+						Field field = new Field();
+						field.setFieldTemplateId(fieldTemplate.getId());
+						field.setName(fieldTemplate.getName());
+						field.setValue(StringUtils.nullValue(fieldValueItem, ""));
+						field.setFieldTemplate(fieldTemplate);
+						
+						saveField(field);
+						
+						// Create field and section relation
+						FieldAndSectionRelation relation = new FieldAndSectionRelation();
+						relation.setFieldId(field.getId());
+						relation.setSectionId(parentSection.getId());
+					}
+				}
 			}
 			
 			// Commit transaction
