@@ -89,7 +89,7 @@ public class SurveyController {
 		survey.setStorageName(reportName);
 		surveySvc.saveSurvey(survey);
 		
-		return "redirect:/" + reportViewPath;
+		return "redirect:" + reportViewPath;
 	}
 	
 	@RequestMapping(value = { "/error.html" }, method = RequestMethod.GET)
