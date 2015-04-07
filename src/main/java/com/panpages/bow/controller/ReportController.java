@@ -28,7 +28,7 @@ public class ReportController {
 	
 	private static final Logger logger = Logger.getLogger(ReportController.class);
 	
-	@RequestMapping(value = { "/view_survey_{outputId}_{outputType}.html" }, method = RequestMethod.GET)
+	@RequestMapping(value = { "/view_{outputId}_{outputType}.html" }, method = RequestMethod.GET)
 	public String listTemplates(@PathVariable String outputId, 
 								@PathVariable String outputType, 
 								ModelMap model) {
