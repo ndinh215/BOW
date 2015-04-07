@@ -11,18 +11,28 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Section 4
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 				<h1>2015 INVESTMENT PLAN</h1>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
 				<img src="<c:url value="/assets/images/panpages_logo.jpg" />" alt="" />
 			</div>
 		</div>
 		<div class="row">
-			
+			<table style="width:100%">
+				<tr>
+					<th>Keyword</th>
+					<th>Avg. Monthly Searches (exact match only)</th>		
+					<th>Suggested bid</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>		
+					<td></td>
+				</tr>
+			</table>
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
