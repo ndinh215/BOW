@@ -185,6 +185,8 @@ public class SurveyDaoImpl extends AbstractDao implements SurveyDao{
 						FieldAndSectionRelation relation = new FieldAndSectionRelation();
 						relation.setFieldId(field.getId());
 						relation.setSectionId(parentSection.getId());
+						
+						saveFieldAndSectionRelation(relation);
 					}
 				}
 			}
