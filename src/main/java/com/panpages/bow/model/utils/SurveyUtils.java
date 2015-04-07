@@ -1,5 +1,6 @@
 package com.panpages.bow.model.utils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.panpages.bow.model.Field;
@@ -39,6 +40,23 @@ public class SurveyUtils {
 		}
 		
 		return null;
+	}
+	
+	public static List<Field> findFieldsWithFieldTemplateSlugName(String slugName, List<Field> fields) {
+		if (slugName == null || slugName.trim().equals("") || fields.size() == 0) {
+			return null;
+		}
+		
+		List<Field> resultFields = new ArrayList<Field>();
+		for (Field field:fields) {
+			FieldTemplate fieldTempl = field.getFieldTemplate();
+			String templSlugName = fieldTempl.getSlugName();
+			if (slugName.equalsIgnoreCase(templSlugName)) {
+				resultFields.add(field);
+			}
+		}
+		
+		return resultFields;
 	}
 	
 }
