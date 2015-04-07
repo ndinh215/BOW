@@ -2,6 +2,7 @@ package com.panpages.bow.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -11,8 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -26,14 +26,14 @@ public class Section {
 	@Column(name = "SECTION_TEMPLATE_ID", nullable = false)
 	private int sectionTemplateId;
 	
-	@OneToOne(fetch = FetchType.EAGER)
-	@PrimaryKeyJoinColumn(name="SECTION_TEMPLATE_ID", referencedColumnName="SECTION_ID")
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="SECTION_TEMPLATE_ID", insertable=false, updatable=false)
 	private SectionTemplate sectionTemplate; 
 	
 	@Column(name = "NAME", nullable = false)
 	private String name;
 	
-	@Column(name = "DESC", nullable = true)
+	@Column(name = "[DESC]", nullable = true)
 	private String desc;
 	
 	@ManyToMany(fetch = FetchType.EAGER)

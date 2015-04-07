@@ -2,19 +2,17 @@ package com.panpages.bow.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
@@ -30,16 +28,21 @@ public class Survey {
 	@Column(name = "SURVEY_TEMPLATE_ID", nullable = false)
 	private int surveyTemplateId;
 	
-	@OneToOne(fetch = FetchType.EAGER)
-	@PrimaryKeyJoinColumn(name="SURVEY_TEMPLATE_ID", referencedColumnName="SURVEY_ID")
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="SURVEY_TEMPLATE_ID", insertable=false, updatable=false)
 	private SurveyTemplate surveyTemplate; 
 	
-	@Size(min=3, max=50)
 	@Column(name = "NAME", nullable = false)
 	private String name;
 	
-	@Column(name = "DESC", nullable = true)
+	@Column(name = "[DESC]", nullable = true)
 	private String desc;
+	
+	@Column(name = "STATUS", nullable = true)
+	private String status;
+	
+	@Column(name = "STORAGE_NAME", nullable = false)
+	private String storageName;
 	
 	@ManyToMany()
 	@LazyCollection(LazyCollectionOption.FALSE)
@@ -103,6 +106,30 @@ public class Survey {
 		}
 		
 		return null;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getStorageName() {
+		return storageName;
+	}
+
+	public void setStorageName(String storageName) {
+		this.storageName = storageName;
+	}
+
+	public int getSurveyTemplateId() {
+		return surveyTemplateId;
+	}
+
+	public void setSurveyTemplateId(int surveyTemplateId) {
+		this.surveyTemplateId = surveyTemplateId;
 	}
 	
 }

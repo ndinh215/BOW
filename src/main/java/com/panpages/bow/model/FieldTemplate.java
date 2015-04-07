@@ -18,10 +18,10 @@ public class FieldTemplate {
 	@Column(name = "NAME", nullable = false)
 	private String name;
 	
-	@Column(name = "TYPE", nullable = false)
+	@Column(name = "[TYPE]", nullable = false)
 	private String type;
 	
-	@Column(name = "DESC", nullable = true)
+	@Column(name = "[DESC]", nullable = true)
 	private String desc;
 	
 	@Column(name = "SLUG_NAME", nullable = false)

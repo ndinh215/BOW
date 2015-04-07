@@ -26,7 +26,7 @@ public class SectionTemplate {
 	@Column(name = "PATH", nullable = true)
 	private String path;
 	
-	@Column(name = "DESC", nullable = true)
+	@Column(name = "[DESC]", nullable = true)
 	private String desc;
 	
 	@Column(name = "SLUG_NAME", nullable = false)

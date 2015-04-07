@@ -1,13 +1,14 @@
-package com.panpages.bow.service;
+package com.panpages.bow.service.survey;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.panpages.bow.dao.SurveyDao;
+import com.panpages.bow.model.FieldTemplate;
 import com.panpages.bow.model.Survey;
+import com.panpages.bow.model.SurveyForm;
 import com.panpages.bow.model.SurveyTemplate;
 
 @Service("surveyService")
@@ -28,6 +29,30 @@ public class SurveyServiceImpl implements SurveyService{
 	@Override
 	public List<SurveyTemplate> findAllSurveyTemplates() {
 		return dao.findAllSurveyTemplates();
+	}
+
+	@Override
+	public int saveSurveyForm(int surveyTemplateId, SurveyForm form) {
+		if (form == null) {
+			return -1;
+		}
+		
+		return dao.saveSurveyForm(surveyTemplateId, form);
+	}
+
+	@Override
+	public FieldTemplate findFieldTemplateWithSlugName(String slugName) {
+		return dao.findFieldTemplateWithSlugName(slugName);
+	}
+
+	@Override
+	public Survey findSurveyWithId(int surveyId) {
+		return dao.findSurveyWithId(surveyId);
+	}
+
+	@Override
+	public SurveyTemplate findSurveyTemplateWithId(int surveyTemplateId) {
+		return dao.findSurveyTemplateWithId(surveyTemplateId);
 	}
 
 }

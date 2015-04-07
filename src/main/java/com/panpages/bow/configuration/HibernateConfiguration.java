@@ -48,18 +48,18 @@ public class HibernateConfiguration {
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(getEnvironment().getRequiredProperty("jdbc.driverClassName"));
-        dataSource.setUrl(getEnvironment().getRequiredProperty("jdbc.url"));
-        dataSource.setUsername(getEnvironment().getRequiredProperty("jdbc.username"));
-        dataSource.setPassword(getEnvironment().getRequiredProperty("jdbc.password"));
+        dataSource.setDriverClassName(getEnvironment().getRequiredProperty(ConfigConstant.JDBC_DRIVER_CLASS_NAME.getName()));
+        dataSource.setUrl(getEnvironment().getRequiredProperty(ConfigConstant.JDBC_URL.getName()));
+        dataSource.setUsername(getEnvironment().getRequiredProperty(ConfigConstant.JDBC_USERNAME.getName()));
+        dataSource.setPassword(getEnvironment().getRequiredProperty(ConfigConstant.JDBC_PASSWORD.getName()));
         return dataSource;
     }
     
     private Properties hibernateProperties() {
         Properties properties = new Properties();
-        properties.put("hibernate.dialect", getEnvironment().getRequiredProperty("hibernate.dialect"));
-        properties.put("hibernate.show_sql", getEnvironment().getRequiredProperty("hibernate.show_sql"));
-        properties.put("hibernate.format_sql", getEnvironment().getRequiredProperty("hibernate.format_sql"));
+        properties.put("hibernate.dialect", getEnvironment().getRequiredProperty(ConfigConstant.HIBERNATE_DIALECT.getName()));
+        properties.put("hibernate.show_sql", getEnvironment().getRequiredProperty(ConfigConstant.HIBERNATE_SHOW_SQL.getName()));
+        properties.put("hibernate.format_sql", getEnvironment().getRequiredProperty(ConfigConstant.HIBERNATE_FORMAT_SQL.getName()));
         return properties;        
     }
     

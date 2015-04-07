@@ -15,7 +15,7 @@ import org.springframework.web.servlet.view.JstlView;
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.panpages.bow")
-public class AppConfig extends WebMvcConfigurerAdapter {
+public class BOWConfig extends WebMvcConfigurerAdapter {
 	
 	@Bean
 	public ViewResolver viewResolver() {

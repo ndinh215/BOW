@@ -1,13 +1,13 @@
 package com.panpages.bow.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -21,14 +21,14 @@ public class Field {
 	@Column(name = "FIELD_TEMPLATE_ID", nullable = false)
 	private int fieldTemplateId;
 	
-	@OneToOne(fetch = FetchType.EAGER)
-	@PrimaryKeyJoinColumn(name="FIELD_TEMPLATE_ID", referencedColumnName="FIELD_ID")
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="FIELD_TEMPLATE_ID", insertable=false, updatable=false)
 	private FieldTemplate fieldTemplate; 
 
-	@Column(name = "VALUE", nullable = false)
+	@Column(name = "[VALUE]", nullable = false)
 	private String value;
 	
-	@Column(name = "DESC", nullable = true)
+	@Column(name = "[DESC]", nullable = true)
 	private String desc;
 	
 	@Column(name = "NAME", nullable = true)
@@ -72,5 +72,13 @@ public class Field {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public int getFieldTemplateId() {
+		return fieldTemplateId;
+	}
+
+	public void setFieldTemplateId(int fieldTemplateId) {
+		this.fieldTemplateId = fieldTemplateId;
 	}
 }
