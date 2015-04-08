@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="proposed_keywords" pageWidth="640" pageHeight="800" whenNoDataType="AllSectionsNoDetail" columnWidth="600" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4886fea7-47d4-423b-977b-d9fff727ab46">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="sections" class="java.util.List"/>
+	<parameter name="RESOURCE_PATH" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="value" class="java.lang.String">
+		<fieldDescription><![CDATA[value]]></fieldDescription>
+	</field>
+	<field name="desc" class="java.lang.String">
+		<fieldDescription><![CDATA[desc]]></fieldDescription>
+	</field>
+	<field name="fieldTemplate" class="com.panpages.bow.model.FieldTemplate">
+		<fieldDescription><![CDATA[fieldTemplate]]></fieldDescription>
+	</field>
+	<field name="fieldTemplateId" class="java.lang.Integer">
+		<fieldDescription><![CDATA[fieldTemplateId]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<variable name="V_TOTAL_EST" class="java.lang.String" resetType="Column" calculation="Sum"/>
+	<variable name="value_1" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{value}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="244" y="0" width="183" height="20" uuid="df32ddba-9e31-4394-b93d-6e3ffd2d953f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SECTION 4]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23">
+			<staticText>
+				<reportElement mode="Opaque" x="244" y="0" width="177" height="20" backcolor="#CCCCCC" uuid="3484006d-4418-418d-8fd7-d495c699a69c"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Avg. Monthly Searches]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="421" y="0" width="179" height="20" backcolor="#CCCCCC" uuid="0f283500-577f-4be0-9bd9-a0735f96b672"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Suggested bid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="244" height="20" backcolor="#CCCCCC" uuid="49ab343c-f4cc-46b1-9fb1-b1d69e5b2a3b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Keyword]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23">
+			<textField>
+				<reportElement x="244" y="0" width="177" height="20" uuid="57f8b7ed-3416-42bf-9a6b-5008a99b5f45"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{value}.split(",")[1]]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="421" y="0" width="179" height="20" uuid="0d4b1a9d-5990-488c-8273-9c924466e8b4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{value}.split(",")[2]]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="244" height="20" uuid="6b543860-48b8-4357-abb5-e498d5e52262"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{value}.split(",")[0]]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="132">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="112" width="345" height="20" backcolor="#CCCCCC" uuid="7358571e-76ac-44c4-b2af-4397b5720bed"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Est. Monthly Investment (50% Share of Voice)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="32" width="345" height="20" backcolor="#CCCCCC" uuid="002cedc3-24e6-4779-b1c5-a9fc3a01de2d"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Average Cost per Click]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="72" width="345" height="20" backcolor="#CCCCCC" uuid="900ba55d-f760-4662-8a47-67572e40b8be"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Est. Clicks Assuming 3% CTR (100% Share of Voice)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="12" width="345" height="20" backcolor="#CCCCCC" uuid="b5639de1-49cc-48ad-8ec9-30a6b7b0c92b"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Est. Impressions (100% Share of Voice)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="92" width="345" height="20" backcolor="#CCCCCC" uuid="19797ac5-5ccb-498c-aefc-45cde6fc9f6d"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Est. Monthly Investment (100% Share of Voice)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="52" width="345" height="20" backcolor="#CCCCCC" uuid="53806122-7be5-4a03-a04e-a0571a536568"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Assumed CTR for Search]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="planner3" pageWidth="640" pageHeight="1100" whenNoDataType="AllSectionsNoDetail" columnWidth="600" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fae24526-20a2-461e-b8a4-4934cf4ebdfa">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="ef6965b1-a13f-44e2-b88c-fb6990810d23"/>
+	<parameter name="sections" class="java.util.List"/>
+	<parameter name="RESOURCE_PATH" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="desc" class="java.lang.String">
+		<fieldDescription><![CDATA[desc]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="sections" class="java.util.List">
+		<fieldDescription><![CDATA[sections]]></fieldDescription>
+	</field>
+	<field name="surveyTemplate" class="com.panpages.bow.model.SurveyTemplate">
+		<fieldDescription><![CDATA[surveyTemplate]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="24">
+			<staticText>
+				<reportElement x="209" y="0" width="183" height="20" uuid="26aa0788-048c-48a0-829e-99a3d344b71a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SECTION 3]]></text>
+			</staticText>
+		</band>
+	</title>
+	<summary>
+		<band height="1051">
+			<staticText>
+				<reportElement x="0" y="0" width="208" height="20" uuid="a488834e-4995-4006-a44a-3c6139810240"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PANPAGES ONLINE SDN BHD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="208" height="35" uuid="d6e0cf2f-3eab-4749-89e5-62f1d0894aa1"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. 1, Jalan OJS 11/8, Bandar Sunway, Petaling Jaya, 46150, Selangor, Malaysia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="63" width="301" height="24" uuid="956ba603-0ef7-4fc7-9dc2-efe4a24413b3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Advertiser: _______________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="91" width="301" height="24" uuid="eb58d4b8-aa69-40fb-a787-9ff5910071dc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address: _________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="39" width="129" height="24" uuid="f3ffdde4-fbd8-4f7d-a2b6-37012fa70606"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Proposal Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="63" width="129" height="24" uuid="4568c9c0-f230-47af-a62c-08b34005b1c7"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valid Until:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="87" width="129" height="24" uuid="7b7f741b-1925-42c1-8786-93d7dd07a710"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Proposed Amount:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="147" width="80" height="20" uuid="4b36baa6-f878-4513-b917-e7f463711eb8"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Option A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="143" width="80" height="20" uuid="9e4867a1-f071-4896-b023-efee79bfde05"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Option B]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="545" width="600" height="34" uuid="7a2a07d8-d4ed-43a9-a55b-11ba85f8b0f9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13"/>
+				</textElement>
+				<text><![CDATA[1. The above mentioned proposal would be due on ___________________ (PanPages Online Sdn Bhd reserved the right on the rate changes after promotion due date).]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="579" width="600" height="34" uuid="b105cfe1-a40e-4c91-a366-f801335ce22b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13"/>
+				</textElement>
+				<text><![CDATA[2. 50% payment shall be made upon sign confirmation date and the balance 50% payment shall be made within 60 days after sign confirmation date. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="613" width="600" height="34" uuid="d296821a-8419-482e-aa92-a8506ff83215"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13"/>
+				</textElement>
+				<text><![CDATA[3. The above advertiser listing page will be activated within 30 working days upon receiving complete product materials and minimum of 50% payment.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="647" width="600" height="34" uuid="7ece3052-bae2-47cc-956a-83ec23057605"/>
+				<textElement>
+					<font fontName="Times New Roman" size="13"/>
+				</textElement>
+				<text><![CDATA[4. Key Phrases or Classifications selected for guaranteed positions are based on a First Come First Serve basis upon receiving complete job sheet.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="700" width="258" height="20" backcolor="#333333" uuid="1f919939-8ba3-4fbf-b165-3c88840308dd"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TRADITIONAL MEDIA COST & REACH
+]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="729" width="190" height="85" uuid="65a566cd-6d36-459d-a63e-1f517bf2627e"/>
+				<imageExpression><![CDATA[$P{RESOURCE_PATH} + "/images/rm40.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="209" y="729" width="190" height="85" uuid="a1a2b9df-b0f2-467c-be7b-5f4c7631d284"/>
+				<imageExpression><![CDATA[$P{RESOURCE_PATH} + "/images/rm15.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="409" y="729" width="190" height="85" uuid="93ef646d-a5ce-486c-a005-130ca1cafd9c"/>
+				<imageExpression><![CDATA[$P{RESOURCE_PATH} + "/images/rm25.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="10" y="820" width="190" height="85" uuid="62f3aa56-4193-4ec7-8cb2-e463bbf49186"/>
+				<imageExpression><![CDATA[$P{RESOURCE_PATH} + "/images/rm22.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="209" y="821" width="190" height="85" uuid="79999365-8126-48a1-aefa-d241912a2256"/>
+				<imageExpression><![CDATA[$P{RESOURCE_PATH} + "/images/rm160.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="409" y="821" width="190" height="85" uuid="aa54f76f-2748-4349-ace3-0734021b30af"/>
+				<imageExpression><![CDATA[$P{RESOURCE_PATH} + "/images/rm15b.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="10" y="916" width="312" height="104" uuid="be262ed6-7db8-4d18-b7fb-bffc441c7022"/>
+				<imageExpression><![CDATA[$P{RESOURCE_PATH} + "/images/rm.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="312" y="970" width="287" height="50" uuid="504d4c8e-5a84-4d17-b6a0-0e1c0530b19c"/>
+				<imageExpression><![CDATA[$P{RESOURCE_PATH} + "/images/save.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="471" y="39" width="129" height="24" uuid="ec5b9d09-fc86-4efd-9d84-ee873613872a"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="471" y="63" width="129" height="24" uuid="3f039b7e-a542-45b4-9f19-a7f77c099df7"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="471" y="87" width="129" height="24" uuid="f937d54e-56a8-494d-af40-c5db4eda51ba"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="514" width="208" height="20" uuid="6b01610f-50cd-46dd-831a-26ae63c6d757"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Terms & Conditions:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="103" y="147" width="20" height="20" uuid="26be9d3d-5988-47b9-bbb4-b08f2859f8b4"/>
+				<imageExpression><![CDATA[]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="402" y="143" width="20" height="20" uuid="c65fc398-292d-4602-adff-93a1f4b4abaa"/>
+			</image>
+			<staticText>
+				<reportElement x="3" y="195" width="206" height="20" uuid="f9dc8cd3-ceb7-42e1-9953-82db9e7bba85"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Products]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="195" width="72" height="20" uuid="e3f07d72-5176-4619-b966-2e9e04f907c7"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="215" width="206" height="20" uuid="9b73c6f5-2bb4-445d-976c-ed7ec665fbfb"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Malaysia PanPages]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="235" width="206" height="20" uuid="a8e02263-2656-4a0b-9861-bb41bb604ad6"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Google AdWords Search & Mobile]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="275" width="206" height="20" uuid="dae01733-58f2-4b2b-8045-07c084d3299d"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yahoo! Search]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="255" width="206" height="20" uuid="beb4f00d-1f6d-401e-88fd-d14b501407a9"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Google Display Network]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="315" width="206" height="20" uuid="c176d4da-feb7-4572-9851-706926d65908"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[YouTube Ads]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="355" width="206" height="20" uuid="8fafc8b7-c3db-4f64-b3df-86d3c8ea28e7"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Pan 360°]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="295" width="206" height="20" uuid="d7e85ae5-026a-4008-9da0-4cf01d7afdf5"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yahoo! Display]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="335" width="206" height="20" uuid="5acc430e-5ee9-4587-baf8-6bb30e733ed4"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Facebook Ads]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="475" width="206" height="20" uuid="c6c1ef2e-9300-422e-b1b3-d7871fb69160"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Grand Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="395" width="206" height="20" uuid="16b1eeed-051d-47a8-b543-ccace647229f"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Super Pages]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="375" width="206" height="20" uuid="b4caff96-c6c3-4d09-9909-da178a04cb25"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Alibaba.com ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="415" width="206" height="20" uuid="b9359cdb-d995-433b-802a-5174c2247ff2"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Others]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="455" width="206" height="20" uuid="aa88589f-9a64-40a0-8c78-24faf8ab8992"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6% Gov. Tax]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="435" width="206" height="20" uuid="0b49121f-8da8-4bb7-a429-51227bba4d84"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Subtotal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="355" width="206" height="20" uuid="368fb97e-8700-4920-8014-3d304b26c3b7"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Pan 360°]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="475" width="206" height="20" uuid="315b01c6-3a3a-4175-ae03-effa50eb5f16"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Grand Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="235" width="206" height="20" uuid="e8560175-b704-4b65-b785-8d905e91cc9e"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Google AdWords Search & Mobile]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="195" width="206" height="20" uuid="17f118ab-7a85-4699-a198-6b0cdea946e2"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Products]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="275" width="206" height="20" uuid="263d09f9-ab77-4d69-8056-94f71c96f761"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yahoo! Search]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="395" width="206" height="20" uuid="fe758dd7-2ce4-442b-96df-bb7ee6c67759"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Super Pages]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="215" width="206" height="20" uuid="d5d92529-956e-4349-a4d4-a5c28e0f3964"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Malaysia PanPages]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="255" width="206" height="20" uuid="8142b717-e896-4354-b463-959a7f7650e3"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Google Display Network]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="455" width="206" height="20" uuid="9aa4e309-0fea-45ce-92a4-38ab8117bd80"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6% Gov. Tax]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="295" width="206" height="20" uuid="e9ebabf0-5311-4aab-b07b-d1617807028c"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Yahoo! Display]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="435" width="206" height="20" uuid="d09cdc1c-77c1-4b8b-a52d-5ed93665338e"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Subtotal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="375" width="206" height="20" uuid="135d5d96-d3cd-45e6-9a2f-9dca91544192"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Alibaba.com ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="335" width="206" height="20" uuid="a12d6e36-dff1-4c02-8286-7a85086f6692"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Facebook Ads]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="415" width="206" height="20" uuid="3d670645-dfca-4175-8643-7b9540effc2d"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Others]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="528" y="195" width="72" height="20" uuid="6513dcaf-bf33-4100-9c29-480e5474facf"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="315" width="206" height="20" uuid="e9d1487c-6cc4-4ebe-bc02-80a3216a3d66"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[YouTube Ads]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="section_1" pageWidth="640" pageHeight="1000" whenNoDataType="AllSectionsNoDetail" columnWidth="600" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="89cc2169-c366-460f-a825-86120bde60b5">
+	<property name="ireport.zoom" value="1.2100000000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="325"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:\\Panpages\\Documents\\BOW project\\reports\\planner1\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="sections" class="java.util.List"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="desc" class="java.lang.String">
+		<fieldDescription><![CDATA[desc]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="sections" class="java.util.List">
+		<fieldDescription><![CDATA[sections]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[status]]></fieldDescription>
+	</field>
+	<field name="storageName" class="java.lang.String">
+		<fieldDescription><![CDATA[storageName]]></fieldDescription>
+	</field>
+	<field name="surveyTemplate" class="com.panpages.bow.model.SurveyTemplate">
+		<fieldDescription><![CDATA[surveyTemplate]]></fieldDescription>
+	</field>
+	<field name="surveyTemplateId" class="java.lang.Integer">
+		<fieldDescription><![CDATA[surveyTemplateId]]></fieldDescription>
+	</field>
+	<variable name="set_country" class="java.lang.String"/>
+	<group name="survey_id">
+		<groupExpression><![CDATA[]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="24">
+			<staticText>
+				<reportElement x="220" y="0" width="183" height="20" uuid="535f241d-acc6-4eb8-8652-a8ba2d45cb77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SECTION 1]]></text>
+			</staticText>
+		</band>
+	</title>
+	<summary>
+		<band height="912">
+			<staticText>
+				<reportElement x="0" y="0" width="219" height="32" uuid="f5f98391-1351-41a2-95f1-191ff2e91a5e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Revenue Increased]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="177" height="32" uuid="1dd73f34-93bc-47d7-b21e-3f6441e56869"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. Of Advertiser]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="0" width="204" height="32" uuid="ad1c1f18-e6a9-4d21-be91-ed040d3561b1"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Average Revenue Per Advertiser (ARPA)
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="60" width="219" height="20" uuid="5b0c6c00-afaa-4738-bab1-ebc54adb7468"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Closing Rate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="60" width="177" height="20" uuid="863d26f4-3f3b-4781-84d4-356cb098ed44"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Leads Conversion Rate
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="60" width="204" height="20" uuid="d26ef187-4c45-458c-bcfc-a433c326033c"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Campaign Period
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="106" width="218" height="20" uuid="c429f007-656f-4dd8-9ad7-8c04a383db71"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Revenue Increased
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="186" width="218" height="20" uuid="c25b0e74-1fb1-4052-9a95-db7b4a32d5e8"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Leads]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="126" width="218" height="20" uuid="694cad90-5e60-4691-b65b-57f97c8df6ee"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ARPA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="146" width="218" height="20" uuid="661e4053-c488-4190-9a36-3aa894922154"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[New Advertisers]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="166" width="218" height="20" uuid="403768a0-4b05-4027-9521-cd1363638d47"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Closing Rate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="206" width="218" height="20" uuid="8968dc5e-9db7-43e4-8955-ff4655849150"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Leads Conversion Rate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="226" width="218" height="20" uuid="d6942ad5-ef81-42c4-ae22-b914968123c0"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Traffic Required]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="246" width="218" height="20" uuid="4ed29cc2-4737-4ad0-8cf8-7579e16adf2d"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Monthly Traffic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="266" width="218" height="20" uuid="c76cf601-e370-41a6-9c54-1d1d308da60c"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Avg. Cost Per Click]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="286" width="218" height="20" uuid="e3463dd3-963b-4a76-8b5d-516ad57a2692"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estimated Monthly Budget]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="306" width="218" height="20" uuid="e1f6b144-c2ba-4bd7-a659-ba3945335b4f"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Campaign Budget]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="335" width="216" height="28" backcolor="#999999" uuid="4b492502-7090-424c-bd10-f01c8c8df6d5"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GEOGRAPHICAL COVERAGE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="366" width="100" height="20" uuid="8c5c5f17-3bba-4c53-aacf-5d945a7ad369"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nationwide]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="386" width="100" height="20" uuid="bbc7cc3d-da02-4c7c-8b1c-3237f892d257"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kuala Lumpur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="406" width="100" height="20" uuid="4c79f750-a35d-4122-8589-5a3d6d52b4e7"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Klang Valley]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="426" width="100" height="20" uuid="a510c5d2-3ec0-4761-9ee2-df2d06f350cb"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Perlis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="446" width="100" height="20" uuid="95d169f5-e118-4be4-b31c-92106d2142bb"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kedah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="466" width="100" height="20" uuid="1c29da07-5a90-43af-83d3-daa691a08a2a"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kelantan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="486" width="100" height="20" uuid="d20dfbe1-c9a7-41bb-8b65-4a581d78fe5c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Penang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="506" width="100" height="20" uuid="9b708382-c525-4bba-ab3c-6560d4b04918"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Perak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="526" width="100" height="20" uuid="0cae720d-623b-4446-a46f-1237fd0b234e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Terengganu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="546" width="100" height="20" uuid="6867c997-144f-4611-b0ed-b2965e2ade98"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pahang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="366" width="100" height="20" uuid="05a72d48-7a65-4380-af47-cd9bd1dd58c6"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Negeri Sembilan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="386" width="100" height="20" uuid="f96043bf-6806-4da3-b1d8-bb2d14418ffb"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Melaka]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="406" width="100" height="20" uuid="f2e53462-ab52-482c-b9c4-a7721192a26a"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Johor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="426" width="100" height="20" uuid="b337c249-eddc-486b-b9d3-7988eb39ad1e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sabah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="466" width="124" height="20" uuid="6b6fe0e2-9d47-40b5-a79a-95865d83e146"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Other Countries:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="486" width="100" height="20" uuid="4945e7fc-75c5-49d7-8715-777e6d031cac"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thailand]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="506" width="100" height="20" uuid="9c7e227e-7f47-486a-a176-fe99a2906cd5"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Singapore]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="526" width="100" height="20" uuid="ad0d3466-8010-413f-a4aa-620ba975fb70"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Indonesia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="546" width="50" height="20" uuid="d87ad7df-5c55-4e6d-adcc-ddc5ff6757dd"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Others:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="446" width="100" height="20" uuid="9b09ef3d-b449-4692-8559-63d4627a2176"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sarawak]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="-1" y="573" width="216" height="28" backcolor="#999999" uuid="b8d4653c-369e-458a-9f3e-00f76be1cf70"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[  TARGETED AUDIENCE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="605" width="100" height="20" uuid="793ff32d-5f31-4122-a705-8eaa7dbf0797"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Profession:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="627" width="128" height="20" uuid="ccfeaa9b-9347-41e3-a669-ebd831616947"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Accounting/Finance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="647" width="128" height="20" uuid="22703c2b-3371-4b02-8348-8e249933b92d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Admin/HR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="667" width="128" height="20" uuid="9e86000a-8b6e-4222-8d02-9b438329c13f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Arts/Communication]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="687" width="128" height="20" uuid="df49ae7a-df5b-416e-b50d-31192291fe82"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Building/Construction]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="707" width="128" height="20" uuid="8760d1f7-4f29-452e-9c7b-5c72d7253f6b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Computer/IT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="727" width="128" height="20" uuid="29800ccd-3b3a-4db8-87f9-08a4ed89b6ab"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Education/Training]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="747" width="128" height="20" uuid="0629206f-b213-4777-8ad2-b3d285eefcd0"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Engineering]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="625" width="128" height="20" uuid="101ff1b8-b076-4bbf-87fb-27bb15333562"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Healthcare]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="645" width="128" height="20" uuid="a1c519ea-0561-437d-a808-7ab07c0a070f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hotel/Restaurant]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="665" width="128" height="20" uuid="09848f1b-f729-4c12-9c2b-1fa81b1d5002"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Manufacturing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="685" width="128" height="20" uuid="19e6123f-2b39-476f-81ca-ebeecb17eae0"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sales/Marketing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="705" width="128" height="20" uuid="72b78e7f-dc47-4e15-a2a9-3f5cd823664e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Science]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="725" width="128" height="20" uuid="738d008a-58ea-4033-8ef4-dd2f97d955a6"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Services]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="745" width="45" height="20" uuid="7514b217-d25a-4c0b-818f-bf3b2dda1f1e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Others:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="779" width="148" height="20" uuid="5182a312-9f6a-40f0-b153-1c25c7035f64"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Preferred Language:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="256" y="779" width="100" height="20" uuid="397c2d03-65af-478e-8d03-7ba96e6e0295"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Profession:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="463" y="779" width="100" height="20" uuid="8f0e7700-c947-47a1-956b-8fb667a9a73b"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="810" width="128" height="20" uuid="fb8e1e82-44ea-4316-ad2c-2364b1127c17"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[English]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="830" width="128" height="20" uuid="a304c7ab-5692-4411-a4fe-a05cf547c0e9"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Malay]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="850" width="128" height="20" uuid="8bff7317-fed1-470c-ac57-3cab646fb319"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chinese]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="870" width="128" height="20" uuid="84d1b165-7dec-49d6-a6b6-e1d401702e83"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tamil]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="890" width="44" height="20" uuid="1a7bae5d-c19b-4a66-b8cb-c8b1d9bb2d54"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Other:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="810" width="82" height="20" uuid="d2fd856d-20b2-4d59-a760-2ef9d1d5f1ce"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[18-20]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="830" width="82" height="20" uuid="330b6eed-7a22-4f4b-9f23-f61b909bcd78"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[30-49]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="850" width="82" height="20" uuid="90ebdbee-dc20-4b00-a854-1b0131eb1b20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[50-64]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="289" y="870" width="44" height="20" uuid="cb888485-708e-4955-b623-864a5e1b6e57"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Other:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="497" y="810" width="66" height="20" uuid="3a4d04f5-1509-43fb-b36a-02ce2da2fc10"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Male]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="497" y="830" width="66" height="20" uuid="595edb7a-bc10-41cc-bc6d-efbc4b48a3a0"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Female]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="32" width="219" height="28" backcolor="#FFFF99" uuid="f903bfc2-d21d-4b39-bcaa-e19206fabc6d"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("revenue-increased", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="219" y="106" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="a63c03f6-2e36-4c6e-a501-02884c18aa55"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("revenue-increased", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="219" y="32" width="178" height="28" forecolor="#000000" backcolor="#FFCCFF" uuid="17fa4261-3229-46a5-b600-508c66e02ed3"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("no-of-advertiser", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="396" y="32" width="204" height="28" backcolor="#FFFF99" uuid="6e387700-3185-454b-bc21-e64d69e07a9a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("average-revenue-per-advertiser", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="80" width="219" height="23" backcolor="#FFFF99" uuid="04dc630d-ac0e-43c8-9c0b-67e6b0812043"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("closing-rate", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="220" y="80" width="177" height="23" backcolor="#FFFF99" uuid="2ff7a9ca-c54f-4ba9-9ba2-aa15e0d47543"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("leads-conversion-rate", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="396" y="80" width="204" height="23" backcolor="#FFFF99" uuid="f3637e26-c9a7-49c5-9566-c4bd13bd60a6"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("campaign-period", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="219" y="126" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="9dfe52af-5a26-4ced-8f53-d1885dcf3b3a"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("average-revenue-aer-advertiser", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="219" y="146" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="e81d27eb-7098-406d-ba3c-f46283cce84c"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("no-of-advertiser", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="219" y="166" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="64257183-7cd3-40b8-aad0-b44daae71411"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("closing-rate", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="219" y="206" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="f2cd8d6d-85c2-4edc-918f-dea24f7b8f0b"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("leads-conversion-rate", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="219" y="186" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="cfe1873e-b8d2-4d01-8931-821b0a63a5a8"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("leads", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="219" y="226" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="69c20650-2031-4dfb-96ba-42491f93c84a"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("traffic-required", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="219" y="246" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="2f001866-8235-4126-8af1-fe625d866882"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("monthly-traffic", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="219" y="266" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="816362db-3139-4777-a992-b5a049583950"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("avg-cost-per-click", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="219" y="286" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="7be2a653-e24f-48ff-b4d7-7e39057878ca"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("estimated-monthly-budget", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="219" y="306" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="dfb60148-7db8-4fcf-8140-eb38153bdc13"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("total-campaign-budget", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="20" y="366" width="20" height="20" uuid="bb63e4cc-fe1c-4c6f-9967-61ee208d5d69"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("nationwide", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())!= null  ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="20" y="386" width="20" height="20" uuid="9920f7aa-72f8-48a5-a298-1c86c912953f"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("kuala-lumpur", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="20" y="406" width="20" height="20" uuid="5c352f3e-cf39-4d32-98ff-96c05efabf9d"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("klang-valley", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="20" y="466" width="20" height="20" uuid="b9ed26e7-bdd6-4e88-9069-9f5178aa60ed"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("kelantan", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="20" y="426" width="20" height="20" uuid="5198c760-4ac3-46fe-8ed6-5ca423117594"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("perlis", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="20" y="446" width="20" height="20" uuid="f8b1223c-f0ab-40aa-975e-6b33184db921"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("kedah", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="20" y="486" width="20" height="20" uuid="7caede81-5ee6-4d4a-a12f-46157e213b70"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("penang", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="20" y="526" width="20" height="20" uuid="73401054-0e25-4803-af9f-f8f954d4420f"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("perak-terengganu", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="20" y="506" width="20" height="20" uuid="8f029756-0da9-487c-b22c-5d795005d83a"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("perak", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="206" y="407" width="20" height="20" uuid="afa52cac-e75f-4aa3-b7c0-2e15e5cc8056"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("johor", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="206" y="367" width="20" height="20" uuid="ebb0f715-5976-41b0-9a7a-4fbcbae8c556"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("negeri-sembilan", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="206" y="546" width="20" height="20" uuid="135c0451-df57-4e8a-bc4a-0a961235f698"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("geo-other", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="206" y="427" width="20" height="20" uuid="b008295e-3f52-47e4-80b5-3d2113a1105c"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("sabah", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="206" y="486" width="20" height="20" uuid="45021bfc-1b70-4447-93e9-47a9da56b333"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("thailand", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="206" y="526" width="20" height="20" uuid="88a6dbcb-db44-4fde-9f94-6e9b135216d1"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("indonesia", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="206" y="506" width="20" height="20" uuid="1ef3f9b7-eb2a-4509-b743-6ae0c6e2f29c"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("singapore", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="206" y="447" width="20" height="20" uuid="0e4964ae-9ab3-4656-b64c-df2ab60bac1f"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("sarawak", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="206" y="387" width="20" height="20" uuid="3bb89f1b-c082-4949-87ec-17f24199c277"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("melaka", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="20" y="546" width="20" height="20" uuid="a01f093c-6355-4d51-bf80-a34a90ef5553"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("pahang", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="40" y="665" width="20" height="20" uuid="a8e533d1-c45b-4002-8604-bede13604603"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("arts-communication", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="40" y="625" width="20" height="20" uuid="482da8ce-a053-4b22-a36e-70a2bbd23657"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("accounting-finance", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="40" y="685" width="20" height="20" uuid="fb3393b4-c551-4be7-9ad1-c57722974450"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("building-construction", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="40" y="725" width="20" height="20" uuid="71b3768a-261f-473e-a2a3-09cc29226e5c"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("education-training", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="40" y="745" width="20" height="20" uuid="f9df53fe-c5cf-42b7-ad10-d6de74ac648f"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("engineering", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="40" y="705" width="20" height="20" uuid="9b21277e-0594-4169-9f21-d664448d40cd"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("computer-it", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="40" y="645" width="20" height="20" uuid="bae8dc08-1899-4e38-8e08-f9bb9d66400b"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("admin-hr", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="263" y="645" width="20" height="20" uuid="f28e94cb-6616-4ee1-b165-983a74ff7ec0"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("hotel-restaurant", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="263" y="745" width="20" height="20" uuid="4a04507d-9fd5-4885-99de-9039c50320c0"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("target-other", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="263" y="725" width="20" height="20" uuid="be3f859a-5962-44d1-b0c0-e31f641e0420"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("services", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="263" y="705" width="20" height="20" uuid="d2b0b861-8edb-41fc-a8dc-d0600c2e027b"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("science", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="263" y="665" width="20" height="20" uuid="4f4141ca-8408-4976-a922-faf572f2255a"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("manufacturing", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="263" y="685" width="20" height="20" uuid="ba28154a-e55e-4fe0-8934-551deef3067a"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("sales-marketing", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="263" y="625" width="20" height="20" uuid="a92d7f55-cedb-4a7e-acf3-2df1f2021824"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("healthcare", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="40" y="890" width="20" height="20" uuid="0096b2a7-0bcc-4a89-a265-fc3a2dee54cc"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="40" y="870" width="20" height="20" uuid="7e40cf35-6994-4416-a128-28fe90510165"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-tamil", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="40" y="850" width="20" height="20" uuid="0eeef62a-f1cf-4bb7-8c63-a8e2045f4be3"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-chinese", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="40" y="810" width="20" height="20" uuid="3aaf35e4-5252-487d-bdcb-e1ce2d136293"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-english", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="40" y="830" width="20" height="20" uuid="2a9c141e-4424-4285-ac46-2e2dd62952ba"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-malay", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="263" y="830" width="20" height="20" uuid="7f494c8a-e21b-41a8-b063-16d88329e547"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("age-30-49", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="263" y="850" width="20" height="20" uuid="a2ee419f-dc54-4a69-bc0b-62233db76c16"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("age-50-64", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="263" y="870" width="20" height="20" uuid="4f7ff1f1-e282-4e59-a837-aa40612c4160"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("nationwide", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="263" y="810" width="20" height="20" uuid="63b235f0-2c3d-48c6-a3fc-5a37f539d1e0"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("age-18-29", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="472" y="830" width="20" height="20" uuid="f490b80b-c4db-4fcf-9e44-dd8b886c89c4"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("female", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="472" y="810" width="20" height="20" uuid="f614a8db-b004-422f-b102-df79ce780d21"/>
+				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("male", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="360" y="386" width="239" height="152" uuid="4755ecc0-e7c7-48d7-a42c-80324ee4e50e"/>
+				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/map.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement mode="Transparent" x="333" y="870" width="83" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="3a33602a-49da-4611-9d5c-2ee66c4a4665"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("age-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="112" y="890" width="83" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="1b225111-bfb2-49f2-8650-2359f18c422f"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="333" y="745" width="83" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="2430350b-a82c-4548-bb65-3271fff781d1"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("target-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="283" y="546" width="83" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="9f6cc9ba-6e2b-4b49-a827-ad4d2b2a8dc7"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("geo-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="458" y="264" width="100" height="20" uuid="a33371d4-467e-439a-b19c-4ff746aca476"/>
+				<textFieldExpression><![CDATA[null == (((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("nationwide", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())? "empty" : "not empty"]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
