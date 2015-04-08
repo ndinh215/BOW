@@ -56,7 +56,6 @@ public class ReportServiceImpl implements ReportService {
 		
 		HashMap<String, Object> params = new HashMap<String, Object>();
 		params.put("SUBREPORT_DIR", reportTemplateDirPath);
-		params.put("REPORT_DATA_SOURCE", new JRBeanCollectionDataSource(surveys));
 		try {
 			JasperDesign jasperDesign = JRXmlLoader.load(reportTemplatePath);
 			JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
