@@ -27,8 +27,11 @@ public class SurveyUtils {
 	}
 	
 	public static Field findFieldWithFieldTemplateSlugName(String slugName, List<Field> fields) {
+		Field emptyField = new Field();
+		emptyField.setId(-1);
+		
 		if (slugName == null || slugName.trim().equals("") || fields.size() == 0) {
-			return null;
+			return emptyField;
 		}
 		
 		for (Field field:fields) {
@@ -39,7 +42,7 @@ public class SurveyUtils {
 			}
 		}
 		
-		return null;
+		return emptyField;
 	}
 	
 	public static List<Field> findFieldsWithFieldTemplateSlugName(String slugName, List<Field> fields) {

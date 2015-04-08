@@ -82,7 +82,7 @@ public class SurveyController {
 		Survey survey = surveySvc.findSurveyWithId(surveyId);
 		//survey.setSurveyTemplate(surveySvc.findSurveyTemplateWithId(surveyTemplateId));
 		String reportName = reportSvc.exportReport(survey, ReportType.PDF.getName());
-		String reportViewPath = String.format("%1$s_%2$s_%3$s.html", "/view_survey", reportName, ReportType.PDF.getName());
+		String reportViewPath = String.format("%1$s_%2$s_%3$s.html", "/view", reportName, ReportType.PDF.getName());
 		
 		// Update status and storage name
 		survey.setStatus(SurveyStatus.COMPLETED.getValue());
