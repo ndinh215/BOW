@@ -51,14 +51,16 @@ public class ReportServiceImpl implements ReportService {
 		String reportPDFFilename = String.format("%1$s.%2$s", reportOutputFilename, "pdf");
 		String reportPDFFilePath = String.format("%1$s%2$s%3$s%4$s%5$s", reportOutputPath, File.separator, reportOutputDir, File.separator, reportPDFFilename);
 		
+		List<Survey> surveys = new ArrayList<Survey>();
+		surveys.add(survey);
+		
 		HashMap<String, Object> params = new HashMap<String, Object>();
 		params.put("SUBREPORT_DIR", reportTemplateDirPath);
+		params.put("REPORT_DATA_SOURCE", surveys);
 		try {
 			JasperDesign jasperDesign = JRXmlLoader.load(reportTemplatePath);
 			JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
 			
-			List<Survey> surveys = new ArrayList<Survey>();
-			surveys.add(survey);
 			JasperPrint print = JasperFillManager.fillReport(jasperReport, params, new JRBeanCollectionDataSource(surveys));
 			JasperExportManager.exportReportToPdfFile(print, reportPDFFilePath);
 
