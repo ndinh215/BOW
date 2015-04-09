@@ -13,13 +13,13 @@
 <script src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />"></script>
 </head>
 <body>
-	<div class="container">
+	<div class="tab-section">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 				<h1>2015 ADVERTISING PLANNER</h1>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-				<img src="<c:url value="/assets/images/panpages_logo.jpg" />" alt="" />
+				
 			</div>
 		</div>
 		<form method="get" action="survey_1.html">
