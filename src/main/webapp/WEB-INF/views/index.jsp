@@ -9,8 +9,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Home</title>
+<link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/home.css" />" >
 </head>
 <body>
-Home
+	<div id="container">
+		<div id="header">
+			<div class="logo"></div>
+		</div>
+		<div id="content"></div>
+	</div>
 </body>
 </html>

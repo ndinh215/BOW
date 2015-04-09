@@ -1,1 +1,63 @@
 @CHARSET "ISO-8859-1";
+
+html {
+   height: 100%;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
+#container {
+   margin: 0 auto;
+   padding: 0;
+   height: 100%;
+   background-image: url("../images/background.jpg");
+   background-color: white;
+   background-size: 1366px 768px; 
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: top center;
+   text-align: center;
+   width: 1366px;
+   padding-bottom: 15px;
+}
+
+#header {
+	background-image: url("../images/cloud.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 70px;
+	position: relative;
+	left: 200px;
+    top: 185px;
+}
+
+#content {
+	  background-color: white;
+	  left: 195px;
+	  top: 175px;
+	  position: relative;
+	  width: 976px;
+	  height: 500px;
+	  border: 1px solid white;
+	  border-radius: 5px;
+	  box-shadow: 3px 2px 1px #A5A0A0;
+	  margin-bottom: 25px;
+}
+
+.logo {
+	background-image: url("../images/logo.png");
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 70px;
+	width: 275px;
+	position: relative;
+	left: 50px;
+    top: 45px;
+    z-index: 999;
+}
+
+
