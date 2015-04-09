@@ -1,32 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SURVEY TEMPLATE 1" pageWidth="680" pageHeight="4300" whenNoDataType="AllSectionsNoDetail" columnWidth="640" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="89cc2169-c366-460f-a825-86120bde60b5">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SURVEY TEMPLATE 1" pageWidth="595" pageHeight="5000" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="5" rightMargin="5" topMargin="5" bottomMargin="5" uuid="89cc2169-c366-460f-a825-86120bde60b5">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="3690"/>
+	<property name="ireport.y" value="1951"/>
 	<subDataset name="dataset1" uuid="b0d91e67-b305-47fa-a3d5-74c1fdba1b72"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["D:\\Panpages\\Documents\\BOW project\\Source\\BOW\\report\\templates\\template_1"]]></defaultValueExpression>
 	</parameter>
+	<parameter name="sections" class="java.util.List"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
-	<field name="surveyTemplate" class="com.panpages.bow.model.SurveyTemplate">
-		<fieldDescription><![CDATA[surveyTemplate]]></fieldDescription>
-	</field>
 	<field name="sections" class="java.util.List">
 		<fieldDescription><![CDATA[sections]]></fieldDescription>
-	</field>
-	<field name="name" class="java.lang.String">
-		<fieldDescription><![CDATA[name]]></fieldDescription>
-	</field>
-	<field name="id" class="java.lang.Integer">
-		<fieldDescription><![CDATA[id]]></fieldDescription>
-	</field>
-	<field name="desc" class="java.lang.String">
-		<fieldDescription><![CDATA[desc]]></fieldDescription>
-	</field>
-	<field name="class" class="java.lang.Class">
-		<fieldDescription><![CDATA[class]]></fieldDescription>
 	</field>
 	<variable name="set_country" class="java.lang.String"/>
 	<group name="survey_id">
@@ -38,7 +24,7 @@
 	<summary>
 		<band height="4202">
 			<subreport>
-				<reportElement x="0" y="0" width="640" height="1000" uuid="42f83a27-6202-4b98-aabc-346785e536c5"/>
+				<reportElement x="0" y="0" width="585" height="1000" uuid="42f83a27-6202-4b98-aabc-346785e536c5"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -49,7 +35,7 @@
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/section_1.jasper"]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement x="0" y="1000" width="640" height="1300" uuid="1154ddaa-7740-407e-a7b1-4994205191cd"/>
+				<reportElement x="0" y="1000" width="585" height="1300" uuid="1154ddaa-7740-407e-a7b1-4994205191cd"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -60,25 +46,30 @@
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/section_2.jasper"]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement x="0" y="2301" width="640" height="1100" uuid="82d1723d-d862-4f4a-ae8b-e52a40edacb8"/>
+				<reportElement x="0" y="2301" width="585" height="1100" uuid="82d1723d-d862-4f4a-ae8b-e52a40edacb8"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportParameter name="sections">
-					<subreportParameterExpression><![CDATA[$F{sections}]]></subreportParameterExpression>
+					<subreportParameterExpression><![CDATA[$P{sections}]]></subreportParameterExpression>
 				</subreportParameter>
 				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/section_3.jasper"]]></subreportExpression>
 			</subreport>
 			<line>
-				<reportElement x="-2" y="2300" width="642" height="1" uuid="cd4ffa40-cedc-4980-9de5-6dc3cef4afca"/>
+				<reportElement x="-2" y="2300" width="585" height="1" uuid="cd4ffa40-cedc-4980-9de5-6dc3cef4afca"/>
 			</line>
 			<line>
-				<reportElement x="-1" y="3401" width="642" height="1" uuid="1ec2c385-0934-4a14-a923-9c71ea37807d"/>
+				<reportElement x="-1" y="3401" width="585" height="1" uuid="1ec2c385-0934-4a14-a923-9c71ea37807d"/>
 			</line>
 			<line>
-				<reportElement x="0" y="999" width="642" height="1" uuid="9e2418ca-a453-435d-b959-d3b54b04d15b"/>
+				<reportElement x="0" y="999" width="585" height="1" uuid="9e2418ca-a453-435d-b959-d3b54b04d15b"/>
 			</line>
+			<subreport>
+				<reportElement x="1" y="3402" width="585" height="61" uuid="cb3c52c6-876d-49b8-b0df-91664da5ca72"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource(com.panpages.bow.model.utils.SurveyUtils.findFieldsWithFieldTemplateSlugName("proposed-keyword", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("proposed-keyword",$F{sections})).getFields()))]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/section_4.jasper"]]></subreportExpression>
+			</subreport>
 		</band>
 	</summary>
 </jasperReport>
