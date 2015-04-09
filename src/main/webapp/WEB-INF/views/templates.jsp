@@ -22,22 +22,27 @@
 			<div class="logo"></div>
 		</div>
 		<div id="content">
-			<table>
-				<tr>
-					<th>Id</th>
-					<th>Survey Name</th>
-					<th>Description</th>
-					<th>#</th>
-				</tr>
 				<c:forEach items="${templates}" var="template">
-					<tr>
-						<td>${template.id}</td>
-						<td>${template.name}</td>
-						<td>${template.desc}</td>
-						<td><a href="<c:url value="survey_${template.id}.html"/>">Go to this Survey</a>
-					</tr>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div id ="survey-image" >
+							<a><img src="assets/images/survey_1.png"/></a>
+						</div>
+						<div id = "survey-name">
+							<a href="<c:url value="survey_${template.id}.html"/>">${template.name}</a>
+						</div>
+					</div>
 				</c:forEach>
-			</table>
+					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<div id ="survey-image" >
+							<a><img src="assets/images/survey_2.png"/></a>							
+						</div>
+						<div id = "survey-name">
+							<a href="survey_2.html">Survey DEMO</a>
+						</div>
+					</div>
+		</div>
+		<div id ="footer">
+			<p>Copyright Panpages © 2015 All Rights Reserved</p>
 		</div>
 	</div>
 </body>
