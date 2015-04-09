@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SURVEY TEMPLATE 1" pageWidth="595" pageHeight="5000" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="5" rightMargin="5" topMargin="5" bottomMargin="5" uuid="89cc2169-c366-460f-a825-86120bde60b5">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="3053"/>
+	<property name="ireport.y" value="1951"/>
 	<subDataset name="dataset1" uuid="b0d91e67-b305-47fa-a3d5-74c1fdba1b72"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["D:\\Panpages\\Documents\\BOW project\\Source\\BOW\\report\\templates\\template_1"]]></defaultValueExpression>
