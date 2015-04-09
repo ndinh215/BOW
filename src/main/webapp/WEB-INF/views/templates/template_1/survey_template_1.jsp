@@ -7,15 +7,15 @@
 	<link rel="stylesheet" href="<c:url value="/template_assets/template_1/assets/css/bootstrap.min_v3.3.4.css" />">
 
 	<link rel="stylesheet" href="<c:url value="/template_assets/template_1/assets/css/bootstrap-theme.min_v3.3.4.css" />">
+	
+	<link  rel="stylesheet" href="<c:url value="/template_assets/template_1/assets/css/template_1.css" /> ">
 
 	<script src="<c:url value="/template_assets/template_1/assets/js/jquery.min_v2.1.3.js" />"></script>
 
 	<script src="<c:url value="/template_assets/template_1/assets/js/bootstrap.min_v3.3.4.js" />"></script>
 	
-	<link href="<c:url value="/template_assets/template_1/assets/css/template_1.css" />" rel="stylesheet">
+	<script src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />"></script>
 	
-	<script src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />/>"></script>
-
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 </head>
 <body>

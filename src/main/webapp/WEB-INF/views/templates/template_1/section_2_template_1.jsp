@@ -23,18 +23,18 @@
 		<div class="row">
 			<h3>2014 MARKETING CAMPAIGN</h3>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<p><input name="malaysia-panpages-2014-marketing-campaign" type="checkbox"/>Malaysia PanPages</p>
-				<p><input name="google-adWords-search-mobile-2014-marketing-campaign" type="checkbox"/>Google AdWords Search &amp; Mobile</p>
-				<p><input name="google-display-network-2014-marketing-campaign" type="checkbox"/>Google Display Network</p>
-				<p><input name="yahoo-search-2014-marketing-campaign" type="checkbox"/>Yahoo! Search</p>
-				<p><input name="yahoo-display-2014-marketing-campaign" type="checkbox"/>Yahoo! Display</p>
+				<p><input name="fields['malaysia-panpages-2014-marketing-campaign']" id="malaysia-panpages-2014-marketing-campaign" type="checkbox" value="false">Malaysia PanPages</p>
+				<p><input name="fields['google-adWords-search-mobile-2014-marketing-campaign']" id="google-adWords-search-mobile-2014-marketing-campaign" type="checkbox" value="false">Google AdWords Search &amp; Mobile</p>
+				<p><input name="fields['google-display-network-2014-marketing-campaign']" id="google-display-network-2014-marketing-campaign" type="checkbox" value="false">Google Display Network</p>
+				<p><input name="fields['yahoo-search-2014-marketing-campaign']" id="yahoo-search-2014-marketing-campaign" type="checkbox" value="false">Yahoo! Search</p>
+				<p><input name="fields['yahoo-display-2014-marketing-campaign']" id="yahoo-display-2014-marketing-campaign" type="checkbox" value="false">Yahoo! Display</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<p><input name="youtube-ads-2014-marketing-campaign" type="checkbox"/>YouTube Ads</p>
-				<p><input name="facebook-ads-2014-marketing-campaign" type="checkbox"/>Facebook Ads</p>
-				<p><input name="pan-360-2014-marketing-campaign" type="checkbox"/>Pan 360°</p>
-				<p><input name="alibaba-com-2014-marketing-campaign" type="checkbox"/>Alibaba.com</p>
-				<p><input name="super-pages-2014-marketing-campaign" type="checkbox"/>Super Pages</p>
+				<p><input name="fields['youtube-ads-2014-marketing-campaign']" id="youtube-ads-2014-marketing-campaign" type="checkbox" value="false">YouTube Ads</p>
+				<p><input name="fields['facebook-ads-2014-marketing-campaign']" id="facebook-ads-2014-marketing-campaign" type="checkbox" value="false">Facebook Ads</p>
+				<p><input name="fields['pan-360-2014-marketing-campaign']" id="pan-360-2014-marketing-campaign" type="checkbox" value="false">Pan 360°</p>
+				<p><input name="fields['alibaba-com-2014-marketing-campaign']" id="alibaba-com-2014-marketing-campaign" type="checkbox" value="false">Alibaba.com</p>
+				<p><input name="fields['super-pages-2014-marketing-campaign']" id="super-pages-2014-marketing-campaign" type="checkbox" value="false">Super Pages</p>
 			</div>
 		</div>
 		<div class="row">
@@ -43,19 +43,19 @@
 				<table style="width:100%">
 					<tr>
 						<td>2014 Advertising Investment</td>
-						<td> </td>		
+						<td>RM<input name="fields['2014-advertising-investment']" id="2014-advertising-investment" type="text"></td>		
 					</tr>
 					<tr>
 						<td>Website Visits</td>
-						<td> </td>
+						<td><input name="fields['website-visits']" id="website-visits" type="text"></td>
 					</tr>
 					<tr>
 						<td>Clicks On Ads</td>
-						<td> </td>	
+						<td><input name="fields['clicks-on-ads']" id="clicks-on-ads" type="text"></td>	
 					</tr>
 					<tr>
 						<td>Click Through Rate</td>
-						<td> </td>	
+						<td><input name="fields['click-through-rate']" id="click-through-rate" type="text"></td>	
 					</tr>
 				</table>
 			</div>
@@ -63,32 +63,32 @@
 		<div class="row">
 			<h3>2015 ACTION PLAN FOR IMPROVEMENT</h3>
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-				<p><input name="enhance-text-content" type="checkbox"/>Enhance Text Content</p>
-				<p><input name="add-on-relevant-product-picture" type="checkbox"/>Add On Relevant Product Picture</p>
-				<p><input name="add-on-product-description" type="checkbox"/>Add On Product Description</p>
-				<p><input name="include-product-price" type="checkbox"/>Include Product Price</p>
-				<p><input name="include-product-specification" type="checkbox"/>Include Product Specification</p>
+				<p><input name="fields['enhance-text-content']" id="enhance-text-content" type="checkbox" value="false">Enhance Text Content</p>
+				<p><input name="fields['add-on-relevant-product-picture']" id="add-on-relevant-product-picture" type="checkbox" value="false">Add On Relevant Product Picture</p>
+				<p><input name="fields['add-on-product-description']" id="add-on-product-description" type="checkbox" value="false">Add On Product Description</p>
+				<p><input name="fields['include-product-price']" id="include-product-price" type="checkbox" value="false">Include Product Price</p>
+				<p><input name="fields['include-product-specification']" id="include-product-specification" type="checkbox" value="false">Include Product Specification</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-				<p><input name="include-company-details" type="checkbox"/>Include Company Details</p>
-				<p><input name="include-delivery-information" type="checkbox"/>Include Delivery Information</p>
-				<p><input name="include-payment-options" type="checkbox"/>Include Payment Options</p>
-				<p><input name="frequently-your-website" type="checkbox"/>Frequently Your Website</p>
-				<p><input name="timely-response-to-enquiry" type="checkbox"/>Timely Response To Enquiry</p>
+				<p><input name="fields['include-company-details']" id="include-company-details" type="checkbox" value="false">Include Company Details</p>
+				<p><input name="fields['include-delivery-information']" id="include-delivery-information" type="checkbox" value="false">Include Delivery Information</p>
+				<p><input name="fields['include-payment-options']" id="include-payment-options" type="checkbox" value="false">Include Payment Options</p>
+				<p><input name="fields['frequently-your-website']" id="frequently-your-website" type="checkbox" value="false">Frequently Your Website</p>
+				<p><input name="fields['timely-response-to-enquiry']" id="timely-response-to-enquiry" type="checkbox" value="false">Timely Response To Enquiry</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-				<p><input name="tracking-on-calls-walk-in" type="checkbox"/>Tracking On Calls &amp; Walk In</p>
-				<p><input name="highlight-unique-selling-point" type="checkbox"/>Highlight Unique Selling Point</p>
-				<p><input name="include-certification-for-better-credential" type="checkbox"/>Include Certification For Better Credential</p>
-				<p><input name="enhance-product-picture-quality" type="checkbox"/>Enhance Product Picture Quality</p>
-				<p><input name="others-2015-action-plan-for-improvement" type="checkbox"/>Others:<input name="others-2015-action-plan-for-improvement-text" type="text"/></p>
+				<p><input name="fields['tracking-on-calls-walk-in']" id="tracking-on-calls-walk-in" type="checkbox" value="false">Tracking On Calls &amp; Walk In</p>
+				<p><input name="fields['highlight-unique-selling-point']" id="highlight-unique-selling-point" type="checkbox" value="false">Highlight Unique Selling Point</p>
+				<p><input name="fields['include-certification-for-better-credential']" id="include-certification-for-better-credential" type="checkbox" value="false">Include Certification For Better Credential</p>
+				<p><input name="fields['enhance-product-picture-quality']" id="enhance-product-picture-quality" type="checkbox" value="false">Enhance Product Picture Quality</p>
+				<p><input name="fields['others-2015-action-plan-for-improvement']" id="others-2015-action-plan-for-improvement" type="checkbox" value="false">Others:<input name="fields['others-2015-action-plan-for-improvement-text']" id="others-2015-action-plan-for-improvement-text" type="text"/></p>
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<form>
 				<fieldset>
 					<legend>Remarks:</legend>
-
+					<textarea rows="5" cols="150" name="fields['remarks']" id="remarks"></textarea>
 				</fieldset>
 			</form>
 		</div>
@@ -102,14 +102,14 @@
 					<th>Examples</th>	
 				</tr>
 				<tr>
-					<td><input name="increase-website-traffic" type="checkbox"/>Increase Website Traffic</td>
+					<td><input name="fields['increase-website-traffic']" id="increase-website-traffic" type="checkbox" value="false">Increase Website Traffic</td>
 					<td>
 						<p>1. Show current offers/promotions</p>
 						<p>2. Want People to better understand their business</p>
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="increase-brand-awareness" type="checkbox"/>Increase Brand Awareness</td>
+					<td><input name="fields['increase-brand-awareness']" id="increase-brand-awareness" type="checkbox" value="false">Increase Brand Awareness</td>
 					<td>
 						<p>1. Ensure your brand is always on top of mind</p>
 						<p>2. Promote brand loyalty</p>
@@ -117,7 +117,7 @@
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="increase-online-forms-submission" type="checkbox"/>Increase Online Forms Submission</td>
+					<td><input name="fields['increase-online-forms-submission']" id="increase-online-forms-submission" type="checkbox" value="false">Increase Online Forms Submission</td>
 					<td>
 						<p>1. Want to reach new customers</p>
 						<p>2. Make reservation online</p>
@@ -125,32 +125,32 @@
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="increase-store-visits" type="checkbox"/>Increase Store Visits</td>
+					<td><input name="fields['increase-store-visits']" id="increase-store-visits" type="checkbox" value="false">Increase Store Visits</td>
 					<td>
 						<p>1. Want people to walk in</p>
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="increase-phones-calls" type="checkbox"/>Increase Phones Calls</td>
+					<td><input name="fields['increase-phones-calls']" id="increase-phones-calls" type="checkbox" value="false">Increase Phones Calls</td>
 					<td>
 						<p>1. Want people to call directly</p>
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="increase-online-purchase" type="checkbox"/>Increase Online Purchase (Subject to website feasibility)</td>
+					<td><input name="fields['increase-online-purchase']" id="increase-online-purchase" type="checkbox" value="false">Increase Online Purchase (Subject to website feasibility)</td>
 					<td>
 						<p>1. Want people to purchase directly from website</p>
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="retargeting-visitors" type="checkbox"/>Retargeting Visitors</td>
+					<td><input name="fields['retargeting-visitors']" id="retargeting-visitors" type="checkbox" value="false">Retargeting Visitors</td>
 					<td>
 						<p>1. Want to reach existing customers</p>
 						<p>2. Want to generate repeat business from existing customers</p>
 					</td>	
 				</tr>
 				<tr>
-					<td><input name="increase-geographical-coverage" type="checkbox"/>Increase Geographical Coverage</td>
+					<td><input name="fields['increase-geographical-coverage']" id="increase-geographical-coverage" type="checkbox" value="false">Increase Geographical Coverage</td>
 					<td>
 						<p>1. Want to expand your business to oversea countries</p>
 					</td>	
@@ -160,18 +160,18 @@
 		<div class="row">
 			<h3>RECOMMENDED SOLUTIONS</h3>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<p><input name="malaysia-panpages-recommended-solutions" type="checkbox"/>Malaysia PanPages</p>
-				<p><input name="google-adWords-search-mobile-recommended-solutions" type="checkbox"/>Google AdWords Search &amp; Mobile</p>
-				<p><input name="google-display-network-recommended-solutions" type="checkbox"/>Google Display Network</p>
-				<p><input name="yahoo-search-recommended-solutions" type="checkbox"/>Yahoo! Search</p>
-				<p><input name="yahoo-display-recommended-solutions" type="checkbox"/>Yahoo! Display</p>
+				<p><input name="fields['malaysia-panpages-recommended-solutions']" id="malaysia-panpages-recommended-solutions" type="checkbox" value="false">Malaysia PanPages</p>
+				<p><input name="fields['google-adWords-search-mobile-recommended-solutions']" id="google-adWords-search-mobile-recommended-solutions" type="checkbox" value="false">Google AdWords Search &amp; Mobile</p>
+				<p><input name="fields['google-display-network-recommended-solutions']" id="google-display-network-recommended-solutions" type="checkbox" value="false">Google Display Network</p>
+				<p><input name="fields['yahoo-search-recommended-solutions']" id="yahoo-search-recommended-solutions" type="checkbox" value="false">Yahoo! Search</p>
+				<p><input name="fields['yahoo-display-recommended-solutions']" id="yahoo-display-recommended-solutions" type="checkbox" value="false">Yahoo! Display</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<p><input name="youtube-ads-recommended-solutions" type="checkbox"/>YouTube Ads</p>
-				<p><input name="facebook-ads-recommended-solutions" type="checkbox"/>Facebook Ads</p>
-				<p><input name="pan-360-recommended-solutions" type="checkbox"/>Pan 360°</p>
-				<p><input name="alibaba-com-recommended-solutions" type="checkbox"/>Alibaba.com</p>
-				<p><input name="super-pages-recommended-solutions" type="checkbox"/>Super Pages</p>
+				<p><input name="fields['youtube-ads-recommended-solutions']" id="youtube-ads-recommended-solutions" type="checkbox" value="false">YouTube Ads</p>
+				<p><input name="fields['facebook-ads-recommended-solutions']" id="facebook-ads-recommended-solutions" type="checkbox" value="false">Facebook Ads</p>
+				<p><input name="fields['pan-360-recommended-solutions']" id="pan-360-recommended-solutions" type="checkbox" value="false">Pan 360°</p>
+				<p><input name="fields['alibaba-com-recommended-solutions']" id="alibaba-com-recommended-solutions" type="checkbox" value="false">Alibaba.com</p>
+				<p><input name="fields['super-pages-recommended-solutions']" id="super-pages-recommended-solutions" type="checkbox" value="false">Super Pages</p>
 			</div>
 		</div>
 	</div>

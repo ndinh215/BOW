@@ -2,15 +2,15 @@
 /* Begin Tab */
 .tabs {
     position: relative;
-	//margin: 40px auto;
-	//width: 750px;
+	/*margin: 40px auto;
+	width: 750px;*/
 }
 
 .tabs>input {
 	position: absolute;
 	z-index: 1000;
-	//width: 120px;
-	//height: 40px;
+	/*width: 120px;
+	height: 40px;*/
 	left: 0px;
 	top: 0px;
 	opacity: 0;
@@ -38,12 +38,12 @@
 	background: linear-gradient(top, #5ba4a4 0%,#4e8c8a 100%);
 	font-size: 15px;
 	line-height: 40px;
-	//height: 40px;
+	/*height: 40px;*/
 	position: relative;
 	padding: 0 20px;
     float: left;
 	display: block;
-	//width: 80px;
+	/*width: 80px;*/
 	color: #385c5b;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -99,7 +99,7 @@
     background: #fff;
 	position: relative;
     width: 100%;
-	//height: 370px;
+	/*height: 370px;*/
 	z-index: 5;
     box-shadow: 0 -2px 3px -2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1);
     border-radius: 0 3px 3px 3px;
@@ -136,10 +136,15 @@
     transition: opacity ease-out 0.2s 0.1s;
 }
 /* End Tab */
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
 th,td {
     padding: 15px;
+}
+
+.geographical-covegare{
+	background:url() repeat-x;	
 }
