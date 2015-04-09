@@ -12,42 +12,75 @@
 </style>
 </head>
 <body>
-	Survey template 2
 	<div class="container">
-		<form:form method="POST" modelAttribute="surveyForm"
-			action="survey_2.html">
+		<form:form method="POST" modelAttribute="surveyForm" action="survey_2.html">
+			<h2>Survey Template 4</h2>
 			<table>
 				<tr>
-					<td><label for="first-name">Revenue Increased: </label></td>
-					<td><input name="fields['revenue-increased']" id="first-name" /></td>
+					<td><label for="first-name">Proposed Keyword: </label></td>
+					<td><input name="fields['proposed-keyword']" id="first-name" /></td>
 				</tr>
 				<tr>
-					<td><label for="last-name">No. Of Advertiser: </label></td>
-					<td><input name="fields['no-of-advertiser']" id="last-name" /></td>
+					<td><label for="first-name">Proposed Keyword: </label></td>
+					<td><input name="fields['proposed-keyword']" id="first-name" /></td>
 				</tr>
 				<tr>
-					<td><label for="first-name">Average Revenue Per
-							Advertiser: </label></td>
-					<td><input name="fields['average-revenue-per-advertiser']"
-						id="first-name" /></td>
-				</tr>
-				<tr>
-					<td><label for="last-name">Closing Rater: </label></td>
-					<td><input name="fields['closing-rater']" id="last-name" /></td>
-				</tr>
-				<tr>
-					<td><label for="first-name">Leads Conversion Rate: </label></td>
-					<td><input name="fields['leads-conversion-rate']"
-						id="first-name" /></td>
-				</tr>
-				<tr>
-					<td><label for="last-name">Campaign Period: </label></td>
-					<td><input name="fields['campaign-period']" id="last-name" /></td>
-				</tr>
-				<tr>
-					<td colspan="3"><input type="submit" value="Register" /></td>
+					<td><label for="first-name">Proposed Keyword: </label></td>
+					<td><input name="fields['proposed-keyword']" id="first-name" /></td>
 				</tr>
 			</table>
+			<h2>Survey Template 1</h2>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<p>Revenue Increased:</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<p><input type="text" name="fields['revenue-increased']"></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<p>No. Of Advertiser:</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<p><input type="text" name="fields['no-of-advertiser']"></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<p>Average Revenue Per Advertiser (ARPA):</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<p><input type="text" name="fields['average-revenue-per-advertiser']"></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<p>Closing Rate:</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<p><input type="text" name="fields['closing-rate']"></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<p>Leads Conversion Rate:</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<p><input type="text" name="fields['leads-conversion-rate']"></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<p>Campaign Period:</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<p><input type="text" name="fields['campaign-period']"></p>
+				</div>
+			</div>
+				<tr>
+					<td><input type="submit" value="OK" id="first-name" /></td>
+				</tr>
 		</form:form>
 	</div>
 </body>
