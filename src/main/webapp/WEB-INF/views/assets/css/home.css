@@ -46,6 +46,8 @@ body {
 	  border-radius: 5px;
 	  box-shadow: 3px 2px 1px #A5A0A0;
 	  margin-bottom: 25px;
+	  overflow: auto;
+	  text-align: left;
 }
 
 .logo {

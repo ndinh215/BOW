@@ -17,40 +17,46 @@
 	<script src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />/>"></script>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Survey template 1</title>
+	<link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/home.css" />" >
 </head>
 <body>
-	Survey template 1
-	<div class="container">
-		<section class="tabs">
-			<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
-			<label for="tab-1" class="tab-label-1">Section 1</label>
-	
-			<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
-			<label for="tab-2" class="tab-label-2">Section 2</label>
-	
-			<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
-			<label for="tab-3" class="tab-label-3">Section 3</label>
+	<div id="container">
+		<div id="header">
+			<div class="logo"></div>
+		</div>
+		<div id="content">
+			<section class="tabs">
+				<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+				<label for="tab-1" class="tab-label-1">Section 1</label>
 		
-			<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
-			<label for="tab-4" class="tab-label-4">Section 4</label>
+				<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+				<label for="tab-2" class="tab-label-2">Section 2</label>
 		
-			<div class="clear-shadow"></div>
+				<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+				<label for="tab-3" class="tab-label-3">Section 3</label>
 			
-			<div class="row content">
-				<div class="content-1">
-					<jsp:include page="section_1_template_1.jsp"></jsp:include>
+				<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+				<label for="tab-4" class="tab-label-4">Section 4</label>
+			
+				<div class="clear-shadow"></div>
+				
+				<div class="row content">
+					<div class="content-1">
+						<jsp:include page="section_1_template_1.jsp"></jsp:include>
+					</div>
+					<div class="content-2">
+						<jsp:include page="section_2_template_1.jsp"></jsp:include>
+					</div>
+					<div class="content-3">
+						<jsp:include page="section_3_template_1.jsp"></jsp:include>
+					</div>
+					<div class="content-4">
+						<jsp:include page="section_4_template_1.jsp"></jsp:include>
+					</div>
 				</div>
-				<div class="content-2">
-					<jsp:include page="section_2_template_1.jsp"></jsp:include>
-				</div>
-				<div class="content-3">
-					<jsp:include page="section_3_template_1.jsp"></jsp:include>
-				</div>
-				<div class="content-4">
-					<jsp:include page="section_4_template_1.jsp"></jsp:include>
-				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 	</div>
 </body>
 </html>
