@@ -17,6 +17,9 @@
 			<h2>Survey Template 4</h2>
 			<table>
 				<tr>
+					<td><input type="submit" value="OK" id="first-name" /></td>
+				</tr>
+				<tr>
 					<td><label for="first-name">Proposed Keyword: </label></td>
 					<td><input name="fields['proposed-keyword']" id="first-name" /></td>
 				</tr>
@@ -30,6 +33,8 @@
 				</tr>
 			</table>
 			<h2>Survey Template 1</h2>
+			<input type="text" name="fields['option-a-malaysia-panpages']">
+			<input type="text" name="fields['price-option-a-malaysia-panpages']">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<p>Revenue Increased:</p>

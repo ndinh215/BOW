@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="2015 ADVERTISING PLANNER" pageWidth="640" pageHeight="1000" whenNoDataType="AllSectionsNoDetail" columnWidth="600" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="89cc2169-c366-460f-a825-86120bde60b5">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="2015 ADVERTISING PLANNER" pageWidth="585" pageHeight="960" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="89cc2169-c366-460f-a825-86120bde60b5">
 	<property name="ireport.zoom" value="1.2100000000000013"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="25"/>
+	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
-		<defaultValueExpression><![CDATA["D:\\Panpages\\Documents\\BOW project\\reports\\planner1\\"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
 	<parameter name="sections" class="java.util.List"/>
 	<queryString>
@@ -86,7 +86,7 @@
 				<text><![CDATA[No. Of Advertiser]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="396" y="0" width="204" height="32" uuid="ad1c1f18-e6a9-4d21-be91-ed040d3561b1"/>
+				<reportElement x="396" y="0" width="189" height="32" uuid="ad1c1f18-e6a9-4d21-be91-ed040d3561b1"/>
 				<box>
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -130,7 +130,7 @@
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="396" y="60" width="204" height="20" uuid="d26ef187-4c45-458c-bcfc-a433c326033c"/>
+				<reportElement x="396" y="60" width="189" height="20" uuid="d26ef187-4c45-458c-bcfc-a433c326033c"/>
 				<box>
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -682,7 +682,7 @@
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("revenue-increased", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="106" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="a63c03f6-2e36-4c6e-a501-02884c18aa55"/>
 				<box>
 					<pen lineWidth="0.75"/>
@@ -707,7 +707,7 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("no-of-advertiser", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Opaque" x="396" y="32" width="204" height="28" backcolor="#FFFF99" uuid="6e387700-3185-454b-bc21-e64d69e07a9a"/>
+				<reportElement mode="Opaque" x="396" y="32" width="189" height="28" backcolor="#FFFF99" uuid="6e387700-3185-454b-bc21-e64d69e07a9a"/>
 				<box>
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -743,7 +743,7 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("leads-conversion-rate", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Opaque" x="396" y="80" width="204" height="23" backcolor="#FFFF99" uuid="f3637e26-c9a7-49c5-9566-c4bd13bd60a6"/>
+				<reportElement mode="Opaque" x="396" y="80" width="189" height="23" backcolor="#FFFF99" uuid="f3637e26-c9a7-49c5-9566-c4bd13bd60a6"/>
 				<box>
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -754,7 +754,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("campaign-period", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="126" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="9dfe52af-5a26-4ced-8f53-d1885dcf3b3a"/>
 				<box>
 					<pen lineWidth="0.75"/>
@@ -766,7 +766,7 @@
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("average-revenue-per-advertiser", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="146" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="e81d27eb-7098-406d-ba3c-f46283cce84c"/>
 				<box>
 					<pen lineWidth="0.75"/>
@@ -778,7 +778,7 @@
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("no-of-advertiser", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="166" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="64257183-7cd3-40b8-aad0-b44daae71411"/>
 				<box>
 					<pen lineWidth="0.75"/>
@@ -790,7 +790,7 @@
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("closing-rate", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="206" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="f2cd8d6d-85c2-4edc-918f-dea24f7b8f0b"/>
 				<box>
 					<pen lineWidth="0.75"/>
@@ -802,7 +802,7 @@
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("leads-conversion-rate", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="186" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="cfe1873e-b8d2-4d01-8931-821b0a63a5a8"/>
 				<box>
 					<pen lineWidth="0.75"/>
@@ -812,9 +812,9 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("leads", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[(((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("leads", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue())==null?"":((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("leads", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="226" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="69c20650-2031-4dfb-96ba-42491f93c84a"/>
 				<box>
 					<pen lineWidth="0.75"/>
@@ -826,7 +826,7 @@
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("traffic-required", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="246" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="2f001866-8235-4126-8af1-fe625d866882"/>
 				<box>
 					<pen lineWidth="0.75"/>
@@ -838,7 +838,7 @@
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("monthly-traffic", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="266" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="816362db-3139-4777-a992-b5a049583950"/>
 				<box>
 					<pen lineWidth="0.75"/>
@@ -850,7 +850,7 @@
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("avg-cost-per-click", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="286" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="7be2a653-e24f-48ff-b4d7-7e39057878ca"/>
 				<box>
 					<pen lineWidth="0.75"/>
@@ -862,7 +862,7 @@
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("estimated-monthly-budget", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="306" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="dfb60148-7db8-4fcf-8140-eb38153bdc13"/>
 				<box>
 					<pen lineWidth="0.75"/>
@@ -1051,10 +1051,10 @@
 				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("male", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="360" y="386" width="239" height="152" uuid="4755ecc0-e7c7-48d7-a42c-80324ee4e50e"/>
+				<reportElement x="346" y="386" width="239" height="152" uuid="4755ecc0-e7c7-48d7-a42c-80324ee4e50e"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/map.png"]]></imageExpression>
 			</image>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="333" y="870" width="83" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="3a33602a-49da-4611-9d5c-2ee66c4a4665"/>
 				<box>
 					<pen lineWidth="0.0"/>
@@ -1068,7 +1068,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("age-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="112" y="890" width="83" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="1b225111-bfb2-49f2-8650-2359f18c422f"/>
 				<box>
 					<pen lineWidth="0.0"/>
@@ -1082,7 +1082,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="333" y="745" width="83" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="2430350b-a82c-4548-bb65-3271fff781d1"/>
 				<box>
 					<pen lineWidth="0.0"/>
@@ -1096,7 +1096,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("target-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="283" y="546" width="83" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="9f6cc9ba-6e2b-4b49-a827-ad4d2b2a8dc7"/>
 				<box>
 					<pen lineWidth="0.0"/>
