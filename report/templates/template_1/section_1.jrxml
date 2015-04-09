@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="section_1" pageWidth="640" pageHeight="1000" whenNoDataType="AllSectionsNoDetail" columnWidth="600" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="89cc2169-c366-460f-a825-86120bde60b5">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="2015 ADVERTISING PLANNER" pageWidth="640" pageHeight="1000" whenNoDataType="AllSectionsNoDetail" columnWidth="600" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="89cc2169-c366-460f-a825-86120bde60b5">
 	<property name="ireport.zoom" value="1.2100000000000013"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="325"/>
+	<property name="ireport.y" value="25"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["D:\\Panpages\\Documents\\BOW project\\reports\\planner1\\"]]></defaultValueExpression>
 	</parameter>
@@ -47,11 +47,11 @@
 	<title>
 		<band height="24">
 			<staticText>
-				<reportElement x="220" y="0" width="183" height="20" uuid="535f241d-acc6-4eb8-8652-a8ba2d45cb77"/>
+				<reportElement x="176" y="0" width="223" height="20" uuid="535f241d-acc6-4eb8-8652-a8ba2d45cb77"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[SECTION 1]]></text>
+				<text><![CDATA[2015 ADVERTISING PLANNER]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -764,7 +764,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("average-revenue-aer-advertiser", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("average-revenue-per-advertiser", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement mode="Opaque" x="219" y="146" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="e81d27eb-7098-406d-ba3c-f46283cce84c"/>
@@ -876,179 +876,179 @@
 			</textField>
 			<image>
 				<reportElement x="20" y="366" width="20" height="20" uuid="bb63e4cc-fe1c-4c6f-9967-61ee208d5d69"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("nationwide", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())!= null  ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("nationwide", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="20" y="386" width="20" height="20" uuid="9920f7aa-72f8-48a5-a298-1c86c912953f"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("kuala-lumpur", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("kuala-lumpur", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() == "true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="20" y="406" width="20" height="20" uuid="5c352f3e-cf39-4d32-98ff-96c05efabf9d"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("klang-valley", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("klang-valley", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="20" y="466" width="20" height="20" uuid="b9ed26e7-bdd6-4e88-9069-9f5178aa60ed"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("kelantan", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("kelantan", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="20" y="426" width="20" height="20" uuid="5198c760-4ac3-46fe-8ed6-5ca423117594"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("perlis", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("perlis", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="20" y="446" width="20" height="20" uuid="f8b1223c-f0ab-40aa-975e-6b33184db921"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("kedah", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("kedah", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="20" y="486" width="20" height="20" uuid="7caede81-5ee6-4d4a-a12f-46157e213b70"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("penang", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("penang", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="20" y="526" width="20" height="20" uuid="73401054-0e25-4803-af9f-f8f954d4420f"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("perak-terengganu", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("terengganu", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="20" y="506" width="20" height="20" uuid="8f029756-0da9-487c-b22c-5d795005d83a"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("perak", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("revenue-increased", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("perak",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="206" y="407" width="20" height="20" uuid="afa52cac-e75f-4aa3-b7c0-2e15e5cc8056"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("johor", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("johor", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="206" y="367" width="20" height="20" uuid="ebb0f715-5976-41b0-9a7a-4fbcbae8c556"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("negeri-sembilan", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("negeri-sembilan", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="206" y="546" width="20" height="20" uuid="135c0451-df57-4e8a-bc4a-0a961235f698"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("geo-other", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("geo-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="206" y="427" width="20" height="20" uuid="b008295e-3f52-47e4-80b5-3d2113a1105c"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("sabah", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("sabah", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="206" y="486" width="20" height="20" uuid="45021bfc-1b70-4447-93e9-47a9da56b333"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("thailand", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("thailand", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="206" y="526" width="20" height="20" uuid="88a6dbcb-db44-4fde-9f94-6e9b135216d1"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("indonesia", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("indonesia", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="206" y="506" width="20" height="20" uuid="1ef3f9b7-eb2a-4509-b743-6ae0c6e2f29c"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("singapore", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("singapore", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="206" y="447" width="20" height="20" uuid="0e4964ae-9ab3-4656-b64c-df2ab60bac1f"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("sarawak", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("sarawak", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="206" y="387" width="20" height="20" uuid="3bb89f1b-c082-4949-87ec-17f24199c277"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("melaka", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("melaka", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="20" y="546" width="20" height="20" uuid="a01f093c-6355-4d51-bf80-a34a90ef5553"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("pahang", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("pahang", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="40" y="665" width="20" height="20" uuid="a8e533d1-c45b-4002-8604-bede13604603"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("arts-communication", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("arts-communication", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="40" y="625" width="20" height="20" uuid="482da8ce-a053-4b22-a36e-70a2bbd23657"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("accounting-finance", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("accounting-finance", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="40" y="685" width="20" height="20" uuid="fb3393b4-c551-4be7-9ad1-c57722974450"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("building-construction", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("building-construction", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="40" y="725" width="20" height="20" uuid="71b3768a-261f-473e-a2a3-09cc29226e5c"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("education-training", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("education-training", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="40" y="745" width="20" height="20" uuid="f9df53fe-c5cf-42b7-ad10-d6de74ac648f"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("engineering", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("engineering", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="40" y="705" width="20" height="20" uuid="9b21277e-0594-4169-9f21-d664448d40cd"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("computer-it", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("computer-it", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="40" y="645" width="20" height="20" uuid="bae8dc08-1899-4e38-8e08-f9bb9d66400b"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("admin-hr", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("admin-hr", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="263" y="645" width="20" height="20" uuid="f28e94cb-6616-4ee1-b165-983a74ff7ec0"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("hotel-restaurant", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("hotel-restaurant", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="263" y="745" width="20" height="20" uuid="4a04507d-9fd5-4885-99de-9039c50320c0"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("target-other", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("target-other", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="263" y="725" width="20" height="20" uuid="be3f859a-5962-44d1-b0c0-e31f641e0420"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("services", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("services", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="263" y="705" width="20" height="20" uuid="d2b0b861-8edb-41fc-a8dc-d0600c2e027b"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("science", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("science", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="263" y="665" width="20" height="20" uuid="4f4141ca-8408-4976-a922-faf572f2255a"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("manufacturing", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("manufacturing", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="263" y="685" width="20" height="20" uuid="ba28154a-e55e-4fe0-8934-551deef3067a"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("sales-marketing", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("sales-marketing", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="263" y="625" width="20" height="20" uuid="a92d7f55-cedb-4a7e-acf3-2df1f2021824"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("healthcare", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("healthcare", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="40" y="890" width="20" height="20" uuid="0096b2a7-0bcc-4a89-a265-fc3a2dee54cc"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="40" y="870" width="20" height="20" uuid="7e40cf35-6994-4416-a128-28fe90510165"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-tamil", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-tamil", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="40" y="850" width="20" height="20" uuid="0eeef62a-f1cf-4bb7-8c63-a8e2045f4be3"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-chinese", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-chinese", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="40" y="810" width="20" height="20" uuid="3aaf35e4-5252-487d-bdcb-e1ce2d136293"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-english", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-english", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="40" y="830" width="20" height="20" uuid="2a9c141e-4424-4285-ac46-2e2dd62952ba"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-malay", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-malay", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="263" y="830" width="20" height="20" uuid="7f494c8a-e21b-41a8-b063-16d88329e547"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("age-30-49", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("age-30-49", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="263" y="850" width="20" height="20" uuid="a2ee419f-dc54-4a69-bc0b-62233db76c16"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("age-50-64", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("age-50-64", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="263" y="870" width="20" height="20" uuid="4f7ff1f1-e282-4e59-a837-aa40612c4160"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("nationwide", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("age-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="263" y="810" width="20" height="20" uuid="63b235f0-2c3d-48c6-a3fc-5a37f539d1e0"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("age-18-29", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("age-18-29", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="472" y="830" width="20" height="20" uuid="f490b80b-c4db-4fcf-9e44-dd8b886c89c4"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("female", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("female", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="472" y="810" width="20" height="20" uuid="f614a8db-b004-422f-b102-df79ce780d21"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("male", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("male", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="360" y="386" width="239" height="152" uuid="4755ecc0-e7c7-48d7-a42c-80324ee4e50e"/>
@@ -1063,7 +1063,7 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
+				<textElement verticalAlignment="Middle">
 					<font isUnderline="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("age-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
@@ -1077,7 +1077,7 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
+				<textElement verticalAlignment="Middle">
 					<font isUnderline="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("lang-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
@@ -1091,7 +1091,7 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
+				<textElement verticalAlignment="Middle">
 					<font isUnderline="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("target-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
@@ -1105,15 +1105,39 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
+				<textElement verticalAlignment="Middle">
 					<font isUnderline="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("geo-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="458" y="264" width="100" height="20" uuid="a33371d4-467e-439a-b19c-4ff746aca476"/>
-				<textFieldExpression><![CDATA[null == (((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("nationwide", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())? "empty" : "not empty"]]></textFieldExpression>
-			</textField>
+			<staticText>
+				<reportElement x="220" y="106" width="43" height="20" uuid="6ea2fec8-019e-4c92-b92a-a3d8941fb0f5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="266" width="43" height="20" uuid="86beccd4-b8d8-4909-ac8b-6e9f417a895e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="306" width="43" height="20" uuid="a0a7b076-3e68-46d5-ad08-4f8da1dcff2d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="286" width="43" height="20" uuid="149f76ac-0bc8-4b08-bcbe-c15255efc960"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RM]]></text>
+			</staticText>
 		</band>
 	</summary>
 </jasperReport>

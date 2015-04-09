@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="planner1" pageWidth="700" pageHeight="1300" whenNoDataType="AllSectionsNoDetail" columnWidth="660" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="89cc2169-c366-460f-a825-86120bde60b5">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MARKETING REVIEW &amp; STRATEGY" pageWidth="640" pageHeight="1200" whenNoDataType="AllSectionsNoDetail" columnWidth="600" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="89cc2169-c366-460f-a825-86120bde60b5">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="2"/>
+	<property name="ireport.y" value="13"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["D:\\Panpages\\Documents\\BOW project\\reports\\planner1\\"]]></defaultValueExpression>
 	</parameter>
@@ -42,18 +42,18 @@
 	<title>
 		<band height="24">
 			<staticText>
-				<reportElement x="265" y="0" width="183" height="20" uuid="f68d98b2-709d-420c-aa2c-7badf4256a18"/>
+				<reportElement x="151" y="0" width="268" height="20" uuid="f68d98b2-709d-420c-aa2c-7badf4256a18"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[SECTION 2]]></text>
+				<text><![CDATA[MARKETING REVIEW & STRATEGY]]></text>
 			</staticText>
 		</band>
 	</title>
 	<columnFooter>
-		<band height="1153" splitType="Stretch">
+		<band height="1100" splitType="Stretch">
 			<staticText>
-				<reportElement mode="Opaque" x="21" y="276" width="347" height="30" backcolor="#CCCCCC" uuid="4b492502-7090-424c-bd10-f01c8c8df6d5"/>
+				<reportElement mode="Opaque" x="1" y="277" width="347" height="30" backcolor="#CCCCCC" uuid="4b492502-7090-424c-bd10-f01c8c8df6d5"/>
 				<box>
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 					<topPen lineWidth="1.0" lineStyle="Solid"/>
@@ -109,56 +109,56 @@
 				<text><![CDATA[Include Delivery Information]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="409" y="312" width="240" height="20" uuid="101ff1b8-b076-4bbf-87fb-27bb15333562"/>
+				<reportElement x="343" y="312" width="257" height="20" uuid="101ff1b8-b076-4bbf-87fb-27bb15333562"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Frequently Your Website]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="409" y="332" width="240" height="20" uuid="a1c519ea-0561-437d-a808-7ab07c0a070f"/>
+				<reportElement x="343" y="332" width="257" height="20" uuid="a1c519ea-0561-437d-a808-7ab07c0a070f"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Timely Response To Enquiry]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="409" y="352" width="240" height="20" uuid="09848f1b-f729-4c12-9c2b-1fa81b1d5002"/>
+				<reportElement x="343" y="352" width="257" height="20" uuid="09848f1b-f729-4c12-9c2b-1fa81b1d5002"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Tracking On Calls & Walk In]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="409" y="372" width="240" height="20" uuid="19e6123f-2b39-476f-81ca-ebeecb17eae0"/>
+				<reportElement x="343" y="372" width="257" height="20" uuid="19e6123f-2b39-476f-81ca-ebeecb17eae0"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Highlight Unique Selling Point]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="409" y="392" width="240" height="20" uuid="72b78e7f-dc47-4e15-a2a9-3f5cd823664e"/>
+				<reportElement x="343" y="392" width="257" height="20" uuid="72b78e7f-dc47-4e15-a2a9-3f5cd823664e"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Include Certification For Better Credential]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="409" y="412" width="240" height="20" uuid="738d008a-58ea-4033-8ef4-dd2f97d955a6"/>
+				<reportElement x="343" y="412" width="257" height="20" uuid="738d008a-58ea-4033-8ef4-dd2f97d955a6"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Enhance Product Picture Quality]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="409" y="432" width="240" height="20" uuid="7514b217-d25a-4c0b-818f-bf3b2dda1f1e"/>
+				<reportElement x="343" y="432" width="53" height="20" uuid="7514b217-d25a-4c0b-818f-bf3b2dda1f1e"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Others:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="21" y="5" width="347" height="30" backcolor="#CCCCCC" uuid="850a77f7-64bf-4207-9e12-8d66a4f33ee3"/>
+				<reportElement mode="Opaque" x="1" y="6" width="347" height="30" backcolor="#CCCCCC" uuid="850a77f7-64bf-4207-9e12-8d66a4f33ee3"/>
 				<box>
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 					<topPen lineWidth="1.0" lineStyle="Solid"/>
@@ -207,42 +207,42 @@
 				<text><![CDATA[Yahoo! Display]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="409" y="44" width="240" height="20" uuid="0c55b5d9-8248-4bce-be10-9c0413561c5b"/>
+				<reportElement x="409" y="44" width="191" height="20" uuid="0c55b5d9-8248-4bce-be10-9c0413561c5b"/>
 				<textElement>
 					<font size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[YouTube Ads]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="409" y="64" width="240" height="20" uuid="34358c9f-3ad8-4159-b9c8-ac69819a54f0"/>
+				<reportElement x="409" y="64" width="191" height="20" uuid="34358c9f-3ad8-4159-b9c8-ac69819a54f0"/>
 				<textElement>
 					<font size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Facebook Ads]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="409" y="84" width="240" height="20" uuid="247ad4b1-c892-4d65-acd7-1a2f43c88151"/>
+				<reportElement x="409" y="84" width="191" height="20" uuid="247ad4b1-c892-4d65-acd7-1a2f43c88151"/>
 				<textElement>
 					<font size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Pan 360°]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="409" y="104" width="240" height="20" uuid="00763b55-7b07-4f2c-9256-16f025c60726"/>
+				<reportElement x="409" y="104" width="191" height="20" uuid="00763b55-7b07-4f2c-9256-16f025c60726"/>
 				<textElement>
 					<font size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Alibaba.com ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="409" y="124" width="240" height="20" uuid="11cfd5bb-7cb6-44bc-8081-24fa86cae4fa"/>
+				<reportElement x="409" y="124" width="191" height="20" uuid="11cfd5bb-7cb6-44bc-8081-24fa86cae4fa"/>
 				<textElement>
 					<font size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Super Pages]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="21" y="148" width="347" height="30" backcolor="#CCCCCC" uuid="8d7a0da7-60e8-4476-b445-9191f826a82d"/>
+				<reportElement mode="Opaque" x="1" y="149" width="347" height="30" backcolor="#CCCCCC" uuid="8d7a0da7-60e8-4476-b445-9191f826a82d"/>
 				<box>
 					<pen lineWidth="1.0" lineStyle="Solid"/>
 					<topPen lineWidth="1.0" lineStyle="Solid"/>
@@ -256,7 +256,7 @@
 				<text><![CDATA[  2014 MARKETING CAMPAIGN RESULT OVERVIEW]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="69" y="185" width="221" height="20" uuid="7b84d175-0fea-488e-b65b-f5023e175e6c"/>
+				<reportElement x="41" y="188" width="221" height="20" uuid="7b84d175-0fea-488e-b65b-f5023e175e6c"/>
 				<box>
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
@@ -270,7 +270,7 @@
 				<text><![CDATA[2014 Advertising Investment]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="69" y="205" width="221" height="20" uuid="b68dc05d-9439-4ec4-a800-77cedae37827"/>
+				<reportElement x="41" y="208" width="221" height="20" uuid="b68dc05d-9439-4ec4-a800-77cedae37827"/>
 				<box>
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
@@ -284,7 +284,7 @@
 				<text><![CDATA[Website Visits]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="69" y="225" width="221" height="20" uuid="79eb860f-d44d-4f08-8e74-0c19cadedb7c"/>
+				<reportElement x="41" y="228" width="221" height="20" uuid="79eb860f-d44d-4f08-8e74-0c19cadedb7c"/>
 				<box>
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
@@ -298,7 +298,7 @@
 				<text><![CDATA[Clicks On Ads]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="69" y="245" width="221" height="20" uuid="a0c8e69b-b459-40ae-a7d6-060ff730401a"/>
+				<reportElement x="41" y="248" width="221" height="20" uuid="a0c8e69b-b459-40ae-a7d6-060ff730401a"/>
 				<box>
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
@@ -312,20 +312,6 @@
 				<text><![CDATA[Click Through Rate]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="290" y="185" width="221" height="20" uuid="5a0a1dcb-4ca4-4998-9671-921567f6794e"/>
-				<box>
-					<pen lineWidth="0.75"/>
-					<topPen lineWidth="0.75"/>
-					<leftPen lineWidth="0.75"/>
-					<bottomPen lineWidth="0.75"/>
-					<rightPen lineWidth="0.75"/>
-				</box>
-				<textElement>
-					<font size="13" isBold="true"/>
-				</textElement>
-				<text><![CDATA[RM]]></text>
-			</staticText>
-			<staticText>
 				<reportElement x="69" y="452" width="216" height="20" uuid="efafdb46-a8b8-4047-b6c4-4b61164e3d21"/>
 				<textElement>
 					<font size="12" isBold="true"/>
@@ -333,7 +319,7 @@
 				<text><![CDATA[Include Payment Options]]></text>
 			</staticText>
 			<rectangle>
-				<reportElement x="21" y="482" width="614" height="114" isPrintWhenDetailOverflows="true" uuid="747f7ed1-91a2-4dfb-9c31-78a194134535"/>
+				<reportElement x="0" y="482" width="599" height="114" isPrintWhenDetailOverflows="true" uuid="747f7ed1-91a2-4dfb-9c31-78a194134535"/>
 			</rectangle>
 			<staticText>
 				<reportElement x="69" y="312" width="216" height="20" uuid="1e174cc8-d044-433d-b0f0-003e06915582"/>
@@ -343,14 +329,14 @@
 				<text><![CDATA[Enhance Text Content]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="21" y="482" width="100" height="20" uuid="7a0c8f5f-c961-4015-b029-2b2b290f113f"/>
+				<reportElement x="7" y="482" width="100" height="20" uuid="7a0c8f5f-c961-4015-b029-2b2b290f113f"/>
 				<textElement>
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Remarks:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="21" y="648" width="347" height="30" backcolor="#CCCCCC" uuid="cff6bb14-48ec-4866-85e4-ccd5c748ad13"/>
+				<reportElement mode="Opaque" x="1" y="607" width="347" height="30" backcolor="#CCCCCC" uuid="cff6bb14-48ec-4866-85e4-ccd5c748ad13"/>
 				<box>
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -364,7 +350,7 @@
 				<text><![CDATA[  2015 MARKETING STRATEGIC PLANNING]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="303" y="682" width="332" height="25" uuid="abb1cdc1-31b6-4528-bd84-22bd95826392"/>
+				<reportElement x="303" y="640" width="297" height="25" uuid="abb1cdc1-31b6-4528-bd84-22bd95826392"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -378,7 +364,7 @@
 				<text><![CDATA[  Examples]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="303" y="707" width="332" height="40" uuid="71ad8385-53da-4b31-9157-86557f3eee1f"/>
+				<reportElement x="303" y="665" width="297" height="40" uuid="71ad8385-53da-4b31-9157-86557f3eee1f"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -393,7 +379,7 @@
   2. Want People to better understand their business]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="303" y="747" width="332" height="50" uuid="79e65087-6cb3-498c-8c69-b58723c41773"/>
+				<reportElement x="303" y="705" width="297" height="50" uuid="79e65087-6cb3-498c-8c69-b58723c41773"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -409,7 +395,7 @@
   3. Want people to be aware of their company or brand]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="303" y="797" width="332" height="50" uuid="5dd8068c-64d0-470a-a749-d7edce21dd30"/>
+				<reportElement x="303" y="755" width="297" height="50" uuid="5dd8068c-64d0-470a-a749-d7edce21dd30"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -425,7 +411,7 @@
   3. Want people to send enquiry]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="303" y="847" width="332" height="20" uuid="6d99591f-9553-4a35-a766-359a8ad18a59"/>
+				<reportElement x="303" y="805" width="297" height="20" uuid="6d99591f-9553-4a35-a766-359a8ad18a59"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -439,7 +425,7 @@
 				<text><![CDATA[  1. Want people to walk in]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="303" y="867" width="332" height="20" uuid="5b4b4b42-d81f-490c-b1b0-dfa4071a86e3"/>
+				<reportElement x="303" y="825" width="297" height="20" uuid="5b4b4b42-d81f-490c-b1b0-dfa4071a86e3"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -453,7 +439,7 @@
 				<text><![CDATA[  1. Want people to call directly]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="303" y="887" width="332" height="20" uuid="17832aac-7335-41dd-8284-9480140591da"/>
+				<reportElement x="303" y="845" width="297" height="20" uuid="17832aac-7335-41dd-8284-9480140591da"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -467,7 +453,7 @@
 				<text><![CDATA[  1. Want people to purchase directly from website]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="303" y="907" width="332" height="40" uuid="c488b29c-6e26-46f5-9516-f2fd18cd4bb1"/>
+				<reportElement x="303" y="865" width="297" height="40" uuid="c488b29c-6e26-46f5-9516-f2fd18cd4bb1"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -482,7 +468,7 @@
   2. Want to generate repeat business from existing customers]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="303" y="947" width="332" height="31" uuid="be772138-af9a-48c4-9475-53c0fd32fe83"/>
+				<reportElement x="303" y="905" width="297" height="31" uuid="be772138-af9a-48c4-9475-53c0fd32fe83"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -496,7 +482,7 @@
 				<text><![CDATA[  1. Want to expand your business to oversea countries]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="31" y="682" width="272" height="25" uuid="4426215f-bb86-449a-b676-a799afc829af"/>
+				<reportElement x="0" y="640" width="303" height="25" uuid="4426215f-bb86-449a-b676-a799afc829af"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -510,7 +496,7 @@
 				<text><![CDATA[          Objectives]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="31" y="707" width="272" height="40" uuid="38b7eaf3-1c6a-4be7-8873-6661790d0e14"/>
+				<reportElement x="0" y="665" width="303" height="40" uuid="38b7eaf3-1c6a-4be7-8873-6661790d0e14"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -524,7 +510,7 @@
 				<text><![CDATA[            Increase Website Traffic]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="31" y="747" width="272" height="50" uuid="0a9dc385-f04b-4add-98fe-373e2d8c3316"/>
+				<reportElement x="0" y="705" width="303" height="50" uuid="0a9dc385-f04b-4add-98fe-373e2d8c3316"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -538,7 +524,7 @@
 				<text><![CDATA[            Increase Brand Awareness]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="31" y="797" width="272" height="50" uuid="eb5cdd26-f29c-4f3d-9830-31257cc3ec3d"/>
+				<reportElement x="0" y="755" width="303" height="50" uuid="eb5cdd26-f29c-4f3d-9830-31257cc3ec3d"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -552,7 +538,7 @@
 				<text><![CDATA[            Increase Online Forms Submission]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="31" y="847" width="272" height="20" uuid="3c63821b-3497-47da-9a0f-8285621cdd3b"/>
+				<reportElement x="0" y="805" width="303" height="20" uuid="3c63821b-3497-47da-9a0f-8285621cdd3b"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -566,7 +552,7 @@
 				<text><![CDATA[            Increase Store Visits]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="31" y="867" width="272" height="20" uuid="45db8c4e-6cca-4e76-b05b-fb329822cbcc"/>
+				<reportElement x="0" y="825" width="303" height="20" uuid="45db8c4e-6cca-4e76-b05b-fb329822cbcc"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -580,7 +566,7 @@
 				<text><![CDATA[            Increase Phones Calls]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="31" y="887" width="272" height="20" uuid="bfa5dbbc-9559-41f6-9239-58477eaa5106"/>
+				<reportElement x="0" y="845" width="303" height="20" uuid="bfa5dbbc-9559-41f6-9239-58477eaa5106"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -594,7 +580,7 @@
 				<text><![CDATA[            Increase Online Purchase (Subject to website feasibility)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="31" y="907" width="272" height="40" uuid="88a9a847-8e48-4de0-a793-268d923116f0"/>
+				<reportElement x="0" y="865" width="303" height="40" uuid="88a9a847-8e48-4de0-a793-268d923116f0"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -608,7 +594,7 @@
 				<text><![CDATA[            Retargeting Visitors]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="31" y="947" width="272" height="31" uuid="be94ea69-df88-41c6-bec5-b188c103beea"/>
+				<reportElement x="0" y="905" width="303" height="31" uuid="be94ea69-df88-41c6-bec5-b188c103beea"/>
 				<box>
 					<pen lineWidth="0.5"/>
 					<topPen lineWidth="0.5"/>
@@ -622,7 +608,7 @@
 				<text><![CDATA[            Increase Geographical Coverage]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="21" y="990" width="347" height="30" backcolor="#CCCCCC" uuid="f4ff1665-e8c2-419d-91fe-ad3f1551610a"/>
+				<reportElement mode="Opaque" x="1" y="946" width="347" height="30" backcolor="#CCCCCC" uuid="f4ff1665-e8c2-419d-91fe-ad3f1551610a"/>
 				<box>
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -636,208 +622,303 @@
 				<text><![CDATA[  RECOMMENDED SOLUTIONS]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="69" y="1039" width="216" height="20" uuid="22f4bb18-5c8b-4d27-b034-eed36de1b480"/>
+				<reportElement x="32" y="997" width="216" height="20" uuid="22f4bb18-5c8b-4d27-b034-eed36de1b480"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Malaysia PanPages]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="69" y="1059" width="216" height="20" uuid="45612132-0c7e-41b1-af69-8fd84f90a244"/>
+				<reportElement x="32" y="1017" width="216" height="20" uuid="45612132-0c7e-41b1-af69-8fd84f90a244"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Google AdWords Search & Mobile]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="69" y="1079" width="216" height="20" uuid="85274275-3ff5-4b0a-bfb7-1dc67a58c660"/>
+				<reportElement x="32" y="1037" width="216" height="20" uuid="85274275-3ff5-4b0a-bfb7-1dc67a58c660"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Google Display Network]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="69" y="1099" width="216" height="20" uuid="1d854365-01ed-4b2a-9e40-071dd09b1947"/>
+				<reportElement x="32" y="1057" width="216" height="20" uuid="1d854365-01ed-4b2a-9e40-071dd09b1947"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Yahoo! Search]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="69" y="1119" width="216" height="20" uuid="d37b6b28-f170-4b4d-b310-6daf403fd02b"/>
+				<reportElement x="32" y="1077" width="216" height="20" uuid="d37b6b28-f170-4b4d-b310-6daf403fd02b"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Yahoo! Display]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="419" y="1039" width="216" height="20" uuid="84a8444a-40c6-4d1b-90c9-9e599cd7bccd"/>
+				<reportElement x="376" y="997" width="181" height="20" uuid="84a8444a-40c6-4d1b-90c9-9e599cd7bccd"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[YouTube Ads]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="419" y="1059" width="216" height="20" uuid="4ab84f44-e387-45cb-b587-613367a0b0fb"/>
+				<reportElement x="376" y="1017" width="181" height="20" uuid="4ab84f44-e387-45cb-b587-613367a0b0fb"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Facebook Ads]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="419" y="1079" width="216" height="20" uuid="d36ede4a-0660-4150-b92b-95a3f72d6112"/>
+				<reportElement x="376" y="1037" width="181" height="20" uuid="d36ede4a-0660-4150-b92b-95a3f72d6112"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Pan 360°]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="419" y="1099" width="216" height="20" uuid="9e43d25c-5c44-46d4-a947-f19c34b82c4e"/>
+				<reportElement x="376" y="1057" width="181" height="20" uuid="9e43d25c-5c44-46d4-a947-f19c34b82c4e"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Alibaba.com ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="419" y="1119" width="216" height="20" uuid="7e0dd375-1f42-446c-bf3e-ffc72f6990c9"/>
+				<reportElement x="376" y="1077" width="181" height="20" uuid="7e0dd375-1f42-446c-bf3e-ffc72f6990c9"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
-				<text><![CDATA[uper Pages]]></text>
+				<text><![CDATA[Super Pages]]></text>
 			</staticText>
 			<image>
 				<reportElement x="41" y="124" width="20" height="20" uuid="1719375b-c6ad-4ba8-9740-d855ce198750"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("campaign-yahoo-display", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="41" y="64" width="20" height="20" uuid="41bf5bd5-058e-44b0-81b3-de3733e5a2f3"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("campaign-google-adWords-search-mobile", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="41" y="84" width="20" height="20" uuid="196dc114-82d5-47b8-9b00-0fe59003e694"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("campaign-google-display-network", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="41" y="104" width="20" height="20" uuid="1b043806-79a2-44df-a91b-8cb7decfa271"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("campaign-yahoo-search", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="41" y="44" width="20" height="20" uuid="513caad2-4835-44a3-aef2-2875913420e7"/>
-				<imageExpression><![CDATA[((((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("kuala-lumpur", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$F{sections})).getFields())).getValue())=="true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png")]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("campaign-malaysia-panpages", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="379" y="124" width="20" height="20" uuid="5f701ae5-8d54-48cb-a3fd-71fb5063ed9e"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("campaign-super-pages", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="379" y="84" width="20" height="20" uuid="cf445ad6-15d4-45d4-b09b-269a32286a04"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("campaign-pan-360", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="379" y="64" width="20" height="20" uuid="dbb4f43a-a6ee-4525-b74a-d4f34b6f4732"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("campaign-facebook-ads", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="379" y="44" width="20" height="20" uuid="800aeb07-8e77-4914-8ad3-514767b86898"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("campaign-youtube-ads", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="379" y="104" width="20" height="20" uuid="b89e3ae7-bcb5-4fc9-ad8b-ca928bff3624"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("campaign-alibaba-com", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="41" y="392" width="20" height="20" uuid="2b9ad94e-4e64-4893-8127-103363ced693"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("include-product-specification", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="41" y="352" width="20" height="20" uuid="8ea75c99-dbc7-43c2-b3df-484f0bb409a6"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("add-on-product-description", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="41" y="332" width="20" height="20" uuid="a0324563-0664-4aa1-8709-48a547c3410e"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("add-on-relevant-product-picture", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="41" y="312" width="20" height="20" uuid="7240aa8c-a54d-4c5c-88b8-b752c90f7a5a"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("enhance-text-content", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="41" y="372" width="20" height="20" uuid="ac7db001-0981-4911-800c-7f04d2e6375a"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("include-product-price", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="41" y="452" width="20" height="20" uuid="82a8d2d0-7bc4-47cf-978f-5adfa5593f2e"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("include-payment-options", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="41" y="412" width="20" height="20" uuid="b70e76a8-aedd-4fc7-b12c-4b2038d5d013"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("include-company-details", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="41" y="432" width="20" height="20" uuid="81231fe1-0e32-4d94-bf53-602acd1483d2"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("include-delivery-information", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="379" y="392" width="20" height="20" uuid="ee3d5f82-5fe1-4306-9257-37c904bf8555"/>
+				<reportElement x="313" y="392" width="20" height="20" uuid="ee3d5f82-5fe1-4306-9257-37c904bf8555"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("include-certification-for-better-credential", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="379" y="332" width="20" height="20" uuid="78f10c44-41b3-4522-9248-fdd2b494d0b7"/>
+				<reportElement x="313" y="332" width="20" height="20" uuid="78f10c44-41b3-4522-9248-fdd2b494d0b7"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("timely-response-to-enquiry", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="379" y="352" width="20" height="20" uuid="0e9db997-1947-4958-98a3-f024ef9aadb1"/>
+				<reportElement x="313" y="352" width="20" height="20" uuid="0e9db997-1947-4958-98a3-f024ef9aadb1"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("tracking-on-calls-walk-in", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="379" y="412" width="20" height="20" uuid="fa62834c-aef8-4668-9778-fa521f6ef1a6"/>
+				<reportElement x="313" y="412" width="20" height="20" uuid="fa62834c-aef8-4668-9778-fa521f6ef1a6"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("enhance-product-picture-quality", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="379" y="372" width="20" height="20" uuid="927470a4-da1b-4425-8fbb-2c7c1d623437"/>
+				<reportElement x="313" y="372" width="20" height="20" uuid="927470a4-da1b-4425-8fbb-2c7c1d623437"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("highlight-unique-selling-point", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="379" y="312" width="20" height="20" uuid="2b240c02-4359-4f5d-a431-631743ddf1b5"/>
+				<reportElement x="313" y="312" width="20" height="20" uuid="2b240c02-4359-4f5d-a431-631743ddf1b5"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("frequently-your-website", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="379" y="432" width="20" height="20" uuid="70b5d280-64b3-46cf-8633-c0bebb6c7cc4"/>
+				<reportElement x="313" y="432" width="20" height="20" uuid="70b5d280-64b3-46cf-8633-c0bebb6c7cc4"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("plan-for-improvement-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="687" width="20" height="20" uuid="f28d3e03-9e4f-4322-a99c-9035c0ca17e5"/>
+				<reportElement x="7" y="911" width="20" height="20" uuid="9e9c8c6a-a113-4538-bd95-9019e6a5d801"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("increase-geographical-coverage", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="953" width="20" height="20" uuid="9e9c8c6a-a113-4538-bd95-9019e6a5d801"/>
+				<reportElement x="7" y="674" width="20" height="20" uuid="011bc453-2976-4a13-b053-489c09ca511f"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("increase-website-traffic", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="716" width="20" height="20" uuid="011bc453-2976-4a13-b053-489c09ca511f"/>
+				<reportElement x="7" y="718" width="20" height="20" uuid="c9067aa4-38a1-4f7a-9176-418e91805f72"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("increase-brand-awareness", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="760" width="20" height="20" uuid="c9067aa4-38a1-4f7a-9176-418e91805f72"/>
+				<reportElement x="7" y="770" width="20" height="20" uuid="97d34b8c-c12d-486a-a16a-7c03200552c4"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("increase-online-forms-submission", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="812" width="20" height="20" uuid="97d34b8c-c12d-486a-a16a-7c03200552c4"/>
+				<reportElement x="7" y="805" width="20" height="20" uuid="c5b66317-8bbf-4d92-80e6-ff036c9f7464"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("increase-store-visits", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="847" width="20" height="20" uuid="c5b66317-8bbf-4d92-80e6-ff036c9f7464"/>
+				<reportElement x="7" y="825" width="20" height="20" uuid="a65cafa0-911d-4398-a50a-a3d070df202c"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("increase-phones-calls", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="867" width="20" height="20" uuid="a65cafa0-911d-4398-a50a-a3d070df202c"/>
+				<reportElement x="7" y="845" width="20" height="20" uuid="20f7198b-455f-4682-9a4b-262c75cc8186"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("increase-online-purchase", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="887" width="20" height="20" uuid="20f7198b-455f-4682-9a4b-262c75cc8186"/>
+				<reportElement x="7" y="875" width="20" height="20" uuid="cbcf5181-50b9-47f2-9c66-67115582630a"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("retargeting-visitors", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="917" width="20" height="20" uuid="cbcf5181-50b9-47f2-9c66-67115582630a"/>
+				<reportElement x="348" y="997" width="20" height="20" uuid="5eca7e0a-a1e6-4189-8265-b782df989408"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("solution-youtube-ads", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="1119" width="20" height="20" uuid="a02fbc29-b0e9-4041-abf6-f5121870ff73"/>
+				<reportElement x="348" y="1017" width="20" height="20" uuid="3636e3b3-d3d9-4ab8-9359-5464e4c24f78"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("solution-facebook-ads", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="1059" width="20" height="20" uuid="8ecd967a-24a5-401d-b29e-74cb4f25ed0d"/>
+				<reportElement x="7" y="997" width="20" height="20" uuid="17bc8194-461e-4057-9e65-f89900486c03"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("solution-malaysia-panpages", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="1079" width="20" height="20" uuid="ea3dd64c-6532-42f6-80c3-164432a5cc59"/>
+				<reportElement x="348" y="1037" width="20" height="20" uuid="35c7fc29-dd40-4c45-b46b-61637f04f2f7"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("solution-pan-360", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="1039" width="20" height="20" uuid="9a98ecc5-2d5b-407c-add3-a437af372316"/>
+				<reportElement x="7" y="1057" width="20" height="20" uuid="879e8267-4a3e-4f12-abe1-f80aba1bbf62"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("solution-yahoo-search", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="41" y="1099" width="20" height="20" uuid="6b9ee343-820d-449b-a01a-58def477b790"/>
+				<reportElement x="348" y="1077" width="20" height="20" uuid="5d21647d-27ef-4e12-b27a-04b1ffc781b1"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("solution-super-pages", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="392" y="1079" width="20" height="20" uuid="0ed9d3e7-53b8-46fe-85d0-1c5b664359c9"/>
+				<reportElement x="7" y="1077" width="20" height="20" uuid="0cabeab1-8e5a-406c-a049-85b3b0e8db51"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("solution-yahoo-display", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="392" y="1099" width="20" height="20" uuid="788453f9-05c0-483c-a8ab-3f68dbac8d6e"/>
+				<reportElement x="348" y="1057" width="20" height="20" uuid="ac04f305-b9e0-4224-9376-276a7b0bfc34"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("solution-alibaba-com", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="392" y="1059" width="20" height="20" uuid="8efce47c-cd79-40e0-99c7-bc2abee50103"/>
+				<reportElement x="7" y="1037" width="20" height="20" uuid="0bfbc0ed-dd94-4015-a420-a305d347caf4"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("solution-google-display-network", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="392" y="1119" width="20" height="20" uuid="3dd87a21-ac3d-4234-81f4-e1476d27aaa5"/>
+				<reportElement x="7" y="1017" width="20" height="20" uuid="ae3af045-bacb-44a4-ab5c-40615eb4f56b"/>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("solution-google-adwords-search-mobile", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
-			<image>
-				<reportElement x="392" y="1039" width="20" height="20" uuid="f8f487a6-491a-427a-8e16-a9acaf1f5bee"/>
-			</image>
+			<staticText>
+				<reportElement x="262" y="188" width="221" height="20" uuid="803786ac-0011-435e-82c6-202ecee60f7a"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="208" width="221" height="20" uuid="61e893c1-bac3-4869-9562-fee24c99b38f"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="228" width="221" height="20" uuid="ab18fc37-cb9e-4583-ad98-384c7333f1d2"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="248" width="221" height="20" uuid="be2ebe32-5e23-4e1a-9948-4f18590118e3"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
 		</band>
 	</columnFooter>
 </jasperReport>
