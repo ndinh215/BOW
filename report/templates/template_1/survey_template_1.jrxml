@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SURVEY TEMPLATE 1" pageWidth="595" pageHeight="5000" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="5" rightMargin="5" topMargin="5" bottomMargin="5" uuid="89cc2169-c366-460f-a825-86120bde60b5">
-	<property name="ireport.zoom" value="1.0"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SURVEY TEMPLATE 1" pageWidth="595" pageHeight="1200" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="5" rightMargin="5" topMargin="5" bottomMargin="5" uuid="89cc2169-c366-460f-a825-86120bde60b5">
+	<property name="ireport.zoom" value="0.8264462809917354"/>
 	<property name="ireport.x" value="0"/>
+<<<<<<< HEAD
 	<property name="ireport.y" value="0"/>
+=======
+	<property name="ireport.y" value="120"/>
+>>>>>>> 0d6f0b77fd06aa0bb8f6981f12704ee25d32fb63
 	<subDataset name="dataset1" uuid="b0d91e67-b305-47fa-a3d5-74c1fdba1b72"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["D:\\Panpages\\Documents\\BOW project\\Source\\BOW\\report\\templates\\template_1"]]></defaultValueExpression>
@@ -22,9 +26,9 @@
 		<band splitType="Stretch"/>
 	</background>
 	<summary>
-		<band height="4202">
+		<band height="882">
 			<subreport>
-				<reportElement x="0" y="0" width="585" height="1000" uuid="42f83a27-6202-4b98-aabc-346785e536c5"/>
+				<reportElement x="0" y="0" width="585" height="61" uuid="42f83a27-6202-4b98-aabc-346785e536c5"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -34,8 +38,11 @@
 				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/section_1.jasper"]]></subreportExpression>
 			</subreport>
+			<break>
+				<reportElement x="0" y="60" width="585" height="1" uuid="0dacf4d0-8e84-494f-8135-4088e8cab34d"/>
+			</break>
 			<subreport>
-				<reportElement x="0" y="1000" width="585" height="1300" uuid="1154ddaa-7740-407e-a7b1-4994205191cd"/>
+				<reportElement x="0" y="87" width="585" height="61" uuid="1154ddaa-7740-407e-a7b1-4994205191cd"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -45,8 +52,11 @@
 				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/section_2.jasper"]]></subreportExpression>
 			</subreport>
+			<break>
+				<reportElement x="0" y="148" width="585" height="1" uuid="4c0501cd-5884-4a3c-a3ed-ee2cab6e4da8"/>
+			</break>
 			<subreport>
-				<reportElement x="0" y="2301" width="585" height="1100" uuid="82d1723d-d862-4f4a-ae8b-e52a40edacb8"/>
+				<reportElement x="0" y="181" width="585" height="61" uuid="82d1723d-d862-4f4a-ae8b-e52a40edacb8"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -56,17 +66,11 @@
 				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/section_3.jasper"]]></subreportExpression>
 			</subreport>
-			<line>
-				<reportElement x="-2" y="2300" width="585" height="1" uuid="cd4ffa40-cedc-4980-9de5-6dc3cef4afca"/>
-			</line>
-			<line>
-				<reportElement x="-1" y="3401" width="585" height="1" uuid="1ec2c385-0934-4a14-a923-9c71ea37807d"/>
-			</line>
-			<line>
-				<reportElement x="0" y="999" width="585" height="1" uuid="9e2418ca-a453-435d-b959-d3b54b04d15b"/>
-			</line>
+			<break>
+				<reportElement x="0" y="241" width="585" height="1" uuid="f4fb89d0-47c3-4122-b667-d3c2575f6012"/>
+			</break>
 			<subreport>
-				<reportElement x="1" y="3402" width="585" height="61" uuid="cb3c52c6-876d-49b8-b0df-91664da5ca72"/>
+				<reportElement x="0" y="272" width="585" height="61" uuid="cb3c52c6-876d-49b8-b0df-91664da5ca72"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource(com.panpages.bow.model.utils.SurveyUtils.findFieldsWithFieldTemplateSlugName("proposed-keyword", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("proposed-keyword",$F{sections})).getFields()))]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/section_4.jasper"]]></subreportExpression>
 			</subreport>
