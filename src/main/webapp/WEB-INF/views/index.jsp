@@ -7,16 +7,33 @@
 <%@ taglib prefix="sql" uri="http://java.sun.com/jstl/sql" %>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home</title>
+<link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.fancybox.css" />" >
+<link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.mCustomScrollbar.css" />" >
+<link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/bootstrap.css" />" >
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/home.css" />" >
+<script src="<c:url value="/assets/js/jquery-1.8.2.min.js" />"></script>
+<script src="<c:url value="/assets/js/bootstrap.min.js" />"></script>
+<script src="<c:url value="/assets/js/jquery.fancybox.js" />"></script>
+<script src="<c:url value="/assets/js/jquery.mCustomScrollbar.js" />"></script>
+<script src="<c:url value="/assets/js/home.js" />"></script>
 </head>
 <body>
 	<div id="container">
 		<div id="header">
 			<div class="logo"></div>
 		</div>
-		<div id="content"></div>
+		<div id="content">
+			<a id="start" href="templates.html">START</a>
+			
+		</div>
+		<div id ="footer">
+			<p>Copyright Panpages © 2015 All Rights Reserved</p>
+		</div>
 	</div>
+	<script type="text/javascript">
+	 $(window).load(function(){
+	     $("#content").mCustomScrollbar();
+	 });
+	</script>
 </body>
 </html>
