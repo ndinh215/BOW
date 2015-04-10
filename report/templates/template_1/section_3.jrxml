@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="2015 INVESTMENT PLAN" pageWidth="585" pageHeight="1010" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fae24526-20a2-461e-b8a4-4934cf4ebdfa">
-	<property name="ireport.zoom" value="1.4641000000000008"/>
+	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<subDataset name="dataset1" uuid="ef6965b1-a13f-44e2-b88c-fb6990810d23"/>
@@ -677,7 +677,7 @@
 			</staticText>
 			<image>
 				<reportElement x="3" y="173" width="18" height="18" uuid="1b53df61-ea02-4a4d-a47f-264cb34b34f5"/>
-				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("option-a-malaysia-panpages", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("option-a-malaysia-panpages", (java.util.List)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan", $P{sections}).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="3" y="193" width="18" height="18" uuid="d9e16842-ac54-44fd-89ab-f2af8e74f95c"/>
@@ -1299,10 +1299,6 @@
 				<reportElement x="471" y="20" width="100" height="95" uuid="dbe92e71-986c-419a-b09a-9c683bb59631"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("option-a-malaysia-panpages", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></textFieldExpression>
 			</textField>
-			<image>
-				<reportElement x="394" y="0" width="20" height="20" uuid="03ade06f-4944-4bb8-a85f-962d053c3597"/>
-				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
-			</image>
 		</band>
 	</summary>
 </jasperReport>

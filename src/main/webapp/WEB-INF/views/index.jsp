@@ -7,6 +7,8 @@
 <%@ taglib prefix="sql" uri="http://java.sun.com/jstl/sql" %>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Home</title>
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.mCustomScrollbar_v3.0.2.css" />" >
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.fancybox_v2.1.5.css" />" >
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/bootstrap.min_v3.2.css" />" >
@@ -21,7 +23,7 @@
 	<div id="container">
 		<div id="header">
 			<div class="logo">
-				<a style="height: 70px;width: 250px;display: block; " href="#"></a>
+				<a style="height: 70px;width: 250px;display: block;" href="#"></a>
 			</div>
 		</div>
 		<div id="content">
