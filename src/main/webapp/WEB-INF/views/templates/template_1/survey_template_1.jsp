@@ -28,16 +28,16 @@
 		<div id="content">
 			<section class="tabs">
 				<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
-				<label for="tab-1" class="tab-label-1">Section 1</label>
+				<label for="tab-1" class="tab-label-1">Planner 1</label>
 		
 				<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
-				<label for="tab-2" class="tab-label-2">Section 2</label>
+				<label for="tab-2" class="tab-label-2">Planner 2</label>
 		
 				<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
-				<label for="tab-3" class="tab-label-3">Section 3</label>
+				<label for="tab-3" class="tab-label-3">Planner 3</label>
 			
 				<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
-				<label for="tab-4" class="tab-label-4">Section 4</label>
+				<label for="tab-4" class="tab-label-4">Proposed Keywords</label>
 			
 				<div class="clear-shadow"></div>
 				
@@ -57,6 +57,14 @@
 				</div>
 			</section>
 		</div>
+		<div id ="footer">
+			<p>Copyright Panpages © 2015 All Rights Reserved</p>
+		</div>
 	</div>
+	<script type="text/javascript">
+	 $(window).load(function(){
+	     $("#content").mCustomScrollbar();
+	 });
+	</script>
 </body>
 </html>

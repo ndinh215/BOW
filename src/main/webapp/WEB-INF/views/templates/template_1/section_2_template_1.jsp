@@ -8,33 +8,30 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Planner 2</title>
 </head>
 <body>
 	<div class="tab-section">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h1>MARKETING REVIEW &amp; STRATEGY</h1>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-				
 			</div>
 		</div>
 		<div class="row">
 			<h3>2014 MARKETING CAMPAIGN</h3>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<p><input name="fields['malaysia-panpages-2014-marketing-campaign']" id="malaysia-panpages-2014-marketing-campaign" type="checkbox" value="false">Malaysia PanPages</p>
-				<p><input name="fields['google-adWords-search-mobile-2014-marketing-campaign']" id="google-adWords-search-mobile-2014-marketing-campaign" type="checkbox" value="false">Google AdWords Search &amp; Mobile</p>
-				<p><input name="fields['google-display-network-2014-marketing-campaign']" id="google-display-network-2014-marketing-campaign" type="checkbox" value="false">Google Display Network</p>
-				<p><input name="fields['yahoo-search-2014-marketing-campaign']" id="yahoo-search-2014-marketing-campaign" type="checkbox" value="false">Yahoo! Search</p>
-				<p><input name="fields['yahoo-display-2014-marketing-campaign']" id="yahoo-display-2014-marketing-campaign" type="checkbox" value="false">Yahoo! Display</p>
+				<p><input name="fields['campaign-malaysia-panpages']" id="malaysia-panpages-2014-marketing-campaign" type="checkbox" value="false">Malaysia PanPages</p>
+				<p><input name="fields['campaign-google-adwords-search-mobile']" id="google-adWords-search-mobile-2014-marketing-campaign" type="checkbox" value="false">Google AdWords Search &amp; Mobile</p>
+				<p><input name="fields['campaign-google-display-network']" id="google-display-network-2014-marketing-campaign" type="checkbox" value="false">Google Display Network</p>
+				<p><input name="fields['campaign-yahoo-search']" id="yahoo-search-2014-marketing-campaign" type="checkbox" value="false">Yahoo! Search</p>
+				<p><input name="fields['campaign-yahoo-display']" id="yahoo-display-2014-marketing-campaign" type="checkbox" value="false">Yahoo! Display</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<p><input name="fields['youtube-ads-2014-marketing-campaign']" id="youtube-ads-2014-marketing-campaign" type="checkbox" value="false">YouTube Ads</p>
-				<p><input name="fields['facebook-ads-2014-marketing-campaign']" id="facebook-ads-2014-marketing-campaign" type="checkbox" value="false">Facebook Ads</p>
-				<p><input name="fields['pan-360-2014-marketing-campaign']" id="pan-360-2014-marketing-campaign" type="checkbox" value="false">Pan 360°</p>
-				<p><input name="fields['alibaba-com-2014-marketing-campaign']" id="alibaba-com-2014-marketing-campaign" type="checkbox" value="false">Alibaba.com</p>
-				<p><input name="fields['super-pages-2014-marketing-campaign']" id="super-pages-2014-marketing-campaign" type="checkbox" value="false">Super Pages</p>
+				<p><input name="fields['campaign-youtube-ads']" id="youtube-ads-2014-marketing-campaign" type="checkbox" value="false">YouTube Ads</p>
+				<p><input name="fields['campaign-facebook-ads']" id="facebook-ads-2014-marketing-campaign" type="checkbox" value="false">Facebook Ads</p>
+				<p><input name="fields['campaign-pan-360']" id="pan-360-2014-marketing-campaign" type="checkbox" value="false">Pan 360°</p>
+				<p><input name="fields['campaign-alibaba-com']" id="alibaba-com-2014-marketing-campaign" type="checkbox" value="false">Alibaba.com</p>
+				<p><input name="fields['campaign-super-pages']" id="super-pages-2014-marketing-campaign" type="checkbox" value="false">Super Pages</p>
 			</div>
 		</div>
 		<div class="row">
@@ -43,7 +40,7 @@
 				<table style="width:100%">
 					<tr>
 						<td>2014 Advertising Investment</td>
-						<td>RM<input name="fields['2014-advertising-investment']" id="2014-advertising-investment" type="text"></td>		
+						<td><input name="fields['2014-advertising-investment']" id="2014-advertising-investment" type="text">RM</td>		
 					</tr>
 					<tr>
 						<td>Website Visits</td>
@@ -81,7 +78,7 @@
 				<p><input name="fields['highlight-unique-selling-point']" id="highlight-unique-selling-point" type="checkbox" value="false">Highlight Unique Selling Point</p>
 				<p><input name="fields['include-certification-for-better-credential']" id="include-certification-for-better-credential" type="checkbox" value="false">Include Certification For Better Credential</p>
 				<p><input name="fields['enhance-product-picture-quality']" id="enhance-product-picture-quality" type="checkbox" value="false">Enhance Product Picture Quality</p>
-				<p><input name="fields['others-2015-action-plan-for-improvement']" id="others-2015-action-plan-for-improvement" type="checkbox" value="false">Others:<input name="fields['others-2015-action-plan-for-improvement-text']" id="others-2015-action-plan-for-improvement-text" type="text"/></p>
+				<p><input name="fields['plan-for-improvement-others']" id="others-2015-action-plan-for-improvement" type="checkbox" value="false">Others:<input name="fields['plan-for-improvement-others-text']" id="others-2015-action-plan-for-improvement-text" type="text"/></p>
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -160,18 +157,18 @@
 		<div class="row">
 			<h3>RECOMMENDED SOLUTIONS</h3>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<p><input name="fields['malaysia-panpages-recommended-solutions']" id="malaysia-panpages-recommended-solutions" type="checkbox" value="false">Malaysia PanPages</p>
-				<p><input name="fields['google-adWords-search-mobile-recommended-solutions']" id="google-adWords-search-mobile-recommended-solutions" type="checkbox" value="false">Google AdWords Search &amp; Mobile</p>
-				<p><input name="fields['google-display-network-recommended-solutions']" id="google-display-network-recommended-solutions" type="checkbox" value="false">Google Display Network</p>
-				<p><input name="fields['yahoo-search-recommended-solutions']" id="yahoo-search-recommended-solutions" type="checkbox" value="false">Yahoo! Search</p>
-				<p><input name="fields['yahoo-display-recommended-solutions']" id="yahoo-display-recommended-solutions" type="checkbox" value="false">Yahoo! Display</p>
+				<p><input name="fields['solutions-malaysia-panpages']" id="malaysia-panpages-recommended-solutions" type="checkbox" value="false">Malaysia PanPages</p>
+				<p><input name="fields['solutions-google-adwords-search-mobile']" id="google-adWords-search-mobile-recommended-solutions" type="checkbox" value="false">Google AdWords Search &amp; Mobile</p>
+				<p><input name="fields['solutions-google-display-network']" id="google-display-network-recommended-solutions" type="checkbox" value="false">Google Display Network</p>
+				<p><input name="fields['solutions-yahoo-search']" id="yahoo-search-recommended-solutions" type="checkbox" value="false">Yahoo! Search</p>
+				<p><input name="fields['solutions-yahoo-display']" id="yahoo-display-recommended-solutions" type="checkbox" value="false">Yahoo! Display</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<p><input name="fields['youtube-ads-recommended-solutions']" id="youtube-ads-recommended-solutions" type="checkbox" value="false">YouTube Ads</p>
-				<p><input name="fields['facebook-ads-recommended-solutions']" id="facebook-ads-recommended-solutions" type="checkbox" value="false">Facebook Ads</p>
-				<p><input name="fields['pan-360-recommended-solutions']" id="pan-360-recommended-solutions" type="checkbox" value="false">Pan 360°</p>
-				<p><input name="fields['alibaba-com-recommended-solutions']" id="alibaba-com-recommended-solutions" type="checkbox" value="false">Alibaba.com</p>
-				<p><input name="fields['super-pages-recommended-solutions']" id="super-pages-recommended-solutions" type="checkbox" value="false">Super Pages</p>
+				<p><input name="fields['solutions-youtube-ads']" id="youtube-ads-recommended-solutions" type="checkbox" value="false">YouTube Ads</p>
+				<p><input name="fields['solutions-facebook-ads']" id="facebook-ads-recommended-solutions" type="checkbox" value="false">Facebook Ads</p>
+				<p><input name="fields['solutions-pan-360']" id="pan-360-recommended-solutions" type="checkbox" value="false">Pan 360°</p>
+				<p><input name="fields['solutions-alibaba-com']" id="alibaba-com-recommended-solutions" type="checkbox" value="false">Alibaba.com</p>
+				<p><input name="fields['solutions-super-pages']" id="super-pages-recommended-solutions" type="checkbox" value="false">Super Pages</p>
 			</div>
 		</div>
 	</div>

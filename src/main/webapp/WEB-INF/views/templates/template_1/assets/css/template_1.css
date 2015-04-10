@@ -149,3 +149,9 @@ th,td {
 .geographical-covegare{
 	background:url() repeat-x;	
 }
+
+.title-tab {
+	font-size: 24px;
+  	font-weight: bold;
+  	color: #D4021D;
+}
