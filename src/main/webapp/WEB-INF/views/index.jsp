@@ -21,9 +21,11 @@
 </head>
 <body>
 	<div id="container">
+		<div id = "icon">
+		</div>
 		<div id="header">
 			<div class="logo">
-				<a style="height: 70px;width: 250px;display: block;" href="#"></a>
+				<a href="#"></a>
 			</div>
 			<div id="menu"></div>
 		</div>
@@ -34,14 +36,15 @@ We have one of the most comprehensive and accurate databases of business in Sout
 Any buyer will consult the swarm intelligence before buying. Any seller will listen to the swarm intelligence before selling. The power is shifting to the hands of consumers.</p>
 			<a href="templates.html"><img alt="Click to Join" src="assets/images/start-image.png"/></a>			
 		</div>
-		<div id ="footer">
-			<p>Copyright Panpages © 2015 All Rights Reserved</p>
-		</div>
+	</div>
+	<div id ="footer">
+		<p>Copyright Panpages &copy; 2015 All Rights Reserved</p>
 	</div>
 	<script type="text/javascript">
 	 $(window).load(function(){
 	     $("#content").mCustomScrollbar();
 	 });
 	</script>
+
 </body>
 </html>

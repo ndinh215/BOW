@@ -18,10 +18,13 @@
 </head>
 <body>
 	<div id="container">
+		<div id = "icon">
+		</div>
 		<div id="header">
 			<div class="logo">
-				<a style="height: 70px;width: 250px;display: block; " href="index.html"></a>
+				<a href="#"></a>
 			</div>
+			<div id="menu"></div>
 		</div>
 		<div id="content">
 				<c:forEach items="${templates}" var="template">
@@ -43,9 +46,9 @@
 						</div>
 					</div>
 		</div>
-		<div id ="footer">
-			<p>Copyright Panpages © 2015 All Rights Reserved</p>
-		</div>
+	</div>
+	<div id ="footer">
+		<p>Copyright Panpages © 2015 All Rights Reserved</p>
 	</div>
 </body>
 </html>

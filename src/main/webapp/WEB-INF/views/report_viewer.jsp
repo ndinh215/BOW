@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>List Survey</title>
+<title>View Report</title>
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.mCustomScrollbar_v3.0.2.css" />" >
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.fancybox_v2.1.5.css" />" >
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/bootstrap.min_v3.2.css" />" >
@@ -29,20 +29,21 @@
 </head>
 <body>
 	<div id="container">
+		<div id = "icon">
+		</div>
 		<div id="header">
 			<div class="logo">
-				<a style="height: 70px;width: 250px;display: block; " href="index.html"></a>
+				<a href="#"></a>
 			</div>
+			<div id="menu"></div>
 		</div>
 		<div id="content">
-			<p>Thank for your survey's submitting...</p>
-			<p>Please click on <a href="<c:url value="${reportPath}" />"> this </a> to view your survey.</p>
+			<p>Please click on <a href="<c:url value="${reportPath}" />"> this </a> to view your survey.</p>		
 		</div>
-		
-		<a href="<c:url value="${reportPath}" />">download</a>
-		<div id ="footer">
-			<p>Copyright Panpages © 2015 All Rights Reserved</p>
-		</div>
+	</div>
+	<div id ="footer">
+		<p>Copyright Panpages &copy; 2015 All Rights Reserved</p>
 	</div>
 </body>
 </html>
+
