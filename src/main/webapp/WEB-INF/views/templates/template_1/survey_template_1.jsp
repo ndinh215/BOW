@@ -14,7 +14,11 @@
 	
 	<link href="<c:url value="/template_assets/template_1/assets/css/template_1.css" />" rel="stylesheet">
 	
-	<script src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />/>"></script>
+	<script src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />"></script>
+	
+	<script src="<c:url value="/assets/js/jquery.mCustomScrollbar_v3.0.2 .js" />"></script>
+	
+	<link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.mCustomScrollbar_v3.0.2.css" />" >
 
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>Survey template 1</title>

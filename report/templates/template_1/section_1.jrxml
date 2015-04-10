@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="2015 ADVERTISING PLANNER" pageWidth="585" pageHeight="960" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="89cc2169-c366-460f-a825-86120bde60b5">
 	<property name="ireport.zoom" value="1.2100000000000013"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="296"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
@@ -880,7 +880,7 @@
 			</image>
 			<image>
 				<reportElement x="20" y="386" width="20" height="20" uuid="9920f7aa-72f8-48a5-a298-1c86c912953f"/>
-				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("kuala-lumpur", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() == "true" ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("kuala-lumpur", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="20" y="406" width="20" height="20" uuid="5c352f3e-cf39-4d32-98ff-96c05efabf9d"/>
@@ -1108,7 +1108,7 @@
 				<textElement verticalAlignment="Middle">
 					<font isUnderline="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("geo-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("geo-others-text", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="220" y="106" width="43" height="20" uuid="6ea2fec8-019e-4c92-b92a-a3d8941fb0f5"/>
