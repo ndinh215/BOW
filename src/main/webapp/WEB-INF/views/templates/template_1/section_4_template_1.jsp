@@ -8,16 +8,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Proposed Keywords</title>
 </head>
 <body>
 	<div class="tab-section">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h1>2015 INVESTMENT PLAN</h1>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-				
 			</div>
 		</div>
 		<form>
@@ -71,11 +68,11 @@
 					</tr>
 					<tr>
 						<td>Average Cost per Click</td>
-						<td>$<input name="fields['average-cost-per-click']" id="average-cost-per-click"/></td> 
+						<td><input name="fields['average-cost-per-click']" id="average-cost-per-click"/>$</td> 
 					</tr>
 					<tr>
 						<td>Assumed CTR for Search</td>
-						<td><input name="fields['assumed-CTR-for-search']" id="assumed-CTR-for-search"/></td> 
+						<td><input name="fields['assumed-ctr-for-search']" id="assumed-CTR-for-search"/></td> 
 					</tr>
 					<tr>
 						<td>Est. Clicks Assuming 3% CTR (100% Share of Voice)</td>
@@ -83,11 +80,11 @@
 					</tr>
 					<tr>
 						<td>Est. Monthly Investment (100% Share of Voice)</td>
-						<td>$<input name="fields['est-monthly-investment-100']" id="est-monthly-investment-100"/></td> 
+						<td><input name="fields['est-monthly-investment-100']" id="est-monthly-investment-100"/>$</td> 
 					</tr>
 					<tr>
 						<td>Est. Monthly Investment (50% Share of Voice)</td>
-						<td>$<input name="fields['est-monthly-investment-50']" id="est-monthly-investment-50"/></td> 
+						<td><input name="fields['est-monthly-investment-50']" id="est-monthly-investment-50"/>$</td> 
 					</tr>
 				</table>
 			</div>

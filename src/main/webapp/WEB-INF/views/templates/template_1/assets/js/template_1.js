@@ -2,6 +2,7 @@ $( document ).ready(function() {
 	/* Section1 */
 	function calculateSection1() {
 		var revenueIncreased = $("#revenue-increased-input").val();
+		
 		if(!$.isNumeric(revenueIncreased))
 		{
 			$("#revenue-increased-input-error").text("Please input a number in Revenue Increased field!");
@@ -76,8 +77,9 @@ $( document ).ready(function() {
 		var monthlyTraffic =(trafficRequired/campaignPeriod).toFixed(2);
 		$("#monthly-traffic-output").val(monthlyTraffic);
 		
-		var avgCostperclick = 4.17;
+		var avgCostperclick = $("#average-cost-per-click").val();
 		$("#avg-cost-per-click-output").val(avgCostperclick);
+		alert(avgCostperclick);
 		
 		var estimatedMonthlybudget = (monthlyTraffic * avgCostperclick).toFixed(2);
 		$("#estimated-monthly-budget-output").val(estimatedMonthlybudget);
@@ -1554,7 +1556,7 @@ $( document ).ready(function() {
 				$("#avg-monthly-searches-input").val('');
 			} else{
 				$("#suggested-bid-input").focus();
-				$("#avg-monthly-searches-input").val('');
+				$("#suggested-bid-input").val('');
 			}
 			return;
 		}	
