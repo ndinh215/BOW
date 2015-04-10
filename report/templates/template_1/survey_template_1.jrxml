@@ -67,6 +67,9 @@
 			</break>
 			<subreport>
 				<reportElement x="0" y="272" width="585" height="61" uuid="cb3c52c6-876d-49b8-b0df-91664da5ca72"/>
+				<subreportParameter name="sections">
+					<subreportParameterExpression><![CDATA[$F{sections}]]></subreportParameterExpression>
+				</subreportParameter>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource(com.panpages.bow.model.utils.SurveyUtils.findFieldsWithFieldTemplateSlugName("proposed-keyword", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("proposed-keyword",$F{sections})).getFields()))]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/section_4.jasper"]]></subreportExpression>
 			</subreport>
