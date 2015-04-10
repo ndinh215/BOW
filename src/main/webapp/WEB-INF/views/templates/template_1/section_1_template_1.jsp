@@ -12,16 +12,17 @@
 <title>Planner 1</title>
 <script src="<c:url value="/template_assets/template_1/assets/js/jquery.min_v2.1.3.js" />"></script>
 <script src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />"></script>
+<script src="<c:url value="/assets/js/jquery.mCustomScrollbar_v3.0.2 .js" />"></script>
+<link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.mCustomScrollbar_v3.0.2.css" />" >
 </head>
 <body>
-	<div class="tab-section">
+	<div class="tab-section" style ="text-align: left">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h1 class="title-tab">2015 ADVERTISING PLANNER</h1>
 			</div>
 		</div>
-		<form:form method="POST" modelAttribute="surveyForm" action="survey_1.html">
-			<div class="row">
+			<div class="row section-1">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<p>Revenue Increased (*):</p>
 				</div>
@@ -257,8 +258,11 @@
 				<p><input type="checkbox" name="fields['female']" id="female" value="false">Female</p>
 			</div>
 		</div>
-		<input type ="submit" value ="OK">
-		</form:form>
+		<script type="text/javascript">
+	 $(window).load(function(){
+	     $(".tab-section").mCustomScrollbar();
+	 });
+	</script>
 	</div>
 </body>
 </html>

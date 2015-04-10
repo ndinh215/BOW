@@ -94,13 +94,3 @@ height: 50px;
   position: relative;
   z-index: 999;
 }
-#social-icon{
-  background-image: url("../images/social-icon.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 380px 200px;
-  height: 200px;
-  position: relative;
-  right: 194px;
-  z-index: 999;
-}

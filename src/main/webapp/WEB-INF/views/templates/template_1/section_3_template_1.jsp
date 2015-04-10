@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="tab-section">
-		<div class="row">
+		<div class="row" style="text-align: left">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h1>2015 INVESTMENT PLAN</h1>
 			</div>

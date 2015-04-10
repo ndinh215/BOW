@@ -18,7 +18,7 @@
 			</div>
 		</div>
 		<form>
-			<div class="row">
+			<div class="row" style="text-align: left">
 				<p id="mesage-error-section4"></p>
 			</div>
 			<div class="row">
