@@ -17,13 +17,7 @@
 <script src="<c:url value="/assets/js/home.js" />"></script>
 <script type="text/javascript">
 	$( document).ready(function() {
-		var iframe = $("#pdf-viewer-iframe")[0];
-
-	   
-	        var ifTitle = iframe.contentDocument.title;
-	        if ( ifTitle.indexOf("404")>=0 ) {
-		        location.reload();
-	        }
+		
 	});
 </script>
 </head>
