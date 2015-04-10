@@ -27,6 +27,7 @@
 			<div id="menu"></div>
 		</div>
 		<div id="content">
+			<h2 style="margin: 30px;color: rgb(212, 2, 29);">List Of Survey</h2>
 				<c:forEach items="${templates}" var="template">
 					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 						<div id ="survey-image" >

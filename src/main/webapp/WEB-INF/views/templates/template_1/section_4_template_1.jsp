@@ -45,12 +45,12 @@
 					<p><input type="text" name="fields['suggested-bid-input']" id="suggested-bid-input"></p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" style="text-align: center;">
 				<input type="button" value="Add" id="add-new">
 			</div>
 		</form>
 		<div class="row">
-			<table  id="table-keyword">
+			<table  id="table-keyword" style="width: 100%;">
 				<tr>
 					<th>Keyword</th>
 					<th>Avg. Monthly Searches (exact match only)</th>		
@@ -60,7 +60,7 @@
 			</table>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding: 0;margin:0;">
 				<table>
 					<tr>
 						<td>Total Est. Impressions (100% Share of Voice)</td>

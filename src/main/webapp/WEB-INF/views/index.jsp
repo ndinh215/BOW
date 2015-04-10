@@ -31,9 +31,9 @@
 		</div>
 		<div id="content">
 			<img src="assets/images/content-home.jpg"/>
-			<p>Swarm intelligence is always right. The market will tell you what they actually want and at what price. If you listen closely to the content in the internet, you can hear the world thinks.
-We have one of the most comprehensive and accurate databases of business in South East Asia. We have a big team for data collection. From the data collect we format them into structured information that you can use. What, how and when you use the information will become the swarm intelligence.
-Any buyer will consult the swarm intelligence before buying. Any seller will listen to the swarm intelligence before selling. The power is shifting to the hands of consumers.</p>
+			<p>PanPages Berhad (formerly known as CBSA Berhad), is a listed company specializing in the areas of Search and Advertising (S&A) and Information Technology (IT). PanPages S&A segment comprises online local business platforms, print directories and content licensing. From the strengths of its technology platforms and large database across South East Asia, PanPages provide B2B multi-platform medias search solutions. Customers can choose to advertise online on different platform such as Google AdWords, Facebook, Youtube, PanPages and even reach out to world traders through Alibaba.com. Malaysia. 
+On the other hand, PanPages IT business segment is responsible for RFID Solutions, e-Security solutions e-Procurement solutions, could computing and infrastructure solutions. PanPages is listed on the Main Market of Bursa Malaysia. A listed company in Malaysia must adhere to strict regulations in corporate governance and transparency based on international standards.
+In PanPages, we pride ourselves of developing excellent technology and search solutions by passionate people. We have the market coverage throughout South East Asia with offices in major cities.</p>
 			<a href="templates.html"><img alt="Click to Join" src="assets/images/start-image.png"/></a>			
 		</div>
 	</div>

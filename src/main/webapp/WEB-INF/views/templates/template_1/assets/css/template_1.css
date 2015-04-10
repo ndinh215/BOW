@@ -6,7 +6,9 @@
 	/*margin: 40px auto;
 	width: 750px;*/
 }
-
+.row{
+	margin: 0 !important;
+}
 .tabs>input {
 	position: absolute;
 	z-index: 1000;
@@ -30,13 +32,13 @@
 }
 
 .tabs label {
-	background: #5ba4a4;
-	background: -moz-linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5ba4a4), color-stop(100%,#4e8c8a));
-	background: -webkit-linear-gradient(top, #5ba4a4 0%,#4e8c8a 100%);
-	background: -o-linear-gradient(top, #5ba4a4 0%,#4e8c8a 100%);
-	background: -ms-linear-gradient(top, #5ba4a4 0%,#4e8c8a 100%);
-	background: linear-gradient(top, #5ba4a4 0%,#4e8c8a 100%);
+	background: #D4021D;
+	background: -moz-linear-gradient(top, #D4021D 0%, #D4021D 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D4021D), color-stop(100%,#D4021D));
+	background: -webkit-linear-gradient(top, #D4021D 0%,#D4021D 100%);
+	background: -o-linear-gradient(top, #D4021D 0%,#D4021D 100%);
+	background: -ms-linear-gradient(top, #D4021D 0%,#D4021D 100%);
+	background: linear-gradient(top, #D4021D 0%,#D4021D 100%);
 	font-size: 15px;
 	line-height: 40px;
 	/*height: 40px;*/
@@ -53,6 +55,12 @@
 	text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
     border-radius: 3px 3px 0 0;
     box-shadow: 2px 0 2px rgba(0,0,0,0.1), -2px 0 2px rgba(0,0,0,0.1);
+    color: white;
+}
+.tabs input:checked + label {
+    background: #fff;
+	  z-index: 6;
+  color: rgb(212, 2, 29);
 }
 
 .tabs label:after {
@@ -87,10 +95,6 @@
     z-index: 1;
 }
 
-.tabs input:checked + label {
-    background: #fff;
-	z-index: 6;
-}
 
 .clear-shadow {
 	clear: both;
@@ -145,6 +149,7 @@
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    width: 100%;
 }
 th,td {
     padding: 15px;
