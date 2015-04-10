@@ -25,6 +25,7 @@
 			<div class="logo">
 				<a style="height: 70px;width: 250px;display: block;" href="#"></a>
 			</div>
+			<div id="menu"></div>
 		</div>
 		<div id="content">
 			<img src="assets/images/content-home.jpg"/>

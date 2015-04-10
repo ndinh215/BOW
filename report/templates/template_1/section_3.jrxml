@@ -1296,8 +1296,8 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="471" y="20" width="100" height="95" uuid="dbe92e71-986c-419a-b09a-9c683bb59631"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("option-a-malaysia-panpages", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></textFieldExpression>
+				<reportElement x="314" y="19" width="100" height="20" uuid="051cfc6e-1097-468b-9bc8-4c218e8f9cee"/>
+				<textFieldExpression><![CDATA[ $P{sections}]]></textFieldExpression>
 			</textField>
 		</band>
 	</summary>
