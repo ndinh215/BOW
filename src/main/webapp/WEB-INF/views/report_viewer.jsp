@@ -38,7 +38,7 @@
 			<div id="menu"></div>
 		</div>
 		<div id="content">
-			<p>Please click on <a href="<c:url value="${reportPath}" />"> this </a> to view your survey.</p>		
+			<a href="<c:url value="${reportPath}" />"><img alt="Click to Join" src="assets/images/view-report.png"/></a>
 		</div>
 	</div>
 	<div id ="footer">
