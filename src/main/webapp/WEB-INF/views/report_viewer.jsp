@@ -15,6 +15,17 @@
 <script src="<c:url value="/assets/js/jquery.fancybox_v2.1.5.js" />"></script>
 <script src="<c:url value="/assets/js/jquery.mCustomScrollbar_v3.0.2 .js" />"></script>
 <script src="<c:url value="/assets/js/home.js" />"></script>
+<script type="text/javascript">
+	$( document).ready(function() {
+		var iframe = $("#pdf-viewer-iframe")[0];
+
+	   
+	        var ifTitle = iframe.contentDocument.title;
+	        if ( ifTitle.indexOf("404")>=0 ) {
+		        location.reload();
+	        }
+	});
+</script>
 </head>
 <body>
 	<div id="container">
@@ -24,8 +35,11 @@
 			</div>
 		</div>
 		<div id="content">
-			<iframe height="100%" width="100%" src="<c:url value="${reportPath}" />"></iframe>
+			<p>Thank for your survey's submitting...</p>
+			<p>Please click on <a href="<c:url value="${reportPath}" />"> this </a> to view your survey.</p>
 		</div>
+		
+		<a href="<c:url value="${reportPath}" />">download</a>
 		<div id ="footer">
 			<p>Copyright Panpages © 2015 All Rights Reserved</p>
 		</div>
