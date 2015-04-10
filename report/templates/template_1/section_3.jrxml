@@ -225,7 +225,7 @@
 			</image>
 			<image>
 				<reportElement x="394" y="120" width="20" height="20" uuid="c65fc398-292d-4602-adff-93a1f4b4abaa"/>
-				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("option-b", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue() == null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("option-b", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="0" y="151" width="175" height="20" uuid="f9dc8cd3-ceb7-42e1-9953-82db9e7bba85"/>
@@ -1297,7 +1297,7 @@
 			</textField>
 			<textField>
 				<reportElement x="314" y="19" width="100" height="20" uuid="051cfc6e-1097-468b-9bc8-4c218e8f9cee"/>
-				<textFieldExpression><![CDATA[ $P{sections}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{sections}]]></textFieldExpression>
 			</textField>
 		</band>
 	</summary>
