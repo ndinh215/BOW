@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home</title>
+<title>PANPAGES's SURVEYs</title>
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.mCustomScrollbar_v3.0.2.css" />" >
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.fancybox_v2.1.5.css" />" >
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/bootstrap.min_v3.2.css" />" >
@@ -53,14 +53,13 @@ In PanPages, we pride ourselves of developing excellent technology and search so
 					</a>							
 				</div>
 			</div>
-			<p>PanPages Berhad (formerly known as CBSA Berhad), is a listed company specializing in the areas of Search and Advertising (SA) and Information Technology (IT). PanPages SA segment comprises online local business platforms, print directories and content licensing. From the strengths of its technology platforms and large database across South East Asia, PanPages provide B2B multi-platform medias search solutions. Customers can choose to advertise online on different platform such as Google AdWords, Facebook, Youtube, PanPages and even reach out to world traders through Alibaba.com. Malaysia. 
-On the other hand, PanPages IT business segment is responsible for RFID Solutions, e-Security solutions e-Procurement solutions, could computing and infrastructure solutions. PanPages is listed on the Main Market of Bursa Malaysia. A listed company in Malaysia must adhere to strict regulations in corporate governance and transparency based on international standards.
-In PanPages, we pride ourselves of developing excellent technology and search solutions by passionate people. We have the market coverage throughout South East Asia with offices in major cities.</p>
-			
-			<a href="templates.html"><img alt="Click to Join" src="assets/images/start-image.png"/></a>			
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top:45px;">
+				<p>Through these surveys, we would like to understand your indeed need and bring back you with real effectiveness in your business. </p>
+				<a href="templates.html"><img alt="Click to Join" src="assets/images/start-image.png"/></a>	
+			</div>	
 		</div>
 	</div>
-	<div id ="footer">
+	<div class="content" id ="footer">
 		<p>Copyright Panpages &copy; 2015 All Rights Reserved</p>
 	</div>
 	<script type="text/javascript">
@@ -68,10 +67,10 @@ In PanPages, we pride ourselves of developing excellent technology and search so
 	     $("#content").mCustomScrollbar();
 	});
 	$(document).ready(function() {
-		  $(".fancybox").fancybox({
+		$(".fancybox").fancybox({
 		  "type": "image"
 		});
-		 });
+	});
 	</script>
 </body>
 </html>

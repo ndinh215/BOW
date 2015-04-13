@@ -14,69 +14,73 @@
 <script
 	src="<c:url value="/template_assets/template_1/assets/js/jquery.min_v2.1.3.js" />"></script>
 
-<script	src="<c:url value="/template_assets/template_1/assets/js/bootstrap.min_v3.3.4.js" />"></script>
+<script
+	src="<c:url value="/template_assets/template_1/assets/js/bootstrap.min_v3.3.4.js" />"></script>
 
-<script	src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />"></script>
+<script
+	src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />"></script>
 
-<script	src="<c:url value="/assets/js/jquery.mCustomScrollbar_v3.0.2 .js" />"></script>
+<script
+	src="<c:url value="/assets/js/jquery.mCustomScrollbar_v3.0.2 .js" />"></script>
 
-<link rel="stylesheet" type="text/css"	href="<c:url value="/assets/css/jquery.mCustomScrollbar_v3.0.2.css" />">
-<link rel="stylesheet" type="text/css" href="<c:url value="/template_assets/template_1/assets/css/template_1.css" />" >
+<link rel="stylesheet" type="text/css"
+	href="<c:url value="/assets/css/jquery.mCustomScrollbar_v3.0.2.css" />">
+<link rel="stylesheet" type="text/css"
+	href="<c:url value="/template_assets/template_1/assets/css/template_1.css" />">
+
+<link rel="stylesheet"
+	href="<c:url value="/template_assets/template_1/assets/css/jquery-ui_v1.11.4.css" />">
+<script
+	src="<c:url value="/template_assets/template_1/assets/js/jquery-ui_v1.11.4.js" />"></script>
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Survey template 1</title>
+<title>SURVEY TEMPLATE 1</title>
 </head>
 <body>
-	<div class="container" style="background:none;  padding-top: 0;  top: 0;  padding: 0;">
+	<div class="container"
+		style="background: none; padding-top: 0; top: 0; padding: 0;">
 		<div id="header">
-			<img src="assets/images/header.png"/>
+			<img src="assets/images/header.png" />
 			<div id="menu"></div>
 		</div>
 	</div>
-	<div class ="container" id ="main-content">
+	<div class="container" id="main-content">
+
 		<form:form method="POST" modelAttribute="surveyForm"
 			action="survey_1.html">
 			<div>
-			<div id="content">
-				<div id="con">
-					<section class="tabs">
-						<input id="tab-1" type="radio" name="radio-set"
-							class="tab-selector-1" checked="checked" /> <label for="tab-1"
-							class="tab-label-1">Planner 1</label> <input id="tab-2"
-							type="radio" name="radio-set" class="tab-selector-2" /> <label
-							for="tab-2" class="tab-label-2">Planner 2</label> <input
-							id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
-						<label for="tab-3" class="tab-label-3">Planner 3</label> <input
-							id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
-						<label for="tab-4" class="tab-label-4">Proposed Keywords</label>
-
-						<div class="clear-shadow"></div>
-
-						<div class="row content">
-							<div class="content-1">
-								<jsp:include page="section_1_template_1.jsp"></jsp:include>
-							</div>
-							<div class="content-2">
-								<jsp:include page="section_2_template_1.jsp"></jsp:include>
-							</div>
-							<div class="content-3">
-								<jsp:include page="section_3_template_1.jsp"></jsp:include>
-							</div>
-							<div class="content-4">
-								<jsp:include page="section_4_template_1.jsp"></jsp:include>
-							</div>
-						</div>
-					</section>
+				<div id="tabs">
+					<ul>
+						<li><a href="#planner-1"><span>Planner 1</span></a></li>
+						<li><a href="#planner-2"><span>Planner 2</span></a></li>
+						<li><a href="#planner-3"><span>Planner 3</span></a></li>
+						<li><a href="#proposed-keywords"><span>Proposed
+									Keywords</span></a></li>
+					</ul>
+					<div id="planner-1">
+						<jsp:include page="section_1_template_1.jsp"></jsp:include>
+					</div>
+					<div id="planner-2">
+						<jsp:include page="section_2_template_1.jsp"></jsp:include>
+					</div>
+					<div id="planner-3">
+						<jsp:include page="section_3_template_1.jsp"></jsp:include>
+					</div>
+					<div id="proposed-keywords">
+						<jsp:include page="section_4_template_1.jsp"></jsp:include>
+					</div>
 				</div>
-			</div>
-			<div id="sub">
-				<input type="submit" value="Submit">
-			</div>
+				<div id="submit-div">
+					<input type="submit" value="SUBMIT">
+				</div>
 			</div>
 		</form:form>
 	</div>
-	<div id="footer">
+	<div class="content" id="footer">
 		<p>Copyright Panpages © 2015 All Rights Reserved</p>
 	</div>
+	<script>
+		$("#tabs").tabs();
+	</script>
 </body>
 </html>

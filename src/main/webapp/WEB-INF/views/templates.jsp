@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>List Of Survey</title>
+<title>LIST OF SURVEYS</title>
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.mCustomScrollbar_v3.0.2.css" />" >
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.fancybox_v2.1.5.css" />" >
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/bootstrap.min_v3.2.css" />" >
@@ -25,7 +25,7 @@
 	</div>
 	<div class ="container" id ="main-content">
 		<div id="content">
-			<h3 style="  margin: 30px 0;">LIST OF SURVEY</h3>
+			<h3 style="  margin: 30px 0;">LIST OF SURVEYS</h3>
 			<c:forEach items="${templates}" var="template">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<div id ="survey-image" >

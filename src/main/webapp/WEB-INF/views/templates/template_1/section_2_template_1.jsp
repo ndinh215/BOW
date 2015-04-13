@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="tab-section">
-		<div class="row" style="text-align: left">
+		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<h1>MARKETING REVIEW &amp; STRATEGY</h1>
 			</div>
@@ -85,7 +85,7 @@
 			<form>
 				<fieldset>
 					<legend>Remarks:</legend>
-					<textarea rows="5" cols="150" name="fields['remarks']" id="remarks"></textarea>
+					<textarea rows="5" style="width: 100%;" name="fields['remarks']" id="remarks"></textarea>
 				</fieldset>
 			</form>
 		</div>

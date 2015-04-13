@@ -8,12 +8,12 @@
 <%@ taglib prefix="sql" uri="http://java.sun.com/jstl/sql" %>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Planner 1</title>
-<script src="<c:url value="/template_assets/template_1/assets/js/jquery.min_v2.1.3.js" />"></script>
-<script src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />"></script>
-<script src="<c:url value="/assets/js/jquery.mCustomScrollbar_v3.0.2 .js" />"></script>
-<link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.mCustomScrollbar_v3.0.2.css" />" >
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> -->
+<!-- <title>Planner 1</title> -->
+<%-- <script src="<c:url value="/template_assets/template_1/assets/js/jquery.min_v2.1.3.js" />"></script> --%>
+<%-- <script src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />"></script> --%>
+<%-- <script src="<c:url value="/assets/js/jquery.mCustomScrollbar_v3.0.2 .js" />"></script> --%>
+<%-- <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/jquery.mCustomScrollbar_v3.0.2.css" />" > --%>
 </head>
 <body>
 	<div class="tab-section" style ="text-align: left">

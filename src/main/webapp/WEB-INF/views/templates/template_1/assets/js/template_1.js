@@ -13,7 +13,7 @@ $( document ).ready(function() {
 			$("#revenue-increased-input-error").text("");
 		}
 		$("#revenue-increased-output").val(revenueIncreased);
-		// 
+		
 		var ARPA = $("#arpa-input").val();
 		if(!$.isNumeric(ARPA))
 		{

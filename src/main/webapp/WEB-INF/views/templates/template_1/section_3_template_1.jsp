@@ -25,7 +25,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<p>Advertiser:<input name="fields['advertiser']" id="advertiser-text" type="text"/></p>
-				<p>Address:<input name="fields['address']" id="address-text" type="text"/></p>
+				<p>Address:&nbsp;&nbsp;&nbsp;<input name="fields['address']" id="address-text" type="text"/></p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<table style="width:100%">
