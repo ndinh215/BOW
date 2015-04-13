@@ -17,12 +17,15 @@
 <script src="<c:url value="/assets/js/home.js" />"></script>
 </head>
 <body>
-	<div class ="container">
+	<div class="container" style="background:none;  padding-top: 0;  top: 0;  padding: 0;">
 		<div id="header">
+			<img src="assets/images/header.png"/>
 			<div id="menu"></div>
 		</div>
+	</div>
+	<div class ="container" id ="main-content">
 		<div id="content">
-			<h2 style="margin: 30px;color: rgb(212, 2, 29);">List Of Survey</h2>
+			<h2 style="margin: 30px;color: rgb(212, 2, 29);">LIST OF SURVEY</h2>
 			<c:forEach items="${templates}" var="template">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<div id ="survey-image" >

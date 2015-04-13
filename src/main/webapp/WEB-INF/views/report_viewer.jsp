@@ -22,10 +22,13 @@
 </script>
 </head>
 <body>
-	<div class ="container">
+	<div class="container" style="background:none;  padding-top: 0;  top: 0;  padding: 0;">
 		<div id="header">
+			<img src="assets/images/header.png"/>
 			<div id="menu"></div>
 		</div>
+	</div>
+	<div class ="container" id ="main-content">
 		<div id="content">
 			<a href="<c:url value="${reportPath}" />"><img alt="Click to Join" src="assets/images/view-report.png"/></a>
 		</div>

@@ -20,10 +20,13 @@
 <script src="<c:url value="/assets/js/home.js" />"></script>
 </head>
 <body>
-	<div class ="container">
+	<div class="container" style="background:none;  padding-top: 0;  top: 0;  padding: 0;">
 		<div id="header">
+			<img src="assets/images/header.png"/>
 			<div id="menu"></div>
 		</div>
+	</div>
+	<div class ="container" id ="main-content">
 		<div id="content">
 			<h3>ABOUT PANPAGES</h3>
 			<p>PanPages Berhad (formerly known as CBSA Berhad), is a listed company specializing in the areas of Search and Advertising (SA) and Information Technology (IT). PanPages SA segment comprises online local business platforms, print directories and content licensing. From the strengths of its technology platforms and large database across South East Asia, PanPages provide B2B multi-platform medias search solutions. Customers can choose to advertise online on different platform such as Google AdWords, Facebook, Youtube, PanPages and even reach out to world traders through Alibaba.com. Malaysia. 
@@ -62,7 +65,7 @@ In PanPages, we pride ourselves of developing excellent technology and search so
 	</div>
 <script type="text/javascript">
 $(window).load(function(){
-    // $("#content").mCustomScrollbar();
+     $("#content").mCustomScrollbar();
 });
 </script>
 <script type="text/javascript">
@@ -70,7 +73,6 @@ $(window).load(function(){
   $(".fancybox").fancybox({
   "type": "image"
 });
-$(".inline").colorbox({inline:true, width:"80%", height:"75%"});
  });
 </script>
 
