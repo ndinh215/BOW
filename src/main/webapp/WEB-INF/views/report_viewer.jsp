@@ -36,6 +36,11 @@
 	<div id ="footer">
 		<p>Copyright Panpages &copy; 2015 All Rights Reserved</p>
 	</div>
+		<script type="text/javascript">
+	$(window).load(function(){
+	     $("#content").mCustomScrollbar();
+	});
+	</script>
 </body>
 </html>
 

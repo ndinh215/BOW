@@ -63,18 +63,15 @@ In PanPages, we pride ourselves of developing excellent technology and search so
 	<div id ="footer">
 		<p>Copyright Panpages &copy; 2015 All Rights Reserved</p>
 	</div>
-<script type="text/javascript">
-$(window).load(function(){
-     $("#content").mCustomScrollbar();
-});
-</script>
-<script type="text/javascript">
- $(document).ready(function() {
-  $(".fancybox").fancybox({
-  "type": "image"
-});
- });
-</script>
-
+	<script type="text/javascript">
+	$(window).load(function(){
+	     $("#content").mCustomScrollbar();
+	});
+	$(document).ready(function() {
+		  $(".fancybox").fancybox({
+		  "type": "image"
+		});
+		 });
+	</script>
 </body>
 </html>

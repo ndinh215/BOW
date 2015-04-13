@@ -14,33 +14,26 @@
 <script
 	src="<c:url value="/template_assets/template_1/assets/js/jquery.min_v2.1.3.js" />"></script>
 
-<script
-	src="<c:url value="/template_assets/template_1/assets/js/bootstrap.min_v3.3.4.js" />"></script>
+<script	src="<c:url value="/template_assets/template_1/assets/js/bootstrap.min_v3.3.4.js" />"></script>
 
-<link
-	href="<c:url value="/template_assets/template_1/assets/css/template_1.css" />"
-	rel="stylesheet">
+<script	src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />"></script>
 
-<script
-	src="<c:url value="/template_assets/template_1/assets/js/template_1.js" />"></script>
+<script	src="<c:url value="/assets/js/jquery.mCustomScrollbar_v3.0.2 .js" />"></script>
 
-<script
-	src="<c:url value="/assets/js/jquery.mCustomScrollbar_v3.0.2 .js" />"></script>
-
-<link rel="stylesheet" type="text/css"
-	href="<c:url value="/assets/css/jquery.mCustomScrollbar_v3.0.2.css" />">
+<link rel="stylesheet" type="text/css"	href="<c:url value="/assets/css/jquery.mCustomScrollbar_v3.0.2.css" />">
+<link rel="stylesheet" type="text/css" href="<c:url value="/template_assets/template_1/assets/css/template_1.css" />" >
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Survey template 1</title>
-<link rel="stylesheet" type="text/css"
-	href="<c:url value="/assets/css/home.css" />">
 </head>
 <body>
-	<div class ="container">
+	<div class="container" style="background:none;  padding-top: 0;  top: 0;  padding: 0;">
 		<div id="header">
+			<img src="assets/images/header.png"/>
 			<div id="menu"></div>
 		</div>
-
+	</div>
+	<div class ="container" id ="main-content">
 		<form:form method="POST" modelAttribute="surveyForm"
 			action="survey_1.html">
 			<div>

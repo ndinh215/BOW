@@ -164,3 +164,71 @@ th,td {
   	font-weight: bold;
   	color: #D4021D;
 }
+body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media (min-width: 768px){
+
+}
+.container {
+  background-image: url("../images/bg-content.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 100px;
+  top: -111px;
+  position: relative;
+}
+#footer{
+  height: 50px;
+  background: rgb(212, 2, 29);
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+#footer p{
+	color: white;
+	text-align: center;
+}
+#content {
+  width: 100%;
+  padding: 50px 50px 30px 70px;
+  text-align: center;
+  height:600px;
+  overflow: auto;
+}
+#content p{
+	  text-align: justify;
+}
+@media (max-width: 768px) {
+	#content {
+	  width: 100%;
+	  padding: 5px;
+
+	}
+	#content img{
+		width: 100%;
+	}
+	#main-content {
+	    top: -45px !important;
+		padding-top: 60px !important;
+		padding-right: 0;
+	}
+}
+#header img{
+	  width: 100%;
+}
+#survey-name a{
+	  font-family: arial;
+  font-size: 20px;
+  color: rgb(44, 41, 41);
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
