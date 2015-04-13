@@ -36,12 +36,8 @@
 	href="<c:url value="/assets/css/home.css" />">
 </head>
 <body>
-	<div id="container">
-		<div id="icon"></div>
+	<div class ="container">
 		<div id="header">
-			<div class="logo">
-				<a href="#"></a>
-			</div>
 			<div id="menu"></div>
 		</div>
 

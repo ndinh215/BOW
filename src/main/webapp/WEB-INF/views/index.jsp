@@ -20,31 +20,59 @@
 <script src="<c:url value="/assets/js/home.js" />"></script>
 </head>
 <body>
-	<div id="container">
-		<div id = "icon">
-		</div>
+	<div class ="container">
 		<div id="header">
-			<div class="logo">
-				<a href="#"></a>
-			</div>
 			<div id="menu"></div>
 		</div>
 		<div id="content">
-			<img src="assets/images/content-home.jpg"/>
-			<p>PanPages Berhad (formerly known as CBSA Berhad), is a listed company specializing in the areas of Search and Advertising (S&A) and Information Technology (IT). PanPages S&A segment comprises online local business platforms, print directories and content licensing. From the strengths of its technology platforms and large database across South East Asia, PanPages provide B2B multi-platform medias search solutions. Customers can choose to advertise online on different platform such as Google AdWords, Facebook, Youtube, PanPages and even reach out to world traders through Alibaba.com. Malaysia. 
+			<h3>ABOUT PANPAGES</h3>
+			<p>PanPages Berhad (formerly known as CBSA Berhad), is a listed company specializing in the areas of Search and Advertising (SA) and Information Technology (IT). PanPages SA segment comprises online local business platforms, print directories and content licensing. From the strengths of its technology platforms and large database across South East Asia, PanPages provide B2B multi-platform medias search solutions. Customers can choose to advertise online on different platform such as Google AdWords, Facebook, Youtube, PanPages and even reach out to world traders through Alibaba.com. Malaysia. 
 On the other hand, PanPages IT business segment is responsible for RFID Solutions, e-Security solutions e-Procurement solutions, could computing and infrastructure solutions. PanPages is listed on the Main Market of Bursa Malaysia. A listed company in Malaysia must adhere to strict regulations in corporate governance and transparency based on international standards.
 In PanPages, we pride ourselves of developing excellent technology and search solutions by passionate people. We have the market coverage throughout South East Asia with offices in major cities.</p>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="padding:0">
+				<div id ="home-about-image" >
+					<a href="assets/images/google-adword.png" class="fancybox" rel="group" title="Google Adword" data-fancybox-group="gallery">
+						<img src="assets/images/google-adword.png"/>
+					</a>							
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="padding:0">
+				<div id ="home-about-image" >
+					<a href="assets/images/facebook-ads.png" class="fancybox" rel="group" title="Facebook Ads" data-fancybox-group="gallery">
+						<img src="assets/images/facebook-ads.png"/>
+					</a>							
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="padding:0">
+				<div id ="home-about-image" >
+					<a href="assets/images/instant-web.png" class="fancybox" rel="group" title="Instant Website" data-fancybox-group="gallery">
+						<img src="assets/images/instant-web.png"/>
+					</a>							
+				</div>
+			</div>
+			<p>PanPages Berhad (formerly known as CBSA Berhad), is a listed company specializing in the areas of Search and Advertising (SA) and Information Technology (IT). PanPages SA segment comprises online local business platforms, print directories and content licensing. From the strengths of its technology platforms and large database across South East Asia, PanPages provide B2B multi-platform medias search solutions. Customers can choose to advertise online on different platform such as Google AdWords, Facebook, Youtube, PanPages and even reach out to world traders through Alibaba.com. Malaysia. 
+On the other hand, PanPages IT business segment is responsible for RFID Solutions, e-Security solutions e-Procurement solutions, could computing and infrastructure solutions. PanPages is listed on the Main Market of Bursa Malaysia. A listed company in Malaysia must adhere to strict regulations in corporate governance and transparency based on international standards.
+In PanPages, we pride ourselves of developing excellent technology and search solutions by passionate people. We have the market coverage throughout South East Asia with offices in major cities.</p>
+			
 			<a href="templates.html"><img alt="Click to Join" src="assets/images/start-image.png"/></a>			
 		</div>
 	</div>
 	<div id ="footer">
 		<p>Copyright Panpages &copy; 2015 All Rights Reserved</p>
 	</div>
-	<script type="text/javascript">
-	 $(window).load(function(){
-	     $("#content").mCustomScrollbar();
-	 });
-	</script>
+<script type="text/javascript">
+$(window).load(function(){
+    // $("#content").mCustomScrollbar();
+});
+</script>
+<script type="text/javascript">
+ $(document).ready(function() {
+  $(".fancybox").fancybox({
+  "type": "image"
+});
+$(".inline").colorbox({inline:true, width:"80%", height:"75%"});
+ });
+</script>
 
 </body>
 </html>

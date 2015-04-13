@@ -8,23 +8,59 @@ body {
    margin: 0;
    padding: 0;
    height: 100%;
-}
-
-#container {
-margin: 0 auto;
-  padding: 0;
-  height: 768px;
-  background-image: url("../images/background.jpg");
-  background-color: white;
-  background-size: 1366px 768px;
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top center;
-  text-align: center;
-  width: 1366px;
-  padding-bottom: 15px;
+  background-size: 100%;
 }
+@media (min-width: 768px){
 
+}
+.container {
+  background-image: url("../images/bg-content.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 100px;
+  margin-top: 220px;
+    min-height: 768px;
+}
+#footer{
+  height: 50px;
+  background: rgb(212, 2, 29);
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+#footer p{
+	color: white;
+	text-align: center;
+}
+#content {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+#content p{
+	  text-align: justify;
+}
+@media (max-width: 768px) {
+	#content {
+	  width: 100%;
+	  padding: 5px;
+
+	}
+	#content img{
+		width: 100%;
+	}
+	.container {
+	    margin-top: 37px !important;
+  		padding-top: 60px !important;
+  		min-height: 500px;
+	}
+}
+/*
 #header {
 background-image: url("../images/cloud.png");
   background-position: top left;
@@ -94,3 +130,4 @@ height: 50px;
   position: relative;
   z-index: 999;
 }
+*/

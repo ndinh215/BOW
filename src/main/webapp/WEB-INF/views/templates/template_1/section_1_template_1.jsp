@@ -258,11 +258,6 @@
 				<p><input type="checkbox" name="fields['female']" id="female" value="false">Female</p>
 			</div>
 		</div>
-		<script type="text/javascript">
-	 $(window).load(function(){
-	     $(".tab-section").mCustomScrollbar();
-	 });
-	</script>
 	</div>
 </body>
 </html>
