@@ -43,8 +43,12 @@ body {
   height:600px;
   overflow: auto;
 }
+#content h3{
+	color: #242424;
+}
 #content p{
 	  text-align: justify;
+	  color: #242424;
 }
 @media (max-width: 768px) {
 	#content {
@@ -65,10 +69,11 @@ body {
 	  width: 100%;
 }
 #survey-name a{
-	  font-family: arial;
-  font-size: 20px;
+  font-family: arial;
+  font-size: 17px;
   color: rgb(44, 41, 41);
   margin-top: 10px;
   display: inline-block;
   font-weight: bold;
+  text-transform: uppercase;
 }

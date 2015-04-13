@@ -74,11 +74,9 @@
 			</div>
 			</div>
 		</form:form>
-
-		<div id="footer">
-			<p>Copyright Panpages © 2015 All Rights Reserved</p>
-		</div>
-
+	</div>
+	<div id="footer">
+		<p>Copyright Panpages © 2015 All Rights Reserved</p>
 	</div>
 </body>
 </html>

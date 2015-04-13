@@ -225,10 +225,11 @@ body {
 	  width: 100%;
 }
 #survey-name a{
-	  font-family: arial;
-  font-size: 20px;
+  font-family: arial;
+  font-size: 17px;
   color: rgb(44, 41, 41);
   margin-top: 10px;
   display: inline-block;
   font-weight: bold;
+  text-transform: uppercase;
 }
