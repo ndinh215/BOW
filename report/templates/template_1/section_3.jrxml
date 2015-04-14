@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.0.3.final using JasperReports Library version 6.0.3  -->
-<!-- 2015-04-15T00:08:38 -->
+<!-- 2015-04-15T02:37:09 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="2015 INVESTMENT PLAN" pageWidth="585" pageHeight="1010" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fae24526-20a2-461e-b8a4-4934cf4ebdfa">
 	<property name="ireport.zoom" value="1.4641000000000006"/>
 	<property name="ireport.x" value="0"/>
@@ -953,7 +953,7 @@
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
-			<textField isBlankWhenNull="false">
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="171" width="87" height="20" backcolor="#FFFF99" uuid="a16a1264-822a-4183-ac8f-ac069e97acc4"/>
 				<box>
 					<pen lineWidth="1.0"/>
@@ -1359,7 +1359,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("proposed-amount", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="276" y="493" width="122" height="20" uuid="86a47b87-11fe-420b-bf29-f32ce9ba8fd8"/>
 				<textElement textAlignment="Center" verticalAlignment="Bottom">
 					<font size="12" isUnderline="false"/>
@@ -1370,14 +1370,14 @@
 				<reportElement x="0" y="870" width="292" height="140" uuid="8277e680-9066-4512-b7c5-4f81a69b620f"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/rm.png"]]></imageExpression>
 			</image>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="109" y="917" width="100" height="20" uuid="8b398a03-6636-41f0-93cc-acc89bad9af7"/>
 				<textElement verticalAlignment="Middle">
 					<font isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("duration", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="109" y="937" width="100" height="20" uuid="b390425d-de1e-4c13-a848-2543ca838218"/>
 				<textElement verticalAlignment="Middle">
 					<font isBold="false"/>
