@@ -928,7 +928,7 @@
 				<textElement verticalAlignment="Middle">
 					<font isUnderline="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("plan-for-improvement-others", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("plan-for-improvement-others-text", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("marketing-review-strategy",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="2" y="482" width="582" height="111" uuid="ba2ad0fb-2503-488c-84c7-7a073588f4a7"/>

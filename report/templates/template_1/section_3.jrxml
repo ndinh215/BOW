@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="2015 INVESTMENT PLAN" pageWidth="585" pageHeight="1010" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fae24526-20a2-461e-b8a4-4934cf4ebdfa">
 	<property name="ireport.zoom" value="1.4641000000000006"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="717"/>
+	<property name="ireport.y" value="525"/>
 	<subDataset name="dataset1" uuid="ef6965b1-a13f-44e2-b88c-fb6990810d23"/>
 	<parameter name="sections" class="java.util.List"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
@@ -1360,7 +1360,7 @@
 			<textField>
 				<reportElement x="276" y="493" width="122" height="20" uuid="86a47b87-11fe-420b-bf29-f32ce9ba8fd8"/>
 				<textElement textAlignment="Center" verticalAlignment="Bottom">
-					<font size="8" isUnderline="false"/>
+					<font size="12" isUnderline="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("terms-conditions", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
