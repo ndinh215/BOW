@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.0.3.final using JasperReports Library version 6.0.3  -->
-<!-- 2015-04-15T00:23:16 -->
+<!-- 2015-04-15T00:45:20 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PROPOSED KEYWORDS" pageWidth="585" pageHeight="802" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="14c4eb3b-0b8d-4fbe-b849-cf639ae67fb0">
 	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="57"/>
@@ -53,17 +53,17 @@
 	</columnHeader>
 	<detail>
 		<band height="23" splitType="Stretch">
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="0" y="1" width="211" height="20" uuid="d8aeb376-8611-4f24-8bef-de57ebc67dc8"/>
 				<textElement verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{value}.split(",")[0]]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="211" y="1" width="197" height="20" uuid="e438ef22-d189-4ea9-b443-15a13d8cfb4a"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{value}.split(",")[1]]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="408" y="1" width="177" height="20" uuid="4249b27f-6f2e-49dd-9c64-8b87a4006984"/>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$F{value}.split(",")[2]]]></textFieldExpression>
@@ -156,27 +156,27 @@
 				</textElement>
 				<text><![CDATA[Total Est. Impressions (100% Share of Voice)]]></text>
 			</staticText>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="345" y="9" width="240" height="20" uuid="c9728963-79f0-44c8-82c4-69b464fff0df"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("total-est-impressions", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("proposed-keyword",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="345" y="29" width="240" height="20" uuid="69607b43-dea7-4219-aa67-bef6881e835a"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("average-cost-per-click", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("proposed-keyword",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="345" y="49" width="240" height="20" uuid="d0e32832-ef23-4ad1-98a3-880d74c856cb"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("assumed-ctr-for-search", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("proposed-keyword",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="345" y="69" width="240" height="20" uuid="d74c4eb9-5fe5-4b0d-82a8-7b189e4c9adb"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("est-clicks-assuming", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("proposed-keyword",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="345" y="89" width="240" height="20" uuid="f574427e-a4f4-4299-83db-c47052e37da9"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("est-monthly-investment-100", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("proposed-keyword",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="345" y="109" width="240" height="20" uuid="5f632290-c59e-4dab-89e0-8cd6c100dcbd"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("est-monthly-investment-50", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("proposed-keyword",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
