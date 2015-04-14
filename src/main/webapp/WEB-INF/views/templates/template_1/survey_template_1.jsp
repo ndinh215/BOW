@@ -45,7 +45,16 @@
 		</div>
 	</div>
 	<div class="container" id="main-content">
-
+		<div id="main-menu">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0">
+				&nbsp;</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0">
+				<a href="index.html"> <span class="menu-item">HOME</span>
+				</a> | <a href="templates.html"> <span class="menu-item">SURVEYS</span>
+				</a> | <a href="index.html"> <span class="menu-item">ABOUT</span>
+				</a>
+			</div>
+		</div>
 		<form:form method="POST" modelAttribute="surveyForm"
 			action="survey_1.html">
 			<div>
@@ -78,7 +87,7 @@
 	</div>
 	<div style="clear: both;"></div>
 	<div id="footer">
-		<p>Copyright Panpages © 2015 All Rights Reserved</p>
+		<p>Copyright <strong>Panpages</strong> © 2015 All Rights Reserved</p>
 	</div>
 	<script>
 		$("#tabs").tabs();

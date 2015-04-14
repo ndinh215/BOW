@@ -193,3 +193,15 @@ ul[role*="tablist"] {
   text-decoration: none;
   font-weight: bold;
 }
+
+.menu-item {
+	color: rgb(212, 2, 29);
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 19px;
+}
+
+#main-menu {
+	font-size: 19px;
+}
+
