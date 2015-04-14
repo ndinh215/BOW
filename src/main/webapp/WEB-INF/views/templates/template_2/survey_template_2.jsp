@@ -33,7 +33,8 @@
 				</tr>
 			</table>
 			<h2>Survey Template 1</h2>
-			<input type="text" name="fields['option-a-malaysia-panpages']">
+			remarks
+			<input type="text" name="fields['remarks']">
 			<input type="text" name="fields['price-option-a-malaysia-panpages']">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">

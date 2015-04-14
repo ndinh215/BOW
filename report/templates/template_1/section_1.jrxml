@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="2015 ADVERTISING PLANNER" pageWidth="585" pageHeight="960" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="89cc2169-c366-460f-a825-86120bde60b5">
 	<property name="ireport.zoom" value="1.2100000000000013"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="747"/>
+	<property name="ireport.y" value="330"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
@@ -908,7 +908,7 @@
 			</image>
 			<image>
 				<reportElement x="20" y="506" width="20" height="20" uuid="8f029756-0da9-487c-b22c-5d795005d83a"/>
-				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("revenue-increased", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("perak",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("perak", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="206" y="407" width="20" height="20" uuid="afa52cac-e75f-4aa3-b7c0-2e15e5cc8056"/>
@@ -984,7 +984,7 @@
 			</image>
 			<image>
 				<reportElement x="263" y="745" width="20" height="20" uuid="4a04507d-9fd5-4885-99de-9039c50320c0"/>
-				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("target-other-text", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
+				<imageExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("target-other", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue() != null ? $P{SUBREPORT_DIR} + "/images/checked.png" : $P{SUBREPORT_DIR} + "/images/unchecked.png"]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="263" y="725" width="20" height="20" uuid="be3f859a-5962-44d1-b0c0-e31f641e0420"/>
@@ -1094,7 +1094,7 @@
 				<textElement verticalAlignment="Middle">
 					<font isUnderline="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("target-others-text", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("target-other-text", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="283" y="546" width="83" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="9f6cc9ba-6e2b-4b49-a827-ad4d2b2a8dc7"/>
