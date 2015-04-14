@@ -45,16 +45,25 @@
 		</div>
 	</div>
 	<div class="container" id="main-content">
-
+		<div id="main-menu">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0">
+				&nbsp;</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0">
+				<a href="index.html"> <span class="menu-item">HOME</span>
+				</a> | <a href="templates.html"> <span class="menu-item">SURVEYS</span>
+				</a> | <a href="index.html"> <span class="menu-item">ABOUT</span>
+				</a>
+			</div>
+		</div>
 		<form:form method="POST" modelAttribute="surveyForm"
 			action="survey_1.html">
 			<div>
 				<div id="tabs">
 					<ul>
-						<li><a href="#planner-1"><span>Planner 1</span></a></li>
-						<li><a href="#planner-2"><span>Planner 2</span></a></li>
-						<li><a href="#planner-3"><span>Planner 3</span></a></li>
-						<li><a href="#proposed-keywords"><span>Proposed
+						<li><a href="#planner-1" class="survey-tab"><span>Planner 1</span></a></li>
+						<li><a href="#planner-2" class="survey-tab"><span>Planner 2</span></a></li>
+						<li><a href="#planner-3" class="survey-tab"><span>Planner 3</span></a></li>
+						<li><a href="#proposed-keywords" class="survey-tab"><span>Proposed
 									Keywords</span></a></li>
 					</ul>
 					<div id="planner-1">
@@ -76,8 +85,9 @@
 			</div>
 		</form:form>
 	</div>
-	<div class="content" id="footer">
-		<p>Copyright Panpages © 2015 All Rights Reserved</p>
+	<div style="clear: both;"></div>
+	<div id="footer">
+		<p>Copyright <strong>Panpages</strong> © 2015 All Rights Reserved</p>
 	</div>
 	<script>
 		$("#tabs").tabs();

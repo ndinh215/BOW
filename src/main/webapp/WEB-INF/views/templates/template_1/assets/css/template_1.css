@@ -85,7 +85,7 @@ body {
   width: 100%;
   text-align: center;
   padding-top: 15px;
-  margin-top: -20px;
+  margin-top: -55px;
 }
 
 #footer p{
@@ -148,8 +148,7 @@ body {
 	float: right;
 	padding: 15 5 15 0;
 	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 18px;
+	font-size: 17px;
 }
 
 #surveyForm {
@@ -173,3 +172,36 @@ body {
 p[id*="error"] {
     color:red 
 }
+
+input[type="submit"] {
+	background-color: rgb(212, 2, 29);
+	color: white;
+}
+
+.ui-tabs-anchor {
+	background-color: rgb(212, 2, 29);
+	color: white;
+}
+
+ul[role*="tablist"] {
+	background-color: white;
+	border: 0;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: white !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-item {
+	color: rgb(212, 2, 29);
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 19px;
+}
+
+#main-menu {
+	font-size: 19px;
+}
+

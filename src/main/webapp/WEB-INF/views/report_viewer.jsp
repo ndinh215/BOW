@@ -29,12 +29,22 @@
 		</div>
 	</div>
 	<div class ="container" id ="main-content">
-		<div id="content">
+		<div id="main-menu">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0">
+				&nbsp;</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0">
+				<a href="index.html"> <span class="menu-item">HOME</span>
+				</a> | <a href="templates.html"> <span class="menu-item">SURVEYS</span>
+				</a> | <a href="index.html"> <span class="menu-item">ABOUT</span>
+				</a>
+			</div>
+		</div>
+		<div id="content" style="padding-top: 30px;">
 			<a href="<c:url value="${reportPath}" />"><img alt="Click to Join" src="assets/images/view-report.png"/></a>
 		</div>
 	</div>
 	<div id ="footer">
-		<p>Copyright Panpages &copy; 2015 All Rights Reserved</p>
+		<p>Copyright <strong>Panpages</strong> &copy; 2015 All Rights Reserved</p>
 	</div>
 		<script type="text/javascript">
 	$(window).load(function(){
