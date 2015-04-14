@@ -1,8 +1,8 @@
 $( document ).ready(function() {
 	/* Section1 */
 	function calculateSection1() {
-		var revenueIncreased = $("#revenue-increased-input").val();
-		
+		var revenueIncreased = $("#revenue-increased-input").val(); 
+		 
 		if(!$.isNumeric(revenueIncreased))
 		{
 			$("#revenue-increased-input-error").text("Please input a number in Revenue Increased field!");
@@ -13,6 +13,7 @@ $( document ).ready(function() {
 			$("#revenue-increased-input-error").text("");
 		}
 		$("#revenue-increased-output").val(revenueIncreased);
+		$("#revenue-increased-output").attr("disabled", "disabled");
 		
 		var ARPA = $("#arpa-input").val();
 		if(!$.isNumeric(ARPA))
@@ -26,10 +27,13 @@ $( document ).ready(function() {
 		}
 		
 		$("#arpa-output").val(ARPA);
+		$("#arpa-output").attr("disabled", "disabled");
 		
 		var newAdvertisers = Math.round(revenueIncreased/ARPA);
 		$("#new-advertisers-output").val(newAdvertisers);
+		$("#new-advertisers-output").attr("disabled", "disabled");
 		$("#no-of-advertiser-input").val(newAdvertisers);
+		$("#no-of-advertiser-input").attr("disabled", "disabled");
 		
 		var closingRate = $("#closing-rate-input").val(); 
 		if(!$.isNumeric(parseInt(closingRate.split("%"))))
@@ -42,6 +46,7 @@ $( document ).ready(function() {
 			$("#closing-rate-input-error").text("");
 		}
 		$("#closing-rate-output").val(closingRate); 
+		$("#closing-rate-output").attr("disabled", "disabled");
 		var closingRateoutput = parseInt(closingRate.split("%"));
 		
 		var leadsConversionRate = $("#leads-conversion-rate-input").val();
@@ -55,6 +60,7 @@ $( document ).ready(function() {
 			$("#leads-conversion-rate-input-error").text("");
 		}
 		$("#leads-conversion-rate-output").val(leadsConversionRate); 
+		$("#leads-conversion-rate-output").attr("disabled", "disabled");
 		var leadsConversionrateoutput = parseInt(leadsConversionRate.split("%"));
 		
 		var campaignPeriod = $("#campaign-period-input").val();
@@ -70,22 +76,27 @@ $( document ).ready(function() {
 		
 		var Leaders =(newAdvertisers/(closingRateoutput/100)).toFixed(0);
 		$("#leads-output").val(Leaders);
+		$("#leads-output").attr("disabled", "disabled");
 		
 		var trafficRequired =(Leaders/(leadsConversionrateoutput/100)).toFixed(0);
 		$("#traffic-required-output").val(trafficRequired);
+		$("#traffic-required-output").attr("disabled", "disabled");
 		
 		var monthlyTraffic =(trafficRequired/campaignPeriod).toFixed(2);
 		$("#monthly-traffic-output").val(monthlyTraffic);
+		$("#monthly-traffic-output").attr("disabled", "disabled");
 		
 		var avgCostperclick = $("#average-cost-per-click").val();
 		$("#avg-cost-per-click-output").val(avgCostperclick);
-		alert(avgCostperclick);
+		$("#avg-cost-per-click-output").attr("disabled", "disabled");
 		
 		var estimatedMonthlybudget = (monthlyTraffic * avgCostperclick).toFixed(2);
 		$("#estimated-monthly-budget-output").val(estimatedMonthlybudget);
+		$("#estimated-monthly-budget-output").attr("disabled", "disabled");
 		
 		var totalCampaignbudget = (estimatedMonthlybudget * campaignPeriod).toFixed(2);
 		$("#total-campaign-budget-output").val(totalCampaignbudget);
+		$("#total-campaign-budget-output").attr("disabled", "disabled");
 		
     }
 	
@@ -1565,7 +1576,7 @@ $( document ).ready(function() {
 				
 		if(typeof $("#" + keywordInput).val() === "undefined"){
 			$('#table-keyword').last().append('<tr><td id="'+keywordInput+'">'+keywordInput+'</td><td id="'+keywordInput+'Col2">'+avgMonthlysearchesinput+'</td><td id="'+keywordInput+'Col3">'+suggestedBidinput+'</td><td><input type="button" value="Delete" class="deleteRowButton"></td></tr>');
-			$('#table-keyword').last().append('<hidden'+' id="keyword['+keywordInput+']" name="fields['+keywordInput+']" value="'+keywordInput+','+avgMonthlysearchesinput+','+suggestedBidinput+'"></hidden>');
+			$('#table-keyword').last().append('<input type="hidden" id="keyword['+keywordInput+']" name="fields['+"'proposed-keyword'"+']" value="'+keywordInput+','+avgMonthlysearchesinput+','+suggestedBidinput+'" />');
 		}
 		else{
 			$("#mesage-error-section4").text("This keyword's already existed!");
