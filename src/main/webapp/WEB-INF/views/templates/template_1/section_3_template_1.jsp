@@ -57,59 +57,59 @@
 						</tr>
 						<tr>
 							<td><input name="fields['option-a-malaysia-panpages']" id="malaysia-panpages-option-A" type="checkbox"/>Malaysia PanPages</td>
-							<td>RM<input name="fields['malaysia-panpages-option-A-input']" id="malaysia-panpages-option-A-input" type="text"></td> 
+							<td>RM<input name="fields['malaysia-panpages-option-a-input']" id="malaysia-panpages-option-A-input" type="text"></td> 
 						</tr>
 						<tr>
 							<td><input name="fields['option-a-google-adwords-search-mobile']" id="google-adWords-search-mobile-option-A" type="checkbox"/>Google AdWords Search &amp; Mobile</td>
-							<td>RM<input name="fields['google-adWords-search-mobile-option-A-input']" id="google-adWords-search-mobile-option-A-input" type="text"></td>
+							<td>RM<input name="fields['google-adWords-search-mobile-option-a-input']" id="google-adWords-search-mobile-option-A-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-a-google-display-network']" id="google-display-network-option-A" type="checkbox"/>Google Display Network</td>
-							<td>RM<input name="fields['google-display-network-option-A-input']" id="google-display-network-option-A-input" type="text"></td> 
+							<td>RM<input name="fields['google-display-network-option-a-input']" id="google-display-network-option-A-input" type="text"></td> 
 						</tr>
 						<tr>
 							<td><input name="fields['option-a-yahoo-search']" id="yahoo-search-option-A" type="checkbox"/>Yahoo! Search</td>
-							<td>RM<input name="fields['yahoo-search-option-A-input']" id="yahoo-search-option-A-input" type="text"></td>
+							<td>RM<input name="fields['yahoo-search-option-a-input']" id="yahoo-search-option-A-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-a-yahoo-display']" id="yahoo-display-option-A" type="checkbox"/>Yahoo! Display</td>
-							<td>RM<input name="fields['yahoo-display-option-A-input']" id="yahoo-display-option-A-input" type="text"></td>
+							<td>RM<input name="fields['yahoo-display-option-a-input']" id="yahoo-display-option-A-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-a-youtube-ads']" id="youtube-ads-option-A" type="checkbox"/>YouTube Ads</td>
-							<td>RM<input name="fields['youtube-ads-option-A-input']" id="youtube-ads-option-A-input" type="text"></td>
+							<td>RM<input name="fields['youtube-ads-option-a-input']" id="youtube-ads-option-A-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-a-facebook-ads']" id="facebook-ads-option-A" type="checkbox"/>Facebook Ads</td>
-							<td>RM<input name="fields['facebook-ads-option-A-input']" id="facebook-ads-option-A-input" type="text"></td>
+							<td>RM<input name="fields['facebook-ads-option-a-input']" id="facebook-ads-option-A-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-a-pan-360']" id="pan-360-option-A" type="checkbox"/>Pan 360°</td>
-							<td>RM<input name="fields['pan-360-option-A-input']" id="pan-360-option-A-input" type="text"></td>
+							<td>RM<input name="fields['pan-360-option-a-input']" id="pan-360-option-A-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-a-alibaba-com']" id="alibaba-com-option-A" type="checkbox"/>Alibaba.com</td>
-							<td>RM<input name="fields['alibaba-com-option-A-input']" id="alibaba-com-option-A-input" type="text"></td>
+							<td>RM<input name="fields['alibaba-com-option-a-input']" id="alibaba-com-option-A-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-a-super-pages']" id="super-pages-option-A" type="checkbox"/>Super Pages</td>
-							<td>RM<input name="fields['super-pages-option-A-input']" id="super-pages-option-A-input" type="text"></td>
+							<td>RM<input name="fields['super-pages-option-a-input']" id="super-pages-option-A-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-a-others']" id="others-option-A" type="checkbox"/>Others</td>
-							<td>RM<input name="fields['others-option-A-input']" id="others-option-A-input" type="text"></td>
+							<td>RM<input name="fields['others-option-a-input']" id="others-option-A-input" type="text"></td>
 						</tr>
 						<tr>
 							<td>Subtotal</td>
-							<td>RM<input name="fields['subtotal-option-A-input']" id="subtotal-option-A-input" type="text"></td>
+							<td>RM<input name="fields['subtotal-option-a-input']" id="subtotal-option-A-input" type="text"></td>
 						</tr>
 						<tr>
 							<td>6% Gov. Tax</td>
-							<td>RM<input name="fields['gov-tax-option-A-input']" id="gov-tax-option-A-input" type="text"></td>
+							<td>RM<input name="fields['gov-tax-option-a-input']" id="gov-tax-option-A-input" type="text"></td>
 						</tr>
 						<tr>
 							<td>Grand Total</td>
-							<td>RM<input name="fields['grand-total-option-A-input']" id="grand-total-option-A-input" type="text"></td>
+							<td>RM<input name="fields['grand-total-option-a-input']" id="grand-total-option-A-input" type="text"></td>
 						</tr>
 					</table>
 				</div>
@@ -126,59 +126,59 @@
 						</tr>
 						<tr>
 							<td><input name="fields['option-b-malaysia-panpages']" id="malaysia-panpages-option-B" type="checkbox"/>Malaysia PanPages</td>
-							<td>RM<input name="fields['malaysia-panpages-option-B-input']" id="malaysia-panpages-option-B-input" type="text"></td>
+							<td>RM<input name="fields['malaysia-panpages-option-b-input']" id="malaysia-panpages-option-B-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-b-google-adwords-search-mobile']" id="google-adWords-search-mobile-option-B" type="checkbox"/>Google AdWords Search &amp; Mobile</td>
-							<td>RM<input name="fields['google-adWords-search-mobile-option-B-input']" id="google-adWords-search-mobile-option-B-input" type="text"></td>
+							<td>RM<input name="fields['google-adWords-search-mobile-option-b-input']" id="google-adWords-search-mobile-option-B-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-b-google-display-network']" id="google-display-network-option-B" type="checkbox"/>Google Display Network</td>
-							<td>RM<input name="fields['google-display-network-option-B-input']" id="google-display-network-option-B-input" type="text"></td>
+							<td>RM<input name="fields['google-display-network-option-b-input']" id="google-display-network-option-B-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-b-yahoo-search']" id="yahoo-search-option-B" type="checkbox"/>Yahoo! Search</td>
-							<td>RM<input name="fields['yahoo-search-option-B-input']" id="yahoo-search-option-B-input" type="text"></td>
+							<td>RM<input name="fields['yahoo-search-option-b-input']" id="yahoo-search-option-B-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-b-yahoo-display']" id="yahoo-display-option-B" type="checkbox"/>Yahoo! Display</td>
-							<td>RM<input name="fields['yahoo-display-option-B-input']" id="yahoo-display-option-B-input" type="text"></td>
+							<td>RM<input name="fields['yahoo-display-option-b-input']" id="yahoo-display-option-B-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-b-youtube-ads']" id="youtube-ads-option-B" type="checkbox"/>YouTube Ads</td>
-							<td>RM<input name="fields['youtube-ads-option-B-input']" id="youtube-ads-option-B-input" type="text"></td> 
+							<td>RM<input name="fields['youtube-ads-option-b-input']" id="youtube-ads-option-B-input" type="text"></td> 
 						</tr>
 						<tr>
 							<td><input name="fields['option-b-facebook-ads']" id="facebook-ads-option-B" type="checkbox"/>Facebook Ads</td>
-							<td>RM<input name="fields['facebook-ads-option-B-input']" id="facebook-ads-option-B-input" type="text"></td>
+							<td>RM<input name="fields['facebook-ads-option-b-input']" id="facebook-ads-option-B-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-b-pan-360']" id="pan-360-option-B" type="checkbox"/>Pan 360°</td>
-							<td>RM<input name="fields['pan-360-option-B-input']" id="pan-360-option-B-input" type="text"></td>
+							<td>RM<input name="fields['pan-360-option-b-input']" id="pan-360-option-B-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-b-alibaba-com']" id="alibaba-com-option-B" type="checkbox"/>Alibaba.com</td>
-							<td>RM<input name="fields['alibaba-com-option-B-input']" id="alibaba-com-option-B-input" type="text"></td>
+							<td>RM<input name="fields['alibaba-com-option-b-input']" id="alibaba-com-option-B-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-b-super-pages']" id="super-pages-option-B" type="checkbox"/>Super Pages</td>
-							<td>RM<input name="fields['super-pages-option-B-input']" id="super-pages-option-B-input" type="text"></td>
+							<td>RM<input name="fields['super-pages-option-b-input']" id="super-pages-option-B-input" type="text"></td>
 						</tr>
 						<tr>
 							<td><input name="fields['option-b-others']" id="others-option-B" type="checkbox"/>Others</td>
-							<td>RM<input name="fields['others-option-B-input']" id="others-option-B-input" type="text"></td>
+							<td>RM<input name="fields['others-option-b-input']" id="others-option-B-input" type="text"></td>
 						</tr>
 						<tr>
 							<td>Subtotal</td>
-							<td>RM<input name="fields['subtotal-option-B-input']" id="subtotal-option-B-input" type="text"></td>
+							<td>RM<input name="fields['subtotal-option-b-input']" id="subtotal-option-B-input" type="text"></td>
 						</tr>
 						<tr>
 							<td>6% Gov. Tax</td>
-							<td>RM<input name="fields['gov-tax-option-B-input']" id="gov-tax-option-B-input" type="text"></td>
+							<td>RM<input name="fields['gov-tax-option-b-input']" id="gov-tax-option-B-input" type="text"></td>
 						</tr>
 						<tr>
 							<td>Grand Total</td>
-							<td>RM<input name="fields['grand-total-option-B-input']" id="grand-total-option-B-input" type="text"></td>
+							<td>RM<input name="fields['grand-total-option-b-input']" id="grand-total-option-B-input" type="text"></td>
 						</tr>
 					</table>
 				</div>
