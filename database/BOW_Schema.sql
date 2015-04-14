@@ -58,7 +58,7 @@ CREATE TABLE `field_section_relation_in_template` (
   `relation_id` int(11) NOT NULL AUTO_INCREMENT,
   `field_id` int(11) NOT NULL,
   `section_id` int(11) NOT NULL,
-  `desc` varchar(45) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `desc` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`relation_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=185 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -156,8 +156,8 @@ DROP TABLE IF EXISTS `survey`;
 CREATE TABLE `survey` (
   `survey_id` int(11) NOT NULL AUTO_INCREMENT,
   `survey_template_id` int(11) NOT NULL,
-  `desc` varchar(45) CHARACTER SET utf8mb4 DEFAULT NULL,
-  `fulfilled_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `desc` varchar(45) DEFAULT NULL,
+  `fulfilled_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   `status` varchar(45) DEFAULT NULL,
   `name` varchar(45) NOT NULL,
   `storage_name` varchar(45) DEFAULT NULL,
@@ -174,8 +174,8 @@ DROP TABLE IF EXISTS `survey_template`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `survey_template` (
   `survey_id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(45) CHARACTER SET utf8mb4 NOT NULL,
-  `desc` varchar(45) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `name` varchar(45) NOT NULL,
+  `desc` varchar(45) DEFAULT NULL,
   `path` varchar(45) DEFAULT NULL,
   `slug_name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`survey_id`)

@@ -73,7 +73,8 @@ public class ReportServiceImpl implements ReportService {
 
 	@Override
 	public String exportReport(int surveyId, String name) {
-		throw new UnsupportedOperationException();
+		//throw new UnsupportedOperationException();
+		return null;
 	}
 
 }
