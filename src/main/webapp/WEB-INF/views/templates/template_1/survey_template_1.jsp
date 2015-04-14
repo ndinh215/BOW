@@ -51,10 +51,10 @@
 			<div>
 				<div id="tabs">
 					<ul>
-						<li><a href="#planner-1"><span>Planner 1</span></a></li>
-						<li><a href="#planner-2"><span>Planner 2</span></a></li>
-						<li><a href="#planner-3"><span>Planner 3</span></a></li>
-						<li><a href="#proposed-keywords"><span>Proposed
+						<li><a href="#planner-1" class="survey-tab"><span>Planner 1</span></a></li>
+						<li><a href="#planner-2" class="survey-tab"><span>Planner 2</span></a></li>
+						<li><a href="#planner-3" class="survey-tab"><span>Planner 3</span></a></li>
+						<li><a href="#proposed-keywords" class="survey-tab"><span>Proposed
 									Keywords</span></a></li>
 					</ul>
 					<div id="planner-1">
