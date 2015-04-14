@@ -59,7 +59,7 @@ In PanPages, we pride ourselves of developing excellent technology and search so
 			</div>	
 		</div>
 	</div>
-	<div class="content" id ="footer">
+	<div id ="footer">
 		<p>Copyright Panpages &copy; 2015 All Rights Reserved</p>
 	</div>
 	<script type="text/javascript">

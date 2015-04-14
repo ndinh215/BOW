@@ -76,7 +76,8 @@
 			</div>
 		</form:form>
 	</div>
-	<div class="content" id="footer">
+	<div style="clear: both;"></div>
+	<div id="footer">
 		<p>Copyright Panpages © 2015 All Rights Reserved</p>
 	</div>
 	<script>
