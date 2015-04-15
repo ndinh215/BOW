@@ -18,7 +18,7 @@ $( document ).ready(function() {
 		var ARPA = $("#arpa-input").val();
 		if(!$.isNumeric(ARPA))
 		{
-			$("#arpa-input-error").text("Please input a number in Revenue Increased field!");
+			$("#arpa-input-error").text("Please input a number in Average Revenue Per Advertiser (ARPA) field!");
 			$("#arpa-input").focus();
 			return;
 		}
@@ -38,7 +38,7 @@ $( document ).ready(function() {
 		var closingRate = $("#closing-rate-input").val(); 
 		if(!$.isNumeric(parseInt(closingRate.split("%"))))
 		{
-			$("#closing-rate-input-error").text("Please input a number in Revenue Increased field!");
+			$("#closing-rate-input-error").text("Please input a number in Closing Rate field!");
 			$("#closing-rate-input").focus();
 			return;
 		}
@@ -52,7 +52,7 @@ $( document ).ready(function() {
 		var leadsConversionRate = $("#leads-conversion-rate-input").val();
 		if(!$.isNumeric(parseInt(leadsConversionRate.split("%"))))
 		{
-			$("#leads-conversion-rate-input-error").text("Please input a number in Revenue Increased field!");
+			$("#leads-conversion-rate-input-error").text("Please input a number in Leads Conversion Rate field!");
 			$("#leads-conversion-rate-input").focus();
 			return;
 		}
@@ -66,7 +66,7 @@ $( document ).ready(function() {
 		var campaignPeriod = $("#campaign-period-input").val();
 		if(!$.isNumeric(campaignPeriod))
 		{
-			$("#campaign-period-input-error").text("Please input a number in Revenue Increased field!");
+			$("#campaign-period-input-error").text("Please input a number in Campaign Period field!");
 			$("#campaign-period-input").focus();
 			return;
 		}
@@ -1704,8 +1704,7 @@ $( document ).ready(function() {
 				
 		if(typeof $("#" + keywordInput).val() === "undefined"){
 			$('#table-keyword').last().append('<tr><td id="'+keywordInput+'">'+keywordInput+'</td><td id="'+keywordInput+'Col2">'+avgMonthlysearchesinput+'</td><td id="'+keywordInput+'Col3">'+suggestedBidinput+'</td><td><input type="hidden"'+' id="keyword'+keywordInput+'" name="fields['+"'proposed-keyword'"+']" value="'+keywordInput+','+avgMonthlysearchesinput+','+suggestedBidinput+'"><input type="button" value="Delete" class="deleteRowButton"></td></tr>');
-			$('#table-keyword').last().append('<tr><td id="'+keywordInput+'">'+keywordInput+'</td><td id="'+keywordInput+'Col2">'+avgMonthlysearchesinput+'</td><td id="'+keywordInput+'Col3">'+suggestedBidinput+'</td><td><input type="button" value="Delete" class="deleteRowButton"></td></tr>');
-			$('#table-keyword').last().append('<input type="hidden" id="keyword['+keywordInput+']" name="fields['+"'proposed-keyword'"+']" value="'+keywordInput+','+avgMonthlysearchesinput+','+suggestedBidinput+'" />');
+			
 		}
 		else{
 			$("#mesage-error-section4").text("This keyword's already existed!");
