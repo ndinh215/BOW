@@ -1861,6 +1861,26 @@ $( document ).ready(function() {
 				alert('Please fill out all of the fields "PLANNER 4" to the best of your business plan.');
 				return false;
 			}
+	    	
 	    }
+	    
+
+		$("#revenue-increased-output").prop( "disabled", false );
+		$("#arpa-output").prop( "disabled", false );
+		$("#new-advertisers-output").prop( "disabled", false );
+	    $("#no-of-advertiser-input").prop( "disabled", false );
+	    $("#closing-rate-output").prop( "disabled", false );
+	    $("#leads-conversion-rate-output").prop( "disabled", false );
+	    $("#leads-output").prop( "disabled", false );
+		$("#traffic-required-output").prop( "disabled", false );
+		$("#monthly-traffic-output").prop( "disabled", false );
+		$("#avg-cost-per-click-output").prop( "disabled", false );
+		$("#estimated-monthly-budget-output").prop( "disabled", false );
+		$("#total-campaign-budget-output").prop( "disabled", false );
+		$("#total-est-impressions").prop( "disabled", false );
+		$("#average-cost-per-click").prop( "disabled", false );
+		$("#est-clicks-assuming").prop( "disabled", false );
+		$("#est-monthly-investment-100").prop( "disabled", false );
+		$("#est-monthly-investment-50").prop( "disabled", false );
 	});
 });
