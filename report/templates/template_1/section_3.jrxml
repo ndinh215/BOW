@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.0.3.final using JasperReports Library version 6.0.3  -->
-<!-- 2015-04-15T02:37:09 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="2015 INVESTMENT PLAN" pageWidth="585" pageHeight="1010" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fae24526-20a2-461e-b8a4-4934cf4ebdfa">
-	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.zoom" value="1.1000000000000005"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="525"/>
+	<property name="ireport.y" value="768"/>
 	<subDataset name="dataset1" uuid="ef6965b1-a13f-44e2-b88c-fb6990810d23"/>
 	<parameter name="sections" class="java.util.List"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
@@ -78,7 +76,7 @@
 			</staticText>
 			<staticText>
 				<reportElement x="327" y="39" width="129" height="24" uuid="f3ffdde4-fbd8-4f7d-a2b6-37012fa70606"/>
-				<box>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -92,7 +90,7 @@
 			</staticText>
 			<staticText>
 				<reportElement x="327" y="63" width="129" height="24" uuid="4568c9c0-f230-47af-a62c-08b34005b1c7"/>
-				<box>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -106,7 +104,7 @@
 			</staticText>
 			<staticText>
 				<reportElement x="327" y="87" width="129" height="24" uuid="7b7f741b-1925-42c1-8786-93d7dd07a710"/>
-				<box>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -363,7 +361,7 @@
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="431" width="175" height="20" uuid="c6c1ef2e-9300-422e-b1b3-d7871fb69160"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -419,7 +417,7 @@
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="411" width="175" height="20" uuid="aa88589f-9a64-40a0-8c78-24faf8ab8992"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -433,7 +431,7 @@
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="391" width="175" height="20" uuid="0b49121f-8da8-4bb7-a429-51227bba4d84"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -461,7 +459,7 @@
 			</staticText>
 			<staticText>
 				<reportElement x="321" y="432" width="175" height="20" uuid="315b01c6-3a3a-4175-ae03-effa50eb5f16"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -559,7 +557,7 @@
 			</staticText>
 			<staticText>
 				<reportElement x="321" y="412" width="175" height="20" uuid="9aa4e309-0fea-45ce-92a4-38ab8117bd80"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -587,7 +585,7 @@
 			</staticText>
 			<staticText>
 				<reportElement x="321" y="392" width="175" height="20" uuid="d09cdc1c-77c1-4b8b-a52d-5ed93665338e"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -953,9 +951,9 @@
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
-			<textField isBlankWhenNull="true">
+			<textField isBlankWhenNull="false">
 				<reportElement mode="Transparent" x="176" y="171" width="87" height="20" backcolor="#FFFF99" uuid="a16a1264-822a-4183-ac8f-ac069e97acc4"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -967,7 +965,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="191" width="87" height="20" backcolor="#FFFF99" uuid="5f7ee208-9834-4e6f-a3d2-b91dbe1d728d"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -979,7 +977,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="211" width="87" height="20" backcolor="#FFFF99" uuid="f5d6e04b-1c2e-4ea0-ba21-54c9e879a84f"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -991,7 +989,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="231" width="87" height="20" backcolor="#FFFF99" uuid="f7ff6dda-d01c-45ea-bfd2-69054eb363d4"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1003,7 +1001,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="251" width="87" height="20" backcolor="#FFFF99" uuid="965bd640-42f1-4ebd-a078-d9671e2a167b"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1015,7 +1013,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="291" width="87" height="20" backcolor="#FFFF99" uuid="15024a79-12f6-47a8-82fe-d2354c3ad92d"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1027,7 +1025,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="271" width="87" height="20" backcolor="#FFFF99" uuid="de6bba27-d318-4e37-b56a-fbe721575ce9"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1039,7 +1037,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="311" width="87" height="20" backcolor="#FFFF99" uuid="8e81adfe-3788-43c6-a497-e692f7b503ea"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1051,7 +1049,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="331" width="87" height="20" backcolor="#FFFF99" uuid="6552ef8a-49e0-4ebe-8078-595dd24013ff"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1063,7 +1061,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="371" width="87" height="20" backcolor="#FFFF99" uuid="b1d24a4b-1ae2-4919-98c6-07baaafa36a4"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1075,7 +1073,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="411" width="87" height="20" backcolor="#FFFF99" uuid="b953d3a7-d831-4d05-a8ae-cd7fb559bdff"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1087,7 +1085,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="391" width="87" height="20" backcolor="#FFFF99" uuid="8eb008a4-06d7-4672-9c2a-db651cdec4f9"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1099,7 +1097,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="351" width="87" height="20" backcolor="#FFFF99" uuid="67d32a0c-2457-40d9-a814-2753bc9ab01a"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1111,7 +1109,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="176" y="431" width="87" height="20" backcolor="#FFFF99" uuid="ff28ad13-851f-48c2-8134-33b6165d9a91"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1123,7 +1121,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="172" width="87" height="20" backcolor="#FFFF99" uuid="b4c67bfe-390c-45ce-9bfc-e4d9df193f4d"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1135,7 +1133,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="412" width="87" height="20" backcolor="#FFFF99" uuid="ab9b5ead-7ddf-4872-ae74-46bee78a66d5"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1147,7 +1145,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="332" width="87" height="20" backcolor="#FFFF99" uuid="8188a9a8-3c23-42c2-a697-77ef3db726c1"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1159,7 +1157,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="352" width="87" height="20" backcolor="#FFFF99" uuid="1a58c9ad-79bd-4beb-9560-7ddc58085245"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1171,7 +1169,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="372" width="87" height="20" backcolor="#FFFF99" uuid="df047c75-d400-404d-a806-f23bf63373f3"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1183,7 +1181,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="212" width="87" height="20" backcolor="#FFFF99" uuid="c9f396c6-4726-4f4e-94b6-e138c738dd11"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1195,7 +1193,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="292" width="87" height="20" backcolor="#FFFF99" uuid="6b540baf-d7a1-498d-b8e5-56e909bc493a"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1207,7 +1205,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="252" width="87" height="20" backcolor="#FFFF99" uuid="d8ccb20f-8a6e-4ce0-9532-cbfe49553aa3"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1219,7 +1217,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="192" width="87" height="20" backcolor="#FFFF99" uuid="c8374d21-6a2b-4a9f-9c5b-10d3db10131e"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1231,7 +1229,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="432" width="87" height="20" backcolor="#FFFF99" uuid="a461c2e5-2c32-4d5e-a0e0-ea91f8f0f551"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1243,7 +1241,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="272" width="87" height="20" backcolor="#FFFF99" uuid="abf95d65-2e41-46f3-ada8-a0dfc516789d"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1255,7 +1253,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="392" width="87" height="20" backcolor="#FFFF99" uuid="46217aa4-f077-4043-9005-79537a1540ef"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1267,7 +1265,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="232" width="87" height="20" backcolor="#FFFF99" uuid="b2d0c87f-2cd4-4942-b7c5-a0b07b8da52d"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1279,7 +1277,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="497" y="312" width="87" height="20" backcolor="#FFFF99" uuid="ec4fa838-836c-44ea-8a0e-956462195fea"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1291,35 +1289,35 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="67" y="63" width="196" height="20" backcolor="#FFFF99" uuid="ef8e7588-870d-4965-b7a6-0a9f8e3d74af"/>
-				<box>
-					<pen lineWidth="1.0"/>
-					<topPen lineWidth="1.0"/>
-					<leftPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
+				<box rightPadding="6">
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
+				<textElement verticalAlignment="Middle">
 					<font isUnderline="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("advertiser", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="67" y="95" width="196" height="20" backcolor="#FFFF99" uuid="c7cd8309-610f-4bb0-923b-a0b42f0ecb7d"/>
-				<box>
-					<pen lineWidth="1.0"/>
-					<topPen lineWidth="1.0"/>
-					<leftPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
+				<box rightPadding="6">
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
+				<textElement verticalAlignment="Middle">
 					<font isUnderline="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("address", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="456" y="39" width="129" height="24" backcolor="#FFFF99" uuid="94fa32fd-37b3-4af4-8ffb-27f398b45fdd"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1333,7 +1331,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="456" y="63" width="129" height="24" backcolor="#FFFF99" uuid="d90375f1-b4cb-45cb-a225-5c37b6309396"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1347,7 +1345,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="456" y="87" width="129" height="24" backcolor="#FFFF99" uuid="92fe6177-1734-4db3-8f58-37f5bbe4f349"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -1359,8 +1357,8 @@
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("proposed-amount", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="276" y="493" width="122" height="20" uuid="86a47b87-11fe-420b-bf29-f32ce9ba8fd8"/>
+			<textField>
+				<reportElement x="263" y="493" width="122" height="20" uuid="86a47b87-11fe-420b-bf29-f32ce9ba8fd8"/>
 				<textElement textAlignment="Center" verticalAlignment="Bottom">
 					<font size="12" isUnderline="false"/>
 				</textElement>
@@ -1373,14 +1371,14 @@
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="109" y="917" width="100" height="20" uuid="8b398a03-6636-41f0-93cc-acc89bad9af7"/>
 				<textElement verticalAlignment="Middle">
-					<font isBold="false"/>
+					<font isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("duration", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="109" y="937" width="100" height="20" uuid="b390425d-de1e-4c13-a848-2543ca838218"/>
 				<textElement verticalAlignment="Middle">
-					<font isBold="false"/>
+					<font isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("coverage", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("investment-plan",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>

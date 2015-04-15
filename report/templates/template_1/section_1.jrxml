@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.0.3.final using JasperReports Library version 6.0.3  -->
-<!-- 2015-04-15T00:48:36 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="2015 ADVERTISING PLANNER" pageWidth="585" pageHeight="960" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="89cc2169-c366-460f-a825-86120bde60b5">
-	<property name="ireport.zoom" value="1.2100000000000013"/>
+	<property name="ireport.zoom" value="1.9487171000000028"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="330"/>
+	<property name="ireport.y" value="165"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
@@ -74,7 +72,7 @@
 				<text><![CDATA[Revenue Increased]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="220" y="0" width="177" height="32" uuid="1dd73f34-93bc-47d7-b21e-3f6441e56869"/>
+				<reportElement x="219" y="0" width="177" height="32" uuid="1dd73f34-93bc-47d7-b21e-3f6441e56869"/>
 				<box>
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -117,7 +115,7 @@
 				<text><![CDATA[Closing Rate]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="220" y="60" width="177" height="20" uuid="863d26f4-3f3b-4781-84d4-356cb098ed44"/>
+				<reportElement x="219" y="60" width="177" height="20" uuid="863d26f4-3f3b-4781-84d4-356cb098ed44"/>
 				<box>
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -147,8 +145,8 @@
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="106" width="218" height="20" uuid="c429f007-656f-4dd8-9ad7-8c04a383db71"/>
-				<box>
+				<reportElement x="1" y="106" width="218" height="20" uuid="c429f007-656f-4dd8-9ad7-8c04a383db71"/>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -162,8 +160,8 @@
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="186" width="218" height="20" uuid="c25b0e74-1fb1-4052-9a95-db7b4a32d5e8"/>
-				<box>
+				<reportElement x="1" y="186" width="218" height="20" uuid="c25b0e74-1fb1-4052-9a95-db7b4a32d5e8"/>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -176,8 +174,8 @@
 				<text><![CDATA[Leads]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="126" width="218" height="20" uuid="694cad90-5e60-4691-b65b-57f97c8df6ee"/>
-				<box>
+				<reportElement x="1" y="126" width="218" height="20" uuid="694cad90-5e60-4691-b65b-57f97c8df6ee"/>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -190,8 +188,8 @@
 				<text><![CDATA[ARPA]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="146" width="218" height="20" uuid="661e4053-c488-4190-9a36-3aa894922154"/>
-				<box>
+				<reportElement x="1" y="146" width="218" height="20" uuid="661e4053-c488-4190-9a36-3aa894922154"/>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -204,8 +202,8 @@
 				<text><![CDATA[New Advertisers]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="166" width="218" height="20" uuid="403768a0-4b05-4027-9521-cd1363638d47"/>
-				<box>
+				<reportElement x="1" y="166" width="218" height="20" uuid="403768a0-4b05-4027-9521-cd1363638d47"/>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -218,8 +216,8 @@
 				<text><![CDATA[Closing Rate]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="206" width="218" height="20" uuid="8968dc5e-9db7-43e4-8955-ff4655849150"/>
-				<box>
+				<reportElement x="1" y="206" width="218" height="20" uuid="8968dc5e-9db7-43e4-8955-ff4655849150"/>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -232,8 +230,8 @@
 				<text><![CDATA[Leads Conversion Rate]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="226" width="218" height="20" uuid="d6942ad5-ef81-42c4-ae22-b914968123c0"/>
-				<box>
+				<reportElement x="1" y="226" width="218" height="20" uuid="d6942ad5-ef81-42c4-ae22-b914968123c0"/>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -246,8 +244,8 @@
 				<text><![CDATA[Traffic Required]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="246" width="218" height="20" uuid="4ed29cc2-4737-4ad0-8cf8-7579e16adf2d"/>
-				<box>
+				<reportElement x="1" y="246" width="218" height="20" uuid="4ed29cc2-4737-4ad0-8cf8-7579e16adf2d"/>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -260,8 +258,8 @@
 				<text><![CDATA[Monthly Traffic]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="266" width="218" height="20" uuid="c76cf601-e370-41a6-9c54-1d1d308da60c"/>
-				<box>
+				<reportElement x="1" y="266" width="218" height="20" uuid="c76cf601-e370-41a6-9c54-1d1d308da60c"/>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -274,8 +272,8 @@
 				<text><![CDATA[Avg. Cost Per Click]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="286" width="218" height="20" uuid="e3463dd3-963b-4a76-8b5d-516ad57a2692"/>
-				<box>
+				<reportElement x="1" y="286" width="218" height="20" uuid="e3463dd3-963b-4a76-8b5d-516ad57a2692"/>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -288,8 +286,8 @@
 				<text><![CDATA[Estimated Monthly Budget]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="306" width="218" height="20" uuid="e1f6b144-c2ba-4bd7-a659-ba3945335b4f"/>
-				<box>
+				<reportElement x="1" y="306" width="218" height="20" uuid="e1f6b144-c2ba-4bd7-a659-ba3945335b4f"/>
+				<box leftPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -672,9 +670,9 @@
 				</textElement>
 				<text><![CDATA[Female]]></text>
 			</staticText>
-			<textField isBlankWhenNull="true">
+			<textField>
 				<reportElement mode="Opaque" x="0" y="32" width="219" height="28" backcolor="#FFFF99" uuid="f903bfc2-d21d-4b39-bcaa-e19206fabc6d"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -686,7 +684,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="106" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="a63c03f6-2e36-4c6e-a501-02884c18aa55"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -696,7 +694,7 @@
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("revenue-increased", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField>
 				<reportElement mode="Opaque" x="219" y="32" width="178" height="28" forecolor="#000000" backcolor="#FFCCFF" uuid="17fa4261-3229-46a5-b600-508c66e02ed3"/>
 				<box>
 					<pen lineWidth="1.0"/>
@@ -708,9 +706,9 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("no-of-advertiser", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField>
 				<reportElement mode="Opaque" x="396" y="32" width="189" height="28" backcolor="#FFFF99" uuid="6e387700-3185-454b-bc21-e64d69e07a9a"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
 					<leftPen lineWidth="1.0"/>
@@ -720,7 +718,7 @@
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("average-revenue-per-advertiser", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField>
 				<reportElement mode="Opaque" x="0" y="80" width="219" height="23" backcolor="#FFFF99" uuid="04dc630d-ac0e-43c8-9c0b-67e6b0812043"/>
 				<box>
 					<pen lineWidth="1.0"/>
@@ -732,8 +730,8 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("closing-rate", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement mode="Opaque" x="220" y="80" width="177" height="23" backcolor="#FFFF99" uuid="2ff7a9ca-c54f-4ba9-9ba2-aa15e0d47543"/>
+			<textField>
+				<reportElement mode="Opaque" x="219" y="80" width="177" height="23" backcolor="#FFFF99" uuid="2ff7a9ca-c54f-4ba9-9ba2-aa15e0d47543"/>
 				<box>
 					<pen lineWidth="1.0"/>
 					<topPen lineWidth="1.0"/>
@@ -744,7 +742,7 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("leads-conversion-rate", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("advertising-planner",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField>
 				<reportElement mode="Opaque" x="396" y="80" width="189" height="23" backcolor="#FFFF99" uuid="f3637e26-c9a7-49c5-9566-c4bd13bd60a6"/>
 				<box>
 					<pen lineWidth="1.0"/>
@@ -758,7 +756,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="126" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="9dfe52af-5a26-4ced-8f53-d1885dcf3b3a"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -770,7 +768,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="146" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="e81d27eb-7098-406d-ba3c-f46283cce84c"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -782,7 +780,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="166" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="64257183-7cd3-40b8-aad0-b44daae71411"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -794,7 +792,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="206" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="f2cd8d6d-85c2-4edc-918f-dea24f7b8f0b"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -806,7 +804,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="186" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="cfe1873e-b8d2-4d01-8931-821b0a63a5a8"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -818,7 +816,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="226" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="69c20650-2031-4dfb-96ba-42491f93c84a"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -830,7 +828,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="246" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="2f001866-8235-4126-8af1-fe625d866882"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -842,7 +840,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="266" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="816362db-3139-4777-a992-b5a049583950"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -854,7 +852,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="286" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="7be2a653-e24f-48ff-b4d7-7e39057878ca"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
@@ -866,7 +864,7 @@
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Opaque" x="219" y="306" width="177" height="20" forecolor="#000000" backcolor="#FFCCFF" uuid="dfb60148-7db8-4fcf-8140-eb38153bdc13"/>
-				<box>
+				<box rightPadding="6">
 					<pen lineWidth="0.75"/>
 					<topPen lineWidth="0.75"/>
 					<leftPen lineWidth="0.75"/>
