@@ -80,7 +80,8 @@
 					</div>
 				</div>
 				<div id="submit-div">
-					<input type="submit" value="SUBMIT">
+					<input type="submit" value="SUBMIT" id="subit-form">
+					<input type="hidden">
 				</div>
 			</div>
 		</form:form>

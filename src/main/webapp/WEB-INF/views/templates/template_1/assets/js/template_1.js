@@ -1,8 +1,8 @@
 $( document ).ready(function() {
 	/* Section1 */
 	function calculateSection1() {
-		var revenueIncreased = $("#revenue-increased-input").val();
-		
+		var revenueIncreased = $("#revenue-increased-input").val(); 
+		 
 		if(!$.isNumeric(revenueIncreased))
 		{
 			$("#revenue-increased-input-error").text("Please input a number in Revenue Increased field!");
@@ -13,6 +13,7 @@ $( document ).ready(function() {
 			$("#revenue-increased-input-error").text("");
 		}
 		$("#revenue-increased-output").val(revenueIncreased);
+		$("#revenue-increased-output").attr("disabled", "disabled");
 		
 		var ARPA = $("#arpa-input").val();
 		if(!$.isNumeric(ARPA))
@@ -26,10 +27,13 @@ $( document ).ready(function() {
 		}
 		
 		$("#arpa-output").val(ARPA);
+		$("#arpa-output").attr("disabled", "disabled");
 		
 		var newAdvertisers = Math.round(revenueIncreased/ARPA);
 		$("#new-advertisers-output").val(newAdvertisers);
+		$("#new-advertisers-output").attr("disabled", "disabled");
 		$("#no-of-advertiser-input").val(newAdvertisers);
+		$("#no-of-advertiser-input").attr("disabled", "disabled");
 		
 		var closingRate = $("#closing-rate-input").val(); 
 		if(!$.isNumeric(parseInt(closingRate.split("%"))))
@@ -42,6 +46,7 @@ $( document ).ready(function() {
 			$("#closing-rate-input-error").text("");
 		}
 		$("#closing-rate-output").val(closingRate); 
+		$("#closing-rate-output").attr("disabled", "disabled");
 		var closingRateoutput = parseInt(closingRate.split("%"));
 		
 		var leadsConversionRate = $("#leads-conversion-rate-input").val();
@@ -55,6 +60,7 @@ $( document ).ready(function() {
 			$("#leads-conversion-rate-input-error").text("");
 		}
 		$("#leads-conversion-rate-output").val(leadsConversionRate); 
+		$("#leads-conversion-rate-output").attr("disabled", "disabled");
 		var leadsConversionrateoutput = parseInt(leadsConversionRate.split("%"));
 		
 		var campaignPeriod = $("#campaign-period-input").val();
@@ -70,22 +76,27 @@ $( document ).ready(function() {
 		
 		var Leaders =(newAdvertisers/(closingRateoutput/100)).toFixed(0);
 		$("#leads-output").val(Leaders);
+		$("#leads-output").attr("disabled", "disabled");
 		
 		var trafficRequired =(Leaders/(leadsConversionrateoutput/100)).toFixed(0);
 		$("#traffic-required-output").val(trafficRequired);
+		$("#traffic-required-output").attr("disabled", "disabled");
 		
 		var monthlyTraffic =(trafficRequired/campaignPeriod).toFixed(2);
 		$("#monthly-traffic-output").val(monthlyTraffic);
+		$("#monthly-traffic-output").attr("disabled", "disabled");
 		
 		var avgCostperclick = $("#average-cost-per-click").val();
 		$("#avg-cost-per-click-output").val(avgCostperclick);
-		alert(avgCostperclick);
+		$("#avg-cost-per-click-output").attr("disabled", "disabled");
 		
 		var estimatedMonthlybudget = (monthlyTraffic * avgCostperclick).toFixed(2);
 		$("#estimated-monthly-budget-output").val(estimatedMonthlybudget);
+		$("#estimated-monthly-budget-output").attr("disabled", "disabled");
 		
 		var totalCampaignbudget = (estimatedMonthlybudget * campaignPeriod).toFixed(2);
 		$("#total-campaign-budget-output").val(totalCampaignbudget);
+		$("#total-campaign-budget-output").attr("disabled", "disabled");
 		
     }
 	
@@ -390,15 +401,55 @@ $( document ).ready(function() {
 	
 	function calculateSection2() {
 		var advertising2014investment = $("#2014-advertising-investment").val();
+		if(!$.isNumeric(advertising2014investment))
+		{
+			$("#2014-advertising-investment-error").text("Please input a number in 2014 Advertising Investment field!");
+			$("#2014-advertising-investment").focus();
+			$("#2014-advertising-investment").val('');
+			return;
+		}
+		else{
+			$("#2014-advertising-investment-error").text("");
+		}
 		$("#2014-advertising-investment").val(advertising2014investment);
 		
 		var websiteVisits = $("#website-visits").val();
+		if(!$.isNumeric(websiteVisits))
+		{
+			$("#website-visits-error").text("Please input a number in Website Visits field!");
+			$("#website-visits").focus();
+			$("#website-visits").val('');
+			return;
+		}
+		else{
+			$("#website-visits-error").text("");
+		}
 		$("#website-visits").val(websiteVisits);
 		
 		var clicksOnads = $("#clicks-on-ads").val();
+		if(!$.isNumeric(clicksOnads))
+		{
+			$("#clicks-on-ads-error").text("Please input a number in Clicks On Ads field!");
+			$("#clicks-on-ads").focus();
+			$("#clicks-on-ads").val('');
+			return;
+		}
+		else{
+			$("#clicks-on-ads-error").text("");
+		}
 		$("#clicks-on-ads").val(clicksOnads);
 		
 		var clickThroughrate = $("#click-through-rate").val();
+		if(!$.isNumeric(clickThroughrate))
+		{
+			$("#click-through-rate-error").text("Please input a number in Click Through Rate field!");
+			$("#click-through-rate").focus();
+			$("#click-through-rate").val('');
+			return;
+		}
+		else{
+			$("#click-through-rate-error").text("");
+		}
 		$("#click-through-rate").val(clickThroughrate);
 		
 		var remarks = $("#remarks").val();
@@ -600,19 +651,66 @@ $( document ).ready(function() {
 	function calculateSection3(){
 		
 		var advertiserText = $('#advertiser-text').val();
-		$('#advertiser-text').val(advertiserText); 
+		if($.isEmptyObject(advertiserText))
+		{
+			$("#advertiser-text-error").text("Please fill in Advertiser field!");
+			$("#advertiser-text").focus();
+			return;
+		}
+		else{
+			$("#advertiser-text-error").text("");
+		}
 		
-		var advertiserText = $('#address-text').val();
-		$('#address-text').val(advertiserText); 
+		var addressText = $('#address-text').val();
+		if($.isEmptyObject(addressText))
+		{
+			$("#address-text-error").text("Please fill in Address field!");
+			$("#address-text").focus();
+			return;
+		}
+		else{
+			$("#address-text-error").text("");
+		}
 		
-		var advertiserText = $('#proposal-date').val();
-		$('#proposal-date').val(advertiserText); 
+		function ValidateDate(dtValue)
+		{
+			var dtRegex = new RegExp(/\b\d{1,2}[\/-]\d{1,2}[\/-]\d{4}\b/);
+			return dtRegex.test(dtValue);
+		}
+		var proposalDate = $('#proposal-date').val();
+		if(ValidateDate(proposalDate))
+		{
+			$("#proposal-date-error").text("");
+		}
+		else
+		{
+			$("#proposal-date-error").text("Invalid Date.(mm/dd/yyyy or mm-dd-yyyy)");
+			$("#proposal-date").focus();
+			return;
+		}
 		
-		var advertiserText = $('#valid-until').val();
-		$('#valid-until').val(advertiserText); 
+		var validUntil = $('#valid-until').val();
+		if(ValidateDate(validUntil))
+		{
+			$("#valid-until-error").text("");
+		}
+		else
+		{
+			$("#valid-until-error").text("Invalid Date.(mm/dd/yyyy or mm-dd-yyyy)");
+			$("#valid-until").focus();
+			return;
+		} 
 		
-		var advertiserText = $('#proposed-amount').val();
-		$('#proposed-amount').val(advertiserText); 
+		var proposedAmount = $('#proposed-amount').val();
+		if(!$.isNumeric(proposedAmount))
+		{
+			$("#proposed-amount-error").text("Please input a number in Proposed Amount field!");
+			$("#proposed-amount").focus();
+			return;
+		}
+		else{
+			$("#proposed-amount-error").text("");
+		}
 		
 		var malaysiaPanpagesOptionAInput = 0;
 		var googleAdWordsSearchMobileOptionAInput = 0;
@@ -1025,7 +1123,38 @@ $( document ).ready(function() {
 		$('#grand-total-option-B-input').val(grandtotalOptionBinput);
 		
 		var termsConditionstext = $("#terms-conditions-text").val();
-		$("#terms-conditions-text").val(termsConditionstext);
+		if(ValidateDate(termsConditionstext))
+		{
+			$("#terms-conditions-text-error").text("");
+		}
+		else
+		{
+			$("#terms-conditions-text-error").text("Invalid Date.(mm/dd/yyyy or mm-dd-yyyy)");
+			$("#terms-conditions-text").focus();
+			return;
+		}
+		
+		var duration = $('#duration').val();
+		if($.isEmptyObject(duration))
+		{
+			$("#duration-error").text("Please fill in Duration field!");
+			$("#duration").focus();
+			return;
+		}
+		else{
+			$("#duration-error").text("");
+		}
+		
+		var coverage = $('#coverage').val();
+		if($.isEmptyObject(coverage))
+		{
+			$("#coverage-error").text("Please fill in Coverage field!");
+			$("#coverage").focus();
+			return;
+		}
+		else{
+			$("#coverage-error").text("");
+		}
 	}
 	
 	$( "#advertiser-text" ).blur(function() {
@@ -1443,11 +1572,6 @@ $( document ).ready(function() {
 	     
 	  });
 	
-	$( "#terms-conditions-text" ).blur(function() {
-		calculateSection3();
-				
-	        });
-	
 	$("#malaysia-panpages-option-A-input").blur(function() {
 		calculateSection3();
 		
@@ -1538,6 +1662,21 @@ $( document ).ready(function() {
 		
 	});
 	
+	$( "#terms-conditions-text" ).blur(function() {
+		calculateSection3();
+				
+	        });
+	
+	$( "#duration" ).blur(function() {
+		calculateSection3();
+				
+	        });
+	
+	$( "#coverage" ).blur(function() {
+		calculateSection3();
+				
+	        });
+	
 	/* Section4 */
 	$("#add-new").click( function()
 	{
@@ -1564,8 +1703,8 @@ $( document ).ready(function() {
 		
 				
 		if(typeof $("#" + keywordInput).val() === "undefined"){
-			$('#table-keyword').last().append('<tr><td id="'+keywordInput+'">'+keywordInput+'</td><td id="'+keywordInput+'Col2">'+avgMonthlysearchesinput+'</td><td id="'+keywordInput+'Col3">'+suggestedBidinput+'</td><td><input type="button" value="Delete" class="deleteRowButton"></td></tr>');
-			$('#table-keyword').last().append('<hidden'+' id="keyword['+keywordInput+']" name="fields['+keywordInput+']" value="'+keywordInput+','+avgMonthlysearchesinput+','+suggestedBidinput+'"></hidden>');
+			$('#table-keyword').last().append('<tr><td id="'+keywordInput+'">'+keywordInput+'</td><td id="'+keywordInput+'Col2">'+avgMonthlysearchesinput+'</td><td id="'+keywordInput+'Col3">'+suggestedBidinput+'</td><td><input type="hidden"'+' id="keyword'+keywordInput+'" name="fields['+"'proposed-keyword'"+']" value="'+keywordInput+','+avgMonthlysearchesinput+','+suggestedBidinput+'"><input type="button" value="Delete" class="deleteRowButton"></td></tr>');
+			
 		}
 		else{
 			$("#mesage-error-section4").text("This keyword's already existed!");
@@ -1592,8 +1731,10 @@ $( document ).ready(function() {
 		});
 		
 		$("#total-est-impressions").val(sumAvgMonthly);
+		$("#total-est-impressions").attr("disabled", "disabled");
 		
 		$("#average-cost-per-click").val(averageCostperclick);
+		$("#average-cost-per-click").attr("disabled", "disabled");
 		
 		function calculateSection4()
 	    {
@@ -1611,16 +1752,19 @@ $( document ).ready(function() {
 				estClicksassuming = totalEst * assumedCTRforsearchOutput / 100;
 				
 				$("#est-clicks-assuming").val(estClicksassuming);
+				$("#est-clicks-assuming").attr("disabled", "disabled");
 				
 				avgCostperclick = $("#average-cost-per-click").val();
 				
 				estMonthlyinvestment100 = (avgCostperclick * estClicksassuming).toFixed(2);
 				
 				$("#est-monthly-investment-100").val(estMonthlyinvestment100);
+				$("#est-monthly-investment-100").attr("disabled", "disabled");
 				
 				estMonthlyinvestment50 = (estMonthlyinvestment100 / 2).toFixed(2);
 				
 				$("#est-monthly-investment-50").val(estMonthlyinvestment50);
+				$("#est-monthly-investment-50").attr("disabled", "disabled");
 			}
 			
 		    
@@ -1658,6 +1802,7 @@ $( document ).ready(function() {
 			
 			$("#average-cost-per-click").val(averageCostperclick1);
 			calculateSection4();
+			calculateSection1();
 	    }
 		
 		$( "#assumed-CTR-for-search" ).blur(function() {
@@ -1666,7 +1811,56 @@ $( document ).ready(function() {
 		        });
 		$("#add-new").blur(function() {
 			calculateSection4();
+			calculateSection1();
 			
         });
+	});
+	$('#surveyForm').submit(function () { 
+		var monthlyTraffic = $.trim($('#monthly-traffic-output').val());
+		
+		var advertisingInvestment = $.trim($('#2014-advertising-investment').val());
+		var websiteVisits =$.trim($('#website-visits').val());
+		var clicksOnads =$.trim($('#clicks-on-ads').val());
+		var clickThroughrate =$.trim($('#click-through-rate').val());
+		var remarks = $.trim($('#remarks').val());
+		
+		var advertiserText =$.trim($('#advertiser-text').val());
+		var addressText =$.trim($('#address-text').val());
+		var proposalDate =$.trim($('#proposal-date').val());
+		var validUntil =$.trim($('#valid-until').val());
+		var proposedAmount =$.trim($('#proposed-amount').val());
+		var subTotaloptiona =$.trim($('#subtotal-option-A-input').val());
+		var subTotaloptionb =$.trim($('#subtotal-option-B-input').val());
+		var termsConditions = $.trim($('#terms-conditions-text').val());
+		
+		var assumedCTR = $.trim($('#assumed-CTR-for-search').val());
+		
+	    if ((monthlyTraffic  === '') 
+	    		|| (advertisingInvestment === '' ) || (websiteVisits === '' ) || (clicksOnads === '' ) || (clickThroughrate === '' )
+	    		|| (advertiserText === '' ) || (addressText === '' ) || (proposalDate === '' ) || (validUntil === '' ) || (proposedAmount === '' ) || (subTotaloptiona === '0' ) || (subTotaloptionb === '0' ) || (subTotaloptiona === '' ) || (subTotaloptionb === '' ) 
+	    		|| (assumedCTR === '')) {
+	    	
+	    	if ((monthlyTraffic  === '')) {
+    			alert('Please fill out all of the fields "PLANNER 1" to the best of your business plan.');
+		        return false;
+	    		
+			} else if((advertisingInvestment === '' ) || (websiteVisits === '' ) || (clicksOnads === '' ) || (clickThroughrate === '' ) || (remarks === '' )){
+				alert('Please fill out all of the fields "PLANNER 2" to the best of your business plan.');
+		        return false;
+		        
+			} else if((advertiserText === '' ) || (addressText === '' ) || (proposalDate === '' ) || (validUntil === '' ) || (proposedAmount === '' ) || (subTotaloptiona === 0 ) || (subTotaloptionb === 0 ) || (subTotaloptiona === '' ) || (subTotaloptionb === '' ) || (termsConditions == '')){
+				alert('Please fill out all of the fields "PLANNER 3" to the best of your business plan.');
+		        return false;
+		        
+			} else if(subTotaloptiona === '0' ){
+				if (subTotaloptionb === '0' ){
+					alert('Please choose "option a" or "option b" or both "option a & option b" and checked kinds of products do you like of your plan.');
+					return false;
+				}
+			} else if(assumedCTR === ''){
+				alert('Please fill out all of the fields "PLANNER 4" to the best of your business plan.');
+				return false;
+			}
+	    }
 	});
 });

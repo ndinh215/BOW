@@ -40,19 +40,19 @@
 				<table style="width:100%">
 					<tr>
 						<td>2014 Advertising Investment</td>
-						<td><input name="fields['2014-advertising-investment']" id="2014-advertising-investment" type="text">RM</td>		
+						<td><input name="fields['2014-advertising-investment']" id="2014-advertising-investment" type="text">RM<p id="2014-advertising-investment-error"></p></td>		
 					</tr>
 					<tr>
 						<td>Website Visits</td>
-						<td><input name="fields['website-visits']" id="website-visits" type="text"></td>
+						<td><input name="fields['website-visits']" id="website-visits" type="text"><p id="website-visits-error"></p></td>
 					</tr>
 					<tr>
 						<td>Clicks On Ads</td>
-						<td><input name="fields['clicks-on-ads']" id="clicks-on-ads" type="text"></td>	
+						<td><input name="fields['clicks-on-ads']" id="clicks-on-ads" type="text"><p id="clicks-on-ads-error"></p></td>	
 					</tr>
 					<tr>
 						<td>Click Through Rate</td>
-						<td><input name="fields['click-through-rate']" id="click-through-rate" type="text"></td>	
+						<td><input name="fields['click-through-rate']" id="click-through-rate" type="text"><p id="click-through-rate-error"></p></td>	
 					</tr>
 				</table>
 			</div>

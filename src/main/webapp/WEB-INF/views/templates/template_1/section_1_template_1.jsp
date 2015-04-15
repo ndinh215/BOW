@@ -27,7 +27,7 @@
 					<p>Revenue Increased (*):</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-					<p><input type="text" name="fields['revenue-increased']" id="revenue-increased-input" ></p>
+					<p><input type="text" name="fields['revenue-increased']" id="revenue-increased-input" style="background-color: #ffff00;"></p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<p id="revenue-increased-input-error"></p>
@@ -38,7 +38,7 @@
 					<p>No. Of Advertiser:</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-					<p><input type="text" name="fields['no-of-advertiser']" id="no-of-advertiser-input"></p>
+					<p><input type="text" name="fields['no-of-advertiser']" id="no-of-advertiser-input" style="background-color: #f2dcdb;"></p>
 				</div>
 			</div>
 			<div class="row">
@@ -46,7 +46,7 @@
 					<p>Average Revenue Per Advertiser (ARPA) (*):</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-					<p><input type="text" name="fields['average-revenue-per-advertiser']" id="arpa-input"></p>
+					<p><input type="text" name="fields['average-revenue-per-advertiser']" id="arpa-input" style="background-color: #ffff00;"></p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<p id="arpa-input-error"></p>
@@ -57,7 +57,7 @@
 					<p>Closing Rate (*):</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-					<p><input type="text" name="fields['closing-rate']" id="closing-rate-input"></p>
+					<p><input type="text" name="fields['closing-rate']" id="closing-rate-input" style="background-color: #ffff00;"></p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<p id="closing-rate-input-error"></p>
@@ -68,7 +68,7 @@
 					<p>Leads Conversion Rate (*):</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-					<p><input type="text" name="fields['leads-conversion-rate']" id="leads-conversion-rate-input"></p>
+					<p><input type="text" name="fields['leads-conversion-rate']" id="leads-conversion-rate-input" style="background-color: #ffff00;"></p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<p id="leads-conversion-rate-input-error"></p>
@@ -79,7 +79,7 @@
 					<p>Campaign Period (*):</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-					<p><input type="text" name="fields['campaign-period']" id="campaign-period-input"></p>
+					<p><input type="text" name="fields['campaign-period']" id="campaign-period-input" style="background-color: #ffff00;"></p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<p id="campaign-period-input-error"></p>
@@ -90,7 +90,7 @@
 				<p>Revenue Increased:</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p><input type="text" name="fields['revenue-increased']" id="revenue-increased-output"></p>
+				<p><input type="text" name="fields['revenue-increased']" id="revenue-increased-output" style="background-color: #f2dcdb;"></p>
 			</div>
 		</div>
 		<div class="row">
@@ -98,7 +98,7 @@
 				<p>ARPA:</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p><input type="text" name="fields['average-revenue-per-advertiser']" id="arpa-output"></p>
+				<p><input type="text" name="fields['average-revenue-per-advertiser']" id="arpa-output" style="background-color: #f2dcdb;"></p>
 			</div>
 		</div>
 		<div class="row">
@@ -106,7 +106,7 @@
 				<p>New Advertisers:</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p><input type="text" name="fields['no-of-advertiser']" id="new-advertisers-output"></p>
+				<p><input type="text" name="fields['no-of-advertiser']" id="new-advertisers-output" style="background-color: #f2dcdb;"></p>
 			</div>
 		</div>
 		<div class="row">
@@ -114,7 +114,7 @@
 				<p>Closing Rate:</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p><input type="text" name="fields['closing-rate']" id="closing-rate-output"></p>
+				<p><input type="text" name="fields['closing-rate']" id="closing-rate-output" style="background-color: #f2dcdb;"></p>
 			</div>
 		</div>
 		<div class="row">
@@ -122,7 +122,7 @@
 				<p>Leads:</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p><input type="text" name="fields['leads']" id="leads-output"></p>
+				<p><input type="text" name="fields['leads']" id="leads-output" style="background-color: #f2dcdb;"></p>
 			</div>
 		</div>
 		<div class="row">
@@ -130,7 +130,7 @@
 				<p>Leads Conversion Rate:</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p><input type="text" name="fields['leads-conversion-rate']" id="leads-conversion-rate-output"></p>
+				<p><input type="text" name="fields['leads-conversion-rate']" id="leads-conversion-rate-output" style="background-color: #f2dcdb;"></p>
 			</div>
 		</div>
 		<div class="row">
@@ -138,7 +138,7 @@
 				<p>Traffic Required:</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p><input type="text" name="fields['traffic-required']" id="traffic-required-output"></p>
+				<p><input type="text" name="fields['traffic-required']" id="traffic-required-output" style="background-color: #f2dcdb;"></p>
 			</div>
 		</div>
 		<div class="row">
@@ -146,7 +146,7 @@
 				<p>Monthly Traffic:</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p><input type="text" name="fields['monthly-traffic']" id="monthly-traffic-output"></p>
+				<p><input type="text" name="fields['monthly-traffic']" id="monthly-traffic-output" style="background-color: #f2dcdb;"></p>
 			</div>
 		</div>
 		<div class="row">
@@ -154,7 +154,7 @@
 				<p>Avg. Cost Per Click:</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p><input type="text" name="fields['avg-cost-per-click']" id="avg-cost-per-click-output"></p>
+				<p><input type="text" name="fields['avg-cost-per-click']" id="avg-cost-per-click-output" style="background-color: #f2dcdb;"></p>
 			</div>
 		</div>
 		<div class="row">
@@ -162,7 +162,7 @@
 				<p>Estimated Monthly Budget:</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p><input type="text" name="fields['estimated-monthly-budget']" id="estimated-monthly-budget-output"></p>
+				<p><input type="text" name="fields['estimated-monthly-budget']" id="estimated-monthly-budget-output" style="background-color: #f2dcdb;"></p>
 			</div>
 		</div>
 		<div class="row">
@@ -170,7 +170,7 @@
 				<p>Total Campaign Budget:</p>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-				<p><input type="text" name="fields['total-campaign-budget']" id="total-campaign-budget-output"></p>
+				<p><input type="text" name="fields['total-campaign-budget']" id="total-campaign-budget-output" style="background-color: #f2dcdb;"></p>
 			</div>
 		</div>
 		<div class="row">

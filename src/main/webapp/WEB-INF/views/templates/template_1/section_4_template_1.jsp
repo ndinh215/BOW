@@ -64,27 +64,27 @@
 				<table>
 					<tr>
 						<td>Total Est. Impressions (100% Share of Voice)</td>
-						<td><input name="fields['total-est-impressions']" id="total-est-impressions"/></td> 
+						<td><input name="fields['total-est-impressions']" id="total-est-impressions" style="background-color: #f2dcdb;"/></td> 
 					</tr>
 					<tr>
 						<td>Average Cost per Click</td>
-						<td><input name="fields['average-cost-per-click']" id="average-cost-per-click"/>$</td> 
+						<td><input name="fields['average-cost-per-click']" id="average-cost-per-click" style="background-color: #f2dcdb;"/>$</td> 
 					</tr>
 					<tr>
 						<td>Assumed CTR for Search</td>
-						<td><input name="fields['assumed-ctr-for-search']" id="assumed-CTR-for-search"/></td> 
+						<td><input name="fields['assumed-ctr-for-search']" id="assumed-CTR-for-search" style="background-color: #ffff00;"/></td> 
 					</tr>
 					<tr>
 						<td>Est. Clicks Assuming 3% CTR (100% Share of Voice)</td>
-						<td><input name="fields['est-clicks-assuming']" id="est-clicks-assuming"/></td> 
+						<td><input name="fields['est-clicks-assuming']" id="est-clicks-assuming" style="background-color: #f2dcdb;"/></td> 
 					</tr>
 					<tr>
 						<td>Est. Monthly Investment (100% Share of Voice)</td>
-						<td><input name="fields['est-monthly-investment-100']" id="est-monthly-investment-100"/>$</td> 
+						<td><input name="fields['est-monthly-investment-100']" id="est-monthly-investment-100" style="background-color: #f2dcdb;"/>$</td> 
 					</tr>
 					<tr>
 						<td>Est. Monthly Investment (50% Share of Voice)</td>
-						<td><input name="fields['est-monthly-investment-50']" id="est-monthly-investment-50"/>$</td> 
+						<td><input name="fields['est-monthly-investment-50']" id="est-monthly-investment-50" style="background-color: #f2dcdb;"/>$</td> 
 					</tr>
 				</table>
 			</div>
