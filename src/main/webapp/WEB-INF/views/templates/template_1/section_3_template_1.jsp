@@ -201,29 +201,27 @@
 				<h3>TRADITIONAL MEDIA COST &amp; REACH</h3>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<form>
-					<fieldset>
-						<legend>RM - Multi-Channel Marketing</legend>
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
-								<p>Duration:</p>
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
-								<p><input type="text" name="fields['duration']" id="duration"></p>
-								<p id="duration-error"></p>
-							</div>
+				<fieldset>
+					<legend>RM - Multi-Channel Marketing</legend>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+							<p>Duration:</p>
 						</div>
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
-								<p>Coverage:</p>
-							</div>
-							<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
-								<p><input type="text" name="fields['coverage']" id="coverage"></p>
-								<p id="coverage-error"></p>
-							</div>
+						<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+							<p><input type="text" name="fields['duration']" id="duration"></p>
+							<p id="duration-error"></p>
 						</div>
-					</fieldset>
-				</form>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+							<p>Coverage:</p>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+							<p><input type="text" name="fields['coverage']" id="coverage"></p>
+							<p id="coverage-error"></p>
+						</div>
+					</div>
+				</fieldset>
 			</div>
 		</div>
 	</div>
