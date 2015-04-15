@@ -11,7 +11,7 @@ public class SurveyTest extends TestCase {
 		ReportService reportSvc = new ReportServiceImpl();
 		String outputUrl = reportSvc.exportReport(1, "pdf");
 		
-		assertEquals("Test string", outputUrl);
+		assertEquals(null, outputUrl);
 	}
 	
 }

@@ -37,7 +37,7 @@
 			<break>
 				<reportElement x="0" y="60" width="585" height="1" uuid="0dacf4d0-8e84-494f-8135-4088e8cab34d"/>
 			</break>
-			<subreport>
+			<subreport runToBottom="true">
 				<reportElement x="0" y="87" width="585" height="61" uuid="1154ddaa-7740-407e-a7b1-4994205191cd"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>

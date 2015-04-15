@@ -33,8 +33,14 @@
 				</tr>
 			</table>
 			<h2>Survey Template 1</h2>
-			<input type="text" name="fields['option-a-malaysia-panpages']">
-			<input type="text" name="fields['price-option-a-malaysia-panpages']">
+			remarks
+			<input type="text" name="fields['total-est-impressions']">
+			<input type="text" name="fields['average-cost-per-click']">
+			<input type="text" name="fields['assumed-ctr-for-search']">
+			<input type="text" name="fields['est-clicks-assuming']">
+			<input type="text" name="fields['est-monthly-investment-100']">
+			<input type="text" name="fields['est-monthly-investment-50']">
+			
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 					<p>Revenue Increased:</p>

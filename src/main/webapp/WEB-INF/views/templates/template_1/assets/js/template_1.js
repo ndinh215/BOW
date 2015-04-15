@@ -1704,7 +1704,8 @@ $( document ).ready(function() {
 				
 		if(typeof $("#" + keywordInput).val() === "undefined"){
 			$('#table-keyword').last().append('<tr><td id="'+keywordInput+'">'+keywordInput+'</td><td id="'+keywordInput+'Col2">'+avgMonthlysearchesinput+'</td><td id="'+keywordInput+'Col3">'+suggestedBidinput+'</td><td><input type="hidden"'+' id="keyword'+keywordInput+'" name="fields['+"'proposed-keyword'"+']" value="'+keywordInput+','+avgMonthlysearchesinput+','+suggestedBidinput+'"><input type="button" value="Delete" class="deleteRowButton"></td></tr>');
-			
+			$('#table-keyword').last().append('<tr><td id="'+keywordInput+'">'+keywordInput+'</td><td id="'+keywordInput+'Col2">'+avgMonthlysearchesinput+'</td><td id="'+keywordInput+'Col3">'+suggestedBidinput+'</td><td><input type="button" value="Delete" class="deleteRowButton"></td></tr>');
+			$('#table-keyword').last().append('<input type="hidden" id="keyword['+keywordInput+']" name="fields['+"'proposed-keyword'"+']" value="'+keywordInput+','+avgMonthlysearchesinput+','+suggestedBidinput+'" />');
 		}
 		else{
 			$("#mesage-error-section4").text("This keyword's already existed!");
