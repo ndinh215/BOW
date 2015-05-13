@@ -15,7 +15,17 @@ public enum ConfigConstant {
 	REPORT_OUTPUT_PREFIX_NAME("report_output_prefix_name"),
 	REPORT_TEMPLATE_PATH("report_template_path"),
 	REPORT_OUTPUT_PATH("report_output_path"),
-	REPORT_OUTPUT_BASE_URL("report_output_base_url");
+	REPORT_OUTPUT_BASE_URL("report_output_base_url"),
+	MAIL_TEMPLATE_PATH("mail_template_path"), 
+	MAIL_HOST("mail_host"), 
+	MAIL_PORT("mail_port"),  
+	MAIL_USERNAME("mail_username"), 
+	MAIL_PASSWORD("mail_password"), 
+	UPLOAD_FOLDER_PATH("upload_folder_path"),
+	NOTIFICATION_MAIL_SUBJECT("notification_mail_subject"), 
+	NOTIFICATION_MAIL_TEMPLATE_NAME("notification_mail_template_name"), 
+	SURVEY_PDF_URL("survey_pdf_url"), 
+	BASE_URL("base_url");
 	
 	private String name;
 

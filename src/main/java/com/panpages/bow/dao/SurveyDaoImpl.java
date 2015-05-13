@@ -1,9 +1,16 @@
 package com.panpages.bow.dao;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
@@ -13,7 +20,9 @@ import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.multipart.MultipartFile;
 
+import com.panpages.bow.configuration.ConfigConstant;
 import com.panpages.bow.configuration.HibernateConfiguration;
 import com.panpages.bow.model.Field;
 import com.panpages.bow.model.FieldAndSectionRelation;
@@ -31,6 +40,8 @@ import com.panpages.bow.service.utils.StringUtils;
 public class SurveyDaoImpl extends AbstractDao implements SurveyDao{
 	@Autowired 
 	ApplicationContext ctx;
+	
+	private static final Logger logger = Logger.getLogger(SurveyDaoImpl.class);
 	
 	public void saveSurvey(Survey survey) {
 		if (survey.getId() != 0) {
@@ -188,6 +199,49 @@ public class SurveyDaoImpl extends AbstractDao implements SurveyDao{
 						
 						saveFieldAndSectionRelation(relation);
 					}
+				}
+				
+				if (fieldValue instanceof MultipartFile) {
+					// Save file
+					String fileName = UUID.randomUUID().toString();
+					String uploadPath = ctx.getEnvironment().getRequiredProperty(ConfigConstant.UPLOAD_FOLDER_PATH.getName());
+					String filePath = String.format("%1$s%2$s%3$s", uploadPath, File.separator, fileName);
+					File file = new File(filePath);
+					BufferedReader reader = null;
+					try {
+						FileUtils.writeByteArrayToFile(file, ((MultipartFile)fieldValue).getBytes());
+					    reader = new BufferedReader(new FileReader(filePath));
+						String line = null;
+						while ((line = reader.readLine()) != null) {
+							// Add new field
+							Field field = new Field();
+							field.setFieldTemplateId(fieldTemplate.getId());
+							field.setName(fieldTemplate.getName());
+							field.setValue(StringUtils.nullValue(line, ""));
+							field.setFieldTemplate(fieldTemplate);
+							
+							saveField(field);
+							
+							// Create field and section relation
+							FieldAndSectionRelation relation = new FieldAndSectionRelation();
+							relation.setFieldId(field.getId());
+							relation.setSectionId(parentSection.getId());
+							
+							saveFieldAndSectionRelation(relation);
+						}
+					} catch (IOException e) {
+						e.printStackTrace();
+						logger.error(e.getStackTrace());
+					} finally {
+						if (reader != null) {
+							try {
+								reader.close();
+							} catch (IOException e) {
+								e.printStackTrace();
+							}
+						}
+					}
+					
 				}
 			}
 			

@@ -11,9 +11,25 @@
 
 	<properties>
 		<springframework.version>4.0.6.RELEASE</springframework.version>
+		<spring.security.version>4.0.1.RELEASE</spring.security.version>
 		<hibernate.version>4.3.6.Final</hibernate.version>
+		<hibernate-validator.version>5.1.2.Final</hibernate-validator.version>
 		<mysql.version>5.1.31</mysql.version>
 		<joda-time.version>2.3</joda-time.version>
+		<validation.version>1.1.0.Final</validation.version>
+		<jadira.usertype.version>3.0.0.CR1</jadira.usertype.version>
+		<servlet.api.version>3.1.0</servlet.api.version>
+		<servlet.jsp-api.version>2.3.1</servlet.jsp-api.version>
+		<jstl.version>1.2</jstl.version>
+		<junit.version>4.0</junit.version>
+		<jasperreports.version>5.6.0</jasperreports.version>
+		<log4j.version>1.2.17</log4j.version>
+		<commons-fileupload.version>1.2.1</commons-fileupload.version>
+		<groovy-all.version>2.3.7</groovy-all.version>
+		<p6spy.version>1.3</p6spy.version>
+		<mail.version>1.4.3</mail.version>
+		<velocity.version>1.7</velocity.version>
+		<commons-io.version>1.4</commons-io.version>
 	</properties>
 
 	<dependencies>
@@ -43,6 +59,31 @@
 			<artifactId>spring-orm</artifactId>
 			<version>${springframework.version}</version>
 		</dependency>
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context-support</artifactId>
+		    <version>${springframework.version}</version>
+		</dependency>
+		
+		<!-- Spring Security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+ 
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+ 
+		<!-- Spring Security JSP Taglib -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
 
 		<!-- Hibernate -->
 		<dependency>
@@ -55,12 +96,12 @@
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
-			<version>1.1.0.Final</version>
+			<version>${validation.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
-			<version>5.1.2.Final</version>
+			<version>${hibernate-validator.version}</version>
 		</dependency>
 
 		<!-- MySQL -->
@@ -81,67 +122,87 @@
   		<dependency>
     		<groupId>org.jadira.usertype</groupId>
     		<artifactId>usertype.core</artifactId>
-    		<version>3.0.0.CR1</version>
+    		<version>${jadira.usertype.version}</version>
 		</dependency>
 
-		<!-- Servlet+JSP+JSTL -->
+		<!-- Servlet & JSP & JSTL -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
+			<version>${servlet.api.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>javax.servlet.jsp-api</artifactId>
-			<version>2.3.1</version>
+			<version>${servlet.jsp-api.version}</version>
 		</dependency>
 		<dependency>
 		    <groupId>javax.servlet</groupId>
 		    <artifactId>jstl</artifactId>
-		    <version>1.2</version>
+		    <version>${jstl.version}</version>
 		</dependency>
 		
-		<!--  Junit 4.0 -->
+		<!--  Junit -->
 		<dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.0</version>    
+            <version>${junit.version}</version>    
         </dependency>
         
-        <!--  JasperReport 5.6.0 -->
+        <!--  JasperReport -->
         <dependency>
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
-            <version>5.6.0</version>
+            <version>${jasperreports.version}</version>
         </dependency>
         
-        <!-- Log4j 1.2.17 -->
+        <!-- Log4j -->
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
+			<version>${log4j.version}</version>
 		</dependency>
 		
-		<!-- Fileupload 1.2.17 -->
+		<!-- Fileupload -->
 		<dependency>
 		   <groupId>commons-fileupload</groupId>
 		   <artifactId>commons-fileupload</artifactId>
-		   <version>1.2.1</version>
+		   <version>${commons-fileupload.version}</version>
 		</dependency>
 		
-		<!-- Groovy 2.3.7 -->
+		<!-- Groovy -->
 		<dependency>
 		    <groupId>org.codehaus.groovy</groupId>
 		    <artifactId>groovy-all</artifactId>
-		    <version>2.3.7</version>
+		    <version>${groovy-all.version}</version>
 		</dependency>
 		
-		<!-- p6spy 1.3 -->
+		<!-- p6spy -->
 		<dependency>
 			<groupId>p6spy</groupId>
 			<artifactId>p6spy</artifactId>
-			<version>1.3</version>
+			<version>${p6spy.version}</version>
 		</dependency>
+		
+		<!-- Java Mail API -->
+	    <dependency>
+		    <groupId>javax.mail</groupId>
+		    <artifactId>mail</artifactId>
+		    <version>${mail.version}</version>
+	    </dependency>
+	    
+	    <!-- Velocity -->
+	    <dependency>
+		   <groupId>org.apache.velocity</groupId>
+		   <artifactId>velocity</artifactId>
+		   <version>${velocity.version}</version>
+		</dependency>
+		
+		<dependency>
+	      <groupId>commons-io</groupId>
+		  <artifactId>commons-io</artifactId>
+	      <version>${commons-io.version}</version>
+	    </dependency>
 	</dependencies>
 
 	<build>

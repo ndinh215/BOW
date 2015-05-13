@@ -36,9 +36,12 @@ public class BOWConfig extends WebMvcConfigurerAdapter {
         return resource;
     }
 	
-	@Bean(name = "multipartResolver")
-    public CommonsMultipartResolver getMultipartResolver() {
-        return new CommonsMultipartResolver();
+	@Bean(name = "filterMultipartResolver")
+    public CommonsMultipartResolver multipartResolver() {
+        CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
+        multipartResolver.setMaxUploadSize(5000000);
+        
+        return multipartResolver;
     }
 	
 	@Override
