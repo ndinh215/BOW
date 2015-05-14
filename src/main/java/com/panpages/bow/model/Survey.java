@@ -44,6 +44,9 @@ public class Survey {
 	@Column(name = "STORAGE_NAME", nullable = false)
 	private String storageName;
 	
+	@Column(name = "FULFILLED_DATE", nullable = true)
+	private String fulfilledDate;
+	
 	@ManyToMany()
 	@LazyCollection(LazyCollectionOption.FALSE)
 	@JoinTable(
@@ -91,22 +94,6 @@ public class Survey {
 	public void setSurveyTemplate(SurveyTemplate surveyTemplate) {
 		this.surveyTemplate = surveyTemplate;
 	}
-	
-	public Section findSectionWithSectionTemplateSlugName(String slugName) {
-		if (slugName == null || slugName.trim().equals("") || sections.size() == 0) {
-			return null;
-		}
-		
-		for (Section section:sections) {
-			SectionTemplate sectionTempl = section.getSectionTemplate();
-			String templSlugName = sectionTempl.getSlugName();
-			if (slugName.equalsIgnoreCase(templSlugName)) {
-				return section;
-			}
-		}
-		
-		return null;
-	}
 
 	public String getStatus() {
 		return status;
@@ -130,6 +117,14 @@ public class Survey {
 
 	public void setSurveyTemplateId(int surveyTemplateId) {
 		this.surveyTemplateId = surveyTemplateId;
+	}
+
+	public String getFulfilledDate() {
+		return fulfilledDate;
+	}
+
+	public void setFulfilledDate(String fulfilledDate) {
+		this.fulfilledDate = fulfilledDate;
 	}
 	
 }
