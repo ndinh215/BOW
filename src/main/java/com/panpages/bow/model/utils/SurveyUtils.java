@@ -90,4 +90,14 @@ public class SurveyUtils {
 		return bean;
 	}
 	
+	public static List<SurveyBean> createSurveyBeans(SurveyBean... beans) {
+		List<SurveyBean> beanList = new ArrayList<SurveyBean>();
+		
+		for (SurveyBean bean : beans) {
+			beanList.add(bean);
+		}
+		
+		return beanList;
+	}
+	
 }
