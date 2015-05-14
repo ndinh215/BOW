@@ -13,13 +13,20 @@
 </head>
 <body>
 	<div class="container">
-		<form:form method="POST" modelAttribute="surveyForm" enctype="multipart/form-data" action="survey_2.html">
+		<form:form method="POST" modelAttribute="surveyForm" enctype="multipart/form-data" action="survey_2.html?submit">
 			<table>
 				<tr>
-					<td><label for="first-name">Proposed Keyword: </label></td>
+					<td><label for="consultant-email-address">Consultant email: </label></td>
+					<td><input name="fields['consultant-email-address']" type="text"/></td>
+				</tr>
+				<tr>
+					<td><label for="advertiser-company-name">Advertiser company name: </label></td>
+					<td><input name="fields['advertiser-company-name']" type="text"/></td>
+				</tr>
+				<tr>
+					<td><label for="proposed-keyword">Proposed Keyword: </label></td>
 					<td><input name="fields['proposed-keyword']" type="file"/></td>
 				</tr>
-				
 				<tr>
 					<td><input type="submit" value="OK" /></td>
 				</tr>

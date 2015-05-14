@@ -24,8 +24,11 @@ public enum ConfigConstant {
 	UPLOAD_FOLDER_PATH("upload_folder_path"),
 	NOTIFICATION_MAIL_SUBJECT("notification_mail_subject"), 
 	NOTIFICATION_MAIL_TEMPLATE_NAME("notification_mail_template_name"), 
-	SURVEY_PDF_URL("survey_pdf_url"), 
-	BASE_URL("base_url");
+	SURVEY_PDF_URL("survey-pdf-url"), 
+	BASE_URL("base_url"), 
+	CONSULTANT_EMAIL("consultant-email-address"),
+	ADVERTISER_COMPANY_NAME("advertiser-company-name"), 
+	SURVEY_FULFILLED_DATE("survey-fulfilled-date");
 	
 	private String name;
 

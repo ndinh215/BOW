@@ -1,5 +1,8 @@
 package com.panpages.bow.model;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -16,6 +19,7 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.LazyCollection;
 import org.hibernate.annotations.LazyCollectionOption;
+import org.hibernate.annotations.Type;
 
 @Entity
 @Table(name="Survey")
@@ -44,8 +48,9 @@ public class Survey {
 	@Column(name = "STORAGE_NAME", nullable = false)
 	private String storageName;
 	
-	@Column(name = "FULFILLED_DATE", nullable = true)
-	private String fulfilledDate;
+	@Column(name = "FULFILLED_DATE", nullable = false)
+	@Type(type="timestamp")
+	private Date fulfilledDate;
 	
 	@ManyToMany()
 	@LazyCollection(LazyCollectionOption.FALSE)
@@ -120,11 +125,16 @@ public class Survey {
 	}
 
 	public String getFulfilledDate() {
-		return fulfilledDate;
+		String newFulfilledDateStr;
+		
+		DateFormat newDateFormat = new SimpleDateFormat("dd/MMM/yyyy");
+		newFulfilledDateStr = newDateFormat.format(fulfilledDate);
+		
+		return newFulfilledDateStr;
 	}
-
-	public void setFulfilledDate(String fulfilledDate) {
-		this.fulfilledDate = fulfilledDate;
+	
+	public void setFulfilledDate() {
+		this.fulfilledDate = new Date();
 	}
 	
 }

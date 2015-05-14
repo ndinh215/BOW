@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.panpages.bow.configuration.ConfigConstant;
-import com.panpages.bow.model.Mail;
 import com.panpages.bow.model.Survey;
 import com.panpages.bow.model.SurveyForm;
 import com.panpages.bow.model.SurveyTemplate;
@@ -99,6 +98,7 @@ public class SurveyController {
 						      (submit != null? SurveyStatus.COMPLETED.getValue() : SurveyStatus.PENDING.getValue());
 		survey.setStatus(surveyStatus);
 		survey.setStorageName(reportName);
+		survey.setFulfilledDate();
 		surveySvc.saveSurvey(survey);
 		
 		// Send notification email
@@ -107,42 +107,12 @@ public class SurveyController {
 		String reportPath = String.format("%1$s%2$s%3$s%4$s%5$s.%6$s", reportBasePath, File.separator, ReportType.PDF.getName(), File.separator, reportName, ReportType.PDF.getName());
 		String reportUrl = String.format("%1$s%2$s", baseUrl, reportPath);
 		
-		Map<String, String> fields = new HashMap<String, String>();
-		fields.put(ConfigConstant.SURVEY_PDF_URL.getName(), reportUrl);
+		Map<String, String> params = new HashMap<String, String>();
+		params.put(ConfigConstant.SURVEY_PDF_URL.getName(), reportUrl);
 		
-		sendMail(survey, fields);
+		emailSvc.sendMail(survey, params);
 		
 		return "redirect:" + reportViewPath;
-	}
-	
-	private void sendMail(Survey survey, Map<String, String> fields) {
-		try {
-			Mail mail = new Mail();
-			
-			// From mail
-			String fromMail = ctx.getEnvironment().getProperty(ConfigConstant.MAIL_USERNAME.getName());
-			mail.setMailFrom(fromMail);
-			
-			// To mail
-			String consultantMail = "blackjackptit@yahoo.com";
-			mail.setMailTo(consultantMail);
-			
-			// Subject
-			String mailSubject = ctx.getEnvironment().getProperty(ConfigConstant.NOTIFICATION_MAIL_SUBJECT.getName());
-			mail.setMailSubject(mailSubject);
-			
-			// Template 
-			String mailTemplateName = ctx.getEnvironment().getProperty(ConfigConstant.NOTIFICATION_MAIL_TEMPLATE_NAME.getName());
-			mail.setTemplateName(mailTemplateName);
-			
-			// Template fields
-			mail.setFields(fields);
-			
-			emailSvc.sendMail(mail);
-		} catch (Exception e) {
-			e.printStackTrace();
-			logger.error(e.getStackTrace());
-		}
 	}
 
 	@RequestMapping(value = { "/error.html" }, method = RequestMethod.GET)

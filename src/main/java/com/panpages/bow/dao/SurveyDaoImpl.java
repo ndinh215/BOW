@@ -203,32 +203,35 @@ public class SurveyDaoImpl extends AbstractDao implements SurveyDao{
 				
 				if (fieldValue instanceof MultipartFile) {
 					// Save file
-					String fileName = UUID.randomUUID().toString();
-					String uploadPath = ctx.getEnvironment().getRequiredProperty(ConfigConstant.UPLOAD_FOLDER_PATH.getName());
-					String filePath = String.format("%1$s%2$s%3$s", uploadPath, File.separator, fileName);
-					File file = new File(filePath);
 					BufferedReader reader = null;
 					try {
-						FileUtils.writeByteArrayToFile(file, ((MultipartFile)fieldValue).getBytes());
-					    reader = new BufferedReader(new FileReader(filePath));
-						String line = null;
-						while ((line = reader.readLine()) != null) {
-							// Add new field
-							Field field = new Field();
-							field.setFieldTemplateId(fieldTemplate.getId());
-							field.setName(fieldTemplate.getName());
-							field.setValue(StringUtils.nullValue(line, ""));
-							field.setFieldTemplate(fieldTemplate);
-							
-							saveField(field);
-							
-							// Create field and section relation
-							FieldAndSectionRelation relation = new FieldAndSectionRelation();
-							relation.setFieldId(field.getId());
-							relation.setSectionId(parentSection.getId());
-							
-							saveFieldAndSectionRelation(relation);
-						}
+						if (((MultipartFile)fieldValue).getBytes().length > 0) {
+							String fileName = UUID.randomUUID().toString();
+							String uploadPath = ctx.getEnvironment().getRequiredProperty(ConfigConstant.UPLOAD_FOLDER_PATH.getName());
+							String filePath = String.format("%1$s%2$s%3$s", uploadPath, File.separator, fileName);
+							File file = new File(filePath);
+						
+							FileUtils.writeByteArrayToFile(file, ((MultipartFile)fieldValue).getBytes());
+						    reader = new BufferedReader(new FileReader(filePath));
+							String line = null;
+							while ((line = reader.readLine()) != null) {
+								// Add new field
+								Field field = new Field();
+								field.setFieldTemplateId(fieldTemplate.getId());
+								field.setName(fieldTemplate.getName());
+								field.setValue(StringUtils.nullValue(line, ""));
+								field.setFieldTemplate(fieldTemplate);
+								
+								saveField(field);
+								
+								// Create field and section relation
+								FieldAndSectionRelation relation = new FieldAndSectionRelation();
+								relation.setFieldId(field.getId());
+								relation.setSectionId(parentSection.getId());
+								
+								saveFieldAndSectionRelation(relation);
+							}
+						} 
 					} catch (IOException e) {
 						e.printStackTrace();
 						logger.error(e.getStackTrace());
@@ -241,7 +244,6 @@ public class SurveyDaoImpl extends AbstractDao implements SurveyDao{
 							}
 						}
 					}
-					
 				}
 			}
 			

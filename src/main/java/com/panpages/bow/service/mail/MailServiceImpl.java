@@ -2,6 +2,7 @@ package com.panpages.bow.service.mail;
 
 import java.io.StringWriter;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
@@ -15,7 +16,11 @@ import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Service;
 
+import com.panpages.bow.configuration.ConfigConstant;
+import com.panpages.bow.model.Field;
 import com.panpages.bow.model.Mail;
+import com.panpages.bow.model.Survey;
+import com.panpages.bow.model.utils.SurveyUtils;
 
 @Service("mailService")
 public class MailServiceImpl implements MailService {
@@ -60,6 +65,49 @@ public class MailServiceImpl implements MailService {
 			ex.printStackTrace();
 			logger.error(ex.getStackTrace());
 			throw ex;
+		}
+	}
+
+	@Override
+	public void sendMail(Survey survey, Map<String, String> params) throws MailException {
+		if (survey == null) {
+			return;
+		}
+		
+		try {
+			Mail mail = new Mail();
+			Field advCompanyNameField = SurveyUtils.findFieldWithFieldTemplateSlugName(ConfigConstant.ADVERTISER_COMPANY_NAME.getName(), survey);			
+			
+			// From mail
+			String fromMail = ctx.getEnvironment().getProperty(ConfigConstant.MAIL_USERNAME.getName());
+			mail.setMailFrom(fromMail);
+			
+			// To mail
+			Field consultantMailField = SurveyUtils.findFieldWithFieldTemplateSlugName(ConfigConstant.CONSULTANT_EMAIL.getName(), survey);						
+			String consultantMail = consultantMailField.getValue();
+			mail.setMailTo(consultantMail);
+			
+			// Subject
+			String mailSubjectPattern = ctx.getEnvironment().getProperty(ConfigConstant.NOTIFICATION_MAIL_SUBJECT.getName());
+			String mailSubject = String.format(mailSubjectPattern, advCompanyNameField.getValue());
+			mail.setMailSubject(mailSubject);
+			
+			// Template 
+			String mailTemplateName = ctx.getEnvironment().getProperty(ConfigConstant.NOTIFICATION_MAIL_TEMPLATE_NAME.getName());
+			mail.setTemplateName(mailTemplateName);
+			
+			/////////////////// Template fields /////////////////////////
+			// Advertiser company name
+			params.put(ConfigConstant.ADVERTISER_COMPANY_NAME.getName(), advCompanyNameField.getValue());
+			// Fulfilled date
+			params.put(ConfigConstant.SURVEY_FULFILLED_DATE.getName(), survey.getFulfilledDate());
+			
+			mail.setFields(params);
+			
+			sendMail(mail);
+		} catch (Exception e) {
+			e.printStackTrace();
+			logger.error(e.getStackTrace());
 		}
 	}
 }

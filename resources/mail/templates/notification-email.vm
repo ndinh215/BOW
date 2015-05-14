@@ -1,7 +1,9 @@
-Dear,
+Dear ${consultant-name},
 
-This email sent to you to remind about your customer's survey.
-Please review your customer's survey with this link: ${survey_pdf_url} 
+We have drafted a proposal for your advertiser ${advertiser-company-name} based on the information you provided on ${survey-fulfilled-date}. 
 
-Thanks & Best regards,
-Panpages.
+Attached is the pdf version of the proposal for your kind perusal. 
+${survey-pdf-url} 
+
+Thanks and Regards, 
+PanPages Online.
