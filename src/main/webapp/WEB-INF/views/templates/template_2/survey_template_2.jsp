@@ -13,11 +13,20 @@
 </head>
 <body>
 	<div class="container">
-		<form:form method="POST" modelAttribute="surveyForm" enctype="multipart/form-data" action="survey_2.html?submit">
+		<form:form method="POST" modelAttribute="surveyForm" enctype="multipart/form-data" action="survey_2.html">
 			<table>
 				
 				<tr>
+<<<<<<< HEAD
 					<td>language-advertiser-target<input name="fields['language-advertiser-target]" type="text"/></td>
+=======
+					<td><label for="consultant-name">Consultant name: </label></td>
+					<td><input name="fields['consultant-name']" type="text"/></td>
+				</tr>
+				<tr>
+					<td><label for="consultant-email-address">Consultant email: </label></td>
+					<td><input name="fields['consultant-email-address']" type="text"/></td>
+>>>>>>> df5d02f665587c4a617a01bf3fc815be465d0ba1
 				</tr>
 				<tr>
 					<td>language-advertiser-target<input name="fields['language-advertiser-target']" type="text"/></td>
