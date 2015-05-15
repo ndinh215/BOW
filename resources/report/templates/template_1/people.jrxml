@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="people" language="groovy" pageWidth="555" pageHeight="50" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="b6d744f2-3d0f-449f-8813-29d5503181ba">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="fields" class="java.util.List">
+		<fieldDescription><![CDATA[fields]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="50">
+			<textField>
+				<reportElement x="21" y="0" width="80" height="20" uuid="db899b57-1f03-4b03-9528-c6a4857da304"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fields}.size() >= 1 ?( $F{fields}.get( 0 ).value):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="261" y="0" width="80" height="20" uuid="3a3b0b12-cc85-42a8-a244-0784596c5a1d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fields}.size() >= 4 ?(","+$F{fields}.get( 3 ).value):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="101" y="0" width="80" height="20" uuid="09e2ee3c-a50c-4b7d-afc7-3c1fe40073ef"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fields}.size() >= 2 ?(","+$F{fields}.get( 1 ).value):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="341" y="0" width="80" height="20" uuid="fda583c3-73dd-4dde-8c48-3148927570b6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fields}.size() >= 5 ?(","+$F{fields}.get( 4 ).value):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="0" width="80" height="20" uuid="efc7951b-6761-45f1-bebf-5312bb842a2b"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fields}.size() >= 3 ?(","+$F{fields}.get( 2 ).value):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="421" y="0" width="108" height="20" uuid="932697e6-48e7-41eb-871d-744b9263c3f6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fields}.size() >= 6 ?(","+$F{fields}.get( 5 ).value):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="261" y="23" width="80" height="20" uuid="ef1511b1-242e-42bb-813a-496c973f05dd"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fields}.size() >= 10 ?(","+$F{fields}.get( 9 ).value):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="341" y="23" width="80" height="20" uuid="c2dc03ec-f280-4515-8ee0-9b63452651df"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fields}.size() >= 11 ?(","+$F{fields}.get( 10 ).value):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="21" y="23" width="80" height="20" uuid="d7e69917-3c36-4997-910b-05d958c4c6bb"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fields}.size() >= 7 ?( $F{fields}.get( 6 ).value):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="101" y="23" width="80" height="20" uuid="0abeb77a-451b-4ca3-998c-32e4879da89f"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fields}.size() >= 8 ?(","+$F{fields}.get( 7 ).value):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="421" y="23" width="108" height="20" uuid="e6fedda2-3514-4eed-9960-977ca54c7a7d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fields}.size() >= 12 ?(","+$F{fields}.get( 11 ).value):""]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="23" width="80" height="20" uuid="50ad9dc9-6c8f-47ea-80ff-2bd858641c2f"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fields}.size() >= 9 ?(","+$F{fields}.get( 8 ).value):""]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
