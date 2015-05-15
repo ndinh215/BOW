@@ -60,8 +60,8 @@
 		<div class="separator"></div>
 		<div id="content">
 			<form:form method="POST" modelAttribute="surveyForm"  enctype="multipart/form-data"
-				action="survey_1.html?submit"  id="feedbackform">
-				<div>
+				action="survey_1.html?submit"  id="surveyForm">
+				<div id="form-sections">
 					<fieldset class="sectionwrap">
 						<jsp:include page="section_1_template_1.jsp"></jsp:include>
 					</fieldset>
@@ -104,5 +104,11 @@
 	<div id="footer">
 		<p>Copyright <strong>Panpages</strong> &copy; 2015 All Rights Reserved</p>
 	</div>
+	
+	<script>
+		$(window).bind("load", function() {
+			$("#form-sections div").first().css("width", "100%");
+		});
+	</script>
 </body>
 </html>
