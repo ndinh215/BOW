@@ -69,13 +69,7 @@ body {
 }
 
 .container {
-  background-image: url("../images/bg-content.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding-top: 100px;
-  top: -145px;
-  position: relative;
+
 }
 
 #footer{
@@ -85,7 +79,6 @@ body {
   width: 100%;
   text-align: center;
   padding-top: 15px;
-  margin-top: -55px;
 }
 
 #footer p{
@@ -97,7 +90,6 @@ body {
   width: 100%;
   padding: 10px 50px 50px 10px;
   text-align: center;
-  height:600px;
   overflow: auto;
 }
 
@@ -120,10 +112,14 @@ body {
 		padding-top: 60px !important;
 		padding-right: 0;
 	}
+	
+	.logo img {
+		margin: 0 auto;
+	}
 }
 
 #header img{
-	  width: 100%;
+		  
 }
 
 #survey-name a{
@@ -152,7 +148,7 @@ body {
 }
 
 #surveyForm {
-	padding-top: 75px;
+	
 }
 
 .ui-tabs-anchor {
@@ -170,7 +166,8 @@ body {
 }
 
 p[id*="error"] {
-    color:red 
+    color:red !important;
+    height: 15px;
 }
 
 input[type="submit"] {
@@ -199,6 +196,16 @@ ul[role*="tablist"] {
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 19px;
+}
+
+.menu-item a:hover {
+	text-decoration: none;
+	color: rgb(212, 2, 29);
+}
+
+.menu-item a:active {
+	text-decoration: none;
+	color: rgb(212, 2, 29);
 }
 
 #main-menu {
