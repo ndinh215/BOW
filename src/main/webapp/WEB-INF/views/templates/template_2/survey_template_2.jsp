@@ -13,7 +13,7 @@
 </head>
 <body>
 	<div class="container">
-		<form:form method="POST" modelAttribute="surveyForm" enctype="multipart/form-data" action="survey_2.html?preview">
+		<form:form method="POST" modelAttribute="surveyForm" enctype="multipart/form-data" action="survey_2.html">
 			<table>
 				<tr>
 					<td><label for="consultant-name">Consultant name: </label></td>

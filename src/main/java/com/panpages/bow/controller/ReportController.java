@@ -38,7 +38,7 @@ public class ReportController {
 		String reportPath = String.format("%1$s%2$s%3$s%4$s%5$s.%6$s", reportBasePath, File.separator, outputType, File.separator, outputId, outputType);
 		model.addAttribute("reportPath", reportPath);
 		
-		return "report_viewer";
+		return "view_report";
 	}
 	
 	@RequestMapping(value = { "/preview_{outputId}_{outputType}.html" }, method = RequestMethod.GET)
@@ -52,7 +52,7 @@ public class ReportController {
 		model.addAttribute("reportPath", reportPath);
 		model.addAttribute("isPreview", true);
 		
-		return "report_viewer";
+		return "view_report";
 	}
 	
 }
