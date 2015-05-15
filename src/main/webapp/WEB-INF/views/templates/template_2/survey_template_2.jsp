@@ -15,17 +15,88 @@
 	<div class="container">
 		<form:form method="POST" modelAttribute="surveyForm" enctype="multipart/form-data" action="survey_2.html?submit">
 			<table>
+				
 				<tr>
-					<td><label for="consultant-email-address">Consultant email: </label></td>
-					<td><input name="fields['consultant-email-address']" type="text"/></td>
+					<td>language-advertiser-target<input name="fields['language-advertiser-target]" type="text"/></td>
 				</tr>
 				<tr>
-					<td><label for="advertiser-company-name">Advertiser company name: </label></td>
-					<td><input name="fields['advertiser-company-name']" type="text"/></td>
+					<td>language-advertiser-target<input name="fields['language-advertiser-target']" type="text"/></td>
 				</tr>
 				<tr>
-					<td><label for="proposed-keyword">Proposed Keyword: </label></td>
-					<td><input name="fields['proposed-keyword']" type="file"/></td>
+					<td>language-advertiser-target<input name="fields['language-advertiser-target']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>language-advertiser-target<input name="fields['language-advertiser-target']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>language-advertiser-target<input name="fields['language-advertiser-target']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>geographical<input name="fields['geographical-area']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>geographical<input name="fields['geographical-area']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>geographical<input name="fields['geographical-area']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>geographical<input name="fields['geographical-area']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>geographical<input name="fields['geographical-area']" type="text"/></td>
+				</tr>
+				
+				
+				
+				<tr>
+					<td>profession-advertiser-target<input name="fields['profession-advertiser-target']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>profession-advertiser-target<input name="fields['profession-advertiser-target']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>profession-advertiser-target<input name="fields['profession-advertiser-target']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>profession-advertiser-target<input name="fields['profession-advertiser-target']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>profession-advertiser-target<input name="fields['profession-advertiser-target']" type="text"/></td>
+				</tr>
+				
+				<tr>
+					<td>age-advertiser-target<input name="fields['age-advertiser-target']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>age-advertiser-target<input name="fields['age-advertiser-target']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>age-advertiser-target<input name="fields['age-advertiser-target']" type="text"/></td>
+				</tr>
+				
+				
+				<tr>
+					<td>gender-advertiser-target<input name="fields['gender-advertiser-target']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>gender-advertiser-target<input name="fields['gender-advertiser-target']" type="text"/></td>
+				</tr>
+				
+				<tr>
+					<td>geographical<input name="fields['proposed-keyword']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>geographical<input name="fields['proposed-keyword']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>geographical<input name="fields['proposed-keyword']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>geographical<input name="fields['proposed-keyword']" type="text"/></td>
+				</tr>
+				<tr>
+					<td>geographical<input name="fields['proposed-keyword']" type="text"/></td>
 				</tr>
 				<tr>
 					<td><input type="submit" value="OK" /></td>
