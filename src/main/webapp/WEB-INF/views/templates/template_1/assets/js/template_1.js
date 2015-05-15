@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 	
 	var myform = new formtowizard({
-		formid: 'surveyForm',
+		formid: 'feedbackform',
 		persistsection: true,
 		revealfx: ['slide', 500],
 		
