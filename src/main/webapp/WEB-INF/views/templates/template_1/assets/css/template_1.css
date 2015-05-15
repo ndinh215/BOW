@@ -69,13 +69,13 @@ body {
 }
 
 .container {
-  background-image: url("../images/bg-content.png");
+  /*background-image: url("../images/bg-content.png");
   background-size: 100%;
   background-repeat: no-repeat;
   text-align: center;
   padding-top: 100px;
   top: -145px;
-  position: relative;
+  position: relative;*/
 }
 
 #footer{
@@ -170,7 +170,8 @@ body {
 }
 
 p[id*="error"] {
-    color:red 
+    color:red;
+    height: 15px;
 }
 
 input[type="submit"] {

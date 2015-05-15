@@ -1,93 +1,80 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
-<%@ taglib prefix="x" uri="http://java.sun.com/jstl/xml" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
-<%@ taglib prefix="sql" uri="http://java.sun.com/jstl/sql" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Proposed Keywords</title>
+<title>Step 4</title>
 </head>
 <body>
-	<div class="tab-section">
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<h1>2015 INVESTMENT PLAN</h1>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>Do you have any recommendation(s) to improve your advertiser&apos;s current/past advertising plan?</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<p><input name="fields['improve-website-content']" id="improve-website-content" type="checkbox" value="false">Improve Website Content</p>
+					<ul>
+						<li><input name="fields['add-on-relevant-product-pictures']" id="add-on-relevant-product-pictures" type="checkbox" value="false">Add On Relevant Product Pictures</li>
+						<li><input name="fields['add-on-product-description']" id="add-on-product-description" type="checkbox" value="false">Add On Product Description</li>
+						<li><input name="fields['include-product-price']" id="include-product-price" type="checkbox" value="false">Include Product Price</li>
+						<li><input name="fields['include-product-specification']" id="include-product-specification" type="checkbox" value="false">Include Product Specification</li>
+						<li><input name="fields['include-company-details']" id="include-company-details" type="checkbox" value="false">Include Company Details</li>
+						<li><input name="fields['highlight-unique-selling-point']" id="highlight-unique-selling-point" type="checkbox" value="false">Highlight Unique Selling Point</li>
+						<li><input name="fields['include-certification-for-better-credential']" id="include-certification-for-better-credential" type="checkbox" value="false">Include Certification For Better Credential</li>
+						<li><input name="fields['enhance-website-picture-quality']" id="enhance-website-picture-quality" type="checkbox" value="false">Enhance Website Picture Quality</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-		<form>
-			<div class="row" style="text-align: left">
-				<p id="mesage-error-section4"></p>
-			</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<p>Keyword:</p>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-					<p><input type="text" name="fields['keyword-input']" id="keyword-input" ></p>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<p><input name="fields['improve-website-maintenance']" id="improve-website-maintenance" type="checkbox" value="false">Improve Website Maintenance</p>
+					<ul>
+						<li><input name="fields['frequently-update-your-website']" id="frequently-update-your-website" type="checkbox" value="false">Frequently Update Your Website</li>
+						<li><input name="fields['timely-response-to-enquiry']" id="timely-response-to-enquiry" type="checkbox" value="false">Timely Response To Enquiry</li>
+					</ul>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<p>Avg. Monthly Searches (exact match only):</p>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-					<p><input type="text" name="fields['avg-monthly-searches-input']" id="avg-monthly-searches-input"></p>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<p><input name="fields['monitor-effectiveness']" id="monitor-effectiveness" type="checkbox" value="false">Monitor Effectiveness</p>
+					<ul>
+						<li><input name="fields['tracking-on-calls-wall-in']" id="tracking-on-calls-wall-in" type="checkbox" value="false">Tracking On Calls &amp; Wall In</li>
+					</ul>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<p>Suggested bid:</p>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-					<p><input type="text" name="fields['suggested-bid-input']" id="suggested-bid-input"> &nbsp; <input type="button" value="Add Keyword" id="add-new"></p>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<p><input name="fields['improve-brand-awareness']" id="improve-brand-awareness" type="checkbox" value="false">Improve Brand Awareness</p>
+					<ul>
+						<li><input name="fields['explore-display-network']" id="explore-display-network" type="checkbox" value="false">Explore Display Network</li>
+					</ul>
 				</div>
 			</div>
-		</form>
-		<div class="row">
-			<table  id="table-keyword" style="width: 100%;">
-				<tr>
-					<th>Keyword</th>
-					<th>Avg. Monthly Searches (exact match only)</th>		
-					<th>Suggested bid</th>
-					<th></th>
-				</tr>
-			</table>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<p><input name="fields['enhance-visibility']" id="enhance-visibility" type="checkbox" value="false">Enhance Visibility</p>
+					<ul>
+						<li><input name="fields['extend-your-marketing-plan-for-longer-visibility']" id="extend-your-marketing-plan-for-longer-visibility" type="checkbox" value="false">Extend Your Marketing Plan For Longer Visibility</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding: 0;margin:0;">
-				<div class="summary">
-					<p>Summary</p>
-				</div>
-				<table>
-					<tr>
-						<td>Total Est. Impressions (100% Share of Voice)</td>
-						<td><input name="fields['total-est-impressions']" id="total-est-impressions" style="background-color: #f2dcdb;"/></td> 
-					</tr>
-					<tr>
-						<td>Average Cost per Click</td>
-						<td><input name="fields['average-cost-per-click']" id="average-cost-per-click" style="background-color: #f2dcdb;"/>$</td> 
-					</tr>
-					<tr>
-						<td>Assumed CTR for Search</td>
-						<td><input name="fields['assumed-ctr-for-search']" id="assumed-CTR-for-search" style="background-color: #ffff00;"/></td> 
-					</tr>
-					<tr>
-						<td>Est. Clicks Assuming 3% CTR (100% Share of Voice)</td>
-						<td><input name="fields['est-clicks-assuming']" id="est-clicks-assuming" style="background-color: #f2dcdb;"/></td> 
-					</tr>
-					<tr>
-						<td>Est. Monthly Investment (100% Share of Voice)</td>
-						<td><input name="fields['est-monthly-investment-100']" id="est-monthly-investment-100" style="background-color: #f2dcdb;"/>$</td> 
-					</tr>
-					<tr>
-						<td>Est. Monthly Investment (50% Share of Voice)</td>
-						<td><input name="fields['est-monthly-investment-50']" id="est-monthly-investment-50" style="background-color: #f2dcdb;"/>$</td> 
-					</tr>
-				</table>
-			</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>Any additional comment(s)?</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<textarea rows="5" style="width: 93%;" name="fields['any-additional-comments']" id="any-additional-comments"></textarea>
+			<p id="any-additional-comments-error" style="text-align: center;"></p>
 		</div>
 	</div>
 </body>
