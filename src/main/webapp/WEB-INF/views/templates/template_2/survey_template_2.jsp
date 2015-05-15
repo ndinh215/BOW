@@ -13,8 +13,12 @@
 </head>
 <body>
 	<div class="container">
-		<form:form method="POST" modelAttribute="surveyForm" enctype="multipart/form-data" action="survey_2.html?submit">
+		<form:form method="POST" modelAttribute="surveyForm" enctype="multipart/form-data" action="survey_2.html?preview">
 			<table>
+				<tr>
+					<td><label for="consultant-name">Consultant name: </label></td>
+					<td><input name="fields['consultant-name']" type="text"/></td>
+				</tr>
 				<tr>
 					<td><label for="consultant-email-address">Consultant email: </label></td>
 					<td><input name="fields['consultant-email-address']" type="text"/></td>

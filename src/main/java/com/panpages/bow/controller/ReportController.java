@@ -29,7 +29,20 @@ public class ReportController {
 	private static final Logger logger = Logger.getLogger(ReportController.class);
 	
 	@RequestMapping(value = { "/view_{outputId}_{outputType}.html" }, method = RequestMethod.GET)
-	public String listTemplates(@PathVariable String outputId, 
+	public String viewReport(@PathVariable String outputId, 
+							 @PathVariable String outputType, 
+							 ModelMap model) {
+		logger.info(String.format("View the survey %1$s with format %2$s", outputId, outputType));
+		
+		String reportBasePath = ctx.getEnvironment().getProperty(ConfigConstant.REPORT_OUTPUT_BASE_URL.getName());
+		String reportPath = String.format("%1$s%2$s%3$s%4$s%5$s.%6$s", reportBasePath, File.separator, outputType, File.separator, outputId, outputType);
+		model.addAttribute("reportPath", reportPath);
+		
+		return "report_viewer";
+	}
+	
+	@RequestMapping(value = { "/preview_{outputId}_{outputType}.html" }, method = RequestMethod.GET)
+	public String previewReport(@PathVariable String outputId, 
 								@PathVariable String outputType, 
 								ModelMap model) {
 		logger.info(String.format("View the survey %1$s with format %2$s", outputId, outputType));
@@ -37,6 +50,7 @@ public class ReportController {
 		String reportBasePath = ctx.getEnvironment().getProperty(ConfigConstant.REPORT_OUTPUT_BASE_URL.getName());
 		String reportPath = String.format("%1$s%2$s%3$s%4$s%5$s.%6$s", reportBasePath, File.separator, outputType, File.separator, outputId, outputType);
 		model.addAttribute("reportPath", reportPath);
+		model.addAttribute("isPreview", true);
 		
 		return "report_viewer";
 	}

@@ -77,6 +77,7 @@ public class MailServiceImpl implements MailService {
 		try {
 			Mail mail = new Mail();
 			Field advCompanyNameField = SurveyUtils.findFieldWithFieldTemplateSlugName(ConfigConstant.ADVERTISER_COMPANY_NAME.getName(), survey);			
+			Field consultantNameField = SurveyUtils.findFieldWithFieldTemplateSlugName(ConfigConstant.CONSULTANT_NAME.getName(), survey);			
 			
 			// From mail
 			String fromMail = ctx.getEnvironment().getProperty(ConfigConstant.MAIL_USERNAME.getName());
@@ -97,6 +98,8 @@ public class MailServiceImpl implements MailService {
 			mail.setTemplateName(mailTemplateName);
 			
 			/////////////////// Template fields /////////////////////////
+			// Consultant name 
+			params.put(ConfigConstant.CONSULTANT_NAME.getName(), consultantNameField.getValue());
 			// Advertiser company name
 			params.put(ConfigConstant.ADVERTISER_COMPANY_NAME.getName(), advCompanyNameField.getValue());
 			// Fulfilled date

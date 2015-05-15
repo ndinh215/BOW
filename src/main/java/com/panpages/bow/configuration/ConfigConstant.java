@@ -28,7 +28,8 @@ public enum ConfigConstant {
 	BASE_URL("base_url"), 
 	CONSULTANT_EMAIL("consultant-email-address"),
 	ADVERTISER_COMPANY_NAME("advertiser-company-name"), 
-	SURVEY_FULFILLED_DATE("survey-fulfilled-date");
+	SURVEY_FULFILLED_DATE("survey-fulfilled-date"), 
+	CONSULTANT_NAME("consultant-name");
 	
 	private String name;
 

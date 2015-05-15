@@ -40,7 +40,22 @@
 			</div>
 		</div>
 		<div id="content" style="padding-top: 30px;">
-			<a href="<c:url value="${reportPath}" />"><img alt="Click to Join" src="assets/images/view-report.png"/></a>
+			<c:choose> 
+			  <c:when test="${isPreview == true}">
+			    <div id="pdf">
+				  <object width="100%" height="500" type="application/pdf" data="<c:url value="${reportPath}" />?#zoom=100&scrollbar=1&toolbar=1&navpanes=1" id="pdf_content">
+				    <p>Sorry, your PDF cannot be displayed.</p>
+				  </object>
+				</div>
+				<div>
+			    	<button onclick="window.history.back();">Back</button>
+			    </div>
+			  </c:when>
+			  <c:otherwise>
+			  	<a href="<c:url value="${reportPath}" />"><img alt="Click to Join" src="assets/images/view-report.png"/></a>			
+			  </c:otherwise>
+			</c:choose>
+			
 		</div>
 	</div>
 	<div id ="footer">
