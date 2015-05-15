@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>LIST OF SURVEYS</title>
+<title>SURVEY RESULT</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css"
@@ -21,9 +21,14 @@
 <script
 	src="<c:url value="/assets/js/jquery.mCustomScrollbar_v3.0.2 .js" />"></script>
 <script src="<c:url value="/assets/js/home.js" />"></script>
+<script type="text/javascript">
+	$( document).ready(function() {
+		
+	});
+</script>
 </head>
 <body>
-	<div class="container" id="main-menu">
+	<div class="container" id="main-content">
 		<div id="header">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 logo">
 				<a href="<c:url value="/index.html" />"><img class="img-responsive" src="assets/images/logo.jpg" /></a>
@@ -37,30 +42,27 @@
 			</div>
 		</div>
 		<div class="separator"></div>
-		<div id="content">
-			<h3 style="  margin: 30px 0;">LIST OF SURVEYS</h3>
-			<c:forEach items="${templates}" var="template">
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-					<div class ="survey-image" >
-						<a><img src="assets/images/survey_1.png"/></a>
-					</div>
-					<div class = "survey-name">
-						<a href="<c:url value="survey_${template.id}.html"/>">${template.name}</a>
-					</div>
+		<div id="content" style="padding-top: 30px;">
+			<c:choose> 
+			  <c:when test="${isPreview == true}">
+			    <div id="pdf">
+				  <object width="100%" height="500" type="application/pdf" data="<c:url value="${reportPath}" />?#zoom=100&scrollbar=1&toolbar=1&navpanes=1" id="pdf_content">
+				    <p>Sorry, your PDF cannot be displayed.</p>
+				  </object>
 				</div>
-			</c:forEach>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-				<div class ="survey-image" >
-					<a><img src="assets/images/survey_2.png"/></a>							
-				</div>
-				<div class = "survey-name">
-					<a href="survey_2.html">Survey DEMO</a>
-				</div>
-			</div>
+				<div class="right-float-buttons">
+			    	<button class="btn btn-primary red-button" onclick="window.history.back();">Back</button>
+			    </div>
+			  </c:when>
+			  <c:otherwise>
+			  	<a href="<c:url value="${reportPath}" />"><img alt="Click to Join" src="assets/images/submit-thank.png"/></a>			
+			  </c:otherwise>
+			</c:choose>
+			
 		</div>
 	</div>
 	<div id ="footer">
-		<p>Copyright <strong>Panpages</strong> © 2015 All Rights Reserved</p>
+		<p>Copyright <strong>Panpages</strong> &copy; 2015 All Rights Reserved</p>
 	</div>
 		<script type="text/javascript">
 	$(window).load(function(){
@@ -69,3 +71,4 @@
 	</script>
 </body>
 </html>
+
