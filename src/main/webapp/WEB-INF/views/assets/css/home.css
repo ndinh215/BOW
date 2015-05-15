@@ -12,58 +12,26 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 }
-
 @media (min-width: 768px){
 
-}
-
-@media (max-width: 768px) {
-	#content {
-	  width: 100%;
-	  padding: 5px !important;
-	}
-	
-	#header {
-		padding: 5px !important;
-	}
-	
-	#main-content {
-	    top: -45px !important;
-		padding-top: 60px !important;
-		padding-right: 0;
-	}
-	
-	.logo img {
-		margin: 0 auto;
-	}
-	
-	.control-label {
-		text-align: left !important;
-		padding-top: 5px;
-	}
-	
 }
 
 h3 {
 	font-weight: bold;
 	font-size: 20px;	
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	padding-top: 30px;
-	text-decoration: underline;
 }
 
 .container {
+  background-image: url("../images/bg-content.png");
   background-size: 100%;
   background-repeat: no-repeat;
   text-align: center;
+  padding-top: 100px;
+  top: -145px;
   position: relative;
   border-radius: 5px;
-  background-color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  -webkit-box-shadow: 12px 16px 19px -11px rgba(0,0,0,0.75);
-  -moz-box-shadow: 12px 16px 19px -11px rgba(0,0,0,0.75);
-  box-shadow: 12px 16px 19px -11px rgba(0,0,0,0.75);
 }
 
 #footer{
@@ -73,6 +41,7 @@ h3 {
   width: 100%;
   text-align: center;
   padding-top: 15px;
+  margin-top: -45px;
 }
 
 #footer p{
@@ -96,15 +65,29 @@ h3 {
 	  color: #242424;
 }
 
-#header{
-  height: 150px;
+@media (max-width: 768px) {
+	#content {
+	  width: 100%;
+	  padding: 5px;
+
+	}
+	
+	#content img{
+		width: 100%;
+	}
+	
+	#main-content {
+	    top: -45px !important;
+		padding-top: 60px !important;
+		padding-right: 0;
+	}
 }
 
-.survey-name {
-	padding-bottom: 25px;
+#header img{
+	  width: 100%;
 }
 
-.survey-name a{
+#survey-name a{
   font-family: arial;
   font-size: 17px;
   color: rgb(44, 41, 41);
@@ -121,75 +104,6 @@ h3 {
 	font-size: 19px;
 }
 
-.menu-item a:hover {
-	text-decoration: none;
+#main-menu {
+	font-size: 19px;
 }
-
-.menu-item a {
-	color: rgb(212, 2, 29);
-}
-
-#header {
-	font-size: 20px;
-	padding: 50px;
-}
-
-.main-menu {
-	padding-top: 45px;
-	padding-bottom: 30px;
-}
-
-.quote-text {
-	text-align: center !important;
-	font-size: 17px;
-	font-weight: bold;
-	font-style: italic;
-	padding: 15px;
-}
-
-.service-logo {
-	padding: 15px !important;
-	text-align: center;
-}
-
-.service-logo img {
-	margin: 0 auto;
-}
-
-.logo {
-	height: 100px;
-}
-
-.company-symbol {
-	height: 200px;
-	background: url("../images/content-management.png") no-repeat right top;
-}
-
-#join-survey img {
-	margin: 15px auto;
-}
-
-.separator {
-	height: 25px;
-	background: url("/BOW/assets/images/separator.jpg") no-repeat center bottom;
-}
-
-.right-float-buttons {
-	float: right;
-	padding: 5px;
-}
-
-.red-button {
-	background-color: rgb(212, 2, 29);
-    border-color: rgb(212, 2, 29);
-}
-
-#logined-top-name {
-	text-align: right;
-	color: white;
-	text-shadow: none;
-    background: #333;
-    color: #fff;
-    background: none;
-}
-

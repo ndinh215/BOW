@@ -91,7 +91,6 @@ public class SurveyController {
 		//survey.setSurveyTemplate(surveySvc.findSurveyTemplateWithId(surveyTemplateId));
 		String reportName = reportSvc.exportReport(survey, ReportType.PDF.getName());
 		String reportViewPath = String.format("%1$s_%2$s_%3$s.html", "/view", reportName, ReportType.PDF.getName());
-		String previewPath = String.format("%1$s_%2$s_%3$s.html", "/preview", reportName, ReportType.PDF.getName());
 		
 		// Update status and storage name
 		String surveyStatus = preview != null? 
@@ -101,11 +100,6 @@ public class SurveyController {
 		survey.setStorageName(reportName);
 		survey.setFulfilledDate();
 		surveySvc.saveSurvey(survey);
-		
-		// Preview mode
-		if (preview != null) {
-			return "redirect:" + previewPath;
-		}
 		
 		// Send notification email
 		String baseUrl = ctx.getEnvironment().getProperty(ConfigConstant.BASE_URL.getName());

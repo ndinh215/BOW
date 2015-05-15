@@ -52,9 +52,6 @@ public class Survey {
 	@Type(type="timestamp")
 	private Date fulfilledDate;
 	
-	@Column(name = "MADE_BY", nullable = false)
-	private String madeBy;
-	
 	@ManyToMany()
 	@LazyCollection(LazyCollectionOption.FALSE)
 	@JoinTable(
@@ -138,14 +135,6 @@ public class Survey {
 	
 	public void setFulfilledDate() {
 		this.fulfilledDate = new Date();
-	}
-
-	public String getMadeBy() {
-		return madeBy;
-	}
-
-	public void setMadeBy(String madeBy) {
-		this.madeBy = madeBy;
 	}
 	
 }
