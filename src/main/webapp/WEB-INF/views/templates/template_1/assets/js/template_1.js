@@ -33,7 +33,7 @@ $( document ).ready(function() {
 		persistsection: true,
 		revealfx: ['slide', 500],
 		
-		onpagechangestart:function($, i, $fieldset, rawi){
+		onpagechangestart:function($, i, $fieldset, rawi) {
 			// Hidden or visible preview or submit button
 			$("#previewBtn").css("display", rawi == "next" && i + 1 == 9? "inline" : "none");
 			$("#submitBtn").css("display", rawi == "next" && i + 1 == 9? "inline" : "none");
