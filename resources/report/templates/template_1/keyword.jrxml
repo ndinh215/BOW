@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="keyword" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="869dc488-a1d9-474e-aff1-1306c92269c0">
+	<property name="ireport.zoom" value="1.6105100000000014"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="sections" class="java.util.List"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="value" class="java.lang.String">
+		<fieldDescription><![CDATA[value]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="269" height="25" forecolor="#FFFFFF" backcolor="#993300" uuid="a812df20-accd-4e91-b52d-390a3baf406d"/>
+				<box leftPadding="10"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Static text]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="269" y="0" width="156" height="25" forecolor="#FFFFFF" backcolor="#993300" uuid="c0b92adb-74fc-423f-9cd4-c4a099440af5"/>
+				<box leftPadding="0" rightPadding="10"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Average Monthly Searchs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="425" y="0" width="130" height="25" forecolor="#FFFFFF" backcolor="#993300" uuid="8ee000db-068b-4410-92a0-99fbf1238864"/>
+				<box leftPadding="0" rightPadding="10"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estimated Cost Per Click]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="6" width="269" height="20" uuid="cf4aa925-6c39-40fe-be0a-fd43d2a6179c"/>
+				<box leftPadding="10" bottomPadding="1"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{value}.split(",")[0]]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="269" y="6" width="156" height="20" uuid="e9b9574d-7f4b-4053-8179-0e3bd8b2c25b"/>
+				<box rightPadding="10"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{value}.split(",")[1]]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="425" y="6" width="130" height="20" uuid="bb32b1f1-8c8c-413e-a7a8-0ab1fde41f57"/>
+				<box rightPadding="10"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{value}.split(",")[2]]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
