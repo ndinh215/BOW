@@ -4,7 +4,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>SURVEY RESULT</title>
+<title>
+	<c:choose> 
+	  <c:when test="${isPreview == true}">
+			PREVIEW YOUR RESULT
+	  </c:when>
+	  <c:otherwise>		
+	  		VIEW YOUR RESULT
+	  </c:otherwise>
+	</c:choose>
+</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css"
@@ -43,6 +52,7 @@
 		</div>
 		<div class="separator"></div>
 		<div id="content" style="padding-top: 30px;">
+			<c:if test="${isPreview == true}"> <h3>PREVIEW YOUR SURVEY RESULT</h3> </c:if>
 			<c:choose> 
 			  <c:when test="${isPreview == true}">
 			    <div id="pdf">
@@ -51,14 +61,13 @@
 				  </object>
 				</div>
 				<div class="right-float-buttons">
-			    	<button class="btn btn-primary red-button" onclick="window.history.back();">Back</button>
+			    	<button class="btn red-white-button" onclick="window.history.back();">Back</button>
 			    </div>
 			  </c:when>
 			  <c:otherwise>
-			  	<a href="<c:url value="${reportPath}" />"><img alt="Click to Join" src="assets/images/submit-thank.png"/></a>			
+			  	<a href="<c:url value="${reportPath}" />"><img class="img-responsive"  alt="Click to Join" src="assets/images/submit-thank.png"/></a>			
 			  </c:otherwise>
 			</c:choose>
-			
 		</div>
 	</div>
 	<div id ="footer">

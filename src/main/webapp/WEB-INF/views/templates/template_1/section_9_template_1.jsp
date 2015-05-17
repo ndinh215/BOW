@@ -14,7 +14,7 @@
 	</div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
-			<input name="fields['choose-file']" id="choose-file" type="file">
+			<input name="fields['proposed-keyword']" id="choose-file" type="file">
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
 		</div>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="advertise" language="groovy" pageWidth="555" pageHeight="30" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="ed9bfeb6-62a5-4b96-a605-38ca5663d442">
-	<property name="ireport.zoom" value="1.5"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="advertise" pageWidth="595" pageHeight="842" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="ed9bfeb6-62a5-4b96-a605-38ca5663d442">
+	<property name="ireport.zoom" value="1.2396694214876032"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<queryString>
@@ -9,45 +9,18 @@
 	<field name="fields" class="java.util.List">
 		<fieldDescription><![CDATA[fields]]></fieldDescription>
 	</field>
+	<field name="_THIS" class="com.panpages.bow.model.SurveyBean"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<detail>
 		<band height="30">
-			<textField>
-				<reportElement x="10" y="5" width="80" height="20" uuid="fda49c67-f2d6-457d-a36c-75fb7eb68474"/>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font isBold="true"/>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="0" y="5" width="595" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="fda49c67-f2d6-457d-a36c-75fb7eb68474"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{fields}.size() >= 1 ?( $F{fields}.get( 0 ).value):""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="90" y="5" width="80" height="20" uuid="5cc3294c-a879-4eb6-bfaa-687a51d7fd82"/>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{fields}.size() >= 1 ?(","+$F{fields}.get( 1 ).value):""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="170" y="5" width="80" height="20" uuid="9c0e5428-8ef4-43c6-81e3-fc07bee77543"/>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{fields}.size() >= 1 ?(","+$F{fields}.get( 2 ).value):""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="250" y="5" width="80" height="20" uuid="0a56c0a6-6934-4521-884b-2016d815b2f0"/>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{fields}.size() >= 1 ?(","+$F{fields}.get( 3 ).value):""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="330" y="5" width="220" height="20" uuid="5aeceae6-4be9-42aa-bd95-2788fe3eb216"/>
-				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{fields}.size() >= 1 ?(","+$F{fields}.get( 4 ).value):""]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{_THIS}.joinFields(",")]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

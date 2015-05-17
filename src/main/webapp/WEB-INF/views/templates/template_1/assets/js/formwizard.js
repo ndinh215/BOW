@@ -30,7 +30,7 @@ formtowizard.prototype={
 	loadsection:function(rawi, bypasshooks){
 		var thiswizard=this
   	//doload Boolean checks to see whether to load next section (true if bypasshooks param is true or onpagechangestart() event handler doesn't return false)
-		var doload=bypasshooks || this.setting.onpagechangestart(jQuery, this.currentsection, this.sections.$sections.eq(this.currentsection))
+		var doload=bypasshooks || this.setting.onpagechangestart(jQuery, this.currentsection, this.sections.$sections.eq(this.currentsection), rawi)
 		doload=(doload===false)? false : true //unless doload is explicitly false, set to true
 		if (!bypasshooks && this.setting.validate){
 			var outcome=this.validate(this.currentsection)
@@ -60,7 +60,7 @@ formtowizard.prototype={
 			else{
 				this.sections.$sections.eq(this.currentsection).hide().end().eq(i).show()
 			}
-			this.paginatediv.$status.text("Page "+(i+1)+" of "+this.sections.count) //update current page status text
+			this.paginatediv.$status.text("STEP "+(i+1)+" of "+this.sections.count) //update current page status text
 			this.paginatediv.$navlinks.css('visibility', 'visible')
 			if (i==0) //hide "prev" link
 				this.paginatediv.$navlinks.eq(0).css('visibility', 'hidden')
@@ -159,7 +159,7 @@ formtowizard.prototype={
 			//$stepsguide.insertBefore($sectionswrapper) //add Steps Container before sectionswrapper container
 			var $thesteps=$stepsguide.find('div.step')
 			//create pagination DIV and add it to end of form:
-			var $paginatediv=$('<div class="formpaginate" style="overflow:hidden;"><span class="prev" style="float:left">Back</span> <span class="status">Step 1 of </span> <span class="next" style="float:right">Next</span></div>')
+			var $paginatediv=$('<div class="formpaginate" style="overflow:hidden;"><span class="prev" style="float:left">BACK</span> <span class="status">Step 1 of </span> <span class="next" style="float:right">NEXT</span></div>')
 			$theform.append($paginatediv)
 			thiswizard.$theform=$theform
 			if (setting.revealfx[0]=="slide"){

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_2" pageWidth="585" pageHeight="1050" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="aee805f9-1daf-45e2-b5e2-182a92e0d063">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_2" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="aee805f9-1daf-45e2-b5e2-182a92e0d063">
 	<property name="ireport.zoom" value="1.0000000000000016"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -11,37 +11,16 @@
 		<band splitType="Stretch"/>
 	</background>
 	<summary>
-		<band height="1049" splitType="Stretch">
-			<textField>
-				<reportElement mode="Transparent" x="15" y="23" width="390" height="50" forecolor="#0033CC" backcolor="#FFFF99" uuid="0d170df7-fb65-4379-806c-4976e1c8376e"/>
-				<box rightPadding="6">
-					<pen lineWidth="0.0"/>
-					<topPen lineWidth="0.0"/>
-					<leftPen lineWidth="0.0"/>
-					<bottomPen lineWidth="0.0"/>
-					<rightPen lineWidth="0.0"/>
-				</box>
-				<textElement verticalAlignment="Middle">
-					<font size="32" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("consultant-name", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-1",$P{sections})).getFields())).getValue()]]></textFieldExpression>
-			</textField>
+		<band height="842" splitType="Stretch">
 			<staticText>
-				<reportElement x="15" y="74" width="205" height="33" uuid="dc72e065-d9f1-4c8e-858e-5ad4dfcd9c12"/>
-				<textElement verticalAlignment="Middle">
-					<font size="18"/>
-				</textElement>
-				<text><![CDATA[Advertising Plan Review]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="15" y="108" width="205" height="20" uuid="0767c618-8615-48d2-a5d8-2afaf47c6a42"/>
+				<reportElement x="15" y="95" width="205" height="20" uuid="0767c618-8615-48d2-a5d8-2afaf47c6a42"/>
 				<textElement verticalAlignment="Middle">
 					<font size="14"/>
 				</textElement>
 				<text><![CDATA[You have purchased]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="408" y="346" width="128" height="20" uuid="1d68b09c-cb4d-4b6e-adfc-ba71720636c6"/>
+				<reportElement x="409" y="335" width="128" height="20" uuid="1d68b09c-cb4d-4b6e-adfc-ba71720636c6"/>
 				<box rightPadding="6"/>
 				<textElement verticalAlignment="Middle">
 					<font size="14" isBold="true"/>
@@ -49,36 +28,36 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("previous-contract-value", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-3",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="33" y="346" width="347" height="20" uuid="e196db7c-8174-4a2a-8203-9149bee0a998"/>
+				<reportElement x="33" y="335" width="347" height="20" uuid="e196db7c-8174-4a2a-8203-9149bee0a998"/>
 				<textElement verticalAlignment="Middle">
 					<font size="13"/>
 				</textElement>
 				<text><![CDATA[In your existing/previous advertising plan, you have invested]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="380" y="346" width="28" height="20" uuid="1944fa95-7c85-4e4a-b175-d553782bdf5e"/>
+				<reportElement x="380" y="335" width="28" height="20" uuid="1944fa95-7c85-4e4a-b175-d553782bdf5e"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<image>
-				<reportElement x="33" y="378" width="80" height="80" uuid="ae406cd6-a5d8-49a8-bda7-ff712de6f067"/>
+				<reportElement x="33" y="357" width="80" height="80" uuid="ae406cd6-a5d8-49a8-bda7-ff712de6f067"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_1/webVisit.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="123" y="410" width="155" height="34" uuid="c30bbefb-e6be-4566-8580-bdcecd64a626"/>
+				<reportElement x="123" y="389" width="155" height="34" uuid="c30bbefb-e6be-4566-8580-bdcecd64a626"/>
 				<textElement verticalAlignment="Middle">
 					<font size="13"/>
 				</textElement>
 				<text><![CDATA[people visited your website]]></text>
 			</staticText>
 			<image>
-				<reportElement x="300" y="378" width="80" height="80" uuid="64f61d69-b584-4194-a029-39bf218c77c8"/>
+				<reportElement x="300" y="357" width="80" height="80" uuid="64f61d69-b584-4194-a029-39bf218c77c8"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_1/national.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="392" y="410" width="144" height="34" uuid="402f4245-f7d8-457d-a3da-98ee256422a5"/>
+				<reportElement x="392" y="389" width="144" height="34" uuid="402f4245-f7d8-457d-a3da-98ee256422a5"/>
 				<textElement verticalAlignment="Middle">
 					<font size="13"/>
 				</textElement>
@@ -86,7 +65,7 @@
 ]]></text>
 			</staticText>
 			<textField>
-				<reportElement mode="Opaque" x="123" y="378" width="122" height="32" forecolor="#0000CC" uuid="225062fb-0b49-428b-8931-570a6749b922"/>
+				<reportElement mode="Opaque" x="123" y="357" width="122" height="32" forecolor="#0000CC" uuid="225062fb-0b49-428b-8931-570a6749b922"/>
 				<box rightPadding="0"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Impact" size="24"/>
@@ -94,42 +73,21 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("website-visit", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-3",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="33" y="462" width="503" height="41" uuid="ee63c9ef-9ed0-4550-a688-085b595dd3ac"/>
+				<reportElement x="33" y="457" width="503" height="41" uuid="ee63c9ef-9ed0-4550-a688-085b595dd3ac"/>
 				<textElement verticalAlignment="Middle">
 					<font size="13"/>
 				</textElement>
 				<text><![CDATA[We value you as our advertiser and would like to provide you some suggestion(s) to enhance your advertising plan.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="33" y="502" width="503" height="20" uuid="b60f32d3-454f-4cf8-b7b5-fd96c62943f4"/>
+				<reportElement x="33" y="497" width="503" height="20" uuid="b60f32d3-454f-4cf8-b7b5-fd96c62943f4"/>
 				<textElement verticalAlignment="Middle">
 					<font size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Some of the suggestions would be:]]></text>
 			</staticText>
-			<textField isBlankWhenNull="true">
-				<reportElement x="19" y="962" width="521" height="56" uuid="d1c3abd0-b0d2-4e47-b0b0-2a263d5cb00f"/>
-				<box topPadding="17" leftPadding="30" rightPadding="6">
-					<pen lineWidth="1.0"/>
-					<topPen lineWidth="1.0"/>
-					<leftPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
-				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("any-additional-comments", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue()]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement mode="Opaque" x="496" y="23" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="6970154e-6b8c-45e6-80a4-bc9adc15d5b3"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Impact" size="32"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
-			</textField>
 			<subreport>
-				<reportElement x="15" y="128" width="555" height="218" uuid="8edf4c47-a603-4391-8b43-7e610e42a8bc"/>
+				<reportElement x="15" y="115" width="555" height="208" uuid="8edf4c47-a603-4391-8b43-7e610e42a8bc"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -147,149 +105,133 @@
 )]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/purchased_ads.jasper"]]></subreportExpression>
 			</subreport>
-			<break>
-				<reportElement x="0" y="1033" width="555" height="1" isRemoveLineWhenBlank="true" uuid="94c369ed-d7cf-488a-8c5d-219d11cc859b"/>
-			</break>
 			<textField>
-				<reportElement x="61" y="522" width="453" height="20" isRemoveLineWhenBlank="true" uuid="6bde9fe0-00bb-48d4-91ee-bbfa00850344"/>
+				<reportElement x="61" y="517" width="453" height="20" isRemoveLineWhenBlank="true" uuid="6bde9fe0-00bb-48d4-91ee-bbfa00850344"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("improve-website-content", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Improve Website Content":""]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement x="22" y="962" width="65" height="17" uuid="dc2c43a9-c463-4417-9450-9392cb68150d"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Others]]></text>
-			</staticText>
 			<textField>
-				<reportElement x="83" y="551" width="453" height="20" isRemoveLineWhenBlank="true" uuid="88cf03bc-3b0d-42e5-aabc-de44eb986ae6"/>
+				<reportElement x="83" y="546" width="453" height="20" isRemoveLineWhenBlank="true" uuid="88cf03bc-3b0d-42e5-aabc-de44eb986ae6"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("add-on-relevant-product-pictures", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Add On Relevant Product Pictures":""]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="83" y="571" width="453" height="20" isRemoveLineWhenBlank="true" uuid="81bd148c-ec67-442c-aae3-5301be564fc7"/>
+				<reportElement x="83" y="566" width="453" height="20" isRemoveLineWhenBlank="true" uuid="81bd148c-ec67-442c-aae3-5301be564fc7"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("add-on-product-description", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Add On Product Description":""]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="83" y="611" width="453" height="20" isRemoveLineWhenBlank="true" uuid="5968d70d-da0c-4b38-a3cb-ff4e091beadf"/>
+				<reportElement x="83" y="606" width="453" height="20" isRemoveLineWhenBlank="true" uuid="5968d70d-da0c-4b38-a3cb-ff4e091beadf"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("include-product-specification", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Include Product Specification":""]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="83" y="591" width="453" height="20" isRemoveLineWhenBlank="true" uuid="778ea43c-6e10-42c6-9504-efb21c3751e2"/>
+				<reportElement x="83" y="586" width="453" height="20" isRemoveLineWhenBlank="true" uuid="778ea43c-6e10-42c6-9504-efb21c3751e2"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("include-product-price", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Include Product Price":""]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="83" y="651" width="453" height="20" isRemoveLineWhenBlank="true" uuid="20112826-c8af-4748-a16e-077e3cb9e68b"/>
+				<reportElement x="83" y="646" width="453" height="20" isRemoveLineWhenBlank="true" uuid="20112826-c8af-4748-a16e-077e3cb9e68b"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("highlight-unique-selling-point", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Highlight Unique Selling Point":""]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="83" y="691" width="453" height="20" isRemoveLineWhenBlank="true" uuid="817fef23-2226-45f0-9b45-c6eedaba00ee"/>
+				<reportElement x="83" y="686" width="453" height="20" isRemoveLineWhenBlank="true" uuid="817fef23-2226-45f0-9b45-c6eedaba00ee"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("enhance-website-picture-quality", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Enhance Website Picture Quality":""]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="83" y="671" width="453" height="20" isRemoveLineWhenBlank="true" uuid="230a4ad5-5ed0-442c-8e11-078d187c2895"/>
+				<reportElement x="83" y="666" width="453" height="20" isRemoveLineWhenBlank="true" uuid="230a4ad5-5ed0-442c-8e11-078d187c2895"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("include-certification-for-better-credential", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Include Certification For Better Credential":""]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="83" y="631" width="453" height="20" isRemoveLineWhenBlank="true" uuid="50857e63-b134-43ac-af95-f0f495dbe3e5"/>
+				<reportElement x="83" y="626" width="453" height="20" isRemoveLineWhenBlank="true" uuid="50857e63-b134-43ac-af95-f0f495dbe3e5"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("include-company-details", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Include Company Details":""]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="61" y="898" width="453" height="20" isRemoveLineWhenBlank="true" uuid="4a365f44-8740-4ec1-8005-c096f8c9d125"/>
-				<textElement verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("enhance-visibility", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Enhance Visibility":""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="83" y="868" width="453" height="20" isRemoveLineWhenBlank="true" uuid="ebb641b3-5527-47a5-a877-12c4086ecbd4"/>
-				<textElement verticalAlignment="Middle">
-					<font size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("explore-display-network", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Explore Display Network":""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="83" y="747" width="453" height="20" isRemoveLineWhenBlank="true" uuid="a3b4dd88-d626-477f-925e-f1b0d0592c9e"/>
+				<reportElement x="83" y="742" width="453" height="20" isRemoveLineWhenBlank="true" uuid="a3b4dd88-d626-477f-925e-f1b0d0592c9e"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("frequently-update-your-website", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Frequently Update Your Website":""]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="61" y="795" width="453" height="20" isRemoveLineWhenBlank="true" uuid="98b88ed3-52f6-440a-8f25-81335f817b6a"/>
-				<textElement verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("monitor-effectiveness", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Monitor Effectiveness":""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="83" y="767" width="453" height="20" isRemoveLineWhenBlank="true" uuid="a9551b0e-ff37-4176-87de-5ebee67508ed"/>
+				<reportElement x="83" y="762" width="453" height="20" isRemoveLineWhenBlank="true" uuid="a9551b0e-ff37-4176-87de-5ebee67508ed"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("timely-response-to-enquiry", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Timely Response To Enquiry":""]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="61" y="721" width="453" height="20" isRemoveLineWhenBlank="true" uuid="6bcf7607-8480-4d9a-8eb7-86f0fa3d18d7"/>
+				<reportElement x="61" y="716" width="453" height="20" isRemoveLineWhenBlank="true" uuid="6bcf7607-8480-4d9a-8eb7-86f0fa3d18d7"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("improve-website-maintenance", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("step-4",$P{sections})).getFields())).getValue() != null ? "Improve Website Maintenance":""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="83" y="815" width="453" height="20" isRemoveLineWhenBlank="true" uuid="498a18d2-9624-40c0-a363-c40b4c59f87f"/>
-				<textElement verticalAlignment="Middle">
-					<font size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("tracking-on-calls-wall-in", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Tracking On Calls & Wall In":""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="61" y="844" width="453" height="20" isRemoveLineWhenBlank="true" uuid="168b9552-06ff-4228-8864-08aca365211f"/>
-				<textElement verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("improve-brand-awareness", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Improve Brand Awareness":""]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="87" y="918" width="453" height="20" isRemoveLineWhenBlank="true" uuid="05388838-cbbe-41c8-a35d-5a2c0c0bd9ba"/>
-				<textElement verticalAlignment="Middle">
-					<font size="12"/>
-				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("extend-your-marketing-plan-por-longer-visibility", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Extend Your Marketing Plan For Longer Visibility":""]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("improve-website-maintenance", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Improve Website Maintenance":""]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="392" y="378" width="144" height="32" forecolor="#0000CC" uuid="e28c4225-8df8-4778-85ce-15ca718a9025"/>
+				<reportElement x="392" y="357" width="144" height="32" forecolor="#0000CC" uuid="e28c4225-8df8-4778-85ce-15ca718a9025"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Impact" size="24"/>
 				</textElement>
 				<text><![CDATA[600,000]]></text>
 			</staticText>
+			<staticText>
+				<reportElement x="15" y="56" width="205" height="33" uuid="dc72e065-d9f1-4c8e-858e-5ad4dfcd9c12"/>
+				<textElement verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Advertising Plan Review]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="496" y="7" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="6970154e-6b8c-45e6-80a4-bc9adc15d5b3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Impact" size="32"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="15" y="7" width="390" height="50" forecolor="#0033CC" backcolor="#FFFF99" uuid="0d170df7-fb65-4379-806c-4976e1c8376e"/>
+				<box rightPadding="6">
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="32" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("consultant-name", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-1",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="0" y="783" width="595" height="59" uuid="3ced2beb-f767-4090-b618-df590e4b828e"/>
+				<subreportParameter name="sections">
+					<subreportParameterExpression><![CDATA[$P{sections}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/page_2_2_subreport.jasper"]]></subreportExpression>
+			</subreport>
 		</band>
 	</summary>
 </jasperReport>

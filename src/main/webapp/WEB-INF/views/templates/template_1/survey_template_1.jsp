@@ -62,40 +62,36 @@
 			<form:form method="POST" modelAttribute="surveyForm"  enctype="multipart/form-data"
 				action="survey_1.html?submit"  id="surveyForm">
 				<div id="form-sections">
-					<fieldset class="sectionwrap">
+					<fieldset class="sectionwrap" id="section-1">
 						<jsp:include page="section_1_template_1.jsp"></jsp:include>
 					</fieldset>
-					<fieldset class="sectionwrap">
+					<fieldset class="sectionwrap" id="section-2">
 						<jsp:include page="section_2_template_1.jsp"></jsp:include>
 					</fieldset>
-					<fieldset class="sectionwrap">
+					<fieldset class="sectionwrap" id="section-3">
 						<jsp:include page="section_3_template_1.jsp"></jsp:include>
 					</fieldset>
-					<fieldset class="sectionwrap">
+					<fieldset class="sectionwrap" id="section-4">
 						<jsp:include page="section_4_template_1.jsp"></jsp:include>
 					</fieldset>
-					<fieldset class="sectionwrap">
+					<fieldset class="sectionwrap" id="section-5">
 						<jsp:include page="section_5_template_1.jsp"></jsp:include>
 					</fieldset>
-					<fieldset class="sectionwrap">
+					<fieldset class="sectionwrap" id="section-6">
 						<jsp:include page="section_6_template_1.jsp"></jsp:include>
 					</fieldset>
-					<fieldset class="sectionwrap">
+					<fieldset class="sectionwrap" id="section-7">
 						<jsp:include page="section_7_template_1.jsp"></jsp:include>
 					</fieldset>
-					<fieldset class="sectionwrap">
+					<fieldset class="sectionwrap" id="section-8">
 						<jsp:include page="section_8_template_1.jsp"></jsp:include>
 					</fieldset>
-					<fieldset class="sectionwrap">
+					<fieldset class="sectionwrap" id="section-9">
 						<jsp:include page="section_9_template_1.jsp"></jsp:include>
 					</fieldset>
-					<fieldset class="sectionwrap">
+					<fieldset class="sectionwrap" id="section-10">
 						<jsp:include page="section_10_template_1.jsp"></jsp:include>
 					</fieldset>
-				</div>
-				<div class="row">
-					<button type="button" class="btn btn-view">View My Proposal</button>
-					<button type="submit" class="btn btn-submit">Submit</button>
 				</div>
 			</form:form>
 		</div>
@@ -104,11 +100,6 @@
 	<div id="footer">
 		<p>Copyright <strong>Panpages</strong> &copy; 2015 All Rights Reserved</p>
 	</div>
-	
-	<script>
-		$(window).bind("load", function() {
-			$("#form-sections div").first().css("width", "100%");
-		});
-	</script>
+
 </body>
 </html>

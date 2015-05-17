@@ -40,7 +40,7 @@
 		</div>
 		<div class="separator"></div>
 		<div id="login-box">
-			<h3>Login</h3>
+			<h3>LOGIN</h3>
 			<c:if test="${not empty error}">
 				<div class="error">${error}</div>
 			</c:if>
@@ -65,8 +65,8 @@
 		        
 		        <div class="form-group">
 		        	<div class="col-xs-12 col-sm-4 col-md-5 col-lg-5"></div>
-		            <div class="col-xs-12 col-sm-8 col-md-7 col-lg-7 off submit">
-		                <button type="submit" class="btn btn-primary">Login</button>
+		            <div class="col-xs-12 col-sm-8 col-md-7 col-lg-7 submit">
+		                <button type="submit" class="btn red-white-button">LOGIN</button>
 		            </div>
 		        </div>
 

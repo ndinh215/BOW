@@ -1,3 +1,31 @@
+$(window).bind("load", function() {
+	$("#form-sections div").first().css("width", "100%");
+
+	// Add buttons to formpaginate
+	var previewBtn = '<button type="button" id="previewBtn" style="display: none; float: right;" onclick="previewSurvey();" class="btn red-white-button">VIEW MY PROPOSAL</button>';
+	var submitBtn = '<button type="submit" id="submitBtn" style="display: none; float: right; margin-left: 3px;" onclick="submitSurvey();" class="btn red-white-button">SUBMIT</button>';
+	
+	$(".formpaginate").append(submitBtn);
+	$(".formpaginate").append(previewBtn);
+
+	if ($("#section-10").css("visibility") == "visible") {
+		$("#previewBtn").css("display", "inline");
+		$("#submitBtn").css("display", "inline");
+		$(".formpaginate .status").css("display", "none");
+		$(".formpaginate .next").css("display", "none");
+	}
+});
+
+function previewSurvey() {
+	$('#surveyForm').attr('action', 'survey_1.html?preview');
+	$('#surveyForm').submit();
+}
+
+function submitSurvey() {
+	$('#surveyForm').attr('action', 'survey_1.html?submit');
+	$('#surveyForm').submit();
+}
+
 $( document ).ready(function() {
 	
 	var myform = new formtowizard({
@@ -5,7 +33,13 @@ $( document ).ready(function() {
 		persistsection: true,
 		revealfx: ['slide', 500],
 		
-		onpagechangestart:function($, i, $fieldset){
+		onpagechangestart:function($, i, $fieldset, rawi){
+			// Hidden or visible preview or submit button
+			$("#previewBtn").css("display", rawi == "next" && i + 1 == 9? "inline" : "none");
+			$("#submitBtn").css("display", rawi == "next" && i + 1 == 9? "inline" : "none");
+			$(".formpaginate .status").css("display", rawi == "next" && i + 1 == 9? "none" : "inline");
+			$(".formpaginate .next").css("display", rawi == "next" && i + 1 == 9? "none" : "inline");
+			
 			var validated = true;
 			var fieldset = $fieldset.get(0); 
 			var allels = fieldset.getElementsByTagName("*"); 

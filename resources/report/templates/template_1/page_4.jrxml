@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_4" pageWidth="585" pageHeight="802" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="90167ed5-0c7a-4203-aa33-cf24b0c47bbb">
-	<property name="ireport.zoom" value="1.3310000000000015"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_4" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="90167ed5-0c7a-4203-aa33-cf24b0c47bbb">
+	<property name="ireport.zoom" value="1.2100000000000013"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="268"/>
+	<property name="ireport.y" value="288"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["H:\\workspace\\BOW\\report\\templates\\template_3\\"]]></defaultValueExpression>
 	</parameter>
@@ -13,13 +13,13 @@
 	<summary>
 		<band height="802" splitType="Stretch">
 			<image>
-				<reportElement x="16" y="19" width="190" height="50" uuid="7b2052f3-40a2-4670-905b-9cdfaa1c8a73"/>
+				<reportElement x="16" y="19" width="171" height="50" uuid="7b2052f3-40a2-4670-905b-9cdfaa1c8a73"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_3/TMPanPanpages.jpg"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="222" y="19" width="252" height="50" uuid="791dd4a2-eb53-4f4a-9475-ff9984c913a6"/>
+				<reportElement x="191" y="19" width="267" height="50" isPrintWhenDetailOverflows="true" uuid="791dd4a2-eb53-4f4a-9475-ff9984c913a6"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Impact" size="30"/>
+					<font fontName="Impact" size="25"/>
 				</textElement>
 				<text><![CDATA[Advertising Planner]]></text>
 			</staticText>
@@ -128,15 +128,15 @@
 				<text><![CDATA[Below are the estimates on how many visitors your website might get based on the keywords suggestions.]]></text>
 			</staticText>
 			<image>
-				<reportElement x="32" y="488" width="159" height="70" uuid="89f3a910-3e93-4064-9290-188efa2149ca"/>
+				<reportElement x="32" y="488" width="180" height="70" uuid="89f3a910-3e93-4064-9290-188efa2149ca"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_3/monthlyBudget.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="191" y="488" width="178" height="70" uuid="a2da4b92-daab-48e7-96e1-0d5f8833108b"/>
+				<reportElement x="194" y="488" width="180" height="70" uuid="a2da4b92-daab-48e7-96e1-0d5f8833108b"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_3/timeAds.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="369" y="488" width="182" height="70" uuid="d50321c7-0492-4805-be02-0232f7b7f95e"/>
+				<reportElement x="363" y="488" width="180" height="70" uuid="d50321c7-0492-4805-be02-0232f7b7f95e"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_3/clickAds.png"]]></imageExpression>
 			</image>
 			<staticText>
@@ -156,21 +156,21 @@
 			<staticText>
 				<reportElement x="43" y="525" width="134" height="20" uuid="d9adfc76-264b-45da-8feb-ff7820aec7eb"/>
 				<textElement verticalAlignment="Middle">
-					<font size="12"/>
+					<font size="10"/>
 				</textElement>
-				<text><![CDATA[Monthly Budge]]></text>
+				<text><![CDATA[Monthly Budget]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="206" y="525" width="147" height="20" uuid="abe28e58-29b0-47f5-9402-e1fa45f714ad"/>
+				<reportElement x="212" y="525" width="147" height="20" uuid="abe28e58-29b0-47f5-9402-e1fa45f714ad"/>
 				<textElement verticalAlignment="Middle">
-					<font size="12"/>
+					<font size="10"/>
 				</textElement>
 				<text><![CDATA[Times your ads could show]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="382" y="525" width="165" height="20" uuid="40ec4c2b-9e86-4526-85cd-0be7011e678f"/>
+				<reportElement x="379" y="525" width="165" height="20" uuid="40ec4c2b-9e86-4526-85cd-0be7011e678f"/>
 				<textElement verticalAlignment="Middle">
-					<font size="12"/>
+					<font size="10"/>
 				</textElement>
 				<text><![CDATA[Clicks your ads could receive]]></text>
 			</staticText>
@@ -186,9 +186,9 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Impact" size="32"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[3]]></textFieldExpression>
 			</textField>
-			<textField>
+			<textField isBlankWhenNull="true">
 				<reportElement x="64" y="505" width="113" height="20" forecolor="#0000CC" uuid="5139d434-e465-484b-9295-981afead0e77"/>
 				<box rightPadding="0">
 					<pen lineWidth="0.0"/>
@@ -202,8 +202,8 @@
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("est-monthly-investment-100", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="206" y="505" width="147" height="20" forecolor="#0000CC" uuid="c474abf8-45bb-4839-89f2-8108c7ba7e33"/>
+			<textField isBlankWhenNull="true">
+				<reportElement x="212" y="505" width="147" height="20" forecolor="#0000CC" uuid="c474abf8-45bb-4839-89f2-8108c7ba7e33"/>
 				<box rightPadding="0">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -216,8 +216,8 @@
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("total-est-impressions", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="382" y="505" width="165" height="20" forecolor="#0000CC" uuid="242e3d7b-1b0a-46fc-a098-a2332b8383a8"/>
+			<textField isBlankWhenNull="true">
+				<reportElement x="379" y="505" width="165" height="20" forecolor="#0000CC" uuid="242e3d7b-1b0a-46fc-a098-a2332b8383a8"/>
 				<box rightPadding="0">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -231,7 +231,7 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("est-clicks-assuming", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<subreport>
-				<reportElement x="32" y="627" width="521" height="159" uuid="caf160a8-07d3-4919-8339-e0caf03cdda4"/>
+				<reportElement x="32" y="627" width="521" height="159" isPrintWhenDetailOverflows="true" uuid="caf160a8-07d3-4919-8339-e0caf03cdda4"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
