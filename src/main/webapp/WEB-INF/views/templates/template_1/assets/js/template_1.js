@@ -8,7 +8,7 @@ $(window).bind("load", function() {
 	$(".formpaginate").append(submitBtn);
 	$(".formpaginate").append(previewBtn);
 
-	if ($("#section-10").css("visibility") == "visible") {
+	if (myform.currentsection == 9) {
 		$("#previewBtn").css("display", "inline");
 		$("#submitBtn").css("display", "inline");
 		$(".formpaginate .status").css("display", "none");
@@ -28,7 +28,7 @@ function submitSurvey() {
 
 $( document ).ready(function() {
 	
-	var myform = new formtowizard({
+	myform = new formtowizard({
 		formid: 'surveyForm',
 		persistsection: true,
 		revealfx: ['slide', 500],
