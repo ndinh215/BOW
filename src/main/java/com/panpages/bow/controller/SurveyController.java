@@ -83,7 +83,7 @@ public class SurveyController {
 							 BindingResult result, 
 							 ModelMap model) {
 		surveyTemplateId = 1;
-		int surveyId = surveySvc.saveSurveyForm(surveyTemplateId, form, calculationFactory.createSurveyCalculator(surveyTemplateId));		
+		int surveyId = surveySvc.saveSurveyForm(surveyTemplateId, form);		
 		
 		// Redirect to error page with surveyId -1
 		if (surveyId == -1) {
@@ -92,9 +92,11 @@ public class SurveyController {
 		
 		// Export survey
 		Survey survey = surveySvc.findSurveyWithId(surveyId);
+		calculationFactory.createSurveyCalculator(surveyTemplateId).calculateFields(survey, surveySvc);
+		// Refresh survey
+		survey = surveySvc.findSurveyWithId(surveyId);
 		// Set fulfilled date
 		survey.setFulfilledDate();
-		//survey.setSurveyTemplate(surveySvc.findSurveyTemplateWithId(surveyTemplateId));
 		String reportName = reportSvc.exportReport(survey, ReportType.PDF.getName());
 		String reportViewPath = String.format("%1$s_%2$s_%3$s.html", "/view", reportName, ReportType.PDF.getName());
 		String previewPath = String.format("%1$s_%2$s_%3$s.html", "/preview", reportName, ReportType.PDF.getName());

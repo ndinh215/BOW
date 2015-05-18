@@ -11,14 +11,11 @@ public class SurveyTest extends TestCase {
 	public void testExportReport() throws Exception {
 		ReportService reportSvc = new ReportServiceImpl();
 		String outputUrl = reportSvc.exportReport(1, "pdf");
-		
 		assertEquals(null, outputUrl);
 	}
 	
 	public void testBCryptGenerator() {
-		
 		boolean result = BCryptUtils.generateBCryptPassword("P@ss2105", 10);
-		
 		assertEquals(true, result);
 	}
 	

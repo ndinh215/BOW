@@ -262,19 +262,6 @@ public class SurveyDaoImpl extends AbstractDao implements SurveyDao{
 		
 		return survey == null? -1 : survey.getId();
 	}
-	
-	@Override
-	public int saveSurveyForm(int surveyTemplateId, SurveyForm form, SurveyCalculate calculation) {
-		int surveyId = saveSurveyForm(surveyTemplateId, form);
-		if (surveyId == -1) {
-			return -1;
-		}
-		
-		Survey survey = findSurveyWithId(surveyId);
-		calculation.calculateFields(survey);
-		
-		return surveyId;
-	}
 
 	@SuppressWarnings("unchecked")
 	public SectionTemplate findSectionTemplateContainingFieldTemplate(int fieldId) {
@@ -314,6 +301,64 @@ public class SurveyDaoImpl extends AbstractDao implements SurveyDao{
 		List<SurveyTemplate> result = query.list();
 		
 		return result != null && result.size() > 0? result.get(0) : null;
+	}
+
+	@Override
+	public int saveSurveyForm(int surveyTemplateId, SurveyForm form, SurveyCalculate calculation) {
+		throw new UnsupportedOperationException();
+	}
+
+	@Override
+	public int addField(String fieldName, String fieldValue, Survey survey) {
+		Session session = HibernateConfiguration.getSessionFactory().getObject().openSession();
+		Transaction tx = null; 
+		
+		Field field = null;
+		
+	    try {
+	    	// Start transaction
+	        tx = session.beginTransaction();
+	        
+			FieldTemplate fieldTemplate = findFieldTemplateWithSlugName(fieldName);
+			if (fieldTemplate == null) {
+				return -1;
+			}
+			
+			SectionTemplate sectionTemplate = findSectionTemplateContainingFieldTemplate(fieldTemplate.getId());
+			Section parentSection = null;
+			for (Section section : survey.getSections()) {
+				if (section.getSectionTemplateId() == sectionTemplate.getId()) {
+					parentSection = section;
+					break;
+				}
+			}
+			
+		    field = new Field();
+			field.setFieldTemplateId(fieldTemplate.getId());
+			field.setName(fieldTemplate.getName());
+			field.setValue(StringUtils.nullValue(fieldValue, ""));
+			field.setFieldTemplate(fieldTemplate);
+			
+			saveField(field);
+			
+			// Create field and section relation
+			FieldAndSectionRelation relation = new FieldAndSectionRelation();
+			relation.setFieldId(field.getId());
+			relation.setSectionId(parentSection.getId());
+			
+			saveFieldAndSectionRelation(relation);
+			// Commit transaction
+			tx.commit();
+	      } catch (HibernateException e) {
+	          if (tx != null) {
+	        	  tx.rollback();
+	          }
+	          e.printStackTrace(); 
+	          survey = null;
+	       } finally {
+	          session.close(); 
+	     }
+		return field == null? -1 : field.getId();
 	}
 	
 }

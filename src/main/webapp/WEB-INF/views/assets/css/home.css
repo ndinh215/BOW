@@ -174,7 +174,7 @@ h3 {
 
 .separator {
 	height: 25px;
-	background: url("/BOW/assets/images/separator.jpg") no-repeat center bottom;
+	background: url("../images/separator.jpg") no-repeat center bottom;
 }
 
 .right-float-buttons {
