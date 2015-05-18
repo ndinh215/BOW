@@ -41,7 +41,7 @@
 	href="<c:url value="/template_assets/template_1/assets/css/formwizard.css" />">
 <script
 	src="<c:url value="/template_assets/template_1/assets/js/formwizard.js" />"></script>
-<title>SURVEY TEMPLATE 1</title>
+<title>PANPAGES PROPOSAL SURVEY</title>
 </head>
 <body>
 	<div class="container" id="main-content">
