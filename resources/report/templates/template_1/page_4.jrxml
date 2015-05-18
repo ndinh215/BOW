@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_4" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="90167ed5-0c7a-4203-aa33-cf24b0c47bbb">
 	<property name="ireport.zoom" value="1.2100000000000013"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="288"/>
+	<property name="ireport.y" value="167"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["H:\\workspace\\BOW\\report\\templates\\template_3\\"]]></defaultValueExpression>
 	</parameter>
@@ -44,30 +44,16 @@
 				<textElement verticalAlignment="Middle"/>
 				<text><![CDATA[Your expected revenue increased via your advertising plan is:]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="121" y="120" width="25" height="23" uuid="da4bd24c-af38-4a7b-82fb-22de1bc7e70f"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Impact" size="16"/>
-				</textElement>
-				<text><![CDATA[RM]]></text>
-			</staticText>
 			<textField>
-				<reportElement x="146" y="120" width="174" height="23" uuid="b2d861bd-5b6d-42ed-a62c-1e6beb7d8259"/>
+				<reportElement x="121" y="120" width="174" height="23" uuid="b2d861bd-5b6d-42ed-a62c-1e6beb7d8259"/>
 				<box rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="16"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("step-5-a", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement x="121" y="203" width="25" height="23" uuid="0b74e88c-85cb-4bca-a9c1-c0e114124752"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Impact" size="16"/>
-				</textElement>
-				<text><![CDATA[RM]]></text>
-			</staticText>
 			<textField>
-				<reportElement x="146" y="203" width="174" height="23" uuid="14374eb3-8f44-437f-8760-38f09b7e6163"/>
+				<reportElement x="121" y="203" width="174" height="23" uuid="14374eb3-8f44-437f-8760-38f09b7e6163"/>
 				<box rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="16"/>
@@ -79,15 +65,8 @@
 				<textElement verticalAlignment="Middle"/>
 				<text><![CDATA[Your expected revenue increased via your advertising plan is:]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="162" y="287" width="25" height="23" uuid="39760c8a-24dc-4587-9332-08601410dbe4"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="16" isBold="true"/>
-				</textElement>
-				<text><![CDATA[%]]></text>
-			</staticText>
 			<textField>
-				<reportElement x="121" y="287" width="41" height="23" uuid="d21a315b-2a22-4343-bba6-8b6a51e3235c"/>
+				<reportElement x="121" y="287" width="174" height="23" uuid="d21a315b-2a22-4343-bba6-8b6a51e3235c"/>
 				<box rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="16"/>
@@ -100,7 +79,7 @@
 				<text><![CDATA[Average spending of your customer is:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="121" y="371" width="41" height="23" uuid="f882871d-bb43-454f-ac6b-27c51a6ecbdd"/>
+				<reportElement x="121" y="371" width="25" height="23" uuid="f882871d-bb43-454f-ac6b-27c51a6ecbdd"/>
 				<box rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="16"/>
@@ -108,7 +87,7 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("step-5-h", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="162" y="371" width="60" height="23" uuid="fca1a30b-c1c5-4a0c-b089-d7a11d1d8eb2"/>
+				<reportElement x="146" y="371" width="50" height="23" uuid="fca1a30b-c1c5-4a0c-b089-d7a11d1d8eb2"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="SansSerif" size="14"/>
 				</textElement>
@@ -120,7 +99,7 @@
 				<text><![CDATA[For every new enquiry, your chances of closing the deal is:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Opaque" x="32" y="427" width="521" height="42" backcolor="#CCCCCC" uuid="acd626b4-7f5c-4693-8ffc-7c0498774461"/>
+				<reportElement mode="Opaque" x="32" y="427" width="521" height="42" backcolor="#CCCCFF" uuid="acd626b4-7f5c-4693-8ffc-7c0498774461"/>
 				<box leftPadding="10" rightPadding="10"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
@@ -149,7 +128,7 @@
 					<rightPen lineColor="#660033"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font isBold="false" isUnderline="false"/>
+					<font size="12" isBold="false" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Your keywords]]></text>
 			</staticText>
@@ -182,14 +161,14 @@
 				<text><![CDATA[These statistics are based on your target country and related searches below.]]></text>
 			</staticText>
 			<textField>
-				<reportElement mode="Opaque" x="497" y="19" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="94fdb0e4-71c3-487e-aa7e-cc2b93dfa539"/>
+				<reportElement mode="Opaque" x="521" y="19" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="94fdb0e4-71c3-487e-aa7e-cc2b93dfa539"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Impact" size="32"/>
 				</textElement>
 				<textFieldExpression><![CDATA[3]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="64" y="505" width="113" height="20" forecolor="#0000CC" uuid="5139d434-e465-484b-9295-981afead0e77"/>
+				<reportElement x="74" y="505" width="113" height="20" forecolor="#0000CC" uuid="5139d434-e465-484b-9295-981afead0e77"/>
 				<box rightPadding="0">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -239,7 +218,7 @@
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/keyword.jasper"]]></subreportExpression>
 			</subreport>
 			<staticText>
-				<reportElement x="43" y="505" width="21" height="20" forecolor="#0000CC" uuid="890237f2-2914-45c3-be63-c78060779d93"/>
+				<reportElement x="43" y="505" width="31" height="20" forecolor="#0000CC" uuid="890237f2-2914-45c3-be63-c78060779d93"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="16"/>
 				</textElement>

@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_2" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="aee805f9-1daf-45e2-b5e2-182a92e0d063">
 	<property name="ireport.zoom" value="1.0000000000000016"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="36"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["H:\\workspace\\BOW\\report\\templates\\template_3\\"]]></defaultValueExpression>
 	</parameter>
@@ -20,8 +20,8 @@
 				<text><![CDATA[You have purchased]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="409" y="335" width="128" height="20" uuid="1d68b09c-cb4d-4b6e-adfc-ba71720636c6"/>
-				<box rightPadding="6"/>
+				<reportElement x="380" y="335" width="157" height="20" uuid="1d68b09c-cb4d-4b6e-adfc-ba71720636c6"/>
+				<box rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font size="14" isBold="true"/>
 				</textElement>
@@ -33,13 +33,6 @@
 					<font size="13"/>
 				</textElement>
 				<text><![CDATA[In your existing/previous advertising plan, you have invested]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="380" y="335" width="28" height="20" uuid="1944fa95-7c85-4e4a-b175-d553782bdf5e"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="14" isBold="true"/>
-				</textElement>
-				<text><![CDATA[RM]]></text>
 			</staticText>
 			<image>
 				<reportElement x="33" y="357" width="80" height="80" uuid="ae406cd6-a5d8-49a8-bda7-ff712de6f067"/>
@@ -204,7 +197,7 @@
 				<text><![CDATA[Advertising Plan Review]]></text>
 			</staticText>
 			<textField>
-				<reportElement mode="Opaque" x="496" y="7" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="6970154e-6b8c-45e6-80a4-bc9adc15d5b3"/>
+				<reportElement mode="Opaque" x="521" y="6" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="6970154e-6b8c-45e6-80a4-bc9adc15d5b3"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Impact" size="32"/>
 				</textElement>

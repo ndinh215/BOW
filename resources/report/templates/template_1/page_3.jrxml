@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_3" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="5" rightMargin="5" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="77f76044-2c3b-433f-aff5-55ed88ca1c06">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_3" pageWidth="585" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="585" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="77f76044-2c3b-433f-aff5-55ed88ca1c06">
 	<property name="ireport.zoom" value="0.9982500000000003"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -94,7 +94,7 @@
 				<text><![CDATA[You would like to target gender which is(are):]]></text>
 			</staticText>
 			<textField>
-				<reportElement mode="Opaque" x="502" y="19" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="46b1f18a-4184-457b-abc4-938c7e46a534"/>
+				<reportElement mode="Opaque" x="509" y="19" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="46b1f18a-4184-457b-abc4-938c7e46a534"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Impact" size="32"/>
 				</textElement>
