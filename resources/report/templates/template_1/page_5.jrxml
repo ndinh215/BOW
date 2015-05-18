@@ -1244,9 +1244,6 @@
 				</textElement>
 				<textFieldExpression><![CDATA[4]]></textFieldExpression>
 			</textField>
-			<break>
-				<reportElement x="0" y="788" width="595" height="1" uuid="ddfc4f49-b0cf-4515-9650-e9f09d2bf3b3"/>
-			</break>
 		</band>
 	</summary>
 </jasperReport>
