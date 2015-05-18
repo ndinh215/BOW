@@ -22,8 +22,6 @@ function previewSurvey() {
 }
 
 function submitSurvey() {
-	myform.currentsection = 0;
-	
 	$('#surveyForm').attr('action', 'survey_1.html?submit');
 	$('#surveyForm').submit();
 }
@@ -159,7 +157,7 @@ $( document ).ready(function() {
 							validated = false;
 							break; 
 						} else{
-							var previousContractvalue = ($("#previous-contract-value").val()).replace('RM ', ''),
+							var previousContractvalue = $("#previous-contract-value").val(),
 						    numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
 							if(!numberRegex.test(previousContractvalue))
 							{
@@ -170,8 +168,7 @@ $( document ).ready(function() {
 							}
 							else{
 								$("#previous-contract-value-error").text("");
-								var tempt = 'RM ' + previousContractvalue;
-								$("#previous-contract-value").val(tempt);
+								$("#previous-contract-value").val(previousContractvalue);
 							}
 						}
 					}
@@ -201,9 +198,9 @@ $( document ).ready(function() {
 						if (allels[i].value == ""){
 							validated = true;
 							var campaignClickthroughrate = 2;
-							$("#campaign-click-through-rate").val(campaignClickthroughrate +' %');
+							$("#campaign-click-through-rate").val(campaignClickthroughrate);
 						} else{
-							var campaignClickthroughrate = ($("#campaign-click-through-rate").val()).replace(' %', ''),
+							var campaignClickthroughrate = $("#campaign-click-through-rate").val(),
 						    numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
 							if(!numberRegex.test(campaignClickthroughrate))
 							{
@@ -214,8 +211,7 @@ $( document ).ready(function() {
 							}
 							else{
 								$("#campaign-click-through-rate-error").text("");
-								var tempt = campaignClickthroughrate + " %"; 
-								$("#campaign-click-through-rate").val(tempt);
+								$("#campaign-click-through-rate").val(campaignClickthroughrate);
 							}
 						}
 					}
@@ -230,6 +226,8 @@ $( document ).ready(function() {
 							var anyAdditionalcomments = $("#any-additional-comments").val();
 						}
 					}
+					
+					/* STEP 5 */
 					else if((allels[i].getAttribute('id')) == "step-5-a"){	
 						if (allels[i].value == ""){
 							$("#step-5-a-error").text("Please fill out this field!");
@@ -237,7 +235,7 @@ $( document ).ready(function() {
 							validated = false;
 							break; 
 						} else{
-							var A = ($("#step-5-a").val()).replace('RM ', ''),
+							var A = $("#step-5-a").val(),
 						    numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
 							if(!numberRegex.test(A))
 							{
@@ -248,8 +246,7 @@ $( document ).ready(function() {
 							}
 							else{
 								$("#step-5-a-error").text("");
-								var tempt = 'RM ' + A; 
-								$("#step-5-a").val(tempt);
+								$("#step-5-a").val(A);
 								$( "#revenue-increased" ).val(A);
 							}
 						}
@@ -261,7 +258,7 @@ $( document ).ready(function() {
 							validated = false;
 							break; 
 						} else{
-							var B = ($("#step-5-b").val()).replace('RM ', ''),
+							var B = $("#step-5-b").val(),
 						    numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
 							if(!numberRegex.test(B))
 							{
@@ -272,8 +269,7 @@ $( document ).ready(function() {
 							}
 							else{
 								$("#step-5-b-error").text("");
-								var tempt = 'RM ' + B; 
-								$("#step-5-b").val(tempt);
+								$("#step-5-b").val(B);
 								$("#average-revenue-perCustomer").val(B);
 								var newAdvertiser = (A / B).toFixed(2);
 								$("#new-advertiser").val(newAdvertiser);
@@ -287,7 +283,7 @@ $( document ).ready(function() {
 							validated = false;
 							break; 
 						} else{
-							var D = ($("#step-5-d").val()).replace(' %', ''),
+							var D = $("#step-5-d").val(),
 						    numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
 							if(!numberRegex.test(D))
 							{
@@ -298,8 +294,7 @@ $( document ).ready(function() {
 							}
 							else{
 								$("#step-5-d-error").text("");
-								var tempt = D + ' %'; 
-								$("#step-5-d").val(tempt);
+								$("#step-5-d").val(D);
 								var enquiryRate = (D / 100).toFixed(2);
 								$("#enquiry-rate").val(enquiryRate);
 								var leads = (newAdvertiser / enquiryRate).toFixed(2);
@@ -318,7 +313,7 @@ $( document ).ready(function() {
 							validated = false;
 							break; 
 						} else{
-							var H = ($("#step-5-h").val()).replace(' Months', ''),
+							var H = $("#step-5-h").val(),
 						    numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
 							if(!numberRegex.test(H))
 							{
@@ -328,9 +323,8 @@ $( document ).ready(function() {
 								break; 
 							}
 							else{
-								$("#step-5-h-error").text("");
-								var tempt = H + ' Months'; 
-								$("#step-5-h").val(tempt);
+								$("#step-5-h-error").text(""); 
+								$("#step-5-h").val(H);
 								$("#campaign-period").val(H);
 								var monthlyTrafficClicks = (trafficClicksRequired / H).toFixed(2);
 								$("#monthly-traffic-clicks").val(monthlyTrafficClicks);
