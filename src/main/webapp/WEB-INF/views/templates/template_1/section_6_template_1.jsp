@@ -114,7 +114,7 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<p><input id="age-18-29" type="checkbox" value="false">18-20</p>
+					<p><input id="age-18-29" type="checkbox" value="false">18-29</p>
 					<p><input id="age-30-49" type="checkbox" value="false">30-49</p>
 					<p><input id="age-50-64" type="checkbox" value="false">50-64</p>
 					<p><input id="others-age" type="checkbox" value="false">Others: (please specify) <input name="fields['others-age-text']" id="others-age-text" type="text"/></p>
