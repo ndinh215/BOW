@@ -11,6 +11,7 @@ import com.panpages.bow.model.SectionTemplate;
 import com.panpages.bow.model.Survey;
 import com.panpages.bow.model.SurveyForm;
 import com.panpages.bow.model.SurveyTemplate;
+import com.panpages.bow.service.survey.SurveyCalculate;
 
 public interface SurveyDao {
 
@@ -26,5 +27,6 @@ public interface SurveyDao {
 	void saveFieldAndSectionRelation(FieldAndSectionRelation relation);
     SurveyTemplate findSurveyTemplateWithId(int templateId);
     List<SectionTemplate> findSectionTemplatesBelongToSurveyTemplate(int surveyTemplateId);
+	int saveSurveyForm(int surveyTemplateId, SurveyForm form, SurveyCalculate calculation);
 	
 }

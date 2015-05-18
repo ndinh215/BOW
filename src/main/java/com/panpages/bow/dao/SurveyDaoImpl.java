@@ -33,6 +33,7 @@ import com.panpages.bow.model.SectionTemplate;
 import com.panpages.bow.model.Survey;
 import com.panpages.bow.model.SurveyForm;
 import com.panpages.bow.model.SurveyTemplate;
+import com.panpages.bow.service.survey.SurveyCalculate;
 import com.panpages.bow.service.survey.SurveyStatus;
 import com.panpages.bow.service.utils.StringUtils;
 
@@ -260,6 +261,19 @@ public class SurveyDaoImpl extends AbstractDao implements SurveyDao{
 	     }
 		
 		return survey == null? -1 : survey.getId();
+	}
+	
+	@Override
+	public int saveSurveyForm(int surveyTemplateId, SurveyForm form, SurveyCalculate calculation) {
+		int surveyId = saveSurveyForm(surveyTemplateId, form);
+		if (surveyId == -1) {
+			return -1;
+		}
+		
+		Survey survey = findSurveyWithId(surveyId);
+		calculation.calculateFields(survey);
+		
+		return surveyId;
 	}
 
 	@SuppressWarnings("unchecked")

@@ -16,5 +16,6 @@ public interface SurveyService {
 	Survey findSurveyWithId(int surveyId); 
 	FieldTemplate findFieldTemplateWithSlugName(String slugName);
 	SurveyTemplate findSurveyTemplateWithId(int surveyTemplateId);
+	int saveSurveyForm(int surveyTemplateId, SurveyForm form, SurveyCalculate calculation);
 	
 }

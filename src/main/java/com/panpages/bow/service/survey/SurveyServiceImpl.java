@@ -39,6 +39,15 @@ public class SurveyServiceImpl implements SurveyService{
 		
 		return dao.saveSurveyForm(surveyTemplateId, form);
 	}
+	
+	@Override
+	public int saveSurveyForm(int surveyTemplateId, SurveyForm form, SurveyCalculate calculation) {
+		if (form == null) {
+			return -1;
+		}
+		
+		return dao.saveSurveyForm(surveyTemplateId, form, calculation);
+	}
 
 	@Override
 	public FieldTemplate findFieldTemplateWithSlugName(String slugName) {

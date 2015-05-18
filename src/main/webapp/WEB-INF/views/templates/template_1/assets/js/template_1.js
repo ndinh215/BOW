@@ -22,6 +22,8 @@ function previewSurvey() {
 }
 
 function submitSurvey() {
+	myform.currentsection = 0;
+	
 	$('#surveyForm').attr('action', 'survey_1.html?submit');
 	$('#surveyForm').submit();
 }
