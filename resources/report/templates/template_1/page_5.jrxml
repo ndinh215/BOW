@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_5" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="d678d0b9-ab96-4489-adb0-502e4744b263">
 	<property name="ireport.zoom" value="1.2100000000000006"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="25"/>
+	<property name="ireport.y" value="217"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
 	<parameter name="sections" class="java.util.List"/>
 	<background>
@@ -571,7 +571,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("subtotal-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("subtotal-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="484" y="400" width="96" height="20" backcolor="#FFFF99" uuid="133a7490-3bbc-4890-9e94-8ccc0c3e9dc3"/>
@@ -616,7 +616,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("yahoo-display-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("yahoo-display-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="620" width="23" height="20" uuid="42f7284b-2c80-4e5d-81bf-9290c3f638e9"/>
@@ -691,7 +691,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("pan-360-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("pan-360-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="484" y="680" width="96" height="20" backcolor="#FFFF99" uuid="c37336f2-e646-4e5a-9973-e4c76ebc30e2"/>
@@ -703,7 +703,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("gov-tax-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("gov-tax-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="520" width="23" height="20" uuid="46e38b33-8c5d-41a9-b6de-c4ec57e95b1d"/>
@@ -722,7 +722,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("facebook-ads-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("facebook-ads-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="680" width="23" height="20" uuid="90b2400a-c23a-497c-8fc7-94b0b1023c63"/>
@@ -741,7 +741,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("youtube-ads-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("youtube-ads-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="484" y="460" width="96" height="20" backcolor="#FFFF99" uuid="acaa65f9-2934-43ed-a688-34d3d35e8022"/>
@@ -753,7 +753,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("yahoo-search-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("yahoo-search-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="318" y="440" width="166" height="20" uuid="835db81e-987d-4504-bbec-974fd31ffcb3"/>
@@ -833,7 +833,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("others-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("others-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="660" width="23" height="20" uuid="d8909302-b2a0-4f68-8e86-ce729b241c38"/>
@@ -894,7 +894,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("google-display-network-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("google-display-network-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="400" width="23" height="20" uuid="8ca1c038-9f54-4f6e-8bc7-b49df98f96de"/>
@@ -913,7 +913,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("alibaba-com-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("alibaba-com-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement mode="Opaque" x="484" y="380" width="96" height="20" backcolor="#FFCCCC" uuid="55c8cec4-d2b8-4630-a33d-07fb1c630e8f"/>
@@ -1002,7 +1002,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("management-fee-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("management-fee-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="480" width="23" height="20" uuid="e141da2d-26e6-42ca-bd4f-9e7a74f8e4f1"/>
@@ -1021,7 +1021,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("super-pages-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("super-pages-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="580" width="23" height="20" uuid="4781f8d3-40eb-4f8f-a8ca-6f52568ef044"/>
@@ -1082,7 +1082,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("grand-total-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("grand-total-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="427" y="352" width="80" height="20" uuid="6095aac4-bce4-4114-a45e-604d8b4a3272"/>
@@ -1155,7 +1155,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("facebook-marketing-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("facebook-marketing-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="540" width="23" height="20" uuid="e17fdf6a-fdda-44e3-b0cc-bacc8d1c3f37"/>

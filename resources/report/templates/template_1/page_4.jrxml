@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_4" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="90167ed5-0c7a-4203-aa33-cf24b0c47bbb">
 	<property name="ireport.zoom" value="1.2100000000000013"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="168"/>
+	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["H:\\workspace\\BOW\\report\\templates\\template_3\\"]]></defaultValueExpression>
 	</parameter>
@@ -45,7 +45,7 @@
 				<text><![CDATA[Your expected revenue increased via your advertising plan is:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="121" y="120" width="174" height="23" uuid="b2d861bd-5b6d-42ed-a62c-1e6beb7d8259"/>
+				<reportElement x="157" y="120" width="174" height="23" uuid="b2d861bd-5b6d-42ed-a62c-1e6beb7d8259"/>
 				<box rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="16"/>
@@ -53,7 +53,7 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("step-5-a", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="121" y="203" width="174" height="23" uuid="14374eb3-8f44-437f-8760-38f09b7e6163"/>
+				<reportElement x="157" y="203" width="174" height="23" uuid="14374eb3-8f44-437f-8760-38f09b7e6163"/>
 				<box rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="16"/>
@@ -66,7 +66,7 @@
 				<text><![CDATA[Your expected revenue increased via your advertising plan is:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="121" y="287" width="174" height="23" uuid="d21a315b-2a22-4343-bba6-8b6a51e3235c"/>
+				<reportElement x="121" y="287" width="36" height="23" uuid="d21a315b-2a22-4343-bba6-8b6a51e3235c"/>
 				<box rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="16"/>
@@ -223,6 +223,27 @@
 					<font fontName="Impact" size="16"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="121" y="120" width="36" height="23" uuid="f40d7c0c-f14b-4b05-ac93-e96a57aba6fb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Impact" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="121" y="203" width="36" height="23" uuid="a98dc22c-6e3b-4bf1-8b68-0b25c2a47772"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Impact" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="158" y="287" width="36" height="23" uuid="d2d7e540-8e47-4d5b-a678-cb7576a625dd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Impact" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
 			</staticText>
 		</band>
 	</summary>
