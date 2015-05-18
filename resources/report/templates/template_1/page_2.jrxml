@@ -20,8 +20,8 @@
 				<text><![CDATA[You have purchased]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="409" y="335" width="128" height="20" uuid="1d68b09c-cb4d-4b6e-adfc-ba71720636c6"/>
-				<box rightPadding="6"/>
+				<reportElement x="380" y="335" width="157" height="20" uuid="1d68b09c-cb4d-4b6e-adfc-ba71720636c6"/>
+				<box rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font size="14" isBold="true"/>
 				</textElement>
@@ -33,13 +33,6 @@
 					<font size="13"/>
 				</textElement>
 				<text><![CDATA[In your existing/previous advertising plan, you have invested]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="380" y="335" width="28" height="20" uuid="1944fa95-7c85-4e4a-b175-d553782bdf5e"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="14" isBold="true"/>
-				</textElement>
-				<text><![CDATA[RM]]></text>
 			</staticText>
 			<image>
 				<reportElement x="33" y="357" width="80" height="80" uuid="ae406cd6-a5d8-49a8-bda7-ff712de6f067"/>
@@ -53,11 +46,11 @@
 				<text><![CDATA[people visited your website]]></text>
 			</staticText>
 			<image>
-				<reportElement x="300" y="357" width="80" height="80" uuid="64f61d69-b584-4194-a029-39bf218c77c8"/>
+				<reportElement x="334" y="357" width="80" height="80" uuid="64f61d69-b584-4194-a029-39bf218c77c8"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_1/national.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="392" y="389" width="144" height="34" uuid="402f4245-f7d8-457d-a3da-98ee256422a5"/>
+				<reportElement x="426" y="389" width="144" height="34" uuid="402f4245-f7d8-457d-a3da-98ee256422a5"/>
 				<textElement verticalAlignment="Middle">
 					<font size="13"/>
 				</textElement>
@@ -190,7 +183,7 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("improve-website-maintenance", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Improve Website Maintenance":""]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="392" y="357" width="144" height="32" forecolor="#0000CC" uuid="e28c4225-8df8-4778-85ce-15ca718a9025"/>
+				<reportElement x="426" y="357" width="144" height="32" forecolor="#0000CC" uuid="e28c4225-8df8-4778-85ce-15ca718a9025"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Impact" size="24"/>
 				</textElement>
@@ -204,7 +197,7 @@
 				<text><![CDATA[Advertising Plan Review]]></text>
 			</staticText>
 			<textField>
-				<reportElement mode="Opaque" x="496" y="7" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="6970154e-6b8c-45e6-80a4-bc9adc15d5b3"/>
+				<reportElement mode="Opaque" x="521" y="6" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="6970154e-6b8c-45e6-80a4-bc9adc15d5b3"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Impact" size="32"/>
 				</textElement>
