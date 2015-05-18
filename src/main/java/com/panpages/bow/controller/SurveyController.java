@@ -25,6 +25,7 @@ import com.panpages.bow.model.SurveyTemplate;
 import com.panpages.bow.service.mail.MailService;
 import com.panpages.bow.service.report.ReportService;
 import com.panpages.bow.service.report.ReportType;
+import com.panpages.bow.service.survey.SurveyCalculateFactory;
 import com.panpages.bow.service.survey.SurveyService;
 import com.panpages.bow.service.survey.SurveyStatus;
 
@@ -42,6 +43,9 @@ public class SurveyController {
 	
 	@Autowired
 	MailService emailSvc;
+	
+	@Autowired
+	SurveyCalculateFactory calculationFactory;
 	
 	private static final Logger logger = Logger.getLogger(SurveyController.class);
 
@@ -79,7 +83,7 @@ public class SurveyController {
 							 BindingResult result, 
 							 ModelMap model) {
 		surveyTemplateId = 1;
-		int surveyId = surveySvc.saveSurveyForm(surveyTemplateId, form);		
+		int surveyId = surveySvc.saveSurveyForm(surveyTemplateId, form, calculationFactory.createSurveyCalculator(surveyTemplateId));		
 		
 		// Redirect to error page with surveyId -1
 		if (surveyId == -1) {

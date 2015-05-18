@@ -22,6 +22,8 @@ function previewSurvey() {
 }
 
 function submitSurvey() {
+	myform.currentsection = 0;
+	
 	$('#surveyForm').attr('action', 'survey_1.html?submit');
 	$('#surveyForm').submit();
 }
@@ -30,7 +32,7 @@ $( document ).ready(function() {
 	
 	myform = new formtowizard({
 		formid: 'surveyForm',
-		persistsection: true,
+		persistsection: false,
 		revealfx: ['slide', 500],
 		
 		onpagechangestart:function($, i, $fieldset, rawi) {
