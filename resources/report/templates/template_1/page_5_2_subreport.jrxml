@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_5_2_subreport" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="aa4e2863-04cb-41de-9474-a2e60ad6511e">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_5_2_subreport" language="groovy" pageWidth="565" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="565" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="aa4e2863-04cb-41de-9474-a2e60ad6511e">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="36"/>
+	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
@@ -10,34 +10,34 @@
 	<summary>
 		<band height="842" splitType="Stretch">
 			<image>
-				<reportElement x="215" y="222" width="170" height="100" uuid="95b31202-8f9d-415d-852b-86d9646dc077"/>
+				<reportElement x="203" y="222" width="170" height="100" uuid="95b31202-8f9d-415d-852b-86d9646dc077"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_6/Picture5.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="215" y="112" width="170" height="100" uuid="6f7a2b94-ceeb-4db0-b16a-1ac55ac19c69"/>
+				<reportElement x="203" y="112" width="170" height="100" uuid="6f7a2b94-ceeb-4db0-b16a-1ac55ac19c69"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_6/Picture2.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="33" y="222" width="170" height="100" uuid="1ba9f0bc-03c5-4548-b459-470b156cb271"/>
+				<reportElement x="21" y="222" width="170" height="100" uuid="1ba9f0bc-03c5-4548-b459-470b156cb271"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_6/Picture4.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="33" y="112" width="170" height="100" uuid="3a8705c3-40ff-4eaa-a5c0-700fa10f8219"/>
+				<reportElement x="21" y="112" width="170" height="100" uuid="3a8705c3-40ff-4eaa-a5c0-700fa10f8219"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_6/Picture1.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="14" y="71" width="555" height="24" uuid="ed9f24ad-21b0-46d5-8da3-069585e83090"/>
+				<reportElement x="14" y="71" width="551" height="24" uuid="ed9f24ad-21b0-46d5-8da3-069585e83090"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[Traditional advertising plan(s) is good, however, the cost is expensive and have limited exposure.]]></text>
 			</staticText>
 			<image>
-				<reportElement x="14" y="619" width="571" height="210" uuid="182cde56-0093-41fa-8d0d-f4a364035a4b"/>
+				<reportElement x="14" y="619" width="539" height="210" uuid="182cde56-0093-41fa-8d0d-f4a364035a4b"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_6/Picture7.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="14" y="335" width="571" height="271" uuid="f1ccfba2-632e-49aa-b516-41170bc9e2e2"/>
+				<reportElement x="14" y="335" width="539" height="271" uuid="f1ccfba2-632e-49aa-b516-41170bc9e2e2"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
@@ -55,11 +55,11 @@ We have given you all the reasons why you should advertise now! I have taken the
 ]]></text>
 			</staticText>
 			<image>
-				<reportElement x="397" y="222" width="170" height="100" uuid="439d2229-6335-4252-bf48-b28f6376a6e6"/>
+				<reportElement x="383" y="222" width="170" height="100" uuid="439d2229-6335-4252-bf48-b28f6376a6e6"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_6/Picture6.png"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="397" y="112" width="170" height="100" uuid="9945c5af-befe-4f52-8d2a-8e594bad3583"/>
+				<reportElement x="383" y="112" width="170" height="100" uuid="9945c5af-befe-4f52-8d2a-8e594bad3583"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_6/Picture3.png"]]></imageExpression>
 			</image>
 			<staticText>
@@ -74,7 +74,7 @@ We have given you all the reasons why you should advertise now! I have taken the
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_5/TMPanPanpages.jpg"]]></imageExpression>
 			</image>
 			<textField>
-				<reportElement mode="Opaque" x="521" y="9" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="ca4e797a-531a-4cd1-b6a6-b1731980237d"/>
+				<reportElement mode="Opaque" x="491" y="9" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="ca4e797a-531a-4cd1-b6a6-b1731980237d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Impact" size="32"/>
 				</textElement>

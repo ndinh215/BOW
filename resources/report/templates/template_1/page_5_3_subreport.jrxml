@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_5_3_subreport" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fda105dd-3be1-4445-bc8f-800fe31e2aed">
-	<property name="ireport.zoom" value="1.0"/>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_5_3_subreport" language="groovy" pageWidth="565" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="565" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fda105dd-3be1-4445-bc8f-800fe31e2aed">
+	<property name="ireport.zoom" value="1.6105100000000008"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
@@ -11,7 +11,7 @@
 	<summary>
 		<band height="842" splitType="Stretch">
 			<staticText>
-				<reportElement x="12" y="82" width="583" height="137" uuid="1aefebe4-e193-47bd-a852-89a0b8d40fe1"/>
+				<reportElement x="12" y="82" width="541" height="137" uuid="1aefebe4-e193-47bd-a852-89a0b8d40fe1"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="10" isBold="false" isItalic="true"/>
 				</textElement>
@@ -23,14 +23,14 @@
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="12" y="63" width="583" height="19" uuid="f437d704-e15f-4b32-b080-4141b56ab2c0"/>
+				<reportElement x="12" y="63" width="541" height="19" uuid="f437d704-e15f-4b32-b080-4141b56ab2c0"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="10" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[Terms & Conditions:]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="227" y="92" width="111" height="14" isRemoveLineWhenBlank="true" backcolor="#FFFF99" uuid="7d2e2225-0786-48cb-8c77-623f030ee6e2"/>
+				<reportElement mode="Transparent" x="227" y="92" width="82" height="14" isRemoveLineWhenBlank="true" backcolor="#FFFF99" uuid="7d2e2225-0786-48cb-8c77-623f030ee6e2"/>
 				<box rightPadding="6">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -44,7 +44,7 @@
 				<textFieldExpression><![CDATA[new SimpleDateFormat("dd MMM yyyy").format(org.apache.commons.lang.time.DateUtils.addMonths(new Date(), 1))]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Transparent" x="27" y="137" width="144" height="14" backcolor="#FFFF99" uuid="2770fd34-6de2-44e3-b911-69d7ce1f9f86"/>
+				<reportElement mode="Transparent" x="27" y="137" width="131" height="14" backcolor="#FFFF99" uuid="2770fd34-6de2-44e3-b911-69d7ce1f9f86"/>
 				<box rightPadding="6">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -69,7 +69,7 @@
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_5/TMPanPanpages.jpg"]]></imageExpression>
 			</image>
 			<textField>
-				<reportElement mode="Opaque" x="521" y="9" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="9e3e572e-b160-4a1a-9e88-8f293d3b7ce5"/>
+				<reportElement mode="Opaque" x="491" y="9" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="9e3e572e-b160-4a1a-9e88-8f293d3b7ce5"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Impact" size="32"/>
 				</textElement>
