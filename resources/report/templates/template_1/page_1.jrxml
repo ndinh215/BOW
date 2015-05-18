@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_1" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="c85d93a0-0d8f-4b28-ae59-d3bf59335912">
 	<property name="ireport.zoom" value="1.3310000000000015"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="273"/>
+	<property name="ireport.y" value="321"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
 	<parameter name="sections" class="java.util.List"/>
 	<parameter name="fulfillDate" class="java.lang.String"/>
@@ -45,7 +45,7 @@
 	<summary>
 		<band height="842" splitType="Stretch">
 			<staticText>
-				<reportElement x="14" y="34" width="77" height="20" uuid="343dcb05-af81-4ec3-ad48-dce0057979a1"/>
+				<reportElement x="14" y="34" width="70" height="20" uuid="343dcb05-af81-4ec3-ad48-dce0057979a1"/>
 				<textElement verticalAlignment="Middle">
 					<font size="14" isBold="true"/>
 				</textElement>
@@ -56,11 +56,11 @@
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/home/TMPanPanpages.jpg"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="95" y="78" width="414" height="509" uuid="97eabd3f-3e5f-4766-943b-4acdcf060a1b"/>
+				<reportElement x="58" y="78" width="469" height="526" uuid="97eabd3f-3e5f-4766-943b-4acdcf060a1b"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/home/search.png"]]></imageExpression>
 			</image>
 			<textField>
-				<reportElement mode="Transparent" x="91" y="34" width="202" height="20" backcolor="#FFFF99" uuid="65a31fd4-9d3f-44af-a872-6d8966238e18"/>
+				<reportElement mode="Transparent" x="84" y="34" width="202" height="20" backcolor="#FFFF99" uuid="65a31fd4-9d3f-44af-a872-6d8966238e18"/>
 				<box rightPadding="0">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -74,14 +74,14 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("consultant-name", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-1",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="14" y="616" width="117" height="30" uuid="209ef8f6-bd91-4bec-b256-17535c42c82d"/>
+				<reportElement x="14" y="628" width="117" height="30" uuid="209ef8f6-bd91-4bec-b256-17535c42c82d"/>
 				<textElement verticalAlignment="Middle">
 					<font size="16" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Prepared For:]]></text>
 			</staticText>
 			<textField>
-				<reportElement mode="Transparent" x="14" y="646" width="268" height="33" backcolor="#FFFF99" uuid="7313bc7a-95cc-4087-848b-7bf995e291e9"/>
+				<reportElement mode="Transparent" x="14" y="658" width="268" height="21" backcolor="#FFFF99" uuid="7313bc7a-95cc-4087-848b-7bf995e291e9"/>
 				<box rightPadding="6">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -95,7 +95,7 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("advertiser-company-pic", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-2",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Transparent" x="14" y="679" width="268" height="31" backcolor="#FFFF99" uuid="f09ef84e-4c8c-4b0e-96d0-ef2228be40c4"/>
+				<reportElement mode="Transparent" x="14" y="679" width="268" height="43" backcolor="#FFFF99" uuid="f09ef84e-4c8c-4b0e-96d0-ef2228be40c4"/>
 				<box rightPadding="6">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -109,14 +109,14 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("advertiser-company-address", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-2",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="121" y="94" width="321" height="45" uuid="c33daa93-57b5-4e6e-9e24-588ef721f546"/>
+				<reportElement x="91" y="103" width="321" height="45" uuid="c33daa93-57b5-4e6e-9e24-588ef721f546"/>
 				<textElement verticalAlignment="Middle">
 					<font size="32" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Panpages Online]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="121" y="139" width="321" height="101" uuid="da88c83e-c8b1-4663-a488-340c85cff101"/>
+				<reportElement x="91" y="148" width="321" height="101" uuid="da88c83e-c8b1-4663-a488-340c85cff101"/>
 				<textElement>
 					<font fontName="Impact" size="40" isBold="true"/>
 				</textElement>
@@ -124,7 +124,7 @@
 PLANNER]]></text>
 			</staticText>
 			<textField>
-				<reportElement mode="Transparent" x="121" y="240" width="321" height="32" backcolor="#FFFF99" uuid="6c402bf4-2268-4e1a-8e93-6f25c2fed7a5"/>
+				<reportElement mode="Transparent" x="91" y="249" width="321" height="32" backcolor="#FFFF99" uuid="6c402bf4-2268-4e1a-8e93-6f25c2fed7a5"/>
 				<box rightPadding="6">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>

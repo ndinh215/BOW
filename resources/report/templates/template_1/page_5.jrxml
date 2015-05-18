@@ -1208,7 +1208,7 @@
 				<reportElement x="0" y="729" width="595" height="1" uuid="c819bcae-d060-4e53-94a5-58a311eed7b3"/>
 			</break>
 			<subreport>
-				<reportElement x="15" y="737" width="565" height="45" uuid="6785d347-5710-4bba-bd0b-5347fd0f59c0"/>
+				<reportElement x="0" y="737" width="595" height="45" uuid="6785d347-5710-4bba-bd0b-5347fd0f59c0"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -1216,7 +1216,7 @@
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/page_5_2_subreport.jasper"]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement x="15" y="795" width="565" height="41" uuid="b6e91928-c649-4879-aa31-d53e35381018"/>
+				<reportElement x="0" y="795" width="595" height="41" uuid="b6e91928-c649-4879-aa31-d53e35381018"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -1244,6 +1244,9 @@
 				</textElement>
 				<textFieldExpression><![CDATA[4]]></textFieldExpression>
 			</textField>
+			<break>
+				<reportElement x="0" y="788" width="595" height="1" uuid="382739a3-a3d9-4991-8064-d119c1086c73"/>
+			</break>
 		</band>
 	</summary>
 </jasperReport>

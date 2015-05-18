@@ -30,7 +30,7 @@ $( document ).ready(function() {
 	
 	myform = new formtowizard({
 		formid: 'surveyForm',
-		persistsection: true,
+		persistsection: false,
 		revealfx: ['slide', 500],
 		
 		onpagechangestart:function($, i, $fieldset, rawi) {
