@@ -45,7 +45,7 @@
 				<textFieldExpression><![CDATA[" The above mentioned proposal would be due on "+ new SimpleDateFormat("dd MMM yyyy").format(org.apache.commons.lang.time.DateUtils.addMonths(new Date(), 1))+" (PanPages Online Sdn Bhd reserved the right on the rate changes after promotion due date)"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Transparent" x="23" y="132" width="554" height="14" backcolor="#FFFF99" uuid="2770fd34-6de2-44e3-b911-69d7ce1f9f86"/>
+				<reportElement mode="Transparent" x="23" y="128" width="554" height="14" backcolor="#FFFF99" uuid="2770fd34-6de2-44e3-b911-69d7ce1f9f86"/>
 				<box rightPadding="0">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
