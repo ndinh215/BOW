@@ -185,7 +185,7 @@
 		<input type="hidden" name="fields['total-campaign-budget']" id="total-campaign-budget">
 		<input type="hidden" name="fields['total-estimate-impression']" id="total-estimate-impression">
 		<input type="hidden" name="fields['assumed-ctr-for-search']" id="assumed-ctr-for-search">
-		<input type="hidden" name="fields['estimatedClicks-based-on-ctr']" id="estimatedClicks-based-on-ctr">
+		<input type="hidden" name="fields['estimatedclicks-based-on-ctr']" id="estimatedClicks-based-on-ctr">
 		<input type="hidden" name="fields['estimated-monthly-investment-100']" id="estimated-monthly-investment-100">
 		<input type="hidden" name="fields['estimated-monthly-investment-50']" id="estimated-monthly-investment-50">
 	</div>

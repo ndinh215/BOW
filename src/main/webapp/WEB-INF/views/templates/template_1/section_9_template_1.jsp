@@ -5,6 +5,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Step 9</title>
+<script type="text/javascript">
+$(function() {
+	$('#choose-file').change(function() {
+		var fileExtension = ['csv', 'txt'];
+		if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
+			alert("Only accept '.csv','.txt' formats are allowed.");
+		}
+	});
+}); 
+</script>
 </head>
 <body>
 	<div class="row">

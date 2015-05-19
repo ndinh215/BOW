@@ -44,7 +44,7 @@ $( document ).ready(function() {
 			var fieldset = $fieldset.get(0); 
 			var allels = fieldset.getElementsByTagName("*"); 
 			for (var i=0; i<allels.length; i++){
-				if (allels[i].type == "text" || allels[i].tagName=="TEXTAREA"){
+				if (allels[i].type == "text" || allels[i].type == "checkbox" || allels[i].tagName=="TEXTAREA"){
 											
 					/*  STEP 1 */
 					if((allels[i].getAttribute('id')) == "consultant-name"){ 
@@ -148,8 +148,107 @@ $( document ).ready(function() {
 							var consultantName = $('#company-pic').val();
 						}
 					}
-					
 					/* STEP 3 */
+					else if((allels[i].getAttribute('id')) == "step-3-panpages"){
+						if(($("#step-3-panpages").is(':checked')) == true){
+							$("#step31").remove();
+							$('#step-3-panpages').val("true");
+							$( "#step-3" ).append( '<input type="hidden" id="step31"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="panpages">');
+						} else{
+							$('#step-3-panpages').val("false");
+							$("#step31").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "step-3-google-adwords-search-mobile"){						
+						if(($("#step-3-google-adwords-search-mobile").is(':checked')) == true){
+							$("#step32").remove();
+							$('#step-3-google-adwords-search-mobile').val("true");
+							$( "#step-3" ).append( '<input type="hidden" id="step32"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="google-adWords-search-mobile">');
+						} else{
+							$('#step-3-google-adwords-search-mobile').val("false");
+							$("#step32").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "step-3-google-display-network"){						
+						if(($("#step-3-google-display-network").is(':checked')) == true){
+							$("#step33").remove();
+							$('#step-3-google-display-network').val("true");
+							$( "#step-3" ).append( '<input type="hidden" id="step33"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="google-display-network">');
+						} else{
+							$('#step-3-google-display-network').val("false");
+							$("#step33").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "step-3-yahoo-search"){	
+						$("#step34").remove();					
+						if(($("#step-3-yahoo-search").is(':checked')) == true){
+							$('#step-3-yahoo-search').val("true");
+							$( "#step-3" ).append( '<input type="hidden" id="step34"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="yahoo-search">');
+						} else{
+							$('#step-3-yahoo-search').val("false");
+							$("#step34").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "step-3-yahoo-display"){						
+						if(($("#step-3-yahoo-display").is(':checked')) == true){
+							$("#step35").remove();
+							$('#step-3-yahoo-display').val("true");
+							$( "#step-3" ).append( '<input type="hidden" id="step35"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="yahoo-display">');
+						} else{
+							$('#step-3-yahoo-display').val("false");
+							$("#step35").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "step-3-youtube-ads"){						
+						if(($("#step-3-youtube-ads").is(':checked')) == true){
+							$("#step36").remove();
+							$('#step-3-youtube-ads').val("true");
+							$( "#step-3" ).append( '<input type="hidden" id="step36"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="youtube-ads">');
+						} else{
+							$('#step-3-youtube-ads').val("false");
+							$("#step36").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "step-3-facebook-ads"){
+						$("#step37").remove();						
+						if(($("#step-3-facebook-ads").is(':checked')) == true){
+							$('#step-3-facebook-ads').val("true");
+							$( "#step-3" ).append( '<input type="hidden" id="step37"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="facebook-ads">');
+						} else{
+							$('#step-3-facebook-ads').val("false");
+							$("#step37").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "step-3-pan-360"){						
+						if(($("#step-3-pan-360").is(':checked')) == true){
+							$("#step38").remove();
+							$('#step-3-pan-360').val("true");
+							$( "#step-3" ).append( '<input type="hidden" id="step38"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="pan-360">');
+						} else{
+							$('#step-3-pan-360').val("false");
+							$("#step38").remove();
+						} 
+					}
+					else if((allels[i].getAttribute('id')) == "step-3-alibaba-com"){						
+						if(($("#step-3-alibaba-com").is(':checked')) == true){
+							$("#step39").remove();
+							$('#step-3-alibaba-com').val("true");
+							$( "#step-3" ).append( '<input type="hidden" id="step39"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="alibaba-com">');
+						} else{
+							$('#step-3-alibaba-com').val("false");
+							$("#step39").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "step-3-super-pages"){						
+						if(($("#step-3-super-pages").is(':checked')) == true){
+							$("#step310").remove();
+							$('#step-3-super-pages').val("true");
+							$( "#step-3" ).append( '<input type="hidden" id="step310"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="super-pages">');
+						} else{
+							$('#step-3-super-pages').val("false");
+							$("#step310").remove();
+						}  
+					}
 					else if((allels[i].getAttribute('id')) == "previous-contract-value"){
 						if (allels[i].value == ""){
 							$("#previous-contract-value-error").text("Please fill in Previous Contract Value field!");
@@ -215,11 +314,140 @@ $( document ).ready(function() {
 							}
 						}
 					}
+					
+					
+					/* STEP 4 */
+					else if((allels[i].getAttribute('id')) == "improve-website-content"){
+						if(($("#improve-website-content").is(':checked')) == true){
+							$('#improve-website-content').val("true");
+						} else{
+							$('#improve-website-content').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "add-on-relevant-product-pictures"){
+						if(($("#add-on-relevant-product-pictures").is(':checked')) == true){
+							$('#add-on-relevant-product-pictures').val("true");
+						} else{
+							$('#add-on-relevant-product-pictures').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "add-on-product-description"){
+						if(($("#add-on-product-description").is(':checked')) == true){
+							$('#add-on-product-description').val("true");
+						} else{
+							$('#add-on-product-description').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "include-product-price"){
+						if(($("#include-product-price").is(':checked')) == true){
+							$('#include-product-price').val("true");
+						} else{
+							$('#include-product-price').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "include-product-specification"){
+						if(($("#include-product-specification").is(':checked')) == true){
+							$('#include-product-specification').val("true");
+						} else{
+							$('#include-product-specification').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "include-company-details"){
+						if(($("#include-company-details").is(':checked')) == true){
+							$('#include-company-details').val("true");
+						} else{
+							$('#include-company-details').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "highlight-unique-selling-point"){
+						if(($("#highlight-unique-selling-point").is(':checked')) == true){
+							$('#highlight-unique-selling-point').val("true");
+						} else{
+							$('#highlight-unique-selling-point').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "include-certification-for-better-credential"){
+						if(($("#include-certification-for-better-credential").is(':checked')) == true){
+							$('#include-certification-for-better-credential').val("true");
+						} else{
+							$('#include-certification-for-better-credential').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "enhance-website-picture-quality"){
+						if(($("#enhance-website-picture-quality").is(':checked')) == true){
+							$('#enhance-website-picture-quality').val("true");
+						} else{
+							$('#enhance-website-picture-quality').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "improve-website-maintenance"){
+						if(($("#improve-website-maintenance").is(':checked')) == true){
+							$('#improve-website-maintenance').val("true");
+						} else{
+							$('#improve-website-maintenance').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "frequently-update-your-website"){
+						if(($("#frequently-update-your-website").is(':checked')) == true){
+							$('#frequently-update-your-website').val("true");
+						} else{
+							$('#frequently-update-your-website').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "timely-response-to-enquiry"){
+						if(($("#timely-response-to-enquiry").is(':checked')) == true){
+							$('#timely-response-to-enquiry').val("true");
+						} else{
+							$('#timely-response-to-enquiry').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "monitor-effectiveness"){
+						if(($("#monitor-effectiveness").is(':checked')) == true){
+							$('#monitor-effectiveness').val("true");
+						} else{
+							$('#monitor-effectiveness').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "tracking-on-calls-wall-in"){
+						if(($("#tracking-on-calls-wall-in").is(':checked')) == true){
+							$('#tracking-on-calls-wall-in').val("true");
+						} else{
+							$('#tracking-on-calls-wall-in').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "improve-brand-awareness"){
+						if(($("#improve-brand-awareness").is(':checked')) == true){
+							$('#improve-brand-awareness').val("true");
+						} else{
+							$('#improve-brand-awareness').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "explore-display-network"){
+						if(($("#explore-display-network").is(':checked')) == true){
+							$('#explore-display-network').val("true");
+						} else{
+							$('#explore-display-network').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "enhance-visibility"){
+						if(($("#enhance-visibility").is(':checked')) == true){
+							$('#enhance-visibility').val("true");
+						} else{
+							$('#enhance-visibility').val("false");
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "extend-your-marketing-plan-for-longer-visibility"){
+						if(($("#extend-your-marketing-plan-for-longer-visibility").is(':checked')) == true){
+							$('#extend-your-marketing-plan-for-longer-visibility').val("true");
+						} else{
+							$('#extend-your-marketing-plan-for-longer-visibility').val("false");
+						}	
+					}
 					else if((allels[i].getAttribute('id')) == "any-additional-comments"){	
 						if (allels[i].value == ""){
-							$("#any-additional-comments-error").text("Please fill in Any Additional Comment field!");
-							allels[i].focus();
-							validated = false;
+							var anyAdditionalcomments = '';
+							$("#any-additional-comments").val(anyAdditionalcomments);
+							validated = true;
 							break; 
 						} else{
 							$("#any-additional-comments-error").text("");
@@ -354,6 +582,571 @@ $( document ).ready(function() {
 					}
 					
 					/* STEP6 */
+					else if((allels[i].getAttribute('id')) == "malaysia"){
+						if(($("#malaysia").is(':checked')) == true){
+							$("#1").remove();
+							$('#malaysia').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="1"'+' name="fields['+"'geographical-area'"+']"'+' value="Malaysia">');
+						} else{
+							$('#malaysia').val("false");
+							$("#1").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "kuala-lumpur"){
+						if(($("#kuala-lumpur").is(':checked')) == true){
+							$("#2").remove();
+							$('#kuala-lumpur').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="2"'+' name="fields['+"'geographical-area'"+']"'+' value="Kuala Lumpur">');
+						} else{
+							$('#kuala-lumpur').val("false");
+							$("#2").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "selangor"){
+						if(($("#selangor").is(':checked')) == true){
+							$("#3").remove();
+							$('#selangor').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="3"'+' name="fields['+"'geographical-area'"+']"'+' value="Selangor">');
+						} else{
+							$('#selangor').val("false");
+							$("#3").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "kedah"){
+						if(($("#kedah").is(':checked')) == true){
+							$("#4").remove();
+							$('#kedah').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="4"'+' name="fields['+"'geographical-area'"+']"'+' value="Kedah">');
+						} else{
+							$('#kedah').val("false");
+							$("#4").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "penang"){
+						if(($("#penang").is(':checked')) == true){
+							$("#5").remove();
+							$('#penang').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="5"'+' name="fields['+"'geographical-area'"+']"'+' value="Penang">');
+						} else{
+							$('#penang').val("false");
+							$("#5").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "ipoh"){
+						if(($("#ipoh").is(':checked')) == true){
+							$("#6").remove();
+							$('#ipoh').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="6"'+' name="fields['+"'geographical-area'"+']"'+' value="Ipoh">');
+						} else{
+							$('#ipoh').val("false");
+							$("#6").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "perlis"){
+						if(($("#perlis").is(':checked')) == true){
+							$("#7").remove();
+							$('#perlis').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="7"'+' name="fields['+"'geographical-area'"+']"'+' value="Perlis">');
+						} else{
+							$('#perlis').val("false");
+							$("#7").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "pahang"){
+						if(($("#pahang").is(':checked')) == true){
+							$("#8").remove();
+							$('#pahang').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="8"'+' name="fields['+"'geographical-area'"+']"'+' value="Pahang">');
+						} else{
+							$('#pahang').val("false");
+							$("#8").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "kelantan"){
+						if(($("#kelantan").is(':checked')) == true){
+							$("#9").remove();
+							$('#kelantan').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="9"'+' name="fields['+"'geographical-area'"+']"'+' value="Pelantan">');
+						} else{
+							$('#kelantan').val("false");
+							$("#9").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "terengganu"){
+						if(($("#terengganu").is(':checked')) == true){
+							$("#10").remove();
+							$('#terengganu').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="10"'+' name="fields['+"'geographical-area'"+']"'+' value="Terengganu">');
+						} else{
+							$('#terengganu').val("false");
+							$("#10").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "negeri-sembilan"){
+						if(($("#negeri-sembilan").is(':checked')) == true){
+							$("#11").remove();
+							$('#negeri-sembilan').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="11"'+' name="fields['+"'geographical-area'"+']"'+' value="Negeri Sembilan">');
+						} else{
+							$('#negeri-sembilan').val("false");
+							$("#11").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "melaka"){
+						if(($("#melaka").is(':checked')) == true){
+							$("#12").remove();
+							$('#melaka').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="12"'+' name="fields['+"'geographical-area'"+']"'+' value="Melaka">');
+						} else{
+							$('#melaka').val("false");
+							$("#12").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "johor"){
+						if(($("#johor").is(':checked')) == true){
+							$("#13").remove();
+							$('#johor').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="13"'+' name="fields['+"'geographical-area'"+']"'+' value="Johor">');
+						} else{
+							$('#johor').val("false");
+							$("#13").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "sabah"){
+						if(($("#sabah").is(':checked')) == true){
+							$("#14").remove();
+							$('#sabah').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="14"'+' name="fields['+"'geographical-area'"+']"'+' value="Sabah">');
+						} else{
+							$('#sabah').val("false");
+							$("#14").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "sarawak"){
+						if(($("#sarawak").is(':checked')) == true){
+							$("#15").remove();
+							$('#sarawak').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="15"'+' name="fields['+"'geographical-area'"+']"'+' value="Sarawak">');
+						} else{
+							$('#sarawak').val("false");
+							$("#15").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "thailand"){
+						if(($("#thailand").is(':checked')) == true){
+							$("#16").remove();
+							$('#thailand').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="16"'+' name="fields['+"'geographical-area'"+']"'+' value="Thailand">');
+						} else{
+							$('#thailand').val("false");
+							$("#16").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "singapore"){
+						if(($("#singapore").is(':checked')) == true){
+							$("#17").remove();
+							$('#singapore').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="17"'+' name="fields['+"'geographical-area'"+']"'+' value="Singapore">');
+						} else{
+							$('#singapore').val("false");
+							$("#17").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "indonesia"){
+						if(($("#indonesia").is(':checked')) == true){
+							$("#18").remove();
+							$('#indonesia').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="18"'+' name="fields['+"'geographical-area'"+']"'+' value="Indonesia">');
+						} else{
+							$('#indonesia').val("false");
+							$("#18").remove();
+						}
+					}
+					//
+					else if((allels[i].getAttribute('id')) == "accounting"){
+						if(($("#accounting").is(':checked')) == true){
+							$("#19").remove();
+							$('#accounting').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="19"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Accounting">');
+						} else{
+							$('#accounting').val("false");
+							$("#19").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "agriculture"){
+						if(($("#agriculture").is(':checked')) == true){
+							$("#20").remove();
+							$('#agriculture').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="20"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Agriculture">');
+						} else{
+							$('#agriculture').val("false");
+							$("#20").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "advertising"){
+						if(($("#advertising").is(':checked')) == true){
+							$("#21").remove();
+							$('#advertising').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="21"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Advertising">');
+						} else{
+							$('#advertising').val("false");
+							$("#21").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "apparel-accessories"){
+						if(($("#apparel-accessories").is(':checked')) == true){
+							$("#22").remove();
+							$('#apparel-accessories').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="22"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Apparel & Accessories">');
+						} else{
+							$('#apparel-accessories').val("false");
+							$("#22").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "automotive"){
+						if(($("#automotive").is(':checked')) == true){
+							$("#23").remove();
+							$('#automotive').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="23"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Automotive">');
+						} else{
+							$('#automotive').val("false");
+							$("#23").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "banking"){
+						if(($("#banking").is(':checked')) == true){
+							$("#24").remove();
+							$('#banking').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="24"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Banking">');
+						} else{
+							$('#banking').val("false");
+							$("#24").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "broadcasting"){
+						if(($("#broadcasting").is(':checked')) == true){
+							$("#25").remove();
+							$('#broadcasting').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="25"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Broadcasting">');
+						} else{
+							$('#broadcasting').val("false");
+							$("#25").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "brokerage"){
+						if(($("#brokerage").is(':checked')) == true){
+							$("#26").remove();
+							$('#brokerage').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="26"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Brokerage">');
+						} else{
+							$('#brokerage').val("false");
+							$("#26").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "biotecnology"){
+						if(($("#biotecnology").is(':checked')) == true){
+							$("#27").remove();
+							$('#biotecnology').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="27"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Biotecnology">');
+						} else{
+							$('#biotecnology').val("false");
+							$("#27").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "cargo-handling"){
+						if(($("#cargo-handling").is(':checked')) == true){
+							$("#28").remove();
+							$('#cargo-handling').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="28"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Cargo Handling">');
+						} else{
+							$('#cargo-handling').val("false");
+							$("#28").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "chemical"){
+						if(($("#chemical").is(':checked')) == true){
+							$("#29").remove();
+							$('#chemical').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="29"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Chemical">');
+						} else{
+							$('#chemical').val("false");
+							$("#29").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "computer"){
+						if(($("#computer").is(':checked')) == true){
+							$("#30").remove();
+							$('#computer').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="30"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Computer">');
+						} else{
+							$('#computer').val("false");
+							$("#30").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "consulting"){
+						if(($("#consulting").is(':checked')) == true){
+							$("#31").remove();
+							$('#consulting').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="31"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Consulting">');
+						} else{
+							$('#consulting').val("false");
+							$("#31").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "consumer-products"){
+						if(($("#consumer-products").is(':checked')) == true){
+							$("#32").remove();
+							$('#consumer-products').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="32"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Consumer Products">');
+						} else{
+							$('#consumer-products').val("false");
+							$("#32").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "cosmetics"){
+						if(($("#cosmetics").is(':checked')) == true){
+							$("#33").remove();
+							$('#cosmetics').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="33"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Cosmetics">');
+						} else{
+							$('#cosmetics').val("false");
+							$("#33").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "department-stores"){
+						if(($("#department-stores").is(':checked')) == true){
+							$("#34").remove();
+							$('#department-stores').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="34"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Department Stores">');
+						} else{
+							$('#department-stores').val("false");
+							$("#34").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "education"){
+						if(($("#education").is(':checked')) == true){
+							$("#35").remove();
+							$('#education').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="35"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Education">');
+						} else{
+							$('#education').val("false");
+							$("#35").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "electronics"){
+						if(($("#electronics").is(':checked')) == true){
+							$("#36").remove();
+							$('#electronics').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="36"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Electronics">');
+						} else{
+							$('#electronics').val("false");
+							$("#36").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "entertainment-leisure"){
+						if(($("#entertainment-leisure").is(':checked')) == true){
+							$("#37").remove();
+							$('#entertainment-leisure').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="37"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Entertainment & Leisure">');
+						} else{
+							$('#entertainment-leisure').val("false");
+							$("#37").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "financial"){
+						if(($("#financial").is(':checked')) == true){
+							$("#38").remove();
+							$('#financial').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="38"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Financial">');
+						} else{
+							$('#financial').val("false");
+							$("#38").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "food-beverage-tobacco"){
+						if(($("#food-beverage-tobacco").is(':checked')) == true){
+							$("#39").remove();
+							$('#food-beverage-tobacco').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="39"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Food Beverage & Tobacco">');
+						} else{
+							$('#food-beverage-tobacco').val("false");
+							$("#39").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "healthcare"){
+						if(($("#healthcare").is(':checked')) == true){
+							$("#40").remove();
+							$('#healthcare').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="40"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Healthcare">');
+						} else{
+							$('#healthcare').val("false");
+							$("#40").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "manufacturing"){
+						if(($("#manufacturing").is(':checked')) == true){
+							$("#41").remove();
+							$('#manufacturing').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="41"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Manufacturing">');
+						} else{
+							$('#manufacturing').val("false");
+							$("#41").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "real-estate"){
+						if(($("#real-estate").is(':checked')) == true){
+							$("#42").remove();
+							$('#real-estate').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="42"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Real Estate">');
+						} else{
+							$('#real-estate').val("false");
+							$("#42").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "retail-wholesale"){
+						if(($("#retail-wholesale").is(':checked')) == true){
+							$("#43").remove();
+							$('#retail-wholesale').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="43"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Retail& Wholesale">');
+						} else{
+							$('#retail-wholesale').val("false");
+							$("#43").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "service"){
+						if(($("#service").is(':checked')) == true){
+							$("#44").remove();
+							$('#service').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="44"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Service">');
+						} else{
+							$('#service').val("false");
+							$("#44").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "telecommunications"){
+						if(($("#telecommunications").is(':checked')) == true){
+							$("#45").remove();
+							$('#telecommunications').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="45"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Selecommunications">');
+						} else{
+							$('#telecommunications').val("false");
+							$("#45").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "building-construction"){
+						if(($("#building-construction").is(':checked')) == true){
+							$("#46").remove();
+							$('#building-construction').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="46"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Building & Construction">');
+						} else{
+							$('#building-construction').val("false");
+							$("#46").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "hotel-restaurant"){
+						if(($("#hotel-restaurant").is(':checked')) == true){
+							$("#47").remove();
+							$('#hotel-restaurant').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="47"'+' name="fields['+"'profession-advertiser-target'"+']"'+' value="Hotel Restaurant">');
+						} else{
+							$('#hotel-restaurant').val("false");
+							$("#47").remove();
+						}
+					}
+					//
+					else if((allels[i].getAttribute('id')) == "english"){
+						if(($("#english").is(':checked')) == true){
+							$("#48").remove();
+							$('#english').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="48"'+' name="fields['+"'language-advertiser-target'"+']"'+' value="English">');
+						} else{
+							$('#english').val("false");
+							$("#48").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "malay"){
+						if(($("#malay").is(':checked')) == true){
+							$("#49").remove();
+							$('#malay').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="49"'+' name="fields['+"'language-advertiser-target'"+']"'+' value="Malay">');
+						} else{
+							$('#malay').val("false");
+							$("#49").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "chinese"){
+						if(($("#chinese").is(':checked')) == true){
+							$("#50").remove();
+							$('#chinese').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="50"'+' name="fields['+"'language-advertiser-target'"+']"'+' value="Chinese">');
+						} else{
+							$('#chinese').val("false");
+							$("#50").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "tamil"){
+						if(($("#tamil").is(':checked')) == true){
+							$("#51").remove();
+							$('#tamil').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="51"'+' name="fields['+"'language-advertiser-target'"+']"'+' value="Tamil">');
+						} else{
+							$('#tamil').val("false");
+							$("#51").remove();
+						}
+					}
+					//
+					else if((allels[i].getAttribute('id')) == "age-18-29"){
+						if(($("#age-18-29").is(':checked')) == true){
+							$("#52").remove();
+							$('#age-18-29').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="52"'+' name="fields['+"'age-advertiser-target'"+']"'+' value="18-29">');
+						} else{
+							$('#age-18-29').val("false");
+							$("#52").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "age-30-49"){
+						if(($("#age-30-49").is(':checked')) == true){
+							$("#53").remove();
+							$('#age-30-49').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="53"'+' name="fields['+"'age-advertiser-target'"+']"'+' value="30-49">');
+						} else{
+							$('#age-30-49').val("false");
+							$("#53").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "age-50-64"){
+						if(($("#age-50-64").is(':checked')) == true){
+							$("#54").remove();
+							$('#age-50-64').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="54"'+' name="fields['+"'age-advertiser-target'"+']"'+' value="50-64">');
+						} else{
+							$('#age-50-64').val("false");
+							$("#54").remove();
+						}
+					}
+					//
+					else if((allels[i].getAttribute('id')) == "male"){
+						if(($("#male").is(':checked')) == true){
+							$("#55").remove();
+							$('#male').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="55"'+' name="fields['+"'gender-advertiser-target'"+']"'+' value="Male">');
+						} else{
+							$('#male').val("false");
+							$("#55").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "female"){
+						if(($("#female").is(':checked')) == true){
+							$("#56").remove();
+							$('#female').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="56"'+' name="fields['+"'gender-advertiser-target'"+']"'+' value="Female">');
+						} else{
+							$('#female').val("false");
+							$("#56").remove();
+						}
+					}
+					//
 					else if((allels[i].getAttribute('id')) == "others-geographical-text"){
 						$("#111").remove();
 						if (allels[i].value == ""){
@@ -417,112 +1210,210 @@ $( document ).ready(function() {
 						}
 					}
 					
+					/* STEP 7 */
+					else if((allels[i].getAttribute('id')) == "increase-website-traffic"){
+						if(($("#increase-website-traffic").is(':checked')) == true){
+							$("#step71").remove();
+							$('#increase-website-traffic').val("true");
+							$( "#step-7" ).append( '<input type="hidden" id="step71"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-website-traffic">');
+						} else{
+							$('#increase-website-traffic').val("false");
+							$("#step71").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "increase-brand-awareness"){
+						if(($("#increase-brand-awareness").is(':checked')) == true){
+							$("#step72").remove();
+							$('#increase-brand-awareness').val("true");
+							$( "#step-7" ).append( '<input type="hidden" id="step72"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-brand-awareness">');
+						} else{
+							$('#increase-brand-awareness').val("false");
+							$("#step72").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "increase-online-enquiry-submission"){
+						if(($("#increase-online-enquiry-submission").is(':checked')) == true){
+							$("#step73").remove();
+							$('#increase-online-enquiry-submission').val("true");
+							$( "#step-7" ).append( '<input type="hidden" id="step73"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-online-enquiry-submission">');
+						} else{
+							$('#increase-online-enquiry-submission').val("false");
+							$("#step73").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "increase-store-visits"){
+						if(($("#increase-store-visits").is(':checked')) == true){
+							$("#step74").remove();
+							$('#increase-store-visits').val("true");
+							$( "#step-7" ).append( '<input type="hidden" id="step74"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-store-visits">');
+						} else{
+							$('#increase-store-visits').val("false");
+							$("#step74").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "increase-phone-calls"){
+						if(($("#increase-phone-calls").is(':checked')) == true){
+							$("#step75").remove();
+							$('#increase-phone-calls').val("true");
+							$( "#step-7" ).append( '<input type="hidden" id="step75"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-phone-calls">');
+						} else{
+							$('#increase-phone-calls').val("false");
+							$("#step75").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "increase-online-purchase"){
+						if(($("#increase-online-purchase").is(':checked')) == true){
+							$("#step76").remove();
+							$('#increase-online-purchase').val("true");
+							$( "#step-7" ).append( '<input type="hidden" id="step76"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-online-purchase">');
+						} else{
+							$('#increase-online-purchase').val("false");
+							$("#step76").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "retargeting-visitors"){
+						if(($("#retargeting-visitors").is(':checked')) == true){
+							$("#step77").remove();
+							$('#retargeting-visitors').val("true");
+							$( "#step-7" ).append( '<input type="hidden" id="step77"'+' name="fields['+"'advertising-objective'"+']"'+' value="retargeting-visitors">');
+						} else{
+							$('#retargeting-visitors').val("false");
+							$("#step77").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "increase-geographical-coverage"){
+						if(($("#increase-geographical-coverage").is(':checked')) == true){
+							$("#step78").remove();
+							$('#increase-geographical-coverage').val("true");
+							$( "#step-7" ).append( '<input type="hidden" id="step78"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-geographical-coverage">');
+						} else{
+							$('#increase-geographical-coverage').val("false");
+							$("#step78").remove();
+						}		
+					}
+					
+					/* STEP 8 */
+					else if((allels[i].getAttribute('id')) == "step-8-panpages"){
+						if(($("#step-8-panpages").is(':checked')) == true){
+							$("#step81").remove();
+							$('#step-8-panpages').val("true");
+							$( "#step-8" ).append( '<input type="hidden" id="step81"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="panpages">');
+						} else{
+							$('#step-8-panpages').val("false");
+							$("#step81").remove();
+						}		
+					}
+					else if((allels[i].getAttribute('id')) == "step-8-google-adwords-search-mobile"){
+						if(($("#step-8-google-adwords-search-mobile").is(':checked')) == true){
+							$("#step82").remove();
+							$('#step-8-google-adwords-search-mobile').val("true");
+							$( "#step-8" ).append( '<input type="hidden" id="step82"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="google-adWords-search-mobile">');
+						} else{
+							$('#step-8-google-adwords-search-mobile').val("false");
+							$("#step82").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "step-8-google-display-network"){
+						if(($("#step-8-google-display-network").is(':checked')) == true){
+							$("#step83").remove();
+							$('#step-8-google-display-network').val("true");
+							$( "#step-8" ).append( '<input type="hidden" id="step83"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="google-display-network">');
+						} else{
+							$('#step-8-google-display-network').val("false");
+							$("#step83").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "step-8-yahoo-search"){
+						if(($("#step-8-yahoo-search").is(':checked')) == true){
+							$("#step84").remove();
+							$('#step-8-yahoo-search').val("true");
+							$( "#step-8" ).append( '<input type="hidden" id="step84"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="yahoo-search">');
+						} else{
+							$('#step-8-yahoo-search').val("false");
+							$("#step84").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "step-8-yahoo-display"){
+						if(($("#step-8-yahoo-display").is(':checked')) == true){
+							$("#step85").remove();
+							$('#step-8-yahoo-display').val("true");
+							$( "#step-8" ).append( '<input type="hidden" id="step85"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="yahoo-display">');
+						} else{
+							$('#step-8-yahoo-display').val("false");
+							$("#step85").remove();
+						}	
+					}
+					else if((allels[i].getAttribute('id')) == "step-8-youtube-ads"){
+						if(($("#step-8-youtube-ads").is(':checked')) == true){
+							$("#step86").remove();
+							$('#step-8-youtube-ads').val("true");
+							$( "#step-8" ).append( '<input type="hidden" id="step86"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="youtube-ads">');
+						} else{
+							$('#step-8-youtube-ads').val("false");
+							$("#step86").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "step-8-facebook-ads"){
+						if(($("#step-8-facebook-ads").is(':checked')) == true){
+							$("#step87").remove();
+							$('#step-8-facebook-ads').val("true");
+							$( "#step-8" ).append( '<input type="hidden" id="step87"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="facebook-ads">');
+						} else{
+							$('#step-8-facebook-ads').val("false");
+							$("#step87").remove();
+						}
+					}
+					else if((allels[i].getAttribute('id')) == "step-8-pan-360"){
+						if(($("#step-8-pan-360").is(':checked')) == true){
+							$("#step88").remove();
+							$('#step-8-pan-360').val("true");
+							$( "#step-8" ).append( '<input type="hidden" id="step88"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="pan-360">');
+						} else{
+							$('#step-8-pan-360').val("false");
+							$("#step88").remove();
+						}  
+					}
+					else if((allels[i].getAttribute('id')) == "step-8-alibaba-com"){
+						if(($("#step-8-alibaba-com").is(':checked')) == true){
+							$("#step89").remove();
+							$('#step-8-alibaba-com').val("true");
+							$( "#step-8" ).append( '<input type="hidden" id="step89"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="alibaba-com">');
+						} else{
+							$('#step-8-alibaba-com').val("false");
+							$("#step89").remove();
+						}	 
+					}
+					else if((allels[i].getAttribute('id')) == "step-8-super-pages"){
+						if(($("#step-8-super-pages").is(':checked')) == true){
+							$("#step810").remove();
+							$('#step-8-super-pages').val("true");
+							$( "#step-8" ).append( '<input type="hidden" id="step810"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="super-pages">');
+						} else{
+							$('#step-8-super-pages').val("false");
+							$("#step810").remove();
+						}    
+					}
+					
+					/* STEP 10 */
+					else if((allels[i].getAttribute('id')) == "option-a"){
+						if(($("#option-a").is(':checked')) == true){
+							$('#option-a').val("true");
+						} else{
+							$('#option-a').val("false");
+						} 
+					}
+					else if((allels[i].getAttribute('id')) == "option-b"){
+						if(($("#option-b").is(':checked')) == true){
+							$('#option-b').val("true");
+						} else{
+							$('#option-b').val("false");
+						} 
+					}
+					
 				} //end outer if
 			}
 			return validated;
 		}
-	});
-	
-	/* STEP 3*/
-	$("#step-3-panpages").click(function(){
-		$('#step-3-panpages').val(this.checked);
-		if(this.checked == true){
-			$('#step-3-panpages').val("true");
-			$( "#step-3" ).append( '<input type="hidden" id="1"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="panpages">');
-		} else{
-			$('#step-3-panpages').val("false");
-			$("#1").remove();
-		}			     
-	});
-	$("#step-3-google-adwords-search-mobile").click(function(){
-		$('#step-3-google-adwords-search-mobile').val(this.checked);
-		if(this.checked == true){
-			$('#step-3-google-adwords-search-mobile').val("true");
-			$( "#step-3" ).append( '<input type="hidden" id="2"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="google-adWords-search-mobile">');
-		} else{
-			$('#step-3-google-adwords-search-mobile').val("false");
-			$("#2").remove();
-		}
-	});
-	$("#step-3-google-display-network").click(function(){
-		$('#step-3-google-display-network').val(this.checked);
-		if(this.checked == true){
-			$('#step-3-google-display-network').val("true");
-			$( "#step-3" ).append( '<input type="hidden" id="3"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="google-display-network">');
-		} else{
-			$('#step-3-google-display-network').val("false");
-			$("#3").remove();
-		}
-	});
-	$("#step-3-yahoo-search").click(function(){
-		$('#step-3-yahoo-search').val(this.checked);
-		if(this.checked == true){
-			$('#step-3-yahoo-search').val("true");
-			$( "#step-3" ).append( '<input type="hidden" id="4"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="yahoo-search">');
-		} else{
-			$('#step-3-yahoo-search').val("false");
-			$("#4").remove();
-		}
-	});
-	$("#step-3-yahoo-display").click(function(){
-		$('#step-3-yahoo-display').val(this.checked);
-		if(this.checked == true){
-			$('#step-3-yahoo-display').val("true");
-			$( "#step-3" ).append( '<input type="hidden" id="5"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="yahoo-display">');
-		} else{
-			$('#step-3-yahoo-display').val("false");
-			$("#5").remove();
-		}
-	});
-	$("#step-3-youtube-ads").click(function(){
-		$('#step-3-youtube-ads').val(this.checked);
-		if(this.checked == true){
-			$('#step-3-youtube-ads').val("true");
-			$( "#step-3" ).append( '<input type="hidden" id="6"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="youtube-ads">');
-		} else{
-			$('#step-3-youtube-ads').val("false");
-			$("#6").remove();
-		}
-	});
-	$("#step-3-facebook-ads").click(function(){
-		$('#step-3-facebook-ads').val(this.checked);
-		if(this.checked == true){
-			$('#step-3-facebook-ads').val("true");
-			$( "#step-3" ).append( '<input type="hidden" id="7"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="facebook-ads">');
-		} else{
-			$('#step-3-facebook-ads').val("false");
-			$("#7").remove();
-		}
-	});
-	$("#step-3-pan-360").click(function(){
-		$('#step-3-pan-360').val(this.checked);
-		if(this.checked == true){
-			$('#step-3-pan-360').val("true");
-			$( "#step-3" ).append( '<input type="hidden" id="8"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="pan-360">');
-		} else{
-			$('#step-3-pan-360').val("false");
-			$("#8").remove();
-		}  
-	});
-	$("#step-3-alibaba-com").click(function(){
-		$('#step-3-alibaba-com').val(this.checked);
-		if(this.checked == true){
-			$('#step-3-alibaba-com').val("true");
-			$( "#step-3" ).append( '<input type="hidden" id="9"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="alibaba-com">');
-		} else{
-			$('#step-3-alibaba-com').val("false");
-			$("#9").remove();
-		}	     
-	});
-	$("#step-3-super-pages").click(function(){
-		$('#step-3-super-pages').val(this.checked);
-		if(this.checked == true){
-			$('#step-3-super-pages').val("true");
-			$( "#step-3" ).append( '<input type="hidden" id="10"'+' name="fields['+"'advertising-solution-subscribed'"+']"'+' value="super-pages">');
-		} else{
-			$('#step-3-super-pages').val("false");
-			$("#10").remove();
-		}     
 	});
 	
 	/* STEP 4 */
@@ -1543,187 +2434,105 @@ $( document ).ready(function() {
 	     
 	});
 	
-	/* STEP 7 */
-	$("#increase-website-traffic").click(function(){
-		$('#increase-website-traffic').val(this.checked);
-		if(this.checked == true){
-			$('#increase-website-traffic').val("true");
-			$( "#step-7" ).append( '<input type="hidden" id="1"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-website-traffic">');
-		} else{
-			$('#increase-website-traffic').val("false");
-			$("#1").remove();
-		}			     
-	});
-	$("#increase-brand-awareness").click(function(){
-		$('#increase-brand-awareness').val(this.checked);
-		if(this.checked == true){
-			$('#increase-brand-awareness').val("true");
-			$( "#step-7" ).append( '<input type="hidden" id="2"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-brand-awareness">');
-		} else{
-			$('#increase-brand-awareness').val("false");
-			$("#2").remove();
-		}			     
-	});
-	$("#increase-online-enquiry-submission").click(function(){
-		$('#increase-online-enquiry-submission').val(this.checked);
-		if(this.checked == true){
-			$('#increase-online-enquiry-submission').val("true");
-			$( "#step-7" ).append( '<input type="hidden" id="3"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-online-enquiry-submission">');
-		} else{
-			$('#increase-online-enquiry-submission').val("false");
-			$("#3").remove();
-		}			     
-	});
-	$("#increase-store-visits").click(function(){
-		$('#increase-store-visits').val(this.checked);
-		if(this.checked == true){
-			$('#increase-store-visits').val("true");
-			$( "#step-7" ).append( '<input type="hidden" id="4"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-store-visits">');
-		} else{
-			$('#increase-store-visits').val("false");
-			$("#4").remove();
-		}			     
-	});
-	$("#increase-phone-calls").click(function(){
-		$('#increase-phone-calls').val(this.checked);
-		if(this.checked == true){
-			$('#increase-phone-calls').val("true");
-			$( "#step-7" ).append( '<input type="hidden" id="5"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-phone-calls">');
-		} else{
-			$('#increase-phone-calls').val("false");
-			$("#5").remove();
-		}			     
-	});
-	$("#increase-online-purchase").click(function(){
-		$('#increase-online-purchase').val(this.checked);
-		if(this.checked == true){
-			$('#increase-online-purchase').val("true");
-			$( "#step-7" ).append( '<input type="hidden" id="6"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-online-purchase">');
-		} else{
-			$('#increase-online-purchase').val("false");
-			$("#6").remove();
-		}			     
-	});
-	$("#retargeting-visitors").click(function(){
-		$('#retargeting-visitors').val(this.checked);
-		if(this.checked == true){
-			$('#retargeting-visitors').val("true");
-			$( "#step-7" ).append( '<input type="hidden" id="7"'+' name="fields['+"'advertising-objective'"+']"'+' value="retargeting-visitors">');
-		} else{
-			$('#retargeting-visitors').val("false");
-			$("#7").remove();
-		}			     
-	});
-	$("#increase-geographical-coverage").click(function(){
-		$('#increase-geographical-coverage').val(this.checked);
-		if(this.checked == true){
-			$('#increase-geographical-coverage').val("true");
-			$( "#step-7" ).append( '<input type="hidden" id="8"'+' name="fields['+"'advertising-objective'"+']"'+' value="increase-geographical-coverage">');
-		} else{
-			$('#increase-geographical-coverage').val("false");
-			$("#8").remove();
-		}			     
-	});
-	
 	/* STEP 8 */
 	$("#step-8-panpages").click(function(){
 		$('#step-8-panpages').val(this.checked);
 		if(this.checked == true){
 			$('#step-8-panpages').val("true");
-			$( "#step-8" ).append( '<input type="hidden" id="1"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="panpages">');
+			$( "#step-8" ).append( '<input type="hidden" id="step81"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="panpages">');
 		} else{
 			$('#step-8-panpages').val("false");
-			$("#1").remove();
+			$("#step81").remove();
 		}			     
 	});
 	$("#step-8-google-adwords-search-mobile").click(function(){
 		$('#step-8-google-adwords-search-mobile').val(this.checked);
 		if(this.checked == true){
 			$('#step-8-google-adwords-search-mobile').val("true");
-			$( "#step-8" ).append( '<input type="hidden" id="2"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="google-adWords-search-mobile">');
+			$( "#step-8" ).append( '<input type="hidden" id="step82"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="google-adWords-search-mobile">');
 		} else{
 			$('#step-8-google-adwords-search-mobile').val("false");
-			$("#2").remove();
+			$("#step82").remove();
 		}
 	});
 	$("#step-8-google-display-network").click(function(){
 		$('#step-8-google-display-network').val(this.checked);
 		if(this.checked == true){
 			$('#step-8-google-display-network').val("true");
-			$( "#step-8" ).append( '<input type="hidden" id="3"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="google-display-network">');
+			$( "#step-8" ).append( '<input type="hidden" id="step83"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="google-display-network">');
 		} else{
 			$('#step-8-google-display-network').val("false");
-			$("#3").remove();
+			$("#step83").remove();
 		}
 	});
 	$("#step-8-yahoo-search").click(function(){
 		$('#step-8-yahoo-search').val(this.checked);
 		if(this.checked == true){
 			$('#step-8-yahoo-search').val("true");
-			$( "#step-8" ).append( '<input type="hidden" id="4"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="yahoo-search">');
+			$( "#step-8" ).append( '<input type="hidden" id="step84"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="yahoo-search">');
 		} else{
 			$('#step-8-yahoo-search').val("false");
-			$("#4").remove();
+			$("#step84").remove();
 		}
 	});
 	$("#step-8-yahoo-display").click(function(){
 		$('#step-8-yahoo-display').val(this.checked);
 		if(this.checked == true){
 			$('#step-8-yahoo-display').val("true");
-			$( "#step-8" ).append( '<input type="hidden" id="5"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="yahoo-display">');
+			$( "#step-8" ).append( '<input type="hidden" id="step85"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="yahoo-display">');
 		} else{
 			$('#step-8-yahoo-display').val("false");
-			$("#5").remove();
+			$("#step85").remove();
 		}
 	});
 	$("#step-8-youtube-ads").click(function(){
 		$('#step-8-youtube-ads').val(this.checked);
 		if(this.checked == true){
 			$('#step-8-youtube-ads').val("true");
-			$( "#step-8" ).append( '<input type="hidden" id="6"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="youtube-ads">');
+			$( "#step-8" ).append( '<input type="hidden" id="step86"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="youtube-ads">');
 		} else{
 			$('#step-8-youtube-ads').val("false");
-			$("#6").remove();
+			$("#step86").remove();
 		}
 	});
 	$("#step-8-facebook-ads").click(function(){
 		$('#step-8-facebook-ads').val(this.checked);
 		if(this.checked == true){
 			$('#step-8-facebook-ads').val("true");
-			$( "#step-8" ).append( '<input type="hidden" id="7"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="facebook-ads">');
+			$( "#step-8" ).append( '<input type="hidden" id="step87"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="facebook-ads">');
 		} else{
 			$('#step-8-facebook-ads').val("false");
-			$("#7").remove();
+			$("#step87").remove();
 		}
 	});
 	$("#step-8-pan-360").click(function(){
 		$('#step-8-pan-360').val(this.checked);
 		if(this.checked == true){
 			$('#step-8-pan-360').val("true");
-			$( "#step-8" ).append( '<input type="hidden" id="8"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="pan-360">');
+			$( "#step-8" ).append( '<input type="hidden" id="step88"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="pan-360">');
 		} else{
 			$('#step-8-pan-360').val("false");
-			$("#8").remove();
+			$("#step88").remove();
 		}  
 	});
 	$("#step-8-alibaba-com").click(function(){
 		$('#step-8-alibaba-com').val(this.checked);
 		if(this.checked == true){
 			$('#step-8-alibaba-com').val("true");
-			$( "#step-8" ).append( '<input type="hidden" id="9"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="alibaba-com">');
+			$( "#step-8" ).append( '<input type="hidden" id="step89"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="alibaba-com">');
 		} else{
 			$('#step-8-alibaba-com').val("false");
-			$("#9").remove();
+			$("#step89").remove();
 		}	     
 	});
 	$("#step-8-super-pages").click(function(){
 		$('#step-8-super-pages').val(this.checked);
 		if(this.checked == true){
 			$('#step-8-super-pages').val("true");
-			$( "#step-8" ).append( '<input type="hidden" id="10"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="super-pages">');
+			$( "#step-8" ).append( '<input type="hidden" id="step810"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="super-pages">');
 		} else{
 			$('#step-8-super-pages').val("false");
-			$("#10").remove();
+			$("#step810").remove();
 		}     
 	});
 	
@@ -2254,5 +3063,37 @@ $( document ).ready(function() {
 	$( "#others-option-b-input" ).blur(function() {
 		step10B();
 				
+	});
+	$('#surveyForm').submit(function () { 
+		/* STEP 4 */
+		$("#add-on-relevant-product-pictures").prop( "disabled", false );
+		$("#add-on-product-description").prop( "disabled", false );
+		$("#include-product-price").prop( "disabled", false );
+		$("#include-product-specification").prop( "disabled", false );
+		$("#include-company-details").prop( "disabled", false );
+		$("#highlight-unique-selling-point").prop( "disabled", false );
+		$("#include-certification-for-better-credential").prop( "disabled", false );
+		$("#enhance-website-picture-quality").prop( "disabled", false );		
+		$("#frequently-update-your-website").prop( "disabled", false );
+		$("#timely-response-to-enquiry").prop( "disabled", false );		
+		$("#tracking-on-calls-wall-in").prop( "disabled", false );		
+		$("#explore-display-network").prop( "disabled", false );
+		$("#extend-your-marketing-plan-for-longer-visibility").prop( "disabled", false );
+		
+		/* STEP 6 */
+		$("#kuala-lumpur").prop( "disabled", false );
+		$("#selangor").prop( "disabled", false );
+		$("#kedah").prop( "disabled", false );
+		$("#penang").prop( "disabled", false );
+		$("#ipoh").prop( "disabled", false );
+		$("#perlis").prop( "disabled", false );
+		$("#pahang").prop( "disabled", false );
+		$("#kelantan").prop( "disabled", false );
+		$("#terengganu").prop( "disabled", false );
+		$("#negeri-sembilan").prop( "disabled", false );
+		$("#melaka").prop( "disabled", false );
+		$("#johor").prop( "disabled", false );
+		$("#sabah").prop( "disabled", false );
+		$("#sarawak").prop( "disabled", false );
 	});
 });

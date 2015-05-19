@@ -44,7 +44,7 @@
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<p><input name="fields['monitor-effectiveness']" id="monitor-effectiveness" type="checkbox" value="false">Monitor Effectiveness</p>
 					<ul>
-						<li><input name="fields['tracking-on-calls-wall-in']" id="tracking-on-calls-wall-in" type="checkbox" value="false">Tracking On Calls &amp; Wall In</li>
+						<li><input name="fields['tracking-on-calls-wall-in']" id="tracking-on-calls-wall-in" type="checkbox" value="false">Tracking On Calls &amp; Walk In</li>
 					</ul>
 				</div>
 			</div>
