@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_4" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="90167ed5-0c7a-4203-aa33-cf24b0c47bbb">
 	<property name="ireport.zoom" value="1.2100000000000013"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="384"/>
+	<property name="ireport.y" value="168"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["H:\\workspace\\BOW\\report\\templates\\template_3\\"]]></defaultValueExpression>
 	</parameter>
@@ -179,7 +179,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="15" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("est-monthly-investment", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("estimated-monthly-investment-100", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="219" y="505" width="147" height="20" forecolor="#0000CC" uuid="c474abf8-45bb-4839-89f2-8108c7ba7e33"/>
@@ -193,7 +193,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="15" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("total-est-impressions", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("total-estimate-impression", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="386" y="505" width="165" height="20" isPrintWhenDetailOverflows="true" forecolor="#0000CC" uuid="242e3d7b-1b0a-46fc-a098-a2332b8383a8"/>
@@ -207,7 +207,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="15" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("est-clicks-on-ctr", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("estimated-clicks-based-on-ctr", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<subreport>
 				<reportElement x="23" y="627" width="545" height="159" isPrintWhenDetailOverflows="true" uuid="caf160a8-07d3-4919-8339-e0caf03cdda4"/>
