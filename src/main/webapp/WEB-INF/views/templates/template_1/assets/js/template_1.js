@@ -1389,9 +1389,30 @@ $( document ).ready(function() {
 	$("#include-certification-for-better-credential").prop( "disabled", true );
 	$("#enhance-website-picture-quality").prop( "disabled", true );
 	
+	
+	if(($("#improve-website-content").is(':checked')) == true){
+		$("#add-on-relevant-product-pictures").prop( "disabled", false );
+		$("#add-on-product-description").prop( "disabled", false );
+		$("#include-product-price").prop( "disabled", false );
+		$("#include-product-specification").prop( "disabled", false );
+		$("#include-company-details").prop( "disabled", false );
+		$("#highlight-unique-selling-point").prop( "disabled", false );
+		$("#include-certification-for-better-credential").prop( "disabled", false );
+		$("#enhance-website-picture-quality").prop( "disabled", false );
+	} else {
+		$("#add-on-relevant-product-pictures").prop( "disabled", true );
+		$("#add-on-product-description").prop( "disabled", true );
+		$("#include-product-price").prop( "disabled", true );
+		$("#include-product-specification").prop( "disabled", true );
+		$("#include-company-details").prop( "disabled", true );
+		$("#highlight-unique-selling-point").prop( "disabled", true );
+		$("#include-certification-for-better-credential").prop( "disabled", true );
+		$("#enhance-website-picture-quality").prop( "disabled", true );
+	}
+	
 	$("#improve-website-content").click(function() {
 		$('#improve-website-content').val(this.checked);
-		if(this.checked == true){
+		if(($("#improve-website-content").is(':checked')) == true){
 			$("#add-on-relevant-product-pictures").click(function() {
 				$('#add-on-relevant-product-pictures').val(this.checked);
 			});
@@ -1442,65 +1463,65 @@ $( document ).ready(function() {
 		} else{
 			$('#add-on-relevant-product-pictures').each(function() 
 			{ 
-			    $(this).prop('checked', false); 
-			    $('#add-on-relevant-product-pictures').val("false");
-			    $("#add-on-relevant-product-pictures").attr("disabled", true);
+				$(this).prop('checked', false); 
+				$('#add-on-relevant-product-pictures').val("false");
+				$("#add-on-relevant-product-pictures").attr("disabled", true);
 			});
 			
 			//
 			$('#add-on-product-description').each(function() 
 			{ 
-			    $(this).prop('checked', false); 
-			    $('#add-on-product-description').val("false");
-			    $("#add-on-product-description").attr("disabled", true);
+				$(this).prop('checked', false); 
+				$('#add-on-product-description').val("false");
+				$("#add-on-product-description").attr("disabled", true);
 			});
 			
 			//
 			$('#include-product-price').each(function() 
 			{ 
-			    $(this).prop('checked', false); 
-			    $('#include-product-price').val("false");
-			    $("#include-product-price").attr("disabled", true);
+				$(this).prop('checked', false); 
+				$('#include-product-price').val("false");
+				$("#include-product-price").attr("disabled", true);
 			});
 			
 			//
 			$('#include-product-specification').each(function() 
 			{ 
-			    $(this).prop('checked', false); 
-			    $('#include-product-specification').val("false");
-			    $("#include-product-specification").attr("disabled", true);
+				$(this).prop('checked', false); 
+				$('#include-product-specification').val("false");
+				$("#include-product-specification").attr("disabled", true);
 			});
 
 			//
 			$('#include-company-details').each(function() 
 			{ 
-			    $(this).prop('checked', false); 
-			    $('#include-company-details').val("false");
-			    $("#include-company-details").attr("disabled", true);
+				$(this).prop('checked', false); 
+				$('#include-company-details').val("false");
+				$("#include-company-details").attr("disabled", true);
 			});
 
 			//
 			$('#highlight-unique-selling-point').each(function() 
 			{ 
-			    $(this).prop('checked', false); 
-			    $('#highlight-unique-selling-point').val("false");
-			    $("#highlight-unique-selling-point").attr("disabled", true);
+				$(this).prop('checked', false); 
+				$('#highlight-unique-selling-point').val("false");
+				$("#highlight-unique-selling-point").attr("disabled", true);
 			});
 
 			//
 			$('#include-certification-for-better-credential').each(function() 
 			{ 
-			    $(this).prop('checked', false); 
-			    $('#include-certification-for-better-credential').val("false");
-			    $("#include-certification-for-better-credential").attr("disabled", true);
+				$(this).prop('checked', false); 
+				$('#include-certification-for-better-credential').val("false");
+				$("#include-certification-for-better-credential").attr("disabled", true);
 			});
 
 			//
 			$('#enhance-website-picture-quality').each(function() 
 			{ 
-			    $(this).prop('checked', false); 
-			    $('#enhance-website-picture-quality').val("false");
-			    $("#enhance-website-picture-quality").attr("disabled", true);
+				$(this).prop('checked', false); 
+				$('#enhance-website-picture-quality').val("false");
+				$("#enhance-website-picture-quality").attr("disabled", true);
 			});
 						
 		}   
@@ -1509,9 +1530,17 @@ $( document ).ready(function() {
 	$("#frequently-update-your-website").prop( "disabled", true );
 	$("#timely-response-to-enquiry").prop( "disabled", true );
 	
+	if(($("#improve-website-maintenance").is(':checked')) == true){
+		$("#frequently-update-your-website").prop( "disabled", false );
+		$("#timely-response-to-enquiry").prop( "disabled", false );
+	} else {
+		$("#frequently-update-your-website").prop( "disabled", true );
+		$("#timely-response-to-enquiry").prop( "disabled", true );
+	}
+	
 	$("#improve-website-maintenance").click(function() {
 		$('#improve-website-maintenance').val(this.checked);
-		if(this.checked == true){
+		if(($("#improve-website-maintenance").is(':checked')) == true){
 			$("#frequently-update-your-website").click(function() {
 				$('#frequently-update-your-website').val(this.checked);
 			});
@@ -1543,9 +1572,15 @@ $( document ).ready(function() {
 	
 	$("#tracking-on-calls-wall-in").prop( "disabled", true );
 	
+	if(($("#monitor-effectiveness").is(':checked')) == true){
+		$("#tracking-on-calls-wall-in").prop( "disabled", false );
+	} else {
+		$("#tracking-on-calls-wall-in").prop( "disabled", true );
+	}
+	
 	$("#monitor-effectiveness").click(function() {
 		$('#monitor-effectiveness').val(this.checked);
-		if(this.checked == true){
+		if(($("#monitor-effectiveness").is(':checked')) == true){
 			$("#tracking-on-calls-wall-in").click(function() {
 				$('#tracking-on-calls-wall-in').val(this.checked);
 			});
@@ -1564,9 +1599,15 @@ $( document ).ready(function() {
 	
 	$("#explore-display-network").prop( "disabled", true );
 	
+	if(($("#improve-brand-awareness").is(':checked')) == true){
+		$("#explore-display-network").prop( "disabled", false );
+	} else {
+		$("#explore-display-network").prop( "disabled", true );
+	}
+	
 	$("#improve-brand-awareness").click(function() {
 		$('#improve-brand-awareness').val(this.checked);
-		if(this.checked == true){
+		if(($("#improve-brand-awareness").is(':checked')) == true){
 			$("#explore-display-network").click(function() {
 				$('#explore-display-network').val(this.checked);
 			});
@@ -1585,9 +1626,15 @@ $( document ).ready(function() {
 	
 	$("#extend-your-marketing-plan-for-longer-visibility").prop( "disabled", true );
 	
+	if(($("#enhance-visibility").is(':checked')) == true){
+		$("#extend-your-marketing-plan-for-longer-visibility").prop( "disabled", false );
+	} else {
+		$("#extend-your-marketing-plan-for-longer-visibility").prop( "disabled", true );
+	}
+	
 	$("#enhance-visibility").click(function() {
 		$('#enhance-visibility').val(this.checked);
-		if(this.checked == true){
+		if(($("#enhance-visibility").is(':checked')) == true){
 			$("#extend-your-marketing-plan-for-longer-visibility").click(function() {
 				$('#extend-your-marketing-plan-for-longer-visibility').val(this.checked);
 			});
@@ -1619,6 +1666,39 @@ $( document ).ready(function() {
 	$("#johor").prop( "disabled", true );
 	$("#sabah").prop( "disabled", true );
 	$("#sarawak").prop( "disabled", true );
+	
+	if(($("#malaysia").is(':checked')) == true){
+		$("#kuala-lumpur").prop( "disabled", false );
+		$("#selangor").prop( "disabled", false );
+		$("#kedah").prop( "disabled", false );
+		$("#penang").prop( "disabled", false );
+		$("#ipoh").prop( "disabled", false );
+		$("#perlis").prop( "disabled", false );
+		$("#pahang").prop( "disabled", false );
+		$("#kelantan").prop( "disabled", false );
+		$("#terengganu").prop( "disabled", false );
+		$("#negeri-sembilan").prop( "disabled", false );
+		$("#melaka").prop( "disabled", false );
+		$("#johor").prop( "disabled", false );
+		$("#sabah").prop( "disabled", false );
+		$("#sarawak").prop( "disabled", false );
+	} else {
+		$("#kuala-lumpur").prop( "disabled", true );
+		$("#selangor").prop( "disabled", true );
+		$("#kedah").prop( "disabled", true );
+		$("#penang").prop( "disabled", true );
+		$("#ipoh").prop( "disabled", true );
+		$("#perlis").prop( "disabled", true );
+		$("#pahang").prop( "disabled", true );
+		$("#kelantan").prop( "disabled", true );
+		$("#terengganu").prop( "disabled", true );
+		$("#negeri-sembilan").prop( "disabled", true );
+		$("#melaka").prop( "disabled", true );
+		$("#johor").prop( "disabled", true );
+		$("#sabah").prop( "disabled", true );
+		$("#sarawak").prop( "disabled", true );
+
+	}
 	
 	$("#kuala-lumpur").click(function() {
 		$('#kuala-lumpur').val(this.checked);
@@ -3027,36 +3107,5 @@ $( document ).ready(function() {
 		step10B();
 				
 	});
-	$('#surveyForm').submit(function () { 
-		/* STEP 4 */
-		$("#add-on-relevant-product-pictures").prop( "disabled", false );
-		$("#add-on-product-description").prop( "disabled", false );
-		$("#include-product-price").prop( "disabled", false );
-		$("#include-product-specification").prop( "disabled", false );
-		$("#include-company-details").prop( "disabled", false );
-		$("#highlight-unique-selling-point").prop( "disabled", false );
-		$("#include-certification-for-better-credential").prop( "disabled", false );
-		$("#enhance-website-picture-quality").prop( "disabled", false );		
-		$("#frequently-update-your-website").prop( "disabled", false );
-		$("#timely-response-to-enquiry").prop( "disabled", false );		
-		$("#tracking-on-calls-wall-in").prop( "disabled", false );		
-		$("#explore-display-network").prop( "disabled", false );
-		$("#extend-your-marketing-plan-for-longer-visibility").prop( "disabled", false );
-		
-		/* STEP 6 */
-		$("#kuala-lumpur").prop( "disabled", false );
-		$("#selangor").prop( "disabled", false );
-		$("#kedah").prop( "disabled", false );
-		$("#penang").prop( "disabled", false );
-		$("#ipoh").prop( "disabled", false );
-		$("#perlis").prop( "disabled", false );
-		$("#pahang").prop( "disabled", false );
-		$("#kelantan").prop( "disabled", false );
-		$("#terengganu").prop( "disabled", false );
-		$("#negeri-sembilan").prop( "disabled", false );
-		$("#melaka").prop( "disabled", false );
-		$("#johor").prop( "disabled", false );
-		$("#sabah").prop( "disabled", false );
-		$("#sarawak").prop( "disabled", false );
-	});
+	
 });
