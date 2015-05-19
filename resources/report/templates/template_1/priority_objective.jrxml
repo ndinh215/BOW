@@ -15,7 +15,7 @@
 	</background>
 	<detail>
 		<band height="242" splitType="Stretch">
-			<image>
+			<image onErrorType="Blank">
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="31" y="3" width="120" height="120" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="4bdfb650-4731-4925-a2f1-81dde0a7dd96">
 					<printWhenExpression><![CDATA[$F{fields}.size() >= 1]]></printWhenExpression>
 				</reportElement>
@@ -29,7 +29,7 @@ $F{fields}.get(0).value == "increase-online-purchase"? $P{SUBREPORT_DIR} + "/ima
 $F{fields}.get(0).value == "retargeting-visitors"? $P{SUBREPORT_DIR} + "/images/page_3/retargeting.png":
 $F{fields}.get(0).value == "increase-geographical-coverage"? $P{SUBREPORT_DIR} + "/images/page_3/geographic.png":""):""]]></imageExpression>
 			</image>
-			<image>
+			<image onErrorType="Blank">
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="154" y="3" width="120" height="120" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="2651787d-5e66-471d-b837-77c258b12a95">
 					<printWhenExpression><![CDATA[$F{fields}.size() >= 2]]></printWhenExpression>
 				</reportElement>
@@ -43,7 +43,7 @@ $F{fields}.get(1).value == "increase-online-purchase"? $P{SUBREPORT_DIR} + "/ima
 $F{fields}.get(1).value == "retargeting-visitors"? $P{SUBREPORT_DIR} + "/images/page_3/retargeting.png":
 $F{fields}.get(1).value == "increase-geographical-coverage"? $P{SUBREPORT_DIR} + "/images/page_3/geographic.png":""):""]]></imageExpression>
 			</image>
-			<image>
+			<image onErrorType="Blank">
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="277" y="3" width="120" height="120" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="0c897925-1128-4ca9-8448-add285ccaab2">
 					<printWhenExpression><![CDATA[$F{fields}.size() >= 3]]></printWhenExpression>
 				</reportElement>
@@ -57,7 +57,7 @@ $F{fields}.get(2).value == "increase-online-purchase"? $P{SUBREPORT_DIR} + "/ima
 $F{fields}.get(2).value == "retargeting-visitors"? $P{SUBREPORT_DIR} + "/images/page_3/retargeting.png":
 $F{fields}.get(2).value == "increase-geographical-coverage"? $P{SUBREPORT_DIR} + "/images/page_3/geographic.png":""):""]]></imageExpression>
 			</image>
-			<image>
+			<image onErrorType="Blank">
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="400" y="3" width="120" height="120" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="654cddb6-01a6-456a-af66-ab45e9b7d165">
 					<printWhenExpression><![CDATA[$F{fields}.size() >= 4]]></printWhenExpression>
 				</reportElement>
@@ -71,7 +71,7 @@ $F{fields}.get(3).value == "increase-online-purchase"? $P{SUBREPORT_DIR} + "/ima
 $F{fields}.get(3).value == "retargeting-visitors"? $P{SUBREPORT_DIR} + "/images/page_3/retargeting.png":
 $F{fields}.get(3).value == "increase-geographical-coverage"? $P{SUBREPORT_DIR} + "/images/page_3/geographic.png":""):""]]></imageExpression>
 			</image>
-			<image>
+			<image onErrorType="Blank">
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="400" y="122" width="120" height="120" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="16506a23-e083-4ce9-a09d-b7da358bb353">
 					<printWhenExpression><![CDATA[$F{fields}.size() >= 8]]></printWhenExpression>
 				</reportElement>
@@ -85,7 +85,7 @@ $F{fields}.get(7).value == "increase-online-purchase"? $P{SUBREPORT_DIR} + "/ima
 $F{fields}.get(7).value == "retargeting-visitors"? $P{SUBREPORT_DIR} + "/images/page_3/retargeting.png":
 $F{fields}.get(7).value == "increase-geographical-coverage"? $P{SUBREPORT_DIR} + "/images/page_3/geographic.png":""):""]]></imageExpression>
 			</image>
-			<image>
+			<image onErrorType="Blank">
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="154" y="122" width="120" height="120" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="b3857fae-303f-43d6-8446-2cb7f023e268">
 					<printWhenExpression><![CDATA[$F{fields}.size() >= 6]]></printWhenExpression>
 				</reportElement>
@@ -99,7 +99,7 @@ $F{fields}.get(5).value == "increase-online-purchase"? $P{SUBREPORT_DIR} + "/ima
 $F{fields}.get(5).value == "retargeting-visitors"? $P{SUBREPORT_DIR} + "/images/page_3/retargeting.png":
 $F{fields}.get(5).value == "increase-geographical-coverage"? $P{SUBREPORT_DIR} + "/images/page_3/geographic.png":""):""]]></imageExpression>
 			</image>
-			<image>
+			<image onErrorType="Blank">
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="31" y="122" width="120" height="120" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="909f29f9-687a-4a3d-8388-5c3fb998fdfa">
 					<printWhenExpression><![CDATA[$F{fields}.size() >= 5]]></printWhenExpression>
 				</reportElement>
@@ -113,7 +113,7 @@ $F{fields}.get(4).value == "increase-online-purchase"? $P{SUBREPORT_DIR} + "/ima
 $F{fields}.get(4).value == "retargeting-visitors"? $P{SUBREPORT_DIR} + "/images/page_3/retargeting.png":
 $F{fields}.get(4).value == "increase-geographical-coverage"? $P{SUBREPORT_DIR} + "/images/page_3/geographic.png":""):""]]></imageExpression>
 			</image>
-			<image>
+			<image onErrorType="Blank">
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="277" y="122" width="120" height="120" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="b9ddd742-7221-4de5-85c6-c0cbae32921c">
 					<printWhenExpression><![CDATA[$F{fields}.size() >= 7]]></printWhenExpression>
 				</reportElement>

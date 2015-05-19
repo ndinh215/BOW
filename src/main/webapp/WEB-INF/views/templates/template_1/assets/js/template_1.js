@@ -1192,7 +1192,6 @@ $( document ).ready(function() {
 							$("#444").remove();
 						} else{
 							var age = $("#others-age-text").val();
-							//
 							var othersAgetext = $("#others-age-text").val(),
 						    intRegex = /^[0-9-+]+$/;
 							if(!intRegex.test(othersAgetext))
@@ -1667,7 +1666,7 @@ $( document ).ready(function() {
 			$("#2").remove();
 		}	
 	});
-	//
+	
 	$("#selangor").click(function() {
 		$('#selangor').val(this.checked);
 		if(this.checked == true){
@@ -1678,7 +1677,7 @@ $( document ).ready(function() {
 			$("#3").remove();
 		}
 	});
-	//
+	
 	$("#kedah").click(function() {
 		$('#kedah').val(this.checked);
 		if(this.checked == true){
@@ -1689,7 +1688,7 @@ $( document ).ready(function() {
 			$("#4").remove();
 		}
 	});
-	//
+	
 	$("#penang").click(function() {
 		$('#penang').val(this.checked);
 		if(this.checked == true){
@@ -1700,7 +1699,7 @@ $( document ).ready(function() {
 			$("#5").remove();
 		}
 	});
-	//
+	
 	$("#ipoh").click(function() {
 		$('#ipoh').val(this.checked);
 		if(this.checked == true){
@@ -1711,7 +1710,7 @@ $( document ).ready(function() {
 			$("#6").remove();
 		}
 	});
-	//
+	
 	$("#perlis").click(function() {
 		$('#perlis').val(this.checked);
 		if(this.checked == true){
@@ -1722,7 +1721,7 @@ $( document ).ready(function() {
 			$("#7").remove();
 		}
 	});
-	//
+	
 	$("#pahang").click(function() {
 		$('#pahang').val(this.checked);
 		if(this.checked == true){
@@ -1733,7 +1732,7 @@ $( document ).ready(function() {
 			$("#8").remove();
 		}
 	});
-	//
+	
 	$("#kelantan").click(function() {
 		$('#kelantan').val(this.checked);
 		if(this.checked == true){
@@ -1744,7 +1743,7 @@ $( document ).ready(function() {
 			$("#9").remove();
 		}
 	});
-	//
+	
 	$("#terengganu").click(function() {
 		$('#terengganu').val(this.checked);
 		if(this.checked == true){
@@ -1755,7 +1754,7 @@ $( document ).ready(function() {
 			$("#10").remove();
 		}
 	});
-	//
+	
 	$("#negeri-sembilan").click(function() {
 		$('#negeri-sembilan').val(this.checked);
 		if(this.checked == true){
@@ -1766,7 +1765,7 @@ $( document ).ready(function() {
 			$("#11").remove();
 		}
 	});
-	//
+	
 	$("#melaka").click(function() {
 		$('#melaka').val(this.checked);
 		if(this.checked == true){
@@ -1777,7 +1776,7 @@ $( document ).ready(function() {
 			$("#12").remove();
 		}
 	});
-	//
+	
 	$("#johor").click(function() {
 		$('#johor').val(this.checked);
 		if(this.checked == true){
@@ -1788,7 +1787,7 @@ $( document ).ready(function() {
 			$("#13").remove();
 		}
 	});
-	//
+	
 	$("#sabah").click(function() {
 		$('#sabah').val(this.checked);
 		if(this.checked == true){
@@ -1799,7 +1798,7 @@ $( document ).ready(function() {
 			$("#14").remove();
 		}
 	});
-	//
+	
 	$("#sarawak").click(function() {
 		$('#sarawak').val(this.checked);
 		if(this.checked == true){
@@ -1869,7 +1868,7 @@ $( document ).ready(function() {
 			    $("#kuala-lumpur").attr("disabled", true);
 			});
 			
-			//
+			
 			$('#selangor').each(function() 
 			{ 
 			    $(this).prop('checked', false); 
@@ -1877,7 +1876,7 @@ $( document ).ready(function() {
 			    $("#selangor").attr("disabled", true);
 			});
 			
-			//
+			
 			$('#kedah').each(function() 
 			{ 
 			    $(this).prop('checked', false); 
@@ -1885,7 +1884,7 @@ $( document ).ready(function() {
 			    $("#kedah").attr("disabled", true);
 			});
 			
-			//
+			
 			$('#penang').each(function() 
 			{ 
 			    $(this).prop('checked', false); 
@@ -1893,7 +1892,7 @@ $( document ).ready(function() {
 			    $("#penang").attr("disabled", true);
 			});
 			
-			//
+			
 			$('#ipoh').each(function() 
 			{ 
 			    $(this).prop('checked', false); 
@@ -1901,7 +1900,7 @@ $( document ).ready(function() {
 			    $("#ipoh").attr("disabled", true);
 			});
 			
-			//
+			
 			$('#perlis').each(function() 
 			{ 
 			    $(this).prop('checked', false); 
@@ -1909,7 +1908,7 @@ $( document ).ready(function() {
 			    $("#perlis").attr("disabled", true);
 			});
 			
-			//
+			
 			$('#pahang').each(function() 
 			{ 
 			    $(this).prop('checked', false); 
@@ -1917,7 +1916,7 @@ $( document ).ready(function() {
 			    $("#pahang").attr("disabled", true);
 			});
 			
-			//
+			
 			$('#kelantan').each(function() 
 			{ 
 			    $(this).prop('checked', false); 
@@ -1925,7 +1924,7 @@ $( document ).ready(function() {
 			    $("#kelantan").attr("disabled", true);
 			});
 			
-			//
+			
 			$('#terengganu').each(function() 
 			{ 
 			    $(this).prop('checked', false); 
@@ -1933,7 +1932,7 @@ $( document ).ready(function() {
 			    $("#terengganu").attr("disabled", true);
 			});
 			
-			//
+			
 			$('#negeri-sembilan').each(function() 
 			{ 
 			    $(this).prop('checked', false); 
@@ -1941,7 +1940,7 @@ $( document ).ready(function() {
 			    $("#negeri-sembilan").attr("disabled", true);
 			});
 			
-			//
+			
 			$('#melaka').each(function() 
 			{ 
 			    $(this).prop('checked', false); 
@@ -1949,7 +1948,7 @@ $( document ).ready(function() {
 			    $("#melaka").attr("disabled", true);
 			});
 			
-			//
+			
 			$('#johor').each(function() 
 			{ 
 			    $(this).prop('checked', false); 
@@ -1957,7 +1956,7 @@ $( document ).ready(function() {
 			    $("#johor").attr("disabled", true);
 			});
 			
-			//
+			
 			$('#sabah').each(function() 
 			{ 
 			    $(this).prop('checked', false); 
@@ -1965,7 +1964,7 @@ $( document ).ready(function() {
 			    $("#sabah").attr("disabled", true);
 			});
 			
-			//
+			
 			$('#sarawak').each(function() 
 			{ 
 			    $(this).prop('checked', false); 
@@ -2008,7 +2007,7 @@ $( document ).ready(function() {
 	     
 	});
 	
-	//
+	
 	$("#accounting").click(function(){
 		$('#accounting').val(this.checked);
 		if(this.checked == true){
@@ -2329,7 +2328,7 @@ $( document ).ready(function() {
 	     
 	});
 	
-	//
+	
 	$("#english").click(function(){
 		$('#english').val(this.checked);
 		if(this.checked == true){
@@ -2375,7 +2374,7 @@ $( document ).ready(function() {
 	     
 	});
 	
-	//
+	
 	$("#age-18-29").click(function(){
 		$('#age-18-29').val(this.checked);
 		if(this.checked == true){
@@ -2410,7 +2409,7 @@ $( document ).ready(function() {
 	     
 	});
 	
-	//
+	
 	$("#male").click(function(){
 		$('#male').val(this.checked);
 		if(this.checked == true){
@@ -2557,7 +2556,7 @@ $( document ).ready(function() {
 		var subtotalOptionA = 0;
 		var govtaxOptionA = 0;
 		var grandtotalOptionA = 0;
-		//
+		
 		var panpagesOptionAtest = $('#panpages-option-a-input').val();
 		if ($.isEmptyObject(panpagesOptionAtest)) {
 			$('#panpages-option-a-input').val(panpagesOptionA);
@@ -2574,7 +2573,7 @@ $( document ).ready(function() {
 				grandtotalOptionA = subtotalOptionA + govtaxOptionA;
 			}
 		}
-		//
+		
 		var alibabaComOptionAtest = $('#alibaba-com-option-a-input').val();
 		if ($.isEmptyObject(alibabaComOptionAtest)) {
 			$('#alibaba-com-option-a-input').val(alibabaComOptionA);
@@ -2592,8 +2591,8 @@ $( document ).ready(function() {
 				
 			}
 		}
-		//
-		//
+		
+		
 		var googleSearchMobileOptionAtest = $('#google-search-mobile-option-a-input').val();
 		var googleDisplayNetworkOptionAtest = $('#google-display-network-option-a-input').val();
 		var yahooSearchOptionAtest = $('#yahoo-search-option-a-input').val();
@@ -2671,7 +2670,7 @@ $( document ).ready(function() {
 				grandtotalOptionA = subtotalOptionA + govtaxOptionA;
 			}
 		}
-		//
+		
 		var facebookMarketingOptionAtest = $('#facebook-marketing-option-a-input').val();
 		if ($.isEmptyObject(facebookMarketingOptionAtest)) {
 			$('#facebook-marketing-option-a-input').val(facebookMarketingOptionA);
@@ -2689,7 +2688,7 @@ $( document ).ready(function() {
 				
 			}
 		}
-		//
+		
 		var pan360OptionAtest = $('#pan-360-option-a-input').val();
 		if ($.isEmptyObject(pan360OptionAtest)) {
 			$('#pan-360-option-a-input').val(pan360OptionA);
@@ -2707,7 +2706,7 @@ $( document ).ready(function() {
 				
 			}
 		}
-		//
+		
 		var superPagesOptionAtest = $('#super-pages-option-a-input').val();
 		if ($.isEmptyObject(superPagesOptionAtest)) {
 			$('#super-pages-option-a-input').val(superPagesOptionA);
@@ -2725,7 +2724,7 @@ $( document ).ready(function() {
 				
 			}
 		}
-		//
+		
 		var otherOptionAtest = $('#others-option-A-input').val();
 		if ($.isEmptyObject(otherOptionAtest)) {
 			$('#others-option-A-input').val(otherOptionA);
@@ -2821,7 +2820,7 @@ $( document ).ready(function() {
 		var subtotalOptionB = 0;
 		var govtaxOptionB = 0;
 		var grandtotalOptionB = 0;
-		//
+		
 		var panpagesOptionBtest = $('#panpages-option-b-input').val();
 		if ($.isEmptyObject(panpagesOptionBtest)) {
 			$('#panpages-option-b-input').val(panpagesOptionB);
@@ -2838,7 +2837,7 @@ $( document ).ready(function() {
 				grandtotalOptionB = subtotalOptionB + govtaxOptionB;
 			}
 		}
-		//
+		
 		var alibabaComOptionBtest = $('#alibaba-com-option-b-input').val();
 		if ($.isEmptyObject(alibabaComOptionBtest)) {
 			$('#alibaba-com-option-b-input').val(alibabaComOptionB);
@@ -2856,8 +2855,8 @@ $( document ).ready(function() {
 				
 			}
 		}
-		//
-		//
+		
+		
 		var googleSearchMobileOptionBtest = $('#google-search-mobile-option-b-input').val();
 		var googleDisplayNetworkOptionBtest = $('#google-display-network-option-b-input').val();
 		var yahooSearchOptionBtest = $('#yahoo-search-option-b-input').val();
@@ -2935,7 +2934,7 @@ $( document ).ready(function() {
 				grandtotalOptionB = subtotalOptionB + govtaxOptionB;
 			}
 		}
-		//
+		
 		var facebookMarketingOptionBtest = $('#facebook-marketing-option-b-input').val();
 		if ($.isEmptyObject(facebookMarketingOptionBtest)) {
 			$('#facebook-marketing-option-b-input').val(facebookMarketingOptionB);
@@ -2953,7 +2952,7 @@ $( document ).ready(function() {
 				
 			}
 		}
-		//
+		
 		var pan360OptionBtest = $('#pan-360-option-b-input').val();
 		if ($.isEmptyObject(pan360OptionBtest)) {
 			$('#pan-360-option-b-input').val(pan360OptionB);
@@ -2971,7 +2970,7 @@ $( document ).ready(function() {
 				
 			}
 		}
-		//
+		
 		var superPagesOptionBtest = $('#super-pages-option-b-input').val();
 		if ($.isEmptyObject(superPagesOptionBtest)) {
 			$('#super-pages-option-b-input').val(superPagesOptionB);
@@ -2989,7 +2988,7 @@ $( document ).ready(function() {
 				
 			}
 		}
-		//
+		
 		var otherOptionBtest = $('#others-option-b-input').val();
 		if ($.isEmptyObject(otherOptionBtest)) {
 			$('#others-option-b-input').val(otherOptionB);

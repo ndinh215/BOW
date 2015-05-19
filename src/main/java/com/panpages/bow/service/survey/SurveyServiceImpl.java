@@ -1,6 +1,7 @@
 package com.panpages.bow.service.survey;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -62,6 +63,11 @@ public class SurveyServiceImpl implements SurveyService{
 	@Override
 	public SurveyTemplate findSurveyTemplateWithId(int surveyTemplateId) {
 		return dao.findSurveyTemplateWithId(surveyTemplateId);
+	}
+
+	@Override
+	public int addField(String fieldName, String fieldValue, Survey survey) {
+		return dao.addField(fieldName, fieldValue, survey);
 	}
 
 }

@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_1" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="c85d93a0-0d8f-4b28-ae59-d3bf59335912">
 	<property name="ireport.zoom" value="1.3310000000000015"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="321"/>
+	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
 	<parameter name="sections" class="java.util.List"/>
 	<parameter name="fulfillDate" class="java.lang.String"/>
@@ -56,7 +56,7 @@
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/home/TMPanPanpages.jpg"]]></imageExpression>
 			</image>
 			<image>
-				<reportElement x="58" y="78" width="469" height="526" uuid="97eabd3f-3e5f-4766-943b-4acdcf060a1b"/>
+				<reportElement x="76" y="78" width="469" height="526" uuid="97eabd3f-3e5f-4766-943b-4acdcf060a1b"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/home/search.png"]]></imageExpression>
 			</image>
 			<textField>
@@ -71,7 +71,7 @@
 				<textElement verticalAlignment="Middle">
 					<font size="14" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("consultant-name", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-1",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("advertiser-company-name", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-2",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="14" y="628" width="117" height="30" uuid="209ef8f6-bd91-4bec-b256-17535c42c82d"/>
@@ -103,20 +103,20 @@
 					<bottomPen lineWidth="0.0"/>
 					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement verticalAlignment="Middle">
+				<textElement verticalAlignment="Top">
 					<font isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("advertiser-company-address", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-2",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="91" y="103" width="321" height="45" uuid="c33daa93-57b5-4e6e-9e24-588ef721f546"/>
+				<reportElement x="108" y="103" width="321" height="45" uuid="c33daa93-57b5-4e6e-9e24-588ef721f546"/>
 				<textElement verticalAlignment="Middle">
 					<font size="32" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Panpages Online]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="91" y="148" width="321" height="101" uuid="da88c83e-c8b1-4663-a488-340c85cff101"/>
+				<reportElement x="108" y="148" width="321" height="101" uuid="da88c83e-c8b1-4663-a488-340c85cff101"/>
 				<textElement>
 					<font fontName="Impact" size="40" isBold="true"/>
 				</textElement>
@@ -124,7 +124,7 @@
 PLANNER]]></text>
 			</staticText>
 			<textField>
-				<reportElement mode="Transparent" x="91" y="249" width="321" height="32" backcolor="#FFFF99" uuid="6c402bf4-2268-4e1a-8e93-6f25c2fed7a5"/>
+				<reportElement mode="Transparent" x="108" y="249" width="321" height="32" backcolor="#FFFF99" uuid="6c402bf4-2268-4e1a-8e93-6f25c2fed7a5"/>
 				<box rightPadding="6">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>

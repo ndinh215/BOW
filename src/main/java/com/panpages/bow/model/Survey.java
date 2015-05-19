@@ -130,7 +130,7 @@ public class Survey {
 	public String getFulfilledDate() {
 		String newFulfilledDateStr;
 		
-		DateFormat newDateFormat = new SimpleDateFormat("dd/MMM/yyyy");
+		DateFormat newDateFormat = new SimpleDateFormat("dd MMM yyyy, hh:mm a");
 		newFulfilledDateStr = newDateFormat.format(fulfilledDate);
 		
 		return newFulfilledDateStr;

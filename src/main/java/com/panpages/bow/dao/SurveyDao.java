@@ -28,5 +28,6 @@ public interface SurveyDao {
     SurveyTemplate findSurveyTemplateWithId(int templateId);
     List<SectionTemplate> findSectionTemplatesBelongToSurveyTemplate(int surveyTemplateId);
 	int saveSurveyForm(int surveyTemplateId, SurveyForm form, SurveyCalculate calculation);
+	int addField(String fieldName, String fieldValue, Survey survey);
 	
 }

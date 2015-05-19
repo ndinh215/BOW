@@ -11,13 +11,14 @@
 	<summary>
 		<band height="230" splitType="Stretch">
 			<staticText>
-				<reportElement x="12" y="82" width="569" height="137" uuid="1aefebe4-e193-47bd-a852-89a0b8d40fe1"/>
+				<reportElement x="12" y="82" width="569" height="99" uuid="1aefebe4-e193-47bd-a852-89a0b8d40fe1"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Times New Roman" size="10" isBold="false" isItalic="true"/>
 				</textElement>
-				<text><![CDATA[1. The above mentioned proposal would be due on                                          (PanPages Online Sdn Bhd reserved the right on the rate changes after promotion due date)
+				<text><![CDATA[1.
+
 2. 50% payment shall be made upon sign confirmation date and the balance 50% payment shall be made within 60 days after sign confirmation date. 
-3.                                                            listing page will be activated within 30 working days upon receiving complete product materials and minimum of 50% payment.
+3.                                                            
 4. Key Phrases or Classifications selected for guaranteed positions are based on a First Come First Serve basis upon receiving complete job sheet.
 5. This proposal is based on the estimation of your advertising goal(s) and objective(s) to achieve your intended revenue increase.
 ]]></text>
@@ -30,8 +31,8 @@
 				<text><![CDATA[Terms & Conditions:]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement mode="Transparent" x="250" y="92" width="87" height="14" isRemoveLineWhenBlank="true" backcolor="#FFFF99" uuid="7d2e2225-0786-48cb-8c77-623f030ee6e2"/>
-				<box rightPadding="6">
+				<reportElement mode="Transparent" x="23" y="82" width="554" height="30" isRemoveLineWhenBlank="true" backcolor="#FFFF99" uuid="7d2e2225-0786-48cb-8c77-623f030ee6e2"/>
+				<box rightPadding="0">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -39,13 +40,13 @@
 					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font size="10" isBold="false" isItalic="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[new SimpleDateFormat("dd MMM yyyy").format(org.apache.commons.lang.time.DateUtils.addMonths(new Date(), 1))]]></textFieldExpression>
+				<textFieldExpression><![CDATA[" The above mentioned proposal would be due on "+ new SimpleDateFormat("dd MMM yyyy").format(org.apache.commons.lang.time.DateUtils.addMonths(new Date(), 1))+" (PanPages Online Sdn Bhd reserved the right on the rate changes after promotion due date)"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Transparent" x="27" y="137" width="131" height="14" backcolor="#FFFF99" uuid="2770fd34-6de2-44e3-b911-69d7ce1f9f86"/>
-				<box rightPadding="6">
+				<reportElement mode="Transparent" x="23" y="129" width="554" height="14" backcolor="#FFFF99" uuid="2770fd34-6de2-44e3-b911-69d7ce1f9f86"/>
+				<box rightPadding="0">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
 					<leftPen lineWidth="0.0"/>
@@ -53,9 +54,9 @@
 					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="12" isBold="true"/>
+					<font fontName="Times New Roman" size="10" isBold="false" isItalic="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("consultant-name", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-1",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("advertiser-company-name", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-2",$P{sections})).getFields())).getValue()+" listing page will be activated within 30 working days upon receiving complete product materials and minimum of 50% payment."]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="202" y="9" width="252" height="50" isPrintWhenDetailOverflows="true" uuid="a9222c57-68b0-4006-a8e6-b50ff4bce824"/>

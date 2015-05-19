@@ -13,7 +13,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<columnHeader>
-		<band height="24" splitType="Stretch">
+		<band height="22" splitType="Stretch">
 			<staticText>
 				<reportElement mode="Opaque" x="176" y="1" width="180" height="20" forecolor="#FFFFFF" backcolor="#C0504D" uuid="fd66e846-b887-44f9-b271-2a19848aa7c8"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
