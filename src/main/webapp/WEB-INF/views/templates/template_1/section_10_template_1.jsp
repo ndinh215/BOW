@@ -170,24 +170,5 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<input type="hidden" name="fields['revenue-increased']" id="revenue-increased">
-		<input type="hidden" name="fields['average-revenue-perCustomer']" id="average-revenue-perCustomer">
-		<input type="hidden" name="fields['new-advertiser']" id="new-advertiser">
-		<input type="hidden" name="fields['enquiry-rate']" id="enquiry-rate">
-		<input type="hidden" name="fields['leads']" id="leads">
-		<input type="hidden" name="fields['leads-conversion-rate']" id="leads-conversion-rate">
-		<input type="hidden" name="fields['traffic-clicks-required']" id="traffic-clicks-required">
-		<input type="hidden" name="fields['campaign-period']" id="campaign-period">
-		<input type="hidden" name="fields['monthly-traffic-clicks']" id="monthly-traffic-clicks">
-		<input type="hidden" name="fields['average-costPer-click']" id="average-costPer-click">
-		<input type="hidden" name="fields['estimated-monthly-budget']" id="estimated-monthly-budget">
-		<input type="hidden" name="fields['total-campaign-budget']" id="total-campaign-budget">
-		<input type="hidden" name="fields['total-estimate-impression']" id="total-estimate-impression">
-		<input type="hidden" name="fields['assumed-ctr-for-search']" id="assumed-ctr-for-search">
-		<input type="hidden" name="fields['estimatedclicks-based-on-ctr']" id="estimatedClicks-based-on-ctr">
-		<input type="hidden" name="fields['estimated-monthly-investment-100']" id="estimated-monthly-investment-100">
-		<input type="hidden" name="fields['estimated-monthly-investment-50']" id="estimated-monthly-investment-50">
-	</div>
 </body>
 </html>

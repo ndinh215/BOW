@@ -475,7 +475,6 @@ $( document ).ready(function() {
 							else{
 								$("#step-5-a-error").text("");
 								$("#step-5-a").val(A);
-								$( "#revenue-increased" ).val(A);
 							}
 						}
 					}
@@ -498,9 +497,6 @@ $( document ).ready(function() {
 							else{
 								$("#step-5-b-error").text("");
 								$("#step-5-b").val(B);
-								$("#average-revenue-perCustomer").val(B);
-								var newAdvertiser = (A / B).toFixed(2);
-								$("#new-advertiser").val(newAdvertiser);
 							}
 						}
 					}
@@ -523,14 +519,6 @@ $( document ).ready(function() {
 							else{
 								$("#step-5-d-error").text("");
 								$("#step-5-d").val(D);
-								var enquiryRate = (D / 100).toFixed(2);
-								$("#enquiry-rate").val(enquiryRate);
-								var leads = (newAdvertiser / enquiryRate).toFixed(2);
-								$("#leads").val(leads);
-								var leadsConversionRate = 20 / 100;
-								$("#leads-conversion-rate").val(leadsConversionRate);
-								var trafficClicksRequired = (leads / leadsConversionRate).toFixed(2);
-								$("#traffic-clicks-required").val(trafficClicksRequired);
 							}
 						}
 					}
@@ -553,30 +541,6 @@ $( document ).ready(function() {
 							else{
 								$("#step-5-h-error").text(""); 
 								$("#step-5-h").val(H);
-								$("#campaign-period").val(H);
-								var monthlyTrafficClicks = (trafficClicksRequired / H).toFixed(2);
-								$("#monthly-traffic-clicks").val(monthlyTrafficClicks);
-								var averageCostPerClick = 0;
-								$("#average-costPer-click").val(averageCostPerClick);
-								var estimatedMonthlyBudget = (monthlyTrafficClicks / averageCostPerClick).toFixed(2);
-								$("#estimated-monthly-budget").val(estimatedMonthlyBudget);
-								var totalCampaignBudget = (estimatedMonthlyBudget * H).toFixed(2);
-								$("#total-campaign-budget").val(totalCampaignBudget);
-								var totalEstimateImpression = 0;
-								$("#total-estimate-impression").val(totalEstimateImpression);
-								var assumedCTRforSearchtempt = ($("#campaign-click-through-rate").val()).replace(' %', '');
-								var assumedCTRforSearch = assumedCTRforSearchtempt / 100;
-								$("#assumed-ctr-for-search").val(assumedCTRforSearch);
-								var estimatedClicksBasedOnCTR = (totalEstimateImpression * assumedCTRforSearch).toFixed(2);
-								$("#estimatedClicks-based-on-ctr").val(estimatedClicksBasedOnCTR);
-								var estimatedMonthlyInvestment100 = (estimatedClicksBasedOnCTR * averageCostPerClick).toFixed(2);
-								$("#estimated-monthly-investment-100").val(estimatedMonthlyInvestment100);
-								var estimatedMonthlyInvestment50 = (estimatedMonthlyInvestment100 / 2).toFixed(2);
-								$("#estimated-monthly-investment-50").val(estimatedMonthlyInvestment50);
-								var calculationCodeOptionA = totalCampaignBudget;
-								$("#Calculation-Code-L-OptionA").text(calculationCodeOptionA);								
-								var calculationCodeOptionB = (calculationCodeOptionA * 0.75).toFixed(2);
-								$("#Calculation-Code-L-OptionB").text(calculationCodeOptionB);
 							}
 						}
 					}
