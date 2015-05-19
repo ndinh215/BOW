@@ -32,16 +32,20 @@ public class SurveyCalculateImpl implements SurveyCalculate {
 		
 		Float totalAverageSearch = (float) 0;
 		Float totalAverageCost = (float) 0;
+		int keywordCount = 0;
 		for (Field keyword:keywordFields) {
+			if (keywordCount++ == 0) {
+				continue;
+			}
+			
 			try {
 				String[] valueItems = keyword.getValue().split(",");
 				
 				String estImpression = StringUtils.nullValue(valueItems[1], null);
-				String costPerClick = StringUtils.nullValue(valueItems[2], null);
+				String costPerClick = StringUtils.nullValue(valueItems.length >= 3? valueItems[2] : "0", null);
 				if (estImpression == null) {
 					return;
 				}
-			
 			
 				Float estImpressionFloat = Float.parseFloat(estImpression.trim());
 				Float costPerClickFloat = Float.parseFloat(costPerClick.trim());
