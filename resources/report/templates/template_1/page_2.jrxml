@@ -229,7 +229,7 @@
 				<textElement verticalAlignment="Middle">
 					<font size="10"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("extend-your-marketing-plan-por-longer-visibility", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Extend Your Marketing Plan For Longer Visibility":null]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("extend-your-marketing-plan-for-longer-visibility", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Extend Your Marketing Plan For Longer Visibility":null]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="49" y="687" width="458" height="20" isRemoveLineWhenBlank="true" uuid="1a158fe9-5392-4c70-85f1-31f475ecf5c1"/>
