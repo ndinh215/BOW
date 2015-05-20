@@ -61,7 +61,7 @@
 				  </object>
 				</div>
 				<div class="right-float-buttons">
-			    	<button class="btn red-white-button" onclick="window.history.back();">Back</button>
+			    	<button class="btn red-white-button" onclick="window.history.back();">BACK</button>
 			    </div>
 			  </c:when>
 			  <c:otherwise>

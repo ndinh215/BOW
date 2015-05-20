@@ -32,12 +32,7 @@ public class SurveyCalculateImpl implements SurveyCalculate {
 		
 		Float totalAverageSearch = (float) 0;
 		Float totalAverageCost = (float) 0;
-		int keywordCount = 0;
 		for (Field keyword:keywordFields) {
-			if (keywordCount++ == 0) {
-				continue;
-			}
-			
 			try {
 				String[] valueItems = keyword.getValue().split(",");
 				

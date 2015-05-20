@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_3" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="77f76044-2c3b-433f-aff5-55ed88ca1c06">
 	<property name="ireport.zoom" value="0.9982500000000003"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="96"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
@@ -11,7 +11,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<summary>
-		<band height="802" splitType="Stretch">
+		<band height="842" splitType="Stretch">
 			<image>
 				<reportElement x="15" y="19" width="176" height="50" uuid="519cddde-e024-428d-979a-3fb916b6111e"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_3/TMPanPanpages.jpg"]]></imageExpression>
@@ -184,7 +184,7 @@
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/gender.jasper"]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="17" y="560" width="565" height="242" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="516149e0-89d5-45ce-9b13-1f35033ae112"/>
+				<reportElement positionType="Float" x="0" y="560" width="595" height="282" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="516149e0-89d5-45ce-9b13-1f35033ae112"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>

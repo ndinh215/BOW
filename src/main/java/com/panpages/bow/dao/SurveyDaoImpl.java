@@ -215,7 +215,13 @@ public class SurveyDaoImpl extends AbstractDao implements SurveyDao{
 							FileUtils.writeByteArrayToFile(file, ((MultipartFile)fieldValue).getBytes());
 						    reader = new BufferedReader(new FileReader(filePath));
 							String line = null;
+							int count = 0;
 							while ((line = reader.readLine()) != null) {
+
+								if (count++ == 0) {
+									continue;
+								}
+								
 								// Add new field
 								Field field = new Field();
 								field.setFieldTemplateId(fieldTemplate.getId());
