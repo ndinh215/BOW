@@ -7,25 +7,30 @@
 <title>Step 7</title>
 </head>
 <body>
-	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<h1>Tell us more about your advertiser&apos;s advertising objective(s).</h1>
+	<div class="step7 row">
+		<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2"></div>	
+		<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h1>Tell us more about your advertiser&apos;s advertising objective(s).</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<p><input id="increase-website-traffic" type="checkbox" value="false"> Increase Website Traffic</p>
+					<p><input id="increase-brand-awareness" type="checkbox" value="false"> Increase Brand Awareness</p>
+					<p><input id="increase-online-enquiry-submission" type="checkbox" value="false"> Increase Online Enquiry Submission</p>
+					<p><input id="increase-store-visits" type="checkbox" value="false"> Increase Store Visits</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<p><input id="increase-phone-calls" type="checkbox" value="false"> Increase Phone Calls</p>
+					<p><input id="increase-online-purchase" type="checkbox" value="false"> Increase Online Purchase (Subject To Website Feasibility)</p>
+					<p><input id="retargeting-visitors" type="checkbox" value="false"> Retargeting Visitors</p>
+					<p><input id="increase-geographical-coverage" type="checkbox" value="false"> Increase Geographical Coverage</p>
+				</div>
+				<div id="step-7" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-			<p><input id="increase-website-traffic" type="checkbox" value="false">Increase Website Traffic</p>
-			<p><input id="increase-brand-awareness" type="checkbox" value="false">Increase Brand Awareness</p>
-			<p><input id="increase-online-enquiry-submission" type="checkbox" value="false">Increase Online Enquiry Submission</p>
-			<p><input id="increase-store-visits" type="checkbox" value="false">Increase Store Visits</p>
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-			<p><input id="increase-phone-calls" type="checkbox" value="false">Increase Phone Calls</p>
-			<p><input id="increase-online-purchase" type="checkbox" value="false">Increase Online Purchase (Subject To Website Feasibility)</p>
-			<p><input id="retargeting-visitors" type="checkbox" value="false">Retargeting Visitors</p>
-			<p><input id="increase-geographical-coverage" type="checkbox" value="false">Increase Geographical Coverage</p>
-		</div>
-		<div id="step-7" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
 	</div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

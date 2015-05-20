@@ -556,12 +556,90 @@ $( document ).ready(function() {
 							$("#1").remove();
 						}	
 					}
+					else if((allels[i].getAttribute('id')) == "all-malaysia"){
+						if(($("#all-malaysia").is(':checked')) == true){
+							$("#2").remove();
+							$("#3").remove();
+							$("#4").remove();
+							$("#5").remove();
+							$("#6").remove();
+							$("#7").remove();
+							$("#8").remove();
+							$("#9").remove();
+							$("#10").remove();
+							$("#11").remove();
+							$("#12").remove();
+							$("#13").remove();
+							$("#14").remove();			
+							$("#15").remove();
+							$('#all-malaysia').val("true");
+							$('#kuala-lumpur').val("true");
+							$('#selangor').val("true");
+							$('#kedah').val("true");
+							$('#penang').val("true");
+							$('#ipoh').val("true");
+							$('#perlis').val("true");
+							$('#pahang').val("true");
+							$('#kelantan').val("true");
+							$('#terengganu').val("true");
+							$('#negeri-sembilan').val("true");
+							$('#melaka').val("true");
+							$('#johor').val("true");
+							$('#sabah').val("true");
+							$('#sarawak').val("true");
+							$( "#step-6" ).append( '<input type="hidden" id="2"'+' name="fields['+"'geographical-area'"+']"'+' value="Kuala Lumpur">');
+							$( "#step-6" ).append( '<input type="hidden" id="3"'+' name="fields['+"'geographical-area'"+']"'+' value="Selangor">');
+							$( "#step-6" ).append( '<input type="hidden" id="4"'+' name="fields['+"'geographical-area'"+']"'+' value="Kedah">');
+							$( "#step-6" ).append( '<input type="hidden" id="5"'+' name="fields['+"'geographical-area'"+']"'+' value="Penang">');
+							$( "#step-6" ).append( '<input type="hidden" id="6"'+' name="fields['+"'geographical-area'"+']"'+' value="Ipoh">');
+							$( "#step-6" ).append( '<input type="hidden" id="7"'+' name="fields['+"'geographical-area'"+']"'+' value="Perlis">');
+							$( "#step-6" ).append( '<input type="hidden" id="8"'+' name="fields['+"'geographical-area'"+']"'+' value="Pahang">');
+							$( "#step-6" ).append( '<input type="hidden" id="9"'+' name="fields['+"'geographical-area'"+']"'+' value="Pelantan">');
+							$( "#step-6" ).append( '<input type="hidden" id="10"'+' name="fields['+"'geographical-area'"+']"'+' value="Terengganu">');
+							$( "#step-6" ).append( '<input type="hidden" id="11"'+' name="fields['+"'geographical-area'"+']"'+' value="Negeri Sembilan">');
+							$( "#step-6" ).append( '<input type="hidden" id="12"'+' name="fields['+"'geographical-area'"+']"'+' value="Melaka">');
+							$( "#step-6" ).append( '<input type="hidden" id="13"'+' name="fields['+"'geographical-area'"+']"'+' value="Johor">');
+							$( "#step-6" ).append( '<input type="hidden" id="14"'+' name="fields['+"'geographical-area'"+']"'+' value="Sabah">');
+							$( "#step-6" ).append( '<input type="hidden" id="15"'+' name="fields['+"'geographical-area'"+']"'+' value="Sarawak">');
+						} else{
+							$('#all-malaysia').val("false");
+							$('#kuala-lumpur').val("false");
+							$('#selangor').val("false");
+							$('#kedah').val("false");
+							$('#penang').val("false");
+							$('#ipoh').val("false");
+							$('#perlis').val("false");
+							$('#pahang').val("false");
+							$('#kelantan').val("false");
+							$('#terengganu').val("false");
+							$('#negeri-sembilan').val("false");
+							$('#melaka').val("false");
+							$('#johor').val("false");
+							$('#sabah').val("false");
+							$('#sarawak').val("false");
+							$("#2").remove();
+							$("#3").remove();
+							$("#4").remove();
+							$("#5").remove();
+							$("#6").remove();
+							$("#7").remove();
+							$("#8").remove();
+							$("#9").remove();
+							$("#10").remove();
+							$("#11").remove();
+							$("#12").remove();
+							$("#13").remove();
+							$("#14").remove();			
+							$("#15").remove();
+						}	
+					}
 					else if((allels[i].getAttribute('id')) == "kuala-lumpur"){
 						if(($("#kuala-lumpur").is(':checked')) == true){
 							$("#2").remove();
 							$('#kuala-lumpur').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="2"'+' name="fields['+"'geographical-area'"+']"'+' value="Kuala Lumpur">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#kuala-lumpur').val("false");
 							$("#2").remove();
 						}	
@@ -572,6 +650,7 @@ $( document ).ready(function() {
 							$('#selangor').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="3"'+' name="fields['+"'geographical-area'"+']"'+' value="Selangor">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#selangor').val("false");
 							$("#3").remove();
 						}
@@ -582,6 +661,7 @@ $( document ).ready(function() {
 							$('#kedah').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="4"'+' name="fields['+"'geographical-area'"+']"'+' value="Kedah">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#kedah').val("false");
 							$("#4").remove();
 						}	
@@ -592,6 +672,7 @@ $( document ).ready(function() {
 							$('#penang').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="5"'+' name="fields['+"'geographical-area'"+']"'+' value="Penang">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#penang').val("false");
 							$("#5").remove();
 						}
@@ -602,6 +683,7 @@ $( document ).ready(function() {
 							$('#ipoh').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="6"'+' name="fields['+"'geographical-area'"+']"'+' value="Ipoh">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#ipoh').val("false");
 							$("#6").remove();
 						}
@@ -612,6 +694,7 @@ $( document ).ready(function() {
 							$('#perlis').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="7"'+' name="fields['+"'geographical-area'"+']"'+' value="Perlis">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#perlis').val("false");
 							$("#7").remove();
 						}
@@ -622,6 +705,7 @@ $( document ).ready(function() {
 							$('#pahang').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="8"'+' name="fields['+"'geographical-area'"+']"'+' value="Pahang">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#pahang').val("false");
 							$("#8").remove();
 						}
@@ -632,6 +716,7 @@ $( document ).ready(function() {
 							$('#kelantan').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="9"'+' name="fields['+"'geographical-area'"+']"'+' value="Pelantan">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#kelantan').val("false");
 							$("#9").remove();
 						}
@@ -642,6 +727,7 @@ $( document ).ready(function() {
 							$('#terengganu').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="10"'+' name="fields['+"'geographical-area'"+']"'+' value="Terengganu">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#terengganu').val("false");
 							$("#10").remove();
 						}
@@ -652,6 +738,7 @@ $( document ).ready(function() {
 							$('#negeri-sembilan').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="11"'+' name="fields['+"'geographical-area'"+']"'+' value="Negeri Sembilan">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#negeri-sembilan').val("false");
 							$("#11").remove();
 						}
@@ -662,6 +749,7 @@ $( document ).ready(function() {
 							$('#melaka').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="12"'+' name="fields['+"'geographical-area'"+']"'+' value="Melaka">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#melaka').val("false");
 							$("#12").remove();
 						}
@@ -672,6 +760,7 @@ $( document ).ready(function() {
 							$('#johor').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="13"'+' name="fields['+"'geographical-area'"+']"'+' value="Johor">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#johor').val("false");
 							$("#13").remove();
 						}
@@ -682,6 +771,7 @@ $( document ).ready(function() {
 							$('#sabah').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="14"'+' name="fields['+"'geographical-area'"+']"'+' value="Sabah">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#sabah').val("false");
 							$("#14").remove();
 						}
@@ -692,6 +782,7 @@ $( document ).ready(function() {
 							$('#sarawak').val("true");
 							$( "#step-6" ).append( '<input type="hidden" id="15"'+' name="fields['+"'geographical-area'"+']"'+' value="Sarawak">');
 						} else{
+							$('#all-malaysia').val("false");
 							$('#sarawak').val("false");
 							$("#15").remove();
 						}
@@ -1652,6 +1743,7 @@ $( document ).ready(function() {
 	});
 	
 	/* STEP 6 */
+	$("#all-malaysia").prop( "disabled", true );
 	$("#kuala-lumpur").prop( "disabled", true );
 	$("#selangor").prop( "disabled", true );
 	$("#kedah").prop( "disabled", true );
@@ -1668,6 +1760,7 @@ $( document ).ready(function() {
 	$("#sarawak").prop( "disabled", true );
 	
 	if(($("#malaysia").is(':checked')) == true){
+		$("#all-malaysia").prop( "disabled", false );
 		$("#kuala-lumpur").prop( "disabled", false );
 		$("#selangor").prop( "disabled", false );
 		$("#kedah").prop( "disabled", false );
@@ -1683,6 +1776,7 @@ $( document ).ready(function() {
 		$("#sabah").prop( "disabled", false );
 		$("#sarawak").prop( "disabled", false );
 	} else {
+		$("#all-malaysia").prop( "disabled", true );
 		$("#kuala-lumpur").prop( "disabled", true );
 		$("#selangor").prop( "disabled", true );
 		$("#kedah").prop( "disabled", true );
@@ -1700,12 +1794,146 @@ $( document ).ready(function() {
 
 	}
 	
+	$("#all-malaysia").click(function() {
+		$('#all-malaysia').val(this.checked);
+		if(this.checked == true){
+			$('#all-malaysia').val("true");
+			$('#kuala-lumpur').val("true");
+			$('#kuala-lumpur').prop('checked', true); 
+			
+			$('#selangor').val("true");
+			$('#selangor').prop('checked', true); 
+			
+			$('#kedah').val("true");
+			$('#kedah').prop('checked', true); 
+			
+			$('#penang').val("true");
+			$('#penang').prop('checked', true); 
+			
+			$('#ipoh').val("true");
+			$('#ipoh').prop('checked', true); 
+			
+			$('#perlis').val("true");
+			$('#perlis').prop('checked', true); 
+			
+			$('#pahang').val("true");
+			$('#pahang').prop('checked', true); 
+			
+			$('#kelantan').val("true");
+			$('#kelantan').prop('checked', true); 
+			
+			$('#terengganu').val("true");
+			$('#terengganu').prop('checked', true); 
+			
+			$('#negeri-sembilan').val("true");
+			$('#negeri-sembilan').prop('checked', true); 
+			
+			$('#melaka').val("true");
+			$('#melaka').prop('checked', true); 
+			
+			$('#johor').val("true");
+			$('#johor').prop('checked', true); 
+			
+			$('#sabah').val("true");
+			$('#sabah').prop('checked', true); 
+			
+			$('#sarawak').val("true");
+			$('#sarawak').prop('checked', true); 
+			
+			$( "#step-6" ).append( '<input type="hidden" id="2"'+' name="fields['+"'geographical-area'"+']"'+' value="Kuala Lumpur">');
+			$( "#step-6" ).append( '<input type="hidden" id="3"'+' name="fields['+"'geographical-area'"+']"'+' value="Selangor">');
+			$( "#step-6" ).append( '<input type="hidden" id="4"'+' name="fields['+"'geographical-area'"+']"'+' value="Kedah">');
+			$( "#step-6" ).append( '<input type="hidden" id="5"'+' name="fields['+"'geographical-area'"+']"'+' value="Penang">');
+			$( "#step-6" ).append( '<input type="hidden" id="6"'+' name="fields['+"'geographical-area'"+']"'+' value="Ipoh">');
+			$( "#step-6" ).append( '<input type="hidden" id="7"'+' name="fields['+"'geographical-area'"+']"'+' value="Perlis">');
+			$( "#step-6" ).append( '<input type="hidden" id="8"'+' name="fields['+"'geographical-area'"+']"'+' value="Pahang">');
+			$( "#step-6" ).append( '<input type="hidden" id="9"'+' name="fields['+"'geographical-area'"+']"'+' value="Pelantan">');
+			$( "#step-6" ).append( '<input type="hidden" id="10"'+' name="fields['+"'geographical-area'"+']"'+' value="Terengganu">');
+			$( "#step-6" ).append( '<input type="hidden" id="11"'+' name="fields['+"'geographical-area'"+']"'+' value="Negeri Sembilan">');
+			$( "#step-6" ).append( '<input type="hidden" id="12"'+' name="fields['+"'geographical-area'"+']"'+' value="Melaka">');
+			$( "#step-6" ).append( '<input type="hidden" id="13"'+' name="fields['+"'geographical-area'"+']"'+' value="Johor">');
+			$( "#step-6" ).append( '<input type="hidden" id="14"'+' name="fields['+"'geographical-area'"+']"'+' value="Sabah">');
+			$( "#step-6" ).append( '<input type="hidden" id="15"'+' name="fields['+"'geographical-area'"+']"'+' value="Sarawak">');
+		} else{
+			$('#all-malaysia').val("false");
+			$('#kuala-lumpur').val("false");
+			$('#kuala-lumpur').prop('checked', false); 
+			
+			$('#selangor').val("false");
+			$('#selangor').prop('checked', false); 
+			
+			$('#kedah').val("false");
+			$('#kedah').prop('checked', false); 
+			
+			$('#penang').val("false");
+			$('#penang').prop('checked', false); 
+			
+			$('#ipoh').val("false");
+			$('#ipoh').prop('checked', false); 
+			
+			$('#perlis').val("false");
+			$('#perlis').prop('checked', false); 
+			
+			$('#pahang').val("false");
+			$('#pahang').prop('checked', false); 
+			
+			$('#kelantan').val("false");
+			$('#kelantan').prop('checked', false); 
+			
+			$('#terengganu').val("false");
+			$('#terengganu').prop('checked', false); 
+			
+			$('#negeri-sembilan').val("false");
+			$('#negeri-sembilan').prop('checked', false); 
+			
+			$('#melaka').val("false");
+			$('#melaka').prop('checked', false); 
+			
+			$('#johor').val("false");
+			$('#johor').prop('checked', false); 
+			
+			$('#sabah').val("false");
+			$('#sabah').prop('checked', false); 
+			
+			$('#sarawak').val("false");
+			$('#sarawak').prop('checked', false); 
+			
+			$("#2").remove();
+			$("#3").remove();
+			$("#4").remove();
+			$("#5").remove();
+			$("#6").remove();
+			$("#7").remove();
+			$("#8").remove();
+			$("#9").remove();
+			$("#10").remove();
+			$("#11").remove();
+			$("#12").remove();
+			$("#13").remove();
+			$("#14").remove();			
+			$("#15").remove();
+		}	
+	});
+	
 	$("#kuala-lumpur").click(function() {
 		$('#kuala-lumpur').val(this.checked);
 		if(this.checked == true){
 			$('#kuala-lumpur').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="2"'+' name="fields['+"'geographical-area'"+']"'+' value="Kuala Lumpur">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#kuala-lumpur').val("false");
 			$("#2").remove();
 		}	
@@ -1716,7 +1944,20 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#selangor').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="3"'+' name="fields['+"'geographical-area'"+']"'+' value="Selangor">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#selangor').val("false");
 			$("#3").remove();
 		}
@@ -1727,7 +1968,20 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#kedah').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="4"'+' name="fields['+"'geographical-area'"+']"'+' value="Kedah">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#kedah').val("false");
 			$("#4").remove();
 		}
@@ -1738,7 +1992,20 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#penang').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="5"'+' name="fields['+"'geographical-area'"+']"'+' value="Penang">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#penang').val("false");
 			$("#5").remove();
 		}
@@ -1749,7 +2016,20 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#ipoh').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="6"'+' name="fields['+"'geographical-area'"+']"'+' value="Ipoh">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#ipoh').val("false");
 			$("#6").remove();
 		}
@@ -1760,7 +2040,20 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#perlis').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="7"'+' name="fields['+"'geographical-area'"+']"'+' value="Perlis">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#perlis').val("false");
 			$("#7").remove();
 		}
@@ -1771,7 +2064,20 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#pahang').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="8"'+' name="fields['+"'geographical-area'"+']"'+' value="Pahang">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#pahang').val("false");
 			$("#8").remove();
 		}
@@ -1782,7 +2088,20 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#kelantan').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="9"'+' name="fields['+"'geographical-area'"+']"'+' value="Pelantan">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#kelantan').val("false");
 			$("#9").remove();
 		}
@@ -1793,7 +2112,20 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#terengganu').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="10"'+' name="fields['+"'geographical-area'"+']"'+' value="Terengganu">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#terengganu').val("false");
 			$("#10").remove();
 		}
@@ -1804,7 +2136,20 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#negeri-sembilan').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="11"'+' name="fields['+"'geographical-area'"+']"'+' value="Negeri Sembilan">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#negeri-sembilan').val("false");
 			$("#11").remove();
 		}
@@ -1815,7 +2160,20 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#melaka').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="12"'+' name="fields['+"'geographical-area'"+']"'+' value="Melaka">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#melaka').val("false");
 			$("#12").remove();
 		}
@@ -1826,7 +2184,20 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#johor').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="13"'+' name="fields['+"'geographical-area'"+']"'+' value="Johor">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#johor').val("false");
 			$("#13").remove();
 		}
@@ -1837,7 +2208,20 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#sabah').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="14"'+' name="fields['+"'geographical-area'"+']"'+' value="Sabah">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#sabah').val("false");
 			$("#14").remove();
 		}
@@ -1848,7 +2232,20 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#sarawak').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="15"'+' name="fields['+"'geographical-area'"+']"'+' value="Sarawak">');
+			
+			if( (($("#kuala-lumpur").is(':checked')) == true) && (($('#selangor').is(':checked')) == true) && (($('#kedah').is(':checked')) == true) 
+				&& (($('#penang').is(':checked')) == true) && (($('#ipoh').is(':checked')) == true) && (($('#perlis').is(':checked')) == true)
+				&& (($('#pahang').is(':checked')) == true) && (($('#kelantan').is(':checked')) == true) && (($('#terengganu').is(':checked')) == true)
+				&& (($('#negeri-sembilan').is(':checked')) == true) && (($('#melaka').is(':checked')) == true) && (($('#johor').is(':checked')) == true)
+				&& (($('#sabah').is(':checked')) == true) && (($('#sarawak').is(':checked')) == true)){
+				$('#all-malaysia').val("true");
+				$('#all-malaysia').prop('checked', true); 
+			}
+	
 		} else{
+			$('#all-malaysia').val("false");			
+			$('#all-malaysia').prop('checked', false); 
+			
 			$('#sarawak').val("false");
 			$("#15").remove();
 		}
@@ -1859,6 +2256,8 @@ $( document ).ready(function() {
 		if(this.checked == true){
 			$('#malaysia').val("true");
 			$( "#step-6" ).append( '<input type="hidden" id="1"'+' name="fields['+"'geographical-area'"+']"'+' value="Malaysia">');
+			
+			$("#all-malaysia").attr("disabled", false);
 			
 			$("#kuala-lumpur").attr("disabled", false);
 			
@@ -1904,6 +2303,13 @@ $( document ).ready(function() {
 			$("#13").remove();
 			$("#14").remove();
 			$("#15").remove();
+			
+			$('#all-malaysia').each(function() 
+			{ 
+			    $(this).prop('checked', false); 
+			    $('#all-malaysia').val("false");
+			    $("#all-malaysia").attr("disabled", true);
+			});
 			
 			$('#kuala-lumpur').each(function() 
 			{ 
