@@ -45,14 +45,14 @@
 	<summary>
 		<band height="842" splitType="Stretch">
 			<staticText>
-				<reportElement x="14" y="34" width="70" height="20" uuid="343dcb05-af81-4ec3-ad48-dce0057979a1"/>
+				<reportElement x="26" y="43" width="70" height="20" uuid="343dcb05-af81-4ec3-ad48-dce0057979a1"/>
 				<textElement verticalAlignment="Middle">
 					<font size="14" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Attention: ]]></text>
 			</staticText>
 			<image>
-				<reportElement x="383" y="7" width="200" height="50" uuid="62a01629-16ee-4d89-a4ba-568c0d61f53b"/>
+				<reportElement x="383" y="13" width="200" height="50" uuid="62a01629-16ee-4d89-a4ba-568c0d61f53b"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/home/TMPanPanpages.jpg"]]></imageExpression>
 			</image>
 			<image>
@@ -60,7 +60,7 @@
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/home/search.png"]]></imageExpression>
 			</image>
 			<textField>
-				<reportElement mode="Transparent" x="84" y="34" width="202" height="20" backcolor="#FFFF99" uuid="65a31fd4-9d3f-44af-a872-6d8966238e18"/>
+				<reportElement mode="Transparent" x="96" y="43" width="202" height="20" backcolor="#FFFF99" uuid="65a31fd4-9d3f-44af-a872-6d8966238e18"/>
 				<box rightPadding="0">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -74,14 +74,14 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("advertiser-company-name", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-2",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="14" y="628" width="117" height="30" uuid="209ef8f6-bd91-4bec-b256-17535c42c82d"/>
+				<reportElement x="26" y="628" width="117" height="30" uuid="209ef8f6-bd91-4bec-b256-17535c42c82d"/>
 				<textElement verticalAlignment="Middle">
 					<font size="16" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Prepared For:]]></text>
 			</staticText>
 			<textField>
-				<reportElement mode="Transparent" x="14" y="658" width="268" height="21" backcolor="#FFFF99" uuid="7313bc7a-95cc-4087-848b-7bf995e291e9"/>
+				<reportElement mode="Transparent" x="26" y="658" width="268" height="21" backcolor="#FFFF99" uuid="7313bc7a-95cc-4087-848b-7bf995e291e9"/>
 				<box rightPadding="6">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -95,7 +95,7 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("advertiser-company-pic", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-2",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement mode="Transparent" x="14" y="679" width="268" height="43" backcolor="#FFFF99" uuid="f09ef84e-4c8c-4b0e-96d0-ef2228be40c4"/>
+				<reportElement mode="Transparent" x="26" y="679" width="268" height="43" backcolor="#FFFF99" uuid="f09ef84e-4c8c-4b0e-96d0-ef2228be40c4"/>
 				<box rightPadding="6">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>

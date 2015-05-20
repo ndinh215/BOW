@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_3" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="77f76044-2c3b-433f-aff5-55ed88ca1c06">
 	<property name="ireport.zoom" value="0.9982500000000003"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="96"/>
+	<property name="ireport.y" value="34"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
@@ -44,7 +44,7 @@
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_2/gender.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement mode="Opaque" x="17" y="500" width="565" height="30" backcolor="#CCCCCC" uuid="abdd0913-6fd6-492d-9982-5f192031f6d2"/>
+				<reportElement mode="Opaque" x="17" y="500" width="565" height="30" backcolor="#CCCCFF" uuid="abdd0913-6fd6-492d-9982-5f192031f6d2"/>
 				<box leftPadding="10" rightPadding="10"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12" isBold="false"/>

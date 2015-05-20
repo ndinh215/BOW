@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PROPOSED KEYWORDS" language="groovy" pageWidth="545" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="545" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="14c4eb3b-0b8d-4fbe-b849-cf639ae67fb0">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PROPOSED KEYWORDS" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="14c4eb3b-0b8d-4fbe-b849-cf639ae67fb0">
 	<property name="ireport.zoom" value="1.3636363636363638"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
@@ -17,16 +17,16 @@
 		<band splitType="Stretch"/>
 	</background>
 	<summary>
-		<band height="133">
+		<band height="150">
 			<staticText>
-				<reportElement x="0" y="20" width="521" height="20" uuid="b5e5b11e-f15d-49c5-a9e2-ef2827fa1621"/>
+				<reportElement x="32" y="37" width="540" height="20" uuid="b5e5b11e-f15d-49c5-a9e2-ef2827fa1621"/>
 				<textElement verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[These statistics are based on your target country and related searches below.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="0" width="521" height="20" uuid="b1e51056-3cc0-47f5-a539-d271bb55f516"/>
+				<reportElement x="32" y="17" width="540" height="20" uuid="b1e51056-3cc0-47f5-a539-d271bb55f516"/>
 				<box>
 					<pen lineColor="#660033"/>
 					<topPen lineColor="#660033"/>
@@ -40,7 +40,7 @@
 				<text><![CDATA[Your keywords]]></text>
 			</staticText>
 			<subreport>
-				<reportElement positionType="Float" x="0" y="40" width="545" height="93" isPrintWhenDetailOverflows="true" uuid="b1fd137a-89bf-4bda-95c2-fc04ba4972c8"/>
+				<reportElement positionType="Float" x="0" y="57" width="595" height="93" isPrintWhenDetailOverflows="true" uuid="b1fd137a-89bf-4bda-95c2-fc04ba4972c8"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource(com.panpages.bow.model.utils.SurveyUtils.findFieldsWithFieldTemplateSlugName("proposed-keyword", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-9",$P{sections})).getFields()))]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/keyword-table.jasper"]]></subreportExpression>
 			</subreport>
