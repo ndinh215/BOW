@@ -45,20 +45,20 @@
 				<text><![CDATA[Your expected revenue increased via your advertising plan is:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="151" y="120" width="174" height="23" isPrintWhenDetailOverflows="true" uuid="b2d861bd-5b6d-42ed-a62c-1e6beb7d8259"/>
+				<reportElement x="121" y="120" width="174" height="23" isPrintWhenDetailOverflows="true" uuid="b2d861bd-5b6d-42ed-a62c-1e6beb7d8259"/>
 				<box rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Impact" size="16"/>
+					<font fontName="Impact" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("step-5-a", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA["RM"+((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("step-5-a", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="151" y="203" width="174" height="23" isPrintWhenDetailOverflows="true" uuid="14374eb3-8f44-437f-8760-38f09b7e6163"/>
+				<reportElement x="121" y="203" width="174" height="23" isPrintWhenDetailOverflows="true" uuid="14374eb3-8f44-437f-8760-38f09b7e6163"/>
 				<box rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Impact" size="16"/>
+					<font fontName="Impact" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("step-5-b", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA["RM"+((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("step-5-b", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="121" y="183" width="428" height="20" isPrintWhenDetailOverflows="true" uuid="cbd06702-c01d-4a2c-9ccd-b26a61105d7c"/>
@@ -66,12 +66,12 @@
 				<text><![CDATA[Your expected revenue increased via your advertising plan is:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="121" y="287" width="30" height="23" isPrintWhenDetailOverflows="true" uuid="d21a315b-2a22-4343-bba6-8b6a51e3235c"/>
+				<reportElement x="121" y="287" width="75" height="23" isPrintWhenDetailOverflows="true" uuid="d21a315b-2a22-4343-bba6-8b6a51e3235c"/>
 				<box rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="16"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("step-5-d", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("step-5-d", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()+"%]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="121" y="267" width="428" height="20" isPrintWhenDetailOverflows="true" uuid="b8a08486-6d72-490f-a683-e3995841b166"/>
@@ -79,20 +79,13 @@
 				<text><![CDATA[Average spending of your customer is:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="121" y="371" width="25" height="23" isPrintWhenDetailOverflows="true" uuid="f882871d-bb43-454f-ac6b-27c51a6ecbdd"/>
+				<reportElement x="121" y="371" width="75" height="23" isPrintWhenDetailOverflows="true" uuid="f882871d-bb43-454f-ac6b-27c51a6ecbdd"/>
 				<box rightPadding="0"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="16"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("step-5-h", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("step-5-h", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()+"Months"]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement x="146" y="371" width="50" height="23" isPrintWhenDetailOverflows="true" uuid="fca1a30b-c1c5-4a0c-b089-d7a11d1d8eb2"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="SansSerif" size="14"/>
-				</textElement>
-				<text><![CDATA[Months]]></text>
-			</staticText>
 			<staticText>
 				<reportElement x="121" y="351" width="428" height="20" isPrintWhenDetailOverflows="true" uuid="6cd14086-2ea9-4c15-8b0d-f7eed5db62ef"/>
 				<textElement verticalAlignment="Middle"/>
@@ -194,27 +187,6 @@
 					<font fontName="Impact" size="16"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="121" y="120" width="30" height="23" isPrintWhenDetailOverflows="true" uuid="f40d7c0c-f14b-4b05-ac93-e96a57aba6fb"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Impact" size="16" isBold="true"/>
-				</textElement>
-				<text><![CDATA[RM]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="121" y="203" width="30" height="23" isPrintWhenDetailOverflows="true" uuid="a98dc22c-6e3b-4bf1-8b68-0b25c2a47772"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Impact" size="16" isBold="true"/>
-				</textElement>
-				<text><![CDATA[RM]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="152" y="287" width="36" height="23" isPrintWhenDetailOverflows="true" uuid="d2d7e540-8e47-4d5b-a678-cb7576a625dd"/>
-				<textElement verticalAlignment="Middle">
-					<font fontName="Impact" size="16" isBold="true"/>
-				</textElement>
-				<text><![CDATA[%]]></text>
 			</staticText>
 		</band>
 	</summary>

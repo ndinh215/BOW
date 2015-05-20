@@ -60,7 +60,7 @@
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<p><input name="fields['enhance-visibility']" id="enhance-visibility" type="checkbox" value="false">Enhance Visibility</p>
 					<ul>
-						<li><input name="fields['extend-your-marketing-plan-for-longer-visibil']" id="extend-your-marketing-plan-for-longer-visibility" type="checkbox" value="false">Extend Your Marketing Plan For Longer Visibility</li>
+						<li><input name="fields['extend-your-marketing-plan-por-longer-visibility']" id="extend-your-marketing-plan-for-longer-visibility" type="checkbox" value="false">Extend Your Marketing Plan For Longer Visibility</li>
 					</ul>
 				</div>
 			</div>
