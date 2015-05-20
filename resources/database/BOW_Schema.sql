@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 5.6.17, for Win64 (x86_64)
 --
--- Host: 112.78.4.239    Database: bow
+-- Host: 127.0.0.1    Database: bow
 -- ------------------------------------------------------
--- Server version	5.1.73
+-- Server version	5.6.20
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -25,11 +25,11 @@ DROP TABLE IF EXISTS `field`;
 CREATE TABLE `field` (
   `field_id` int(11) NOT NULL AUTO_INCREMENT,
   `field_template_id` int(11) NOT NULL,
-  `value` varchar(500) DEFAULT NULL,
+  `value` varchar(45) DEFAULT NULL,
   `desc` varchar(45) DEFAULT NULL,
   `name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`field_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3980 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +44,7 @@ CREATE TABLE `field_section_relation` (
   `field_id` int(11) NOT NULL,
   `section_id` int(11) NOT NULL,
   PRIMARY KEY (`relation_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3980 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -75,7 +75,7 @@ CREATE TABLE `field_template` (
   `type` varchar(45) NOT NULL,
   `desc` varchar(45) DEFAULT NULL,
   `name` varchar(45) NOT NULL,
-  `slug_name` varchar(45) NOT NULL,
+  `slug_name` varchar(60) NOT NULL,
   PRIMARY KEY (`field_id`),
   UNIQUE KEY `field_id_UNIQUE` (`field_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=159 DEFAULT CHARSET=utf8;
@@ -94,7 +94,7 @@ CREATE TABLE `section` (
   `desc` varchar(45) DEFAULT NULL,
   `name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`section_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=501 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -110,7 +110,7 @@ CREATE TABLE `section_survey_relation` (
   `survey_id` int(11) NOT NULL,
   `desc` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`relation_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=501 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -156,14 +156,14 @@ DROP TABLE IF EXISTS `survey`;
 CREATE TABLE `survey` (
   `survey_id` int(11) NOT NULL AUTO_INCREMENT,
   `survey_template_id` int(11) NOT NULL,
-  `desc` varchar(45) DEFAULT NULL,
-  `fulfilled_date` datetime DEFAULT '0000-00-00 00:00:00',
+  `desc` varchar(45) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `fulfilled_date` datetime DEFAULT CURRENT_TIMESTAMP,
   `status` varchar(45) DEFAULT NULL,
   `name` varchar(45) NOT NULL,
   `storage_name` varchar(45) DEFAULT NULL,
   `made_by` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`survey_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -175,8 +175,8 @@ DROP TABLE IF EXISTS `survey_template`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `survey_template` (
   `survey_id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(45) NOT NULL,
-  `desc` varchar(45) DEFAULT NULL,
+  `name` varchar(45) CHARACTER SET utf8mb4 NOT NULL,
+  `desc` varchar(45) CHARACTER SET utf8mb4 DEFAULT NULL,
   `path` varchar(45) DEFAULT NULL,
   `slug_name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`survey_id`)
@@ -233,10 +233,6 @@ CREATE TABLE `user_role_relation` (
   UNIQUE KEY `relation_id_UNIQUE` (`relation_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping routines for database 'bow'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -247,4 +243,4 @@ CREATE TABLE `user_role_relation` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-05-19 17:23:35
+-- Dump completed on 2015-05-20 17:44:07
