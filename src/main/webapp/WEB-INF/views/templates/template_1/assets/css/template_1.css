@@ -65,53 +65,53 @@ body {
 }
 
 .step1 {
-  background-image: url("../images/step1.png");
-  background-repeat: no-repeat;
+  background: url("../images/step1.png") left top no-repeat;
+  background-size: 100%;
 }
 
 .step2 {
-  background-image: url("../images/step2.png");
-  background-repeat: no-repeat;
+  background: url("../images/step2.png") left top no-repeat;
+  background-size: 100%;
 }
 
 .step3 {
-  background-image: url("../images/step3.png");
-  background-repeat: no-repeat;
+  background: url("../images/step3.png") left top no-repeat;
+  background-size: 100%;
 }
 
 .step4 {
-  background-image: url("../images/step4.png");
-  background-repeat: no-repeat;
+  background: url("../images/step4.png") left top no-repeat;
+  background-size: 100%;
 }
 
 .step5 {
-  background-image: url("../images/step5.png");
-  background-repeat: no-repeat;
+  background: url("../images/step5.png") left top no-repeat;
+  background-size: 100%;
 }
 
 .step6 {
-  background-image: url("../images/step6.png");
-  background-repeat: no-repeat;
+  background: url("../images/step6.png") left top no-repeat;
+  background-size: 100%;
 }
 
 .step7 {
-  background-image: url("../images/step7.png");
-  background-repeat: no-repeat;
+  background: url("../images/step7.png") left top no-repeat;
+  background-size: 100%;
 }
 
 .step8 {
-  background-image: url("../images/step8.png");
-  background-repeat: no-repeat;
+  background: url("../images/step8.png") left top no-repeat;
+  background-size: 100%;
 }
 
 .step9 {
-  background-image: url("../images/step9.png");
-  background-repeat: no-repeat;
+  background: url("../images/step9.png") left top no-repeat;
+  background-size: 100%;
 }
 
 .step10 {
-  background-image: url("../images/step10.png");
-  background-repeat: no-repeat;
+  background: url("../images/step10.png") left top no-repeat;
+  background-size: 100%;
 }
 
 @media (min-width: 768px){

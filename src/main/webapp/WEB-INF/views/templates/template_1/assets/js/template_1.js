@@ -2989,18 +2989,18 @@ $( document ).ready(function() {
 	/* Option A */
 	function step10A() {
 		//Option A
-		var panpagesOptionA = 0;
-		var googleSearchMobileOptionA = 0;
-		var facebookAdsOptionA = 0;
-		var alibabaComOptionA = 0; 
-		var googleDisplayNetworkOptionA = 0;
-		var yahooSearchOptionA = 0;
-		var yahooDisplayOptionA = 0;
-		var youtubeAdsOptionA = 0;
-		var facebookMarketingOptionA = 0;
-		var pan360OptionA = 0;
-		var superPagesOptionA = 0;
-		var otherOptionA = 0;
+		var panpagesOptionA = '';
+		var googleSearchMobileOptionA = '';
+		var facebookAdsOptionA = '';
+		var alibabaComOptionA = ''; 
+		var googleDisplayNetworkOptionA = '';
+		var yahooSearchOptionA = '';
+		var yahooDisplayOptionA = '';
+		var youtubeAdsOptionA = '';
+		var facebookMarketingOptionA = '';
+		var pan360OptionA = '';
+		var superPagesOptionA = '';
+		var otherOptionA = '';
 		
 		var managementFeeOptionA = 0;
 		var subtotalOptionA = 0;
@@ -3082,6 +3082,12 @@ $( document ).ready(function() {
 			tempt8 = parseInt(yahooDisplayOptionAtest);
 			tempt9 = parseInt(youtubeAdsOptionAtest);
 			tempt3 = parseInt(facebookAdsOptionAtest);
+			alert('2' + tempt2);			
+			alert('3' + tempt3);
+			alert('6' + tempt6);
+			alert('7' + tempt7);
+			alert('8' + tempt8);
+			alert('9' + tempt9);
 			
 			if((!$.isNumeric(tempt2)) || (!$.isNumeric(tempt6)) || (!$.isNumeric(tempt7)) 
 				|| (!$.isNumeric(tempt8)) || (!$.isNumeric(tempt9)) || (!$.isNumeric(tempt3)))
@@ -3253,18 +3259,18 @@ $( document ).ready(function() {
 	/*Option B*/
 	function step10B() {
 		//Option B
-		var panpagesOptionB = 0;
-		var googleSearchMobileOptionB = 0;
-		var facebookAdsOptionB = 0;
-		var alibabaComOptionB = 0; 
-		var googleDisplayNetworkOptionB = 0;
-		var yahooSearchOptionB = 0;
-		var yahooDisplayOptionB = 0;
-		var youtubeAdsOptionB = 0;
-		var facebookMarketingOptionB = 0;
-		var pan360OptionB = 0;
-		var superPagesOptionB = 0;
-		var otherOptionB = 0;
+		var panpagesOptionB = '';
+		var googleSearchMobileOptionB = '';
+		var facebookAdsOptionB = '';
+		var alibabaComOptionB = ''; 
+		var googleDisplayNetworkOptionB = '';
+		var yahooSearchOptionB = '';
+		var yahooDisplayOptionB = '';
+		var youtubeAdsOptionB = '';
+		var facebookMarketingOptionB = '';
+		var pan360OptionB = '';
+		var superPagesOptionB = '';
+		var otherOptionB = '';
 		
 		var managementFeeOptionB = 0;
 		var subtotalOptionB = 0;
