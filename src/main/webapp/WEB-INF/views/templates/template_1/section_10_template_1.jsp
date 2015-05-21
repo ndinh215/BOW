@@ -18,7 +18,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 					<div class="row">
-						<p><input name="fields['option-a']" id="option-a" type="checkbox" value="false">Option A <span style="font-weight: bold;">(Recommended)</span></p>
+						<p><input name="fields['option-a']" id="option-a" type="checkbox" value="false"> Option A <span style="font-weight: bold;">(Recommended)</span></p>
 					</div>
 					<div class="row">
 						<table style="width:100%">
@@ -96,7 +96,7 @@
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 					<div class="row">
-						<p><input name="fields['option-b']" id="option-b" type="checkbox" value="false">Option B <span style="font-weight: bold;">(Recommended)</span></p>
+						<p><input name="fields['option-b']" id="option-b" type="checkbox" value="false"> Option B <span style="font-weight: bold;"></span></p>
 					</div>
 					<div class="row">
 						<table style="width:100%">

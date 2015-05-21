@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_4" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="90167ed5-0c7a-4203-aa33-cf24b0c47bbb">
 	<property name="ireport.zoom" value="1.1000000000000012"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="94"/>
+	<property name="ireport.y" value="247"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["H:\\workspace\\BOW\\report\\templates\\template_3\\"]]></defaultValueExpression>
 	</parameter>
@@ -71,7 +71,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="Impact" size="16"/>
 				</textElement>
-				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("step-5-d", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()+"%]]></textFieldExpression>
+				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("step-5-d", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="121" y="267" width="428" height="20" isPrintWhenDetailOverflows="true" uuid="b8a08486-6d72-490f-a683-e3995841b166"/>
@@ -119,14 +119,14 @@
 				<text><![CDATA[Monthly Budget]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="226" y="525" width="147" height="20" isPrintWhenDetailOverflows="true" uuid="abe28e58-29b0-47f5-9402-e1fa45f714ad"/>
+				<reportElement x="235" y="525" width="147" height="20" isPrintWhenDetailOverflows="true" uuid="abe28e58-29b0-47f5-9402-e1fa45f714ad"/>
 				<textElement verticalAlignment="Middle">
 					<font size="10"/>
 				</textElement>
 				<text><![CDATA[Times your ads could show]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="404" y="525" width="165" height="20" isPrintWhenDetailOverflows="true" uuid="40ec4c2b-9e86-4526-85cd-0be7011e678f"/>
+				<reportElement x="414" y="525" width="144" height="20" isPrintWhenDetailOverflows="true" uuid="40ec4c2b-9e86-4526-85cd-0be7011e678f"/>
 				<textElement verticalAlignment="Middle">
 					<font size="10"/>
 				</textElement>
@@ -154,7 +154,7 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("est-monthly-investment", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="226" y="505" width="147" height="20" isPrintWhenDetailOverflows="true" forecolor="#0000CC" uuid="c474abf8-45bb-4839-89f2-8108c7ba7e33"/>
+				<reportElement x="235" y="505" width="147" height="20" isPrintWhenDetailOverflows="true" forecolor="#0000CC" uuid="c474abf8-45bb-4839-89f2-8108c7ba7e33"/>
 				<box rightPadding="0">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -168,7 +168,7 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("total-est-impressions", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-5",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="404" y="505" width="165" height="20" isPrintWhenDetailOverflows="true" forecolor="#0000CC" uuid="242e3d7b-1b0a-46fc-a098-a2332b8383a8"/>
+				<reportElement x="414" y="505" width="144" height="20" isPrintWhenDetailOverflows="true" forecolor="#0000CC" uuid="242e3d7b-1b0a-46fc-a098-a2332b8383a8"/>
 				<box rightPadding="0">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
