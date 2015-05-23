@@ -61,7 +61,7 @@ p{
 	text-align: left;
 }
 input{
-	width: 100%;
+	width: 99%;
 }
 input[type=checkbox], input[type=radio]{
 	width: auto;
@@ -84,4 +84,132 @@ table, th, td{
 }
 .stepsguide>div>div{
 	width: 100% !important;
+}
+
+.currencyinput {
+    border: 1px solid #A9A9A9;
+  	padding: 4px;
+}
+
+.currencyinput input {
+    border: 0;
+}
+
+ @media (min-width:1200px){
+ 	.currencyinput input {
+		width: 92%;
+	  	margin: -1px;
+	}
+ }
+@media (min-width:992px) and (max-width:1199px){
+	.currencyinput {
+	  	border: 1px solid #A9A9A9;
+  	  	padding: 5px;
+	}
+	.currencyinput input {
+		width: 80%;
+	  	margin: 0;
+	}
+	.currency {
+		padding: 1px;
+	}
+}
+@media (min-width: 768px)and (max-width:991px){
+	.currencyinput input {
+		width: 89%;
+	  	margin: -1px;
+	}
+}
+@media (max-width: 768px) {
+	.currencyinput input {
+		width: 82%;
+	}
+}
+
+.currencyinput1 {
+    border: 1px solid #A9A9A9;
+  	padding: 4px;
+}
+
+.currencyinput1 input {
+    border: 0;
+}
+
+ @media (min-width:1200px){
+ 	.currencyinput1 input {
+		width: 94%;
+	  	margin: -1px;
+	}
+ }
+@media (min-width:992px) and (max-width:1199px){
+	.currencyinput1 {
+	  	border: 1px solid #A9A9A9;
+  	  	padding: 5px;
+	}
+	.currencyinput1 input {
+		width: 84%;
+	  	margin: -1px;
+	}
+	.currency1 {
+		padding: 4px;
+	}
+	input {
+  		width: 91%;
+  	}
+}
+@media (min-width: 768px)and (max-width:991px){
+	.currencyinput1 input {
+		width: 89%;
+	  	margin: -1px;
+	}
+}
+@media (max-width: 768px) {
+	.currencyinput1 input {
+		width: 83%;
+	  	margin: -1px;
+	}
+}
+
+.currencyinput2 {
+    border: 1px solid #A9A9A9;
+  	padding: 4px;
+}
+
+.currencyinput2 input {
+    border: 0;
+}
+
+ @media (min-width:1200px){
+ 	.currencyinput2 input {
+		width: 89%;
+	  	margin: -1px;
+	}
+ }
+@media (min-width:992px) and (max-width:1199px){
+	.currencyinput2 {
+	  	border: 1px solid #A9A9A9;
+  	  	padding: 5px;
+	}
+	.currencyinput2 input {
+		width: 84%;
+	  	margin: -1px;
+	}
+	.currency2 {
+		padding: 4px;
+	}
+	input {
+  		width: 91%;
+  	}
+}
+@media (min-width: 768px)and (max-width:991px){
+	.currencyinput2 input {
+		width: 89%;
+	  	margin: -1px;
+	}
+}
+@media (max-width: 768px) {
+	.currencyinput2 input {
+		width: 83%;
+	  	margin: -1px;
+	}
 }

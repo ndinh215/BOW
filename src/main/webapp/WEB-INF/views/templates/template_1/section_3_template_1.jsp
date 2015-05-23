@@ -30,7 +30,7 @@
 					<p><input id="step-3-facebook-ads" type="checkbox" value="false"> Facebook Ads</p>
 					<p><input id="step-3-pan-360" type="checkbox" value="false"> Pan 360°</p>
 					<p><input id="step-3-alibaba-com" type="checkbox" value="false"> Alibaba.com</p>
-					<p><input id="step-3-super-pages" type="checkbox" value="false"> Super Pages<label> NOTE: If this is ticked, show Readership stats.</label></p>
+					<p><input id="step-3-super-pages" type="checkbox" value="false"> Super Pages</p>
 				</div>
 				<div id="step-3" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
 			</div>
@@ -46,7 +46,7 @@
 					<p>Previous Contract Value</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<p><input type="text" name="fields['previous-contract-value']" id="previous-contract-value" placeholder="RM"></p>
+					<p class="currency"><span class="currencyinput">RM <input type="text" name="fields['previous-contract-value']" id="previous-contract-value"></span></p>
 					<p id="previous-contract-value-error"></p>
 				</div>
 			</div>
@@ -63,7 +63,7 @@
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<p id="website-visit-error"></p>
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 						<p style="text-align: right;">NOTE: Leave it blank if not applicable.</p>
 					</div>
 				</div>
@@ -75,13 +75,13 @@
 					<p>Campaign Click Through Rate</p>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<p><input type="text" name="fields['campaign-click-through-rate']" id="campaign-click-through-rate" placeholder="%"></p>
+					<p class="currency1"><span class="currencyinput1"><input type="text" name="fields['campaign-click-through-rate']" id="campaign-click-through-rate"> %</span></p>
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<p id="campaign-click-through-rate-error"></p>
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 						<p style="text-align: right;">NOTE: Leave it blank if not applicable.</p>
 					</div>
 				</div>

@@ -59,9 +59,9 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/background_template_1.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-attachment: fixed;
 }
 
 .step1 {
@@ -261,4 +261,3 @@ ul[role*="tablist"] {
 #main-menu {
 	font-size: 19px;
 }
-

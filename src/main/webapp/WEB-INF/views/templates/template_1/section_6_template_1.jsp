@@ -45,7 +45,7 @@
 							<p><input id="thailand" type="checkbox" value="false"> Thailand</p>
 							<p><input id="singapore" type="checkbox" value="false"> Singapore</p>
 							<p><input id="indonesia" type="checkbox" value="false"> Indonesia</p>
-							<p><input id="others-geographical" type="checkbox" value="false"> Others: (please specify) <input name="fields['others-geographical-text']" id="others-geographical-text" type="text"/></p>
+							<p style="text-align: left;"><input id="others-geographical" type="checkbox" value="false"> Others: (please specify) <input name="fields['others-geographical-text']" id="others-geographical-text" type="text"/></p>
 						</div>
 					</div>
 				</div>
@@ -88,7 +88,7 @@
 							<p><input id="telecommunications" type="checkbox" value="false"> Telecommunications</p>
 							<p><input id="building-construction" type="checkbox" value="false"> Building &amp; Construction</p>
 							<p><input id="hotel-restaurant" type="checkbox" value="false"> Hotel &amp; Restaurant</p>
-							<p><input id="others-profession" type="checkbox" value="false"> Others: (please specify) <input name="fields['others-profession-text']" id="others-profession-text" type="text"/></p>
+							<p style="text-align: left;"><input id="others-profession" type="checkbox" value="false"> Others: (please specify) <input name="fields['others-profession-text']" id="others-profession-text" type="text"/></p>
 						</div>
 					</div>
 				</div>
@@ -106,7 +106,7 @@
 							<p><input id="malay" type="checkbox" value="false"> Malay</p>
 							<p><input id="chinese" type="checkbox" value="false"> Chinese</p>
 							<p><input id="tamil" type="checkbox" value="false"> Tamil</p>
-							<p><input id="others-languages" type="checkbox" value="false"> Others: (please specify) <input name="fields['others-languages-text']" id="others-languages-text" type="text"/></p>
+							<p style="text-align: left;"><input id="others-languages" type="checkbox" value="false"> Others: (please specify) <input name="fields['others-languages-text']" id="others-languages-text" type="text"/></p>
 						</div>
 					</div>
 				</div>
@@ -121,7 +121,7 @@
 							<p><input id="age-18-29" type="checkbox" value="false"> 18-29</p>
 							<p><input id="age-30-49" type="checkbox" value="false"> 30-49</p>
 							<p><input id="age-50-64" type="checkbox" value="false"> 50-64</p>
-							<p><input id="others-age" type="checkbox" value="false"> Others: (please specify) <input name="fields['others-age-text']" id="others-age-text" type="text"/></p>
+							<p style="text-align: left;"><input id="others-age" type="checkbox" value="false"> Others: (please specify) <input name="fields['others-age-text']" id="others-age-text" type="text"/></p>
 							<p id="others-age-text-error"></p>
 						</div>
 					</div>

@@ -8,10 +8,14 @@
 <script type="text/javascript">
 $(function() {
 	$('#choose-file').change(function() {
-		var fileExtension = ['csv', 'txt'];
-		if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
+		/*var fileExtension = ['csv', 'txt'];
+		alert($(this).val());
+		alert($(this).val().split('.').pop().toLowerCase());
+		if($(this).val().split('.').pop().toLowerCase() != "csv" && $(this).val().split('.').pop().toLowerCase() != "txt"){
+	//	if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
 			alert("Only accept '.csv','.txt' formats are allowed.");
-		}
+			$('#choose-file').focus();
+		}*/
 	});
 }); 
 </script>
@@ -34,7 +38,7 @@ $(function() {
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<p style="color: #FD0000;">NOTE: Only accept .csv format file.</p>
+					<p style="color: #FD0000;">NOTE: Only accept .csv, .txt format file.</p>
 					<p>The <span style="font-weight:bold;">THREE</span> required columns are as below:</p>
 					<p>1.Keyword</p>
 					<p>2.Average Monthly Search (exact match only)</p>
