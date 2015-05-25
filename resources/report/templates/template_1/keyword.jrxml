@@ -21,7 +21,7 @@
 			<staticText>
 				<reportElement x="32" y="37" width="540" height="20" uuid="b5e5b11e-f15d-49c5-a9e2-ef2827fa1621"/>
 				<textElement verticalAlignment="Middle">
-					<font size="12"/>
+					<font fontName="Open Sans" size="12"/>
 				</textElement>
 				<text><![CDATA[These statistics are based on your target country and related searches below.]]></text>
 			</staticText>
@@ -35,7 +35,7 @@
 					<rightPen lineColor="#660033"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="12" isBold="false" isUnderline="false"/>
+					<font fontName="Open Sans" size="12" isBold="false" isUnderline="false"/>
 				</textElement>
 				<text><![CDATA[Your keywords]]></text>
 			</staticText>

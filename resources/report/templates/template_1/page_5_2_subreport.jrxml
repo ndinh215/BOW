@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_5_2_subreport" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="aa4e2863-04cb-41de-9474-a2e60ad6511e">
 	<property name="ireport.zoom" value="1.3310000000000004"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="321"/>
+	<property name="ireport.y" value="815"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
 	<parameter name="sections" class="java.util.List"/>
 	<background>
@@ -29,7 +29,7 @@
 			<staticText>
 				<reportElement x="14" y="71" width="551" height="24" uuid="ed9f24ad-21b0-46d5-8da3-069585e83090"/>
 				<textElement verticalAlignment="Middle">
-					<font size="12"/>
+					<font fontName="Open Sans" size="12"/>
 				</textElement>
 				<text><![CDATA[Traditional advertising plan(s) is good, however, the cost is expensive and have limited exposure.]]></text>
 			</staticText>
@@ -40,7 +40,7 @@
 			<staticText>
 				<reportElement x="14" y="291" width="569" height="250" uuid="f1ccfba2-632e-49aa-b516-41170bc9e2e2"/>
 				<textElement verticalAlignment="Middle">
-					<font size="11"/>
+					<font fontName="Open Sans" size="11"/>
 				</textElement>
 				<text><![CDATA[PanPages aim is to provide a multi-channel advertising plan for our advertisers.
 
@@ -66,7 +66,7 @@ We have given you all the reasons why you should advertise now! I have taken the
 			<staticText>
 				<reportElement x="204" y="9" width="252" height="50" isPrintWhenDetailOverflows="true" uuid="1671ff10-d2a1-409c-a399-a546b35d27fe"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Impact" size="25"/>
+					<font fontName="Open Sans" size="25"/>
 				</textElement>
 				<text><![CDATA[Advertising Planner]]></text>
 			</staticText>
@@ -77,19 +77,19 @@ We have given you all the reasons why you should advertise now! I have taken the
 			<textField>
 				<reportElement mode="Opaque" x="521" y="9" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="ca4e797a-531a-4cd1-b6a6-b1731980237d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Impact" size="32"/>
+					<font fontName="Open Sans" size="32"/>
 				</textElement>
 				<textFieldExpression><![CDATA[5]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="14" y="710" width="569" height="19" uuid="5f02e3de-453a-442c-a75d-644de9ded6aa"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="10" isItalic="true"/>
+					<font fontName="Open Sans" size="10" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[Terms & Conditions:]]></text>
 			</staticText>
 			<textField>
-				<reportElement mode="Transparent" x="25" y="776" width="558" height="14" backcolor="#FFFF99" uuid="54ea7081-6270-45d0-bec3-de27fb8b1741"/>
+				<reportElement mode="Transparent" x="23" y="785" width="558" height="14" backcolor="#FFFF99" uuid="54ea7081-6270-45d0-bec3-de27fb8b1741"/>
 				<box rightPadding="0">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
@@ -98,7 +98,7 @@ We have given you all the reasons why you should advertise now! I have taken the
 					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="10" isBold="false" isItalic="true"/>
+					<font fontName="Open Sans" size="10" isBold="false" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("advertiser-company-name", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-2",$P{sections})).getFields())).getValue()+" listing page will be activated within 30 working days upon receiving complete product materials and minimum of 50% payment."]]></textFieldExpression>
 			</textField>
@@ -112,14 +112,14 @@ We have given you all the reasons why you should advertise now! I have taken the
 					<rightPen lineWidth="0.0"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10" isBold="false" isItalic="true"/>
+					<font fontName="Open Sans" size="10" isBold="false" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[" The above mentioned proposal would be due on "+ new SimpleDateFormat("dd MMM yyyy").format(org.apache.commons.lang.time.DateUtils.addMonths(new Date(), 1))+" (PanPages Online Sdn Bhd reserved the right on the rate changes after promotion due date)"]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="14" y="729" width="569" height="99" uuid="f1257051-20fa-449e-bae9-43b87bc450fc"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="10" isBold="false" isItalic="true"/>
+					<font fontName="Open Sans" size="10" isBold="false" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[1.
 

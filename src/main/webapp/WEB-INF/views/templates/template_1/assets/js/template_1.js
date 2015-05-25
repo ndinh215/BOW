@@ -49,10 +49,14 @@ function submitSurvey() {
 var myform = null, fileUpload = null;
 
 $(document ).ready(function() {
+	$('.survey-tip').tooltip({html: true, placement: 'bottom'});
 	
 	var fileName = $('#file-name-uploaded').val();
 	$('#file-name').text(fileName);
-	$('.survey-tip').tooltip({html: true, placement: 'bottom'});
+	
+	if ($('#uploaded-file-name').val().length > 0) {
+		$('#progress .progress-bar-success').css("width", "100%");
+	}
 	
     fileUpload = $('#file-upload').fileupload({
         url: "calculate_field_1/total-campaign-budget.html",

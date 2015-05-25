@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_5" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="d678d0b9-ab96-4489-adb0-502e4744b263">
 	<property name="ireport.zoom" value="1.2100000000000006"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="288"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
 	<parameter name="sections" class="java.util.List"/>
 	<background>
@@ -13,28 +13,28 @@
 			<staticText>
 				<reportElement x="15" y="68" width="555" height="37" uuid="a644fd58-9e39-4c71-a44e-3d18f37f2f43"/>
 				<textElement verticalAlignment="Middle">
-					<font size="12"/>
+					<font fontName="Open Sans" size="12"/>
 				</textElement>
 				<text><![CDATA[Based on your previous advertising performance and your keyword(s) list, we will suggest you to explore the below channel(s):]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="15" y="328" width="555" height="24" uuid="a19e468e-b1d1-460c-98ea-1cf82f472fad"/>
 				<textElement verticalAlignment="Middle">
-					<font size="12"/>
+					<font fontName="Open Sans" size="12"/>
 				</textElement>
 				<text><![CDATA[The propose budget that we recommend for our suggested channel(s) as below:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="680" width="23" height="20" uuid="e622d9ce-5394-4804-b30c-801ad2898bdd"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="480" width="23" height="20" uuid="dd64820a-f438-4174-9413-68d60c5b83af"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -47,7 +47,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("alibaba-com-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -60,14 +62,14 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Facebook Ads]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="600" width="23" height="20" uuid="ab3bab94-abe7-4903-a9ab-c9a1c14f89a1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -80,7 +82,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("youtube-ads-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -93,21 +97,21 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="13" isBold="true"/>
+					<font fontName="Open Sans" size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Channel]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="459" width="23" height="20" uuid="8178f69d-149c-4cc1-8e56-c756a3d0323d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="520" width="23" height="20" uuid="0d3ea642-21cb-41e1-a89a-befc21ccd5cc"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -120,7 +124,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("grand-total-option-a", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -133,14 +139,14 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Subtotal]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="620" width="23" height="20" uuid="e63fe277-0b60-4242-a852-4faf440ed668"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -153,7 +159,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("pan-360-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -166,7 +174,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Super Pages]]></text>
 			</staticText>
@@ -179,7 +187,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("facebook-ads-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -192,14 +202,14 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Pan 360°]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="660" width="23" height="20" uuid="7b62f912-cf2a-4634-92f3-101c286e6227"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -213,14 +223,14 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[6% Gov. Tax]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="419" width="23" height="20" uuid="8b8edb7e-6d90-478f-a8d8-0145a0f84c3e"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -233,13 +243,15 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("yahoo-search-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="181" y="439" width="23" height="20" uuid="c2c0ad6c-150a-48a3-9170-6b785babca7c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -252,7 +264,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("yahoo-display-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -265,7 +279,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Alibaba.com ]]></text>
 			</staticText>
@@ -279,7 +293,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Yahoo! Display]]></text>
 			</staticText>
@@ -293,7 +307,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Management Fee]]></text>
 			</staticText>
@@ -307,7 +321,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Yahoo! Search]]></text>
 			</staticText>
@@ -321,7 +335,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[PanPages]]></text>
 			</staticText>
@@ -334,7 +348,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("gov-tax-option-a", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -346,7 +362,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("google-display-network-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -359,21 +377,21 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Google Display Network]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="640" width="23" height="20" uuid="9a800af3-a032-45dd-8785-873076d1a70f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="500" width="23" height="20" uuid="9cbeb0a8-579b-44a0-89f6-6abd8c811add"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -386,7 +404,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("management-fee-option-a", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -398,13 +418,15 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("super-pages-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="181" y="400" width="23" height="20" uuid="88f050e2-0479-4f95-9237-8a6277744b26"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -418,7 +440,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Others]]></text>
 			</staticText>
@@ -431,7 +453,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("subtotal-option-a", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -444,7 +468,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Grand Total]]></text>
 			</staticText>
@@ -458,7 +482,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Google AdWords Search & Mobile]]></text>
 			</staticText>
@@ -472,14 +496,14 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="13"/>
+					<font fontName="Open Sans" size="13"/>
 				</textElement>
 				<text><![CDATA[Option A]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="560" width="23" height="20" uuid="113cb3e1-f60e-44a5-b86d-e7762d4432d4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -493,7 +517,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="13" isBold="true"/>
+					<font fontName="Open Sans" size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Price]]></text>
 			</staticText>
@@ -506,7 +530,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("panpages-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -518,13 +544,15 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("google-search-mobile-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="181" y="700" width="23" height="20" uuid="169110a2-c40a-4870-b4a0-50abd27fec4d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -537,7 +565,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("others-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -550,14 +580,14 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[YouTube Ads]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="580" width="23" height="20" uuid="78c57b9f-c22d-4e67-bc33-5a4ef06b9321"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -570,7 +600,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("subtotal-option-b", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -582,13 +614,15 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("panpages-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="459" width="23" height="20" uuid="3f85a9dd-5cac-45c3-b938-f279bc0e648f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -602,7 +636,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Pan 360°]]></text>
 			</staticText>
@@ -615,41 +649,43 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("yahoo-display-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="620" width="23" height="20" uuid="42f7284b-2c80-4e5d-81bf-9290c3f638e9"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="640" width="23" height="20" uuid="87ebb5d8-4c32-44a0-a857-45f261bad433"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="560" width="23" height="20" uuid="661defc3-d4bc-4b3a-be37-99fc7a99b91c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="500" width="23" height="20" uuid="b1d326f1-4934-4b87-9c9a-e5e50454f703"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="439" width="23" height="20" uuid="355c6b1f-d1db-4aa3-8238-048567728be7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -663,7 +699,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Subtotal]]></text>
 			</staticText>
@@ -677,7 +713,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Yahoo! Display]]></text>
 			</staticText>
@@ -690,7 +726,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("pan-360-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -702,13 +740,15 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("gov-tax-option-b", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="520" width="23" height="20" uuid="46e38b33-8c5d-41a9-b6de-c4ec57e95b1d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -721,13 +761,15 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("facebook-ads-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="680" width="23" height="20" uuid="90b2400a-c23a-497c-8fc7-94b0b1023c63"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -740,7 +782,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("youtube-ads-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
@@ -752,7 +796,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("yahoo-search-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -765,7 +811,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Google Display Network]]></text>
 			</staticText>
@@ -778,7 +824,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("google-search-mobile-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -791,7 +839,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[6% Gov. Tax]]></text>
 			</staticText>
@@ -805,7 +853,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="13" isBold="true"/>
+					<font fontName="Open Sans" size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Channel]]></text>
 			</staticText>
@@ -819,7 +867,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Google AdWords Search & Mobile]]></text>
 			</staticText>
@@ -832,13 +880,15 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("others-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="660" width="23" height="20" uuid="d8909302-b2a0-4f68-8e86-ce729b241c38"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -852,7 +902,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Alibaba.com ]]></text>
 			</staticText>
@@ -866,7 +916,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Yahoo! Search]]></text>
 			</staticText>
@@ -880,7 +930,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[YouTube Ads]]></text>
 			</staticText>
@@ -893,13 +943,15 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("google-display-network-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="400" width="23" height="20" uuid="8ca1c038-9f54-4f6e-8bc7-b49df98f96de"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -912,7 +964,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("alibaba-com-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -925,28 +979,28 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="13" isBold="true"/>
+					<font fontName="Open Sans" size="13" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Price]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="600" width="23" height="20" uuid="ca3028f1-421a-4d9a-b551-5ad2f34bddd4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="700" width="23" height="20" uuid="c00c00a3-9202-48c5-94df-22a154bce163"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="419" width="23" height="20" uuid="c063af9a-3adb-4134-a7cd-4897823a2946"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -960,7 +1014,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Others]]></text>
 			</staticText>
@@ -974,7 +1028,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Management Fee]]></text>
 			</staticText>
@@ -988,7 +1042,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Grand Total]]></text>
 			</staticText>
@@ -1001,13 +1055,15 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("management-fee-option-b", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="480" width="23" height="20" uuid="e141da2d-26e6-42ca-bd4f-9e7a74f8e4f1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -1020,13 +1076,15 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("super-pages-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="580" width="23" height="20" uuid="4781f8d3-40eb-4f8f-a8ca-6f52568ef044"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -1040,7 +1098,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Super Pages]]></text>
 			</staticText>
@@ -1054,7 +1112,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[PanPages]]></text>
 			</staticText>
@@ -1068,7 +1126,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Facebook Ads]]></text>
 			</staticText>
@@ -1081,7 +1139,9 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("grand-total-option-b", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
@@ -1094,7 +1154,7 @@
 					<rightPen lineWidth="1.0"/>
 				</box>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Times New Roman" size="13"/>
+					<font fontName="Open Sans" size="13"/>
 				</textElement>
 				<text><![CDATA[Option B]]></text>
 			</staticText>
@@ -1108,7 +1168,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Facebook Marketing]]></text>
 			</staticText>
@@ -1121,13 +1181,15 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("facebook-marketing-option-a-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="181" y="540" width="23" height="20" uuid="5ea86b4c-77ed-4bc6-8f7a-6ba1fedcdee7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -1141,7 +1203,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement verticalAlignment="Middle">
-					<font size="10"/>
+					<font fontName="Open Sans" size="10"/>
 				</textElement>
 				<text><![CDATA[Facebook Marketing]]></text>
 			</staticText>
@@ -1154,13 +1216,15 @@
 					<bottomPen lineWidth="1.0"/>
 					<rightPen lineWidth="1.0"/>
 				</box>
-				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Open Sans"/>
+				</textElement>
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("facebook-marketing-option-b-input", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="484" y="540" width="23" height="20" uuid="e17fdf6a-fdda-44e3-b0cc-bacc8d1c3f37"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -1181,7 +1245,7 @@
 			<staticText>
 				<reportElement x="209" y="12" width="252" height="50" uuid="7cf122f1-7c9d-4133-9949-f05fa652af3f"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Impact" size="25"/>
+					<font fontName="Open Sans" size="25"/>
 				</textElement>
 				<text><![CDATA[Advertising Planner]]></text>
 			</staticText>
@@ -1192,7 +1256,7 @@
 			<textField>
 				<reportElement mode="Opaque" x="521" y="12" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="934ee2eb-979b-47fe-8ab2-77dbe5e4820d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Impact" size="32"/>
+					<font fontName="Open Sans" size="32"/>
 				</textElement>
 				<textFieldExpression><![CDATA[4]]></textFieldExpression>
 			</textField>
