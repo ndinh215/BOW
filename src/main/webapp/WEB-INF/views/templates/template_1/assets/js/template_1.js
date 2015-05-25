@@ -60,10 +60,10 @@ $(document ).ready(function() {
         done: function (e, data) {
         	var status = data.response().result['status'];
         	if (status == 'success') {
-        		var totalCampaignBudget = data.response().result['total-campaign-budget'];
+        		var totalCampaignBudget = parseFloat(data.response().result['total-campaign-budget']).toFixed(2);
         		// Set total campaign budget value
         		$('#Calculation-Code-L-OptionA').text(totalCampaignBudget);
-        		$('#Calculation-Code-L-OptionB').text(totalCampaignBudget * 0.75);
+        		$('#Calculation-Code-L-OptionB').text(parseFloat(totalCampaignBudget*0.75).toFixed(2));
         		// Set uploaded file name
         		var uploadedFileName = data.response().result['uploaded-file-name'];
         		$('#uploaded-file-name').val(uploadedFileName);
@@ -81,8 +81,10 @@ $(document ).ready(function() {
     	
     	// Reset uploaded file name
     	$('#file-name').text('');
+    	$('#file-name-uploaded').val('');
     	// Set filename label
     	$('#file-name').text(data.originalFiles[0].name);
+    	$('#file-name-uploaded').val(data.originalFiles[0].name);
     	
     	// Analyze extension
     	var extension = data.originalFiles[0].name.split('.').pop().toLowerCase();						
