@@ -28,7 +28,7 @@
 <script src="<c:url value="/assets/js/bootstrap.min_v3.2.0.js" />"></script>
 <script src="<c:url value="/assets/js/jquery.fancybox_v2.1.5.js" />"></script>
 <script
-	src="<c:url value="/assets/js/jquery.mCustomScrollbar_v3.0.2 .js" />"></script>
+	src="<c:url value="/assets/js/jquery.mCustomScrollbar_v3.0.2.js" />"></script>
 <script src="<c:url value="/assets/js/home.js" />"></script>
 <script type="text/javascript">
 	$( document).ready(function() {
@@ -40,12 +40,12 @@
 	<div class="container" id="main-content">
 		<div id="header">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 logo">
-				<a href="<c:url value="/index.html" />"><img class="img-responsive" src="assets/images/logo.jpg" /></a>
+				<a href="<c:url value="/index.html" />"><img class="img-responsive" src="<c:url value="/assets/images/logo.jpg" />" /></a>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 main-menu">
-				 <span class="menu-item"><a href="index.html">HOME</a></span>
+				 <span class="menu-item"><a href="<c:url value="/index.html" />">HOME</a></span>
 				 &frasl;
-				 <span class="menu-item"><a href="templates.html">SURVEYS</a></span>
+				 <span class="menu-item"><a href="<c:url value="templates.html" />">SURVEYS</a></span>
 				 &frasl; 
 				 <span class="menu-item"><a href="http://about.panpages.com/">ABOUT</a></span>
 			</div>
@@ -61,9 +61,9 @@
 				  </object>
 				</div>
 				<div class="right-float-buttons">
-					<form action="/submit/${surveyId}.html">
+					<form action="<c:url value="/submit/${surveyId}.html" />" method="POST">
 				    	<button class="btn red-white-button" onclick="window.history.back();">EDIT</button> &nbsp;
-				    	<button class="btn red-white-button" onclick="">SUBMIT</button>
+				    	<button class="btn red-white-button" onclick="" type="submit">SUBMIT</button>
 				    	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 			    	</form>
 			    </div>

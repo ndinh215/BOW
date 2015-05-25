@@ -35,12 +35,12 @@
 	<div class="container" id="main-content">
 		<div id="header">
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 logo">
-				<a href="<c:url value="/index.html" />"><img class="img-responsive" src="assets/images/logo.jpg" /></a>
+				<a href="<c:url value="/index.html" />"><img class="img-responsive" src="<c:url value="/assets/images/logo.jpg" />" /></a>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 main-menu">
-				 <span class="menu-item"><a href="index.html">HOME</a></span>
+				 <span class="menu-item"><a href="<c:url value="index.html" />">HOME</a></span>
 				 &frasl;
-				 <span class="menu-item"><a href="templates.html">SURVEYS</a></span>
+				 <span class="menu-item"><a href="<c:url value="templates.html" />">SURVEYS</a></span>
 				 &frasl; 
 				 <span class="menu-item"><a href="http://about.panpages.com/">ABOUT</a></span>
 			</div>
@@ -50,30 +50,30 @@
 			<form:form method="POST" modelAttribute="surveyForm"  enctype="multipart/form-data"
 				action="survey_1.html?submit"  id="surveyForm">
 				<div id="form-sections">
-<!-- 					<fieldset class="sectionwrap" id="section-1"> -->
-<%-- 						<jsp:include page="section_1_template_1.jsp"></jsp:include> --%>
-<!-- 					</fieldset> -->
-<!-- 					<fieldset class="sectionwrap" id="section-2"> -->
-<%-- 						<jsp:include page="section_2_template_1.jsp"></jsp:include> --%>
-<!-- 					</fieldset> -->
-<!-- 					<fieldset class="sectionwrap" id="section-3"> -->
-<%-- 						<jsp:include page="section_3_template_1.jsp"></jsp:include> --%>
-<!-- 					</fieldset> -->
-<!-- 					<fieldset class="sectionwrap" id="section-4"> -->
-<%-- 						<jsp:include page="section_4_template_1.jsp"></jsp:include> --%>
-<!-- 					</fieldset> -->
-<!-- 					<fieldset class="sectionwrap" id="section-5"> -->
-<%-- 						<jsp:include page="section_5_template_1.jsp"></jsp:include> --%>
-<!-- 					</fieldset> -->
-<!-- 					<fieldset class="sectionwrap" id="section-6"> -->
-<%-- 						<jsp:include page="section_6_template_1.jsp"></jsp:include> --%>
-<!-- 					</fieldset> -->
+					<fieldset class="sectionwrap" id="section-1">
+						<jsp:include page="section_1_template_1.jsp"></jsp:include>
+					</fieldset>
+					<fieldset class="sectionwrap" id="section-2">
+						<jsp:include page="section_2_template_1.jsp"></jsp:include>
+					</fieldset>
+					<fieldset class="sectionwrap" id="section-3">
+						<jsp:include page="section_3_template_1.jsp"></jsp:include>
+					</fieldset>
+					<fieldset class="sectionwrap" id="section-4">
+						<jsp:include page="section_4_template_1.jsp"></jsp:include>
+					</fieldset>
+					<fieldset class="sectionwrap" id="section-5">
+						<jsp:include page="section_5_template_1.jsp"></jsp:include>
+					</fieldset>
+					<fieldset class="sectionwrap" id="section-6">
+						<jsp:include page="section_6_template_1.jsp"></jsp:include>
+					</fieldset>
 					<fieldset class="sectionwrap" id="section-7">
 						<jsp:include page="section_7_template_1.jsp"></jsp:include>
 					</fieldset>
-<!-- 					<fieldset class="sectionwrap" id="section-8"> -->
-<%-- 						<jsp:include page="section_8_template_1.jsp"></jsp:include> --%>
-<!-- 					</fieldset> -->
+					<fieldset class="sectionwrap" id="section-8">
+						<jsp:include page="section_8_template_1.jsp"></jsp:include>
+					</fieldset>
 					<fieldset class="sectionwrap" id="section-9">
 						<jsp:include page="section_9_template_1.jsp"></jsp:include>
 					</fieldset>

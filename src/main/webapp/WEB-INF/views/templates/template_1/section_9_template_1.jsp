@@ -8,7 +8,7 @@
 <script type="text/javascript">
 $(function() {
 	$('#file-upload').change(function(e) {
-		alert(e);
+		
 	});
 }); 
 </script>
@@ -27,7 +27,7 @@ $(function() {
 					<span class="btn btn-success fileinput-button">
 				        <span>Choose File...</span>
 						<input name="fields['proposed-keyword']" id="file-upload" type="file">
-						<input name="uploaded-file-name" id="uploaded-file-name" type="hidden">
+						<input name="fields['uploaded-file-name']" id="uploaded-file-name" type="hidden">
 					</span>
 					<label id="file-name"></label>
 					<label id="upload-error"></label>

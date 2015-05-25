@@ -100,14 +100,15 @@ public class SurveyController {
 		
 		// Export survey
 		Survey survey = surveySvc.findSurveyWithId(surveyId);
-		calculationFactory.createSurveyCalculator(surveyTemplateId).calculateFields(survey, surveySvc);
+		SurveyCalculate surveyCalc = calculationFactory.createSurveyCalculator(surveyTemplateId);
+		surveyCalc.calculateFields(survey, surveySvc, ctx);
 		// Refresh survey
 		survey = surveySvc.findSurveyWithId(surveyId);
 		// Set fulfilled date
 		survey.setFulfilledDate();
 		String reportName = reportSvc.exportReport(survey, ReportType.PDF.getName());
-		String reportViewPath = String.format("%1$s_%2$s_%3$s_%4$s.html", "/view", survey.getId(), reportName, ReportType.PDF.getName());
-		String previewPath = String.format("%1$s_%2$s_%3$s_%4$s.html", "/preview", survey.getId(), reportName, ReportType.PDF.getName());
+		String reportViewPath = String.format("%1$s/%2$s/%3$s_%4$s.html", "/view", survey.getId(), reportName, ReportType.PDF.getName());
+		String previewPath = String.format("%1$s/%2$s/%3$s_%4$s.html", "/preview", survey.getId(), reportName, ReportType.PDF.getName());
 		
 		// Update status and storage name
 		String surveyStatus = preview != null? 

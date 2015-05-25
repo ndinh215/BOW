@@ -8,18 +8,62 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
+import org.springframework.context.ApplicationContext;
+import org.springframework.stereotype.Service;
+
+import com.panpages.bow.configuration.ConfigConstant;
 import com.panpages.bow.model.Field;
 import com.panpages.bow.model.Section;
 import com.panpages.bow.model.Survey;
 import com.panpages.bow.model.utils.SurveyUtils;
 import com.panpages.bow.service.utils.StringUtils;
 
+@Service("surveyCalculate")
 public class SurveyCalculateImpl implements SurveyCalculate {
+	
+	private static final Logger logger = Logger.getLogger(SurveyCalculateImpl.class);
 
 	@Override
-	public void calculateFields(Survey survey, SurveyService surveySvc) {
+	public void calculateFields(Survey survey, SurveyService surveySvc, ApplicationContext ctx) {
 		if (survey == null || survey.getId() == -1) {
 			return;
+		}
+		
+		// Add fields from file
+		Field uploadedFileNameField = SurveyUtils.findFieldWithFieldTemplateSlugName(SurveyFieldName.UPLOADED_FILE_NAME.getName(), survey);
+		String fileName = uploadedFileNameField.getValue();
+		
+		if (fileName != null && !fileName.trim().equals("")) {
+			String uploadPath = ctx.getEnvironment().getRequiredProperty(ConfigConstant.UPLOAD_FOLDER_PATH.getName());
+			String filePath = String.format("%1$s%2$s%3$s", uploadPath, File.separator, fileName);
+			BufferedReader reader = null;
+			
+		    try {
+			    reader = new BufferedReader(new FileReader(filePath));
+				String line = null;
+				int count = 0;
+				while ((line = reader.readLine()) != null) {
+
+					if (count++ == 0) {
+						continue;
+					}
+					
+					// Add new field
+					surveySvc.addField(SurveyFieldName.FIELD_PROPOSED_KEYWORD.getName(), line, survey);
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+				logger.error(e.getStackTrace());
+			} finally {
+				if (reader != null) {
+					try {
+						reader.close();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
+			}
 		}
 		
 		///////////////////// Count indexes /////////////////////
@@ -71,6 +115,7 @@ public class SurveyCalculateImpl implements SurveyCalculate {
 				assumedCTR = floatValue;
 			} catch (NumberFormatException e) {
 				e.printStackTrace();
+				logger.error(e.getStackTrace());
 				return;
 			}
 		}
@@ -125,14 +170,17 @@ public class SurveyCalculateImpl implements SurveyCalculate {
 						totalAverageCost += costPerClickFloat;
 					} catch (Exception e) {
 						e.printStackTrace();
+						logger.error(e.getStackTrace());
 						return null;
 					}
 					
 				}
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
+				logger.error(e.getStackTrace());
 			} catch (IOException e) {
 				e.printStackTrace();
+				logger.error(e.getStackTrace());
 			} 
 			
 			averageCostPerClick = totalAverageCost == 0? 0 : totalAverageCost/(count - 1);
@@ -143,6 +191,7 @@ public class SurveyCalculateImpl implements SurveyCalculate {
 				campaignPeriod = Float.parseFloat(params.get(SurveyFieldName.STEP_5_H.getName()).toString());
 			} catch (Exception e) {
 				e.printStackTrace();
+				logger.error(e.getStackTrace());
 			}
 			
 			if (campaignPeriod == -1) {
@@ -150,7 +199,6 @@ public class SurveyCalculateImpl implements SurveyCalculate {
 			}
 			
 			Float estMonthlyBudget = (float) -1;
-			
 			Float monthlyTraffic = (float) -1;
 			
 			Float traffic = (float) -1;
@@ -187,5 +235,5 @@ public class SurveyCalculateImpl implements SurveyCalculate {
 		
 		return null;
 	}
-
+	
 }
