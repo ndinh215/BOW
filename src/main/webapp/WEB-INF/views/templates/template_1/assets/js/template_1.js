@@ -63,8 +63,11 @@ $(document ).ready(function() {
         	if (status == 'success') {
         		var totalCampaignBudget = data.response().result['total-campaign-budget'];
         		// Set total campaign budget value
-        		
+        		$('#Calculation-Code-L-OptionA').val(totalCampaignBudget);
+        		$('#Calculation-Code-L-OptionB').val(totalCampaignBudget * 0.75);
         		// Set uploaded file name
+        		var uploadedFileName = data.response().result['uploaded-file-name'];
+        		$('#uploaded-file-name').val(uploadedFileName);
         	}
         },
 		progressall: function (e, data) {
@@ -78,7 +81,7 @@ $(document ).ready(function() {
     	$('#progress .progress-bar-success').css("width", "0");
     	
     	// Reset uploaded file name
-    	
+    	$('#file-name').val('');
     	// Set filename label
     	$('#file-name').text(data.originalFiles[0].name);
     	
@@ -104,9 +107,10 @@ $(document ).ready(function() {
 		
 		data.abort();
     }).on('fileuploaddone', function (e, data) {
-    	
+    	$('#upload-error').text("");    	
     }).on('fileuploadfail', function (e, data) {
-    	
+    	$('#upload-error').text("Sorry, upload of the file failed!");
+    	$('#uploaded-file-name').val('');
     }).prop('disabled', !$.support.fileInput).parent().addClass($.support.fileInput ? undefined : 'disabled');
 	
 	myform = new formtowizard({

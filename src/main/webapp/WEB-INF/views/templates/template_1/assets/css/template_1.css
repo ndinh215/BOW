@@ -119,6 +119,10 @@ body {
   background-size: 100%;
 }
 
+.question-img{
+  background: url("../images/question-mark-gray-round.gif");
+}
+
 @media (min-width: 768px){
 
 }
@@ -268,7 +272,7 @@ ul[role*="tablist"] {
 }
 
 .survey-tip {
-	background: #C00000;
+	/*background: #C00000;*/
 	color: #FFFFFF;
 	font-weight: bold;
 }
