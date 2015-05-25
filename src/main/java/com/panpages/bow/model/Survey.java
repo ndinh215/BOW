@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -131,6 +132,25 @@ public class Survey {
 		String newFulfilledDateStr;
 		
 		DateFormat newDateFormat = new SimpleDateFormat("dd MMM yyyy, hh:mm a");
+		TimeZone zone = TimeZone.getTimeZone("GMT+08:00");
+		newDateFormat.setTimeZone(zone);
+		
+		newFulfilledDateStr = newDateFormat.format(fulfilledDate);
+		
+		return newFulfilledDateStr;
+	}
+	
+	public String getFulfilledDate(String timezone) {
+		if (timezone == null || timezone.trim().equalsIgnoreCase("")) {
+			return getFulfilledDate();
+		}
+		
+		String newFulfilledDateStr;
+		
+		DateFormat newDateFormat = new SimpleDateFormat("dd MMM yyyy, hh:mm a");
+		TimeZone zone = TimeZone.getTimeZone(timezone);
+		newDateFormat.setTimeZone(zone);
+		
 		newFulfilledDateStr = newDateFormat.format(fulfilledDate);
 		
 		return newFulfilledDateStr;

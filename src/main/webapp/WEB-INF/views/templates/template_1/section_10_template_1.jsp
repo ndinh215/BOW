@@ -91,7 +91,7 @@
 								<td>RM <input name="fields['grand-total-option-a']" id="grand-total-option-a" type="text" style="width: 85%;"></td>
 							</tr>
 						</table>
-						<p>Suggested advertising budget for your advertiser is <span id="Calculation-Code-L-OptionA"></span></p>
+						<p>Suggested advertising budget for your advertiser is <span id="Calculation-Code-L-OptionA" name="total-campaign-budget"></span></p>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">

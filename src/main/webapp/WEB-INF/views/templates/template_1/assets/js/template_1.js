@@ -46,7 +46,68 @@ function submitSurvey() {
 	$("#grand-total-option-b").prop( "disabled", false );
 }
 
-$( document ).ready(function() {
+var myform = null, fileUpload = null;
+
+$(document ).ready(function() {
+	'use strict';
+	$('.survey-tip').tooltip({html: true, placement: 'bottom'});
+	
+    fileUpload = $('#file-upload').fileupload({
+        url: "calculate_field_1/total-campaign-budget.html",
+        dataType: 'json',
+        autoUpload: false,
+        acceptFileTypes: /(\.|\/)(text|csv)$/i,
+        maxFileSize: 5000000, // 5 MB
+        done: function (e, data) {
+        	var status = data.response().result['status'];
+        	if (status == 'success') {
+        		var totalCampaignBudget = data.response().result['total-campaign-budget'];
+        		// Set total campaign budget value
+        		
+        		// Set uploaded file name
+        	}
+        },
+		progressall: function (e, data) {
+	        var progress = parseInt(data.loaded / data.total * 100, 10);
+	        $('#progress .progress-bar').css('width', progress + '%');
+	    }
+    }).on('fileuploadadd', function (e, data) {
+    	var isValidFile = false;
+    	
+    	// Set progress to 0%
+    	$('#progress .progress-bar-success').css("width", "0");
+    	
+    	// Reset uploaded file name
+    	
+    	// Set filename label
+    	$('#file-name').text(data.originalFiles[0].name);
+    	
+    	// Analyze extension
+    	var extension = data.originalFiles[0].name.split('.').pop().toLowerCase();						
+		
+		if((extension != "csv") && (extension != "txt")) {
+			$('#file-upload').focus();
+			alert("Only accept '.csv','.txt' formats are allowed.");
+			$('#file-name').text("");
+			
+			isValidFile = false;
+		} else if (extension == "csv"){
+			isValidFile = true;
+		} else if (extension == "txt"){
+			isValidFile = true;
+		}
+    	
+		if (isValidFile) {
+			data.submit();
+			return;
+		} 
+		
+		data.abort();
+    }).on('fileuploaddone', function (e, data) {
+    	
+    }).on('fileuploadfail', function (e, data) {
+    	
+    }).prop('disabled', !$.support.fileInput).parent().addClass($.support.fileInput ? undefined : 'disabled');
 	
 	myform = new formtowizard({
 		formid: 'surveyForm',
@@ -1470,27 +1531,8 @@ $( document ).ready(function() {
 						}
 						
 						// STEP 9
-						else if((allels[i].getAttribute('id')) == "choose-file"){
-							var extension = ($("#choose-file").val().split('.').pop().toLowerCase());						
-							if ($.isEmptyObject(extension)){
-								validated = true;
-							} else{
-								
-								if((extension != "csv") && (extension != "txt")) {
-									$('#choose-file').focus();
-									$("#previewBtn").css("display", "none");
-									$("#submitBtn").css("display", "none");
-									$(".formpaginate .status").css("display", "inline");
-									$(".formpaginate .next").css("display", "inline");								
-									alert("Only accept '.csv','.txt' formats are allowed.");
-									validated = false;
-									break;
-								} else if (extension == "csv"){
-									validated = true;
-								} else if (extension == "txt"){
-									validated = true;
-								}
-							}
+						else if((allels[i].getAttribute('id')) == "file-upload"){
+							
 						}
 						/* STEP 10 */
 						else if((allels[i].getAttribute('id')) == "option-a"){

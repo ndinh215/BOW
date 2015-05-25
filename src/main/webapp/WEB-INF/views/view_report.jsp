@@ -44,9 +44,9 @@
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 main-menu">
 				 <span class="menu-item"><a href="index.html">HOME</a></span>
-				 |
+				 &frasl;
 				 <span class="menu-item"><a href="templates.html">SURVEYS</a></span>
-				 | 
+				 &frasl; 
 				 <span class="menu-item"><a href="http://about.panpages.com/">ABOUT</a></span>
 			</div>
 		</div>
@@ -61,7 +61,11 @@
 				  </object>
 				</div>
 				<div class="right-float-buttons">
-			    	<button class="btn red-white-button" onclick="window.history.back();">BACK</button>
+					<form action="/submit/${surveyId}.html">
+				    	<button class="btn red-white-button" onclick="window.history.back();">EDIT</button> &nbsp;
+				    	<button class="btn red-white-button" onclick="">SUBMIT</button>
+				    	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+			    	</form>
 			    </div>
 			  </c:when>
 			  <c:otherwise>

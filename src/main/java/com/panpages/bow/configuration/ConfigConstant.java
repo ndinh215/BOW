@@ -29,7 +29,8 @@ public enum ConfigConstant {
 	CONSULTANT_EMAIL("consultant-email-address"),
 	ADVERTISER_COMPANY_NAME("advertiser-company-name"), 
 	SURVEY_FULFILLED_DATE("survey-fulfilled-date"), 
-	CONSULTANT_NAME("consultant-name");
+	CONSULTANT_NAME("consultant-name"), 
+	TIME_ZONE("time_zone");
 	
 	private String name;
 

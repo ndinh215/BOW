@@ -1,6 +1,7 @@
 @CHARSET "ISO-8859-1";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
-.row{
+.row {
 	margin: 0 !important;
 }
 
@@ -56,12 +57,15 @@ h1 {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   height: 100%;
+  width: 100%;
   background-image: url("../images/background_template_1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Open Sans';
 }
 
 .step1 {
@@ -97,6 +101,7 @@ body {
 .step7 {
   background: url("../images/step7.png") left top no-repeat;
   background-size: 100%;
+  padding-bottom: 25px;
 }
 
 .step8 {
@@ -260,4 +265,18 @@ ul[role*="tablist"] {
 
 #main-menu {
 	font-size: 19px;
+}
+
+.survey-tip {
+	background: #C00000;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+#progress {
+	margin-top: 3px;
+}
+
+.file-section {
+	text-align: left;
 }

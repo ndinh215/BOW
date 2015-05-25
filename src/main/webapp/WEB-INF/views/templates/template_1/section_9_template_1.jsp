@@ -7,15 +7,8 @@
 <title>Step 9</title>
 <script type="text/javascript">
 $(function() {
-	$('#choose-file').change(function() {
-		/*var fileExtension = ['csv', 'txt'];
-		alert($(this).val());
-		alert($(this).val().split('.').pop().toLowerCase());
-		if($(this).val().split('.').pop().toLowerCase() != "csv" && $(this).val().split('.').pop().toLowerCase() != "txt"){
-	//	if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
-			alert("Only accept '.csv','.txt' formats are allowed.");
-			$('#choose-file').focus();
-		}*/
+	$('#file-upload').change(function(e) {
+		alert(e);
 	});
 }); 
 </script>
@@ -30,19 +23,28 @@ $(function() {
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
-					<input name="fields['proposed-keyword']" id="choose-file" type="file">
+				<div class="file-section col-xs-12 col-sm-12 col-md-11 col-lg-12">
+					<span class="btn btn-success fileinput-button">
+				        <span>Choose File...</span>
+						<input name="fields['proposed-keyword']" id="file-upload" type="file">
+						<input name="uploaded-file-name" id="uploaded-file-name" type="hidden">
+					</span>
+					<label id="file-name"></label>
+					<label id="upload-error"></label>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div id="progress" class="progress">
+				        <div class="progress-bar progress-bar-success"></div>
+				    </div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<p style="color: #FD0000;">NOTE: Only accept .csv, .txt format file.</p>
 					<p>The <span style="font-weight:bold;">THREE</span> required columns are as below:</p>
-					<p>1.Keyword</p>
-					<p>2.Average Monthly Search (exact match only)</p>
-					<p>3.Suggested Bid (Currency in<span style="font-weight: bold;"> Ringgit Malaysia ONLY</span>)</p>
+					<p>1. Keyword</p>
+					<p>2. Average Monthly Search (exact match only)</p>
+					<p>3. Suggested Bid (Currency in<span style="font-weight: bold;"> Ringgit Malaysia ONLY</span>)</p>
 				</div>
 			</div>
 		</div>

@@ -30,9 +30,9 @@
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 main-menu">
 				 <span class="menu-item"><a href="index.html">HOME</a></span>
-				 |
+				 &frasl;
 				 <span class="menu-item"><a href="templates.html">SURVEYS</a></span>
-				 | 
+				 &frasl; 
 				 <span class="menu-item"><a href="http://about.panpages.com/">ABOUT</a></span>
 			</div>
 		</div>
@@ -49,14 +49,6 @@
 					</div>
 				</div>
 			</c:forEach>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-				<div class ="survey-image" >
-					<a><img src="assets/images/survey_2.png"/></a>							
-				</div>
-				<div class = "survey-name">
-					<a href="survey_2.html">Survey DEMO</a>
-				</div>
-			</div>
 		</div>
 	</div>
 	<div id ="footer">

@@ -103,7 +103,8 @@ public class MailServiceImpl implements MailService {
 			// Advertiser company name
 			params.put(ConfigConstant.ADVERTISER_COMPANY_NAME.getName(), advCompanyNameField.getValue());
 			// Fulfilled date
-			params.put(ConfigConstant.SURVEY_FULFILLED_DATE.getName(), survey.getFulfilledDate());
+			String timezone = ctx.getEnvironment().getProperty(ConfigConstant.TIME_ZONE.getName());
+			params.put(ConfigConstant.SURVEY_FULFILLED_DATE.getName(), survey.getFulfilledDate(timezone));
 			
 			mail.setFields(params);
 			

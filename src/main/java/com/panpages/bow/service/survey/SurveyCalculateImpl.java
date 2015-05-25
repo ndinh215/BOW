@@ -1,6 +1,12 @@
 package com.panpages.bow.service.survey;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 import com.panpages.bow.model.Field;
 import com.panpages.bow.model.Section;
@@ -69,7 +75,6 @@ public class SurveyCalculateImpl implements SurveyCalculate {
 			}
 		}
 		
-		
 		// Estimated click on CTR
 		float estClickOnCTR = -1;
 		estClickOnCTR = totalEstImpression * assumedCTR;
@@ -90,6 +95,97 @@ public class SurveyCalculateImpl implements SurveyCalculate {
 		if (estClickOnCTR != -1) {
 			surveySvc.addField(SurveyFieldName.FIELD_EST_CLICKS_ON_CTR.getName(), String.valueOf(estClickOnCTR), survey);
 		}
+	}
+	
+	@SuppressWarnings("resource")
+	public String calculateField(String fieldName, File fieldsFile, Map<String, Object> params) {
+		if (fieldName != null && fieldName.trim().equalsIgnoreCase(SurveyFieldName.FIELD_TOTAL_CAMPAIGN_BUDGET.getName())) {
+			float averageCostPerClick = -1;
+			Float totalAverageCost = (float) 0;
+			Float totalCampaignBudget = (float) -1;
+			int count = 0;
+			
+			try {
+				BufferedReader reader = new BufferedReader(new FileReader(fieldsFile));
+				String line = null;
+				while ((line = reader.readLine()) != null) {
+					if (count++ == 0) {
+						continue;
+					}
+					
+					String[] valueItems = line.split(",");
+					try {
+						String estImpression = StringUtils.nullValue(valueItems[1], null);
+						String costPerClick = StringUtils.nullValue(valueItems.length >= 3? valueItems[2] : "0", null);
+						if (estImpression == null) {
+							return null;
+						}
+					
+						Float costPerClickFloat = Float.parseFloat(costPerClick.trim());
+						totalAverageCost += costPerClickFloat;
+					} catch (Exception e) {
+						e.printStackTrace();
+						return null;
+					}
+					
+				}
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			} 
+			
+			averageCostPerClick = totalAverageCost == 0? 0 : totalAverageCost/(count - 1);
+			
+			Float campaignPeriod = (float) -1;
+			
+			try {
+				campaignPeriod = Float.parseFloat(params.get(SurveyFieldName.STEP_5_H.getName()).toString());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+			if (campaignPeriod == -1) {
+				return null;
+			}
+			
+			Float estMonthlyBudget = (float) -1;
+			
+			Float monthlyTraffic = (float) -1;
+			
+			Float traffic = (float) -1;
+			Float leads = (float) -1;
+			Float newAdvertisers = (float) -1;
+			Float leadConversionRate = (float) 0.2;
+			Float revenueIncreased = (float) -1;
+			Float avgRevenuePerCust = (float) -1;
+			
+			Float enquiryRate = (float) -1;
+			
+			try {
+				enquiryRate = Float.parseFloat(params.get(SurveyFieldName.STEP_5_D.getName()).toString());
+				revenueIncreased = Float.parseFloat(params.get(SurveyFieldName.STEP_5_A.getName()).toString());
+				avgRevenuePerCust = Float.parseFloat(params.get(SurveyFieldName.STEP_5_B.getName()).toString());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+			if (enquiryRate == -1) {
+				return null;
+			}
+			
+			newAdvertisers = revenueIncreased/avgRevenuePerCust;
+			leads = newAdvertisers/enquiryRate;
+			traffic = leads/leadConversionRate;
+			monthlyTraffic = traffic/campaignPeriod;
+			
+			estMonthlyBudget = monthlyTraffic * averageCostPerClick;
+			totalCampaignBudget = estMonthlyBudget * campaignPeriod;
+			
+			return String.valueOf(totalCampaignBudget);
+		}
+		
+		return null;
 	}
 
 }

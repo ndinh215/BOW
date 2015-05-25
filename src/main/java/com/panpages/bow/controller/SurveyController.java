@@ -1,13 +1,17 @@
 package com.panpages.bow.controller;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 import javax.validation.Valid;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
@@ -17,6 +21,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.panpages.bow.configuration.ConfigConstant;
 import com.panpages.bow.model.Survey;
@@ -25,7 +31,9 @@ import com.panpages.bow.model.SurveyTemplate;
 import com.panpages.bow.service.mail.MailService;
 import com.panpages.bow.service.report.ReportService;
 import com.panpages.bow.service.report.ReportType;
+import com.panpages.bow.service.survey.SurveyCalculate;
 import com.panpages.bow.service.survey.SurveyCalculateFactory;
+import com.panpages.bow.service.survey.SurveyFieldName;
 import com.panpages.bow.service.survey.SurveyService;
 import com.panpages.bow.service.survey.SurveyStatus;
 
@@ -98,8 +106,8 @@ public class SurveyController {
 		// Set fulfilled date
 		survey.setFulfilledDate();
 		String reportName = reportSvc.exportReport(survey, ReportType.PDF.getName());
-		String reportViewPath = String.format("%1$s_%2$s_%3$s.html", "/view", reportName, ReportType.PDF.getName());
-		String previewPath = String.format("%1$s_%2$s_%3$s.html", "/preview", reportName, ReportType.PDF.getName());
+		String reportViewPath = String.format("%1$s_%2$s_%3$s_%4$s.html", "/view", survey.getId(), reportName, ReportType.PDF.getName());
+		String previewPath = String.format("%1$s_%2$s_%3$s_%4$s.html", "/preview", survey.getId(), reportName, ReportType.PDF.getName());
 		
 		// Update status and storage name
 		String surveyStatus = preview != null? 
@@ -124,6 +132,7 @@ public class SurveyController {
 		params.put(ConfigConstant.SURVEY_PDF_URL.getName(), reportUrl);
 		
 		emailSvc.sendMail(survey, params);
+		logger.info("Send email for the survey " + survey.getId());
 		
 		return "redirect:" + reportViewPath;
 	}
@@ -131,5 +140,65 @@ public class SurveyController {
 	@RequestMapping(value = { "/error.html" }, method = RequestMethod.GET)
 	public String showError(ModelMap model) {
 		return "error";
+	}
+	
+	@RequestMapping(value = { "/submit/{surveyId}.html" }, method = RequestMethod.POST)
+	public String finishSurvey(ModelMap model,
+							   @PathVariable int surveyId) {
+		Survey survey = surveySvc.findSurveyWithId(surveyId);
+		survey.setStatus(SurveyStatus.COMPLETED.getValue());
+		surveySvc.saveSurvey(survey);
+		
+		String reportViewPath = String.format("%1$s_%2$s_%3$s_%4$s.html", "/view", survey.getId(), survey.getStorageName(), ReportType.PDF.getName());
+		
+		// Send notification email
+		String baseUrl = ctx.getEnvironment().getProperty(ConfigConstant.BASE_URL.getName());
+		String reportBasePath = ctx.getEnvironment().getProperty(ConfigConstant.REPORT_OUTPUT_BASE_URL.getName());
+		String reportPath = String.format("%1$s%2$s%3$s%4$s%5$s.%6$s", reportBasePath, File.separator, ReportType.PDF.getName(), File.separator, survey.getStorageName(), ReportType.PDF.getName());
+		String reportUrl = String.format("%1$s%2$s", baseUrl, reportPath);
+		
+		Map<String, String> params = new HashMap<String, String>();
+		params.put(ConfigConstant.SURVEY_PDF_URL.getName(), reportUrl);
+		
+		emailSvc.sendMail(survey, params);
+		logger.info("Send email for the survey " + survey.getId());
+		
+		return "redirect:" + reportViewPath;
+	}
+	
+	@SuppressWarnings("unchecked")
+	@RequestMapping(value = { "/calculate_field_{surveyTemplateId}/{fieldName}.html" }, method = RequestMethod.POST)
+	public @ResponseBody String calculateField (@PathVariable int surveyTemplateId,
+												@PathVariable String fieldName,
+												@RequestParam("fields['proposed-keyword']") MultipartFile uploadfile,
+												@Valid SurveyForm form) {
+		try {
+			if (((MultipartFile)uploadfile).getBytes().length > 0) {
+				String fileName = UUID.randomUUID().toString();
+				String uploadPath = ctx.getEnvironment().getRequiredProperty(ConfigConstant.UPLOAD_FOLDER_PATH.getName());
+				String filePath = String.format("%1$s%2$s%3$s", uploadPath, File.separator, fileName);
+				File file = new File(filePath);
+			
+				FileUtils.writeByteArrayToFile(file, ((MultipartFile)uploadfile).getBytes());
+				
+				SurveyCalculate surveyCalc = calculationFactory.createSurveyCalculator(surveyTemplateId);
+				String fieldValue = surveyCalc.calculateField(fieldName, file, form.getFields());
+				
+				JSONObject jsonObj = new JSONObject();
+				jsonObj.put(fieldName, fieldValue);
+				jsonObj.put(SurveyFieldName.UPLOADED_FILE_NAME.getName(), fileName);
+				jsonObj.put("status", "success");
+				
+				return jsonObj.toJSONString();
+			}
+		} catch (IllegalStateException | IOException e) {
+			e.printStackTrace();
+			logger.error(e.getStackTrace());
+		}
+		
+		JSONObject jsonObj = new JSONObject();
+		jsonObj.put("status", "error");
+		
+		return jsonObj.toJSONString();
 	}
 }

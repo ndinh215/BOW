@@ -28,27 +28,31 @@ public class ReportController {
 	
 	private static final Logger logger = Logger.getLogger(ReportController.class);
 	
-	@RequestMapping(value = { "/view_{outputId}_{outputType}.html" }, method = RequestMethod.GET)
-	public String viewReport(@PathVariable String outputId, 
+	@RequestMapping(value = { "/view_{surveyId}_{outputId}_{outputType}.html" }, method = RequestMethod.GET)
+	public String viewReport(@PathVariable String surveyId,
+							 @PathVariable String outputId, 
 							 @PathVariable String outputType, 
 							 ModelMap model) {
 		logger.info(String.format("View the survey %1$s with format %2$s", outputId, outputType));
 		
 		String reportBasePath = ctx.getEnvironment().getProperty(ConfigConstant.REPORT_OUTPUT_BASE_URL.getName());
 		String reportPath = String.format("%1$s%2$s%3$s%4$s%5$s.%6$s", reportBasePath, File.separator, outputType, File.separator, outputId, outputType);
+		model.addAttribute("surveyId", reportPath);
 		model.addAttribute("reportPath", reportPath);
 		
 		return "view_report";
 	}
 	
-	@RequestMapping(value = { "/preview_{outputId}_{outputType}.html" }, method = RequestMethod.GET)
-	public String previewReport(@PathVariable String outputId, 
+	@RequestMapping(value = { "/preview_{surveyId}_{outputId}_{outputType}.html" }, method = RequestMethod.GET)
+	public String previewReport(@PathVariable String surveyId,
+								@PathVariable String outputId, 
 								@PathVariable String outputType, 
 								ModelMap model) {
 		logger.info(String.format("View the survey %1$s with format %2$s", outputId, outputType));
 		
 		String reportBasePath = ctx.getEnvironment().getProperty(ConfigConstant.REPORT_OUTPUT_BASE_URL.getName());
 		String reportPath = String.format("%1$s%2$s%3$s%4$s%5$s.%6$s", reportBasePath, File.separator, outputType, File.separator, outputId, outputType);
+		model.addAttribute("surveyId", reportPath);
 		model.addAttribute("reportPath", reportPath);
 		model.addAttribute("isPreview", true);
 		

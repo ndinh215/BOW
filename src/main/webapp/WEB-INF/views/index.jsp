@@ -33,9 +33,9 @@
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 main-menu">
 				 <span class="menu-item"><a href="index.html">HOME</a></span>
-				 |
+				 &frasl;
 				 <span class="menu-item"><a href="templates.html">SURVEYS</a></span>
-				 | 
+				 &frasl; 
 				 <span class="menu-item"><a href="http://about.panpages.com/">ABOUT</a></span>
 			</div>
 		</div>
