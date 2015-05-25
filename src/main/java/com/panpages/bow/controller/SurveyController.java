@@ -150,7 +150,7 @@ public class SurveyController {
 		survey.setStatus(SurveyStatus.COMPLETED.getValue());
 		surveySvc.saveSurvey(survey);
 		
-		String reportViewPath = String.format("%1$s_%2$s_%3$s_%4$s.html", "/view", survey.getId(), survey.getStorageName(), ReportType.PDF.getName());
+		String reportViewPath = String.format("%1$s/%2$s/%3$s_%4$s.html", "/view", survey.getId(), survey.getStorageName(), ReportType.PDF.getName());
 		
 		// Send notification email
 		String baseUrl = ctx.getEnvironment().getProperty(ConfigConstant.BASE_URL.getName());

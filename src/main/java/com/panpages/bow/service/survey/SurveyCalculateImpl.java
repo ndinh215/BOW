@@ -66,6 +66,9 @@ public class SurveyCalculateImpl implements SurveyCalculate {
 			}
 		}
 		
+		// Refresh survey
+		survey = surveySvc.findSurveyWithId(survey.getId());
+		
 		///////////////////// Count indexes /////////////////////
 		// Average of bid (proposed-keyword[2])
 		float averageCostPerClick = -1;

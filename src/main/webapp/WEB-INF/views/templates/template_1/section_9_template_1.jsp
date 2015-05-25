@@ -30,7 +30,7 @@ $(function() {
 						<input name="fields['uploaded-file-name']" id="uploaded-file-name" type="hidden">
 					</span>
 					<label id="file-name"></label>
-					<input name="fields['file-name-uploaded']" id="file-name-uploaded" type="hidden">
+					<input id="file-name-uploaded" type="hidden">
 					<label id="upload-error"></label>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
