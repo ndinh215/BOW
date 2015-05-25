@@ -49,7 +49,6 @@ function submitSurvey() {
 var myform = null, fileUpload = null;
 
 $(document ).ready(function() {
-	'use strict';
 	$('.survey-tip').tooltip({html: true, placement: 'bottom'});
 	
     fileUpload = $('#file-upload').fileupload({

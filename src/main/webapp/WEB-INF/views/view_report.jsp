@@ -69,7 +69,7 @@
 			    </div>
 			  </c:when>
 			  <c:otherwise>
-			  	<a href="<c:url value="${reportPath}" />"><img class="img-responsive"  alt="Click to Join" src="assets/images/submit-thank.png"/></a>			
+			  	<a href="<c:url value="${reportPath}" />"><img class="img-responsive"  alt="Click to Join" src="<c:url value="/assets/images/submit-thank.png" />"></a>			
 			  </c:otherwise>
 			</c:choose>
 		</div>
