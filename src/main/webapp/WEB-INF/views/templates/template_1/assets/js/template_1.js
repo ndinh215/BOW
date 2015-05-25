@@ -118,12 +118,6 @@ $(document ).ready(function() {
 		revealfx: ['slide', 500],
 		
 		onpagechangestart:function($, i, $fieldset, rawi) {
-			// Hidden or visible preview or submit button
-			$("#previewBtn").css("display", rawi == "next" && i + 1 == 9? "inline" : "none");
-			$("#submitBtn").css("display", rawi == "next" && i + 1 == 9? "inline" : "none");
-			$(".formpaginate .status").css("display", rawi == "next" && i + 1 == 9? "none" : "inline");
-			$(".formpaginate .next").css("display", rawi == "next" && i + 1 == 9? "none" : "inline");
-			
 			if(rawi == "next"){
 				var validated = true;
 				var fieldset = $fieldset.get(0); 
@@ -1537,7 +1531,9 @@ $(document ).ready(function() {
 						else if((allels[i].getAttribute('id')) == "file-upload"){
 							if ($('#uploaded-file-name').val().length == 0) {
 								alert("Please, input a keywords file!");
+								allels[i].focus();
 								validated = false;
+								break; 
 							}
 						}
 						/* STEP 10 */
@@ -1558,6 +1554,15 @@ $(document ).ready(function() {
 						
 					} //end outer if
 				}
+				
+				// Hidden or visible preview or submit button
+				if (validated) {
+					$("#previewBtn").css("display", rawi == "next" && i + 1 == 9? "inline" : "none");
+					$("#submitBtn").css("display", rawi == "next" && i + 1 == 9? "inline" : "none");
+					$(".formpaginate .status").css("display", rawi == "next" && i + 1 == 9? "none" : "inline");
+					$(".formpaginate .next").css("display", rawi == "next" && i + 1 == 9? "none" : "inline");
+				}
+				
 				return validated;
 			}
 		}
