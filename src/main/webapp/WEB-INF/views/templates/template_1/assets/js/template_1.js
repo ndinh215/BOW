@@ -1555,16 +1555,15 @@ $(document ).ready(function() {
 					} //end outer if
 				}
 				
-				// Hidden or visible preview or submit button
-				if (validated) {
-					$("#previewBtn").css("display", rawi == "next" && i + 1 == 9? "inline" : "none");
-					$("#submitBtn").css("display", rawi == "next" && i + 1 == 9? "inline" : "none");
-					$(".formpaginate .status").css("display", rawi == "next" && i + 1 == 9? "none" : "inline");
-					$(".formpaginate .next").css("display", rawi == "next" && i + 1 == 9? "none" : "inline");
-				}
-				
-				return validated;
 			}
+			
+			// Hidden or visible preview or submit button
+			$("#previewBtn").css("display", rawi == "next" && myform.currentsection + 1 == 9? "inline" : "none");
+			$("#submitBtn").css("display", rawi == "next" && myform.currentsection + 1 == 9? "inline" : "none");
+			$(".formpaginate .status").css("display", rawi == "next" && myform.currentsection + 1 == 9? "none" : "inline");
+			$(".formpaginate .next").css("display", rawi == "next" && myform.currentsection + 1 == 9? "none" : "inline");
+			
+			return validated;
 		}
 	});
 	
