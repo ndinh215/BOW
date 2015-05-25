@@ -49,6 +49,9 @@ function submitSurvey() {
 var myform = null, fileUpload = null;
 
 $(document ).ready(function() {
+	
+	var fileName = $('#file-name-uploaded').val();
+	$('#file-name').text(fileName);
 	$('.survey-tip').tooltip({html: true, placement: 'bottom'});
 	
     fileUpload = $('#file-upload').fileupload({
