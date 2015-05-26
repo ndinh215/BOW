@@ -15,7 +15,8 @@ public enum SurveyFieldName {
 	STEP_5_A("step-5-a"), 
 	STEP_5_B("step-5-b"), 
 	
-	UPLOADED_FILE_NAME("uploaded-file-name");
+	UPLOADED_FILE_NAME("uploaded-file-name"), 
+	FIELD_TOTAL_GOOGLE_BUDGET("total-google-budget");
 	
 	private String name;
 	

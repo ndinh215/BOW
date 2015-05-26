@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_5" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="d678d0b9-ab96-4489-adb0-502e4744b263">
 	<property name="ireport.zoom" value="1.2100000000000006"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="288"/>
+	<property name="ireport.y" value="402"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
 	<parameter name="sections" class="java.util.List"/>
 	<background>
@@ -484,7 +484,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="Open Sans" size="10"/>
 				</textElement>
-				<text><![CDATA[Google AdWords Search & Mobile]]></text>
+				<text><![CDATA[Google Search & Mobile]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="115" y="353" width="80" height="20" uuid="e01274d9-8604-416c-baaf-05c77cf92fb6"/>
@@ -869,7 +869,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="Open Sans" size="10"/>
 				</textElement>
-				<text><![CDATA[Google AdWords Search & Mobile]]></text>
+				<text><![CDATA[Google Search & Mobile]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
 				<reportElement mode="Transparent" x="484" y="620" width="96" height="20" backcolor="#FFFF99" uuid="72734da3-a770-4253-ad68-9f287503968b"/>

@@ -3,6 +3,7 @@ package com.panpages.bow.controller;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -187,6 +188,49 @@ public class SurveyController {
 				
 				JSONObject jsonObj = new JSONObject();
 				jsonObj.put(fieldName, fieldValue);
+				jsonObj.put(SurveyFieldName.UPLOADED_FILE_NAME.getName(), fileName);
+				jsonObj.put("status", "success");
+				
+				return jsonObj.toJSONString();
+			}
+		} catch (IllegalStateException | IOException e) {
+			e.printStackTrace();
+			logger.error(e.getStackTrace());
+		}
+		
+		JSONObject jsonObj = new JSONObject();
+		jsonObj.put("status", "error");
+		
+		return jsonObj.toJSONString();
+	}
+	
+	@SuppressWarnings("unchecked")
+	@RequestMapping(value = { "/calculate_fields_{surveyTemplateId}/{fieldGroupName}.html" }, method = RequestMethod.POST)
+	public @ResponseBody String calculateFields (@PathVariable int surveyTemplateId,
+												@PathVariable String fieldGroupName,
+												@RequestParam("fields['proposed-keyword']") MultipartFile uploadfile,
+												@Valid SurveyForm form) {
+		try {
+			if (((MultipartFile)uploadfile).getBytes().length > 0) {
+				String fileName = UUID.randomUUID().toString();
+				String uploadPath = ctx.getEnvironment().getRequiredProperty(ConfigConstant.UPLOAD_FOLDER_PATH.getName());
+				String filePath = String.format("%1$s%2$s%3$s", uploadPath, File.separator, fileName);
+				File file = new File(filePath);
+			
+				FileUtils.writeByteArrayToFile(file, ((MultipartFile)uploadfile).getBytes());
+				
+				SurveyCalculate surveyCalc = calculationFactory.createSurveyCalculator(surveyTemplateId);
+				Map<String, String> fieldValues = surveyCalc.calculateFields(fieldGroupName, file, form.getFields());
+				
+				JSONObject jsonObj = new JSONObject();
+				
+				Iterator<String> fieldKeys = fieldValues.keySet().iterator();
+				while (fieldKeys.hasNext()) {
+					String key = fieldKeys.next();
+					
+					jsonObj.put(key, fieldValues.get(key));
+				}
+				
 				jsonObj.put(SurveyFieldName.UPLOADED_FILE_NAME.getName(), fileName);
 				jsonObj.put("status", "success");
 				

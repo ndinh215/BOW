@@ -45,7 +45,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 main-menu">
 				 <span class="menu-item"><a href="<c:url value="/index.html" />">HOME</a></span>
 				 &frasl;
-				 <span class="menu-item"><a href="<c:url value="templates.html" />">SURVEYS</a></span>
+				 <span class="menu-item"><a href="<c:url value="/templates.html" />">SURVEYS</a></span>
 				 &frasl; 
 				 <span class="menu-item"><a href="http://about.panpages.com/">ABOUT</a></span>
 			</div>

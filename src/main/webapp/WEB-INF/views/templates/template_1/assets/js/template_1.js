@@ -60,13 +60,16 @@ $(document ).ready(function() {
 	$('#Calculation-Code-L-OptionA').text(budgetOptionA);
 	var budgetOptionB = $('#budget-option-b').val();
 	$('#Calculation-Code-L-OptionB').text(budgetOptionB);
+	var totalGoogleBudget = $('#total-google-budget').val();
+	$('#google-search-mobile-option-a-input').val(parseFloat(totalGoogleBudget).toFixed(2));
+	$('#google-search-mobile-option-b-input').val(parseFloat(totalGoogleBudget).toFixed(2));
 	
 	if ($('#uploaded-file-name').val().length > 0) {
 		$('#progress .progress-bar-success').css("width", "100%");
 	}
 	
     fileUpload = $('#file-upload').fileupload({
-        url: "calculate_field_1/total-campaign-budget.html",
+        url: "calculate_fields_1/total-campaign-budget.html",
         dataType: 'json',
         autoUpload: false,
         acceptFileTypes: /(\.|\/)(text|csv)$/i,
@@ -75,11 +78,16 @@ $(document ).ready(function() {
         	var status = data.response().result['status'];
         	if (status == 'success') {
         		var totalCampaignBudget = parseFloat(data.response().result['total-campaign-budget']).toFixed(2);
+        		var totalGoogleBudget = parseFloat(data.response().result['total-google-budget']).toFixed(2);
         		// Set total campaign budget value
         		$('#Calculation-Code-L-OptionA').text(totalCampaignBudget);
         		$('#budget-option-a').val(totalCampaignBudget);
         		$('#Calculation-Code-L-OptionB').text(parseFloat(totalCampaignBudget*0.75).toFixed(2));
         		$('#budget-option-b').val(parseFloat(totalCampaignBudget*0.75).toFixed(2));
+        		// Set google budget
+        		$('#total-google-budget').val(parseFloat(totalGoogleBudget).toFixed(2));
+        		$('#google-search-mobile-option-a-input').val(parseFloat(totalGoogleBudget).toFixed(2));
+        		$('#google-search-mobile-option-b-input').val(parseFloat(totalGoogleBudget).toFixed(2));
         		// Set uploaded file name
         		var uploadedFileName = data.response().result['uploaded-file-name'];
         		$('#uploaded-file-name').val(uploadedFileName);

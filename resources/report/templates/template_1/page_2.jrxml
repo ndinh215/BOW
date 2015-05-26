@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_2" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="aee805f9-1daf-45e2-b5e2-182a92e0d063">
 	<property name="ireport.zoom" value="1.3310000000000024"/>
 	<property name="ireport.x" value="11"/>
-	<property name="ireport.y" value="630"/>
+	<property name="ireport.y" value="150"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["H:\\workspace\\BOW\\report\\templates\\template_3\\"]]></defaultValueExpression>
 	</parameter>
@@ -46,11 +46,29 @@
 				<text><![CDATA[people visited your website]]></text>
 			</staticText>
 			<image>
-				<reportElement x="334" y="357" width="80" height="80" uuid="64f61d69-b584-4194-a029-39bf218c77c8"/>
+				<reportElement x="334" y="357" width="80" height="80" uuid="64f61d69-b584-4194-a029-39bf218c77c8">
+					<printWhenExpression><![CDATA[((java.util.List)(com.panpages.bow.model.utils.SurveyUtils.findFieldsWithFieldTemplateSlugName
+				("advertising-solution-subscribed", (java.util.List)
+					(
+						(com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-3",$P{sections})
+					).getFields(),
+                    "super-pages"
+				)
+			)).size()>0]]></printWhenExpression>
+				</reportElement>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_1/national.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="426" y="389" width="144" height="34" uuid="402f4245-f7d8-457d-a3da-98ee256422a5"/>
+				<reportElement x="426" y="389" width="144" height="34" uuid="402f4245-f7d8-457d-a3da-98ee256422a5">
+					<printWhenExpression><![CDATA[((java.util.List)(com.panpages.bow.model.utils.SurveyUtils.findFieldsWithFieldTemplateSlugName
+				("advertising-solution-subscribed", (java.util.List)
+					(
+						(com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-3",$P{sections})
+					).getFields(),
+                    "super-pages"
+				)
+			)).size()>0]]></printWhenExpression>
+				</reportElement>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Open Sans" size="13"/>
 				</textElement>
@@ -183,7 +201,16 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("improve-website-maintenance", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-4",$P{sections})).getFields())).getValue() != null ? "Improve Website Maintenance":null]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="426" y="357" width="144" height="32" forecolor="#0000CC" uuid="e28c4225-8df8-4778-85ce-15ca718a9025"/>
+				<reportElement x="426" y="357" width="144" height="32" forecolor="#0000CC" uuid="e28c4225-8df8-4778-85ce-15ca718a9025">
+					<printWhenExpression><![CDATA[((java.util.List)(com.panpages.bow.model.utils.SurveyUtils.findFieldsWithFieldTemplateSlugName
+				("advertising-solution-subscribed", (java.util.List)
+					(
+						(com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-3",$P{sections})
+					).getFields(),
+                    "super-pages"
+				)
+			)).size()>0]]></printWhenExpression>
+				</reportElement>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Open Sans" size="22"/>
 				</textElement>

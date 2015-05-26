@@ -11,5 +11,6 @@ public interface SurveyCalculate {
 	
 	public String calculateField(String fieldName, File fieldsFile, Map<String, Object> map);
 	void calculateFields(Survey survey, SurveyService surveySvc, ApplicationContext ctx);
+	public Map<String, String> calculateFields(String fieldName, File fieldsFile, Map<String, Object> params);
 	
 }
