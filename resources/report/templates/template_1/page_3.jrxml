@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_3" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Empty" uuid="77f76044-2c3b-433f-aff5-55ed88ca1c06">
 	<property name="ireport.zoom" value="0.9982500000000003"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="431"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
@@ -11,13 +11,13 @@
 		<band splitType="Stretch"/>
 	</background>
 	<summary>
-		<band height="842" splitType="Stretch">
+		<band height="804" splitType="Stretch">
 			<image>
 				<reportElement x="15" y="19" width="176" height="50" uuid="519cddde-e024-428d-979a-3fb916b6111e"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_3/TMPanPanpages.jpg"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="191" y="19" width="267" height="50" isPrintWhenDetailOverflows="true" uuid="a80868ab-9eab-408c-9de0-2772656fee60"/>
+				<reportElement x="191" y="19" width="267" height="50" uuid="a80868ab-9eab-408c-9de0-2772656fee60"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Open Sans" size="25"/>
 				</textElement>
@@ -44,7 +44,7 @@
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_2/gender.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement mode="Opaque" x="17" y="500" width="565" height="30" backcolor="#CCCCFF" uuid="abdd0913-6fd6-492d-9982-5f192031f6d2"/>
+				<reportElement mode="Opaque" x="17" y="491" width="565" height="30" backcolor="#CCCCFF" uuid="abdd0913-6fd6-492d-9982-5f192031f6d2"/>
 				<box leftPadding="10" rightPadding="10"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Open Sans" size="12" isBold="false"/>
@@ -52,7 +52,7 @@
 				<text><![CDATA[This adverting plan is designed to help you in achieving your business objective(s).]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="17" y="540" width="555" height="20" uuid="883448c7-22cd-4ffb-b8f7-7780ff8e9931"/>
+				<reportElement x="17" y="527" width="555" height="20" uuid="883448c7-22cd-4ffb-b8f7-7780ff8e9931"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Open Sans" size="12"/>
 				</textElement>
@@ -98,10 +98,10 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Open Sans" size="32"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[2]]></textFieldExpression>
 			</textField>
 			<subreport>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="85" y="110" width="497" height="50" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="8fdf9158-912b-4e52-a80c-fee34e1cf689"/>
+				<reportElement x="85" y="110" width="497" height="50" isRemoveLineWhenBlank="true" uuid="8fdf9158-912b-4e52-a80c-fee34e1cf689"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -120,7 +120,7 @@
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/advertise.jasper"]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="85" y="190" width="497" height="50" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="11667036-82bf-4904-be74-a529453a8df2"/>
+				<reportElement x="85" y="190" width="497" height="50" isRemoveLineWhenBlank="true" uuid="11667036-82bf-4904-be74-a529453a8df2"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource(
 	com.panpages.bow.model.utils.SurveyUtils.createSurveyBeans(
 		com.panpages.bow.model.utils.SurveyUtils.createSurveyBean
@@ -136,7 +136,7 @@
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/languages.jasper"]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="85" y="270" width="497" height="50" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="cefdbc7e-94ea-4d6e-83ec-173dffa5cbbd"/>
+				<reportElement x="85" y="270" width="497" height="50" isRemoveLineWhenBlank="true" uuid="cefdbc7e-94ea-4d6e-83ec-173dffa5cbbd"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource(
 	com.panpages.bow.model.utils.SurveyUtils.createSurveyBeans(
 		com.panpages.bow.model.utils.SurveyUtils.createSurveyBean
@@ -152,7 +152,7 @@
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/people.jasper"]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="85" y="350" width="497" height="50" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="098bf1f1-f5a4-4c4e-9309-e4019037a0fc"/>
+				<reportElement x="85" y="350" width="497" height="50" isRemoveLineWhenBlank="true" uuid="098bf1f1-f5a4-4c4e-9309-e4019037a0fc"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource(
 	com.panpages.bow.model.utils.SurveyUtils.createSurveyBeans(
 		com.panpages.bow.model.utils.SurveyUtils.createSurveyBean
@@ -168,7 +168,7 @@
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/ages.jasper"]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="85" y="430" width="497" height="50" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="b189d3fd-cacb-4f73-9c36-2921de6a85e6"/>
+				<reportElement x="85" y="430" width="497" height="50" isRemoveLineWhenBlank="true" uuid="b189d3fd-cacb-4f73-9c36-2921de6a85e6"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource(
 	com.panpages.bow.model.utils.SurveyUtils.createSurveyBeans(
 		com.panpages.bow.model.utils.SurveyUtils.createSurveyBean
@@ -184,7 +184,7 @@
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/gender.jasper"]]></subreportExpression>
 			</subreport>
 			<subreport>
-				<reportElement positionType="Float" x="0" y="560" width="595" height="282" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="516149e0-89d5-45ce-9b13-1f35033ae112"/>
+				<reportElement x="0" y="548" width="595" height="246" isRemoveLineWhenBlank="true" uuid="516149e0-89d5-45ce-9b13-1f35033ae112"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
