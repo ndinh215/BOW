@@ -17,8 +17,6 @@ $(window).bind("load", function() {
 });
 
 function previewSurvey() {
-	$('#surveyForm').attr('action', 'survey_1.html?preview');
-	$('#surveyForm').submit();
 	
 	$("#management-fee-option-a").prop( "disabled", false );
 	$("#subtotal-option-a").prop( "disabled", false );
@@ -29,11 +27,12 @@ function previewSurvey() {
 	$("#subtotal-option-b").prop( "disabled", false );
 	$("#gov-tax-option-b").prop( "disabled", false );
 	$("#grand-total-option-b").prop( "disabled", false );
+	
+	$('#surveyForm').attr('action', 'survey_1.html?preview');
+	$('#surveyForm').submit();
 }
 
 function submitSurvey() {
-	$('#surveyForm').attr('action', 'survey_1.html?submit');
-	$('#surveyForm').submit();
 
 	$("#management-fee-option-a").prop( "disabled", false );
 	$("#subtotal-option-a").prop( "disabled", false );
@@ -44,6 +43,9 @@ function submitSurvey() {
 	$("#subtotal-option-b").prop( "disabled", false );
 	$("#gov-tax-option-b").prop( "disabled", false );
 	$("#grand-total-option-b").prop( "disabled", false );
+	
+	$('#surveyForm').attr('action', 'survey_1.html?submit');
+	$('#surveyForm').submit();
 }
 
 var myform = null, fileUpload = null;
@@ -53,6 +55,11 @@ $(document ).ready(function() {
 	
 	var fileName = $('#file-name-uploaded').val();
 	$('#file-name').text(fileName);
+	
+	var budgetOptionA = $('#budget-option-a').val();
+	$('#Calculation-Code-L-OptionA').text(budgetOptionA);
+	var budgetOptionB = $('#budget-option-b').val();
+	$('#Calculation-Code-L-OptionB').text(budgetOptionB);
 	
 	if ($('#uploaded-file-name').val().length > 0) {
 		$('#progress .progress-bar-success').css("width", "100%");
@@ -70,7 +77,9 @@ $(document ).ready(function() {
         		var totalCampaignBudget = parseFloat(data.response().result['total-campaign-budget']).toFixed(2);
         		// Set total campaign budget value
         		$('#Calculation-Code-L-OptionA').text(totalCampaignBudget);
+        		$('#budget-option-a').val(totalCampaignBudget);
         		$('#Calculation-Code-L-OptionB').text(parseFloat(totalCampaignBudget*0.75).toFixed(2));
+        		$('#budget-option-b').val(parseFloat(totalCampaignBudget*0.75).toFixed(2));
         		// Set uploaded file name
         		var uploadedFileName = data.response().result['uploaded-file-name'];
         		$('#uploaded-file-name').val(uploadedFileName);
@@ -3243,7 +3252,8 @@ $(document ).ready(function() {
 		
 		var temptsum = tempt2 + tempt3 + tempt6 + tempt7 + tempt8 + tempt9;
 		managementFeeOptionA = ((temptsum * 1.3) - temptsum).toFixed(2);
-		subtotalOptionA += temptsum;
+		var subA = parseInt(temptsum) + parseInt(managementFeeOptionA);
+		subtotalOptionA += subA;
 		govtaxOptionA = subtotalOptionA * 6 / 100;
 		grandtotalOptionA = subtotalOptionA + govtaxOptionA;
 		
@@ -3624,7 +3634,8 @@ $(document ).ready(function() {
 		
 		var temptsum = tempt2 + tempt3 + tempt6 + tempt7 + tempt8 + tempt9;
 		managementFeeOptionB = ((temptsum * 1.3) - temptsum).toFixed(2);
-		subtotalOptionB += temptsum;
+		var subB = parseInt(temptsum) + parseInt(managementFeeOptionB);
+		subtotalOptionB += subB;
 		govtaxOptionB = subtotalOptionB * 6 / 100;
 		grandtotalOptionB = subtotalOptionB + govtaxOptionB;
 		

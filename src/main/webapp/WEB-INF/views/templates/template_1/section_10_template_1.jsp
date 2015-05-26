@@ -92,6 +92,7 @@
 							</tr>
 						</table>
 						<p>Suggested advertising budget for your advertiser is <span id="Calculation-Code-L-OptionA" name="fields['total-campaign-budget']" style="font-weight: bold;"></span></p>
+						<input id="budget-option-a" type="hidden">
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -170,6 +171,7 @@
 							</tr>
 						</table>
 						<p>Suggested advertising budget for your advertiser is <span id="Calculation-Code-L-OptionB" style="font-weight: bold;"></span></p>
+						<input id="budget-option-b" type="hidden">
 					</div>
 				</div>
 			</div>
