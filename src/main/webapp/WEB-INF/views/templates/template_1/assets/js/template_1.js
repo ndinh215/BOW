@@ -3012,9 +3012,21 @@ $(document ).ready(function() {
 		if(this.checked == true){
 			$('#step-8-panpages').val("true");
 			$( "#step-8" ).append( '<input type="hidden" id="step81"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="panpages">');
+			if(($("#option-a").is(':checked')) == true){
+				$("#panpages-option-a-input").prop( "disabled", false );
+			} else {
+				$("#panpages-option-a-input").prop( "disabled", true );
+			}
+			if(($("#option-b").is(':checked')) == true){
+				$("#panpages-option-b-input").prop( "disabled", false );
+			} else {
+				$("#panpages-option-b-input").prop( "disabled", true );
+			}
 		} else{
 			$('#step-8-panpages').val("false");
 			$("#step81").remove();
+			$("#panpages-option-a-input").prop( "disabled", true );
+			$("#panpages-option-b-input").prop( "disabled", true );
 		}			     
 	});
 	$("#step-8-google-adwords-search-mobile").click(function(){
@@ -3022,9 +3034,21 @@ $(document ).ready(function() {
 		if(this.checked == true){
 			$('#step-8-google-adwords-search-mobile').val("true");
 			$( "#step-8" ).append( '<input type="hidden" id="step82"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="google-adWords-search-mobile">');
+			if(($("#option-a").is(':checked')) == true){
+				$("#google-search-mobile-option-a-input").prop( "disabled", false );
+			} else {
+				$("#google-search-mobile-option-a-input").prop( "disabled", true );
+			}
+			if(($("#option-b").is(':checked')) == true){
+				$("#google-search-mobile-option-b-input").prop( "disabled", false );
+			} else {
+				$("#google-search-mobile-option-b-input").prop( "disabled", true );
+			}
 		} else{
 			$('#step-8-google-adwords-search-mobile').val("false");
 			$("#step82").remove();
+			$("#google-search-mobile-option-a-input").prop( "disabled", true );
+			$("#google-search-mobile-option-b-input").prop( "disabled", true );
 		}
 	});
 	$("#step-8-google-display-network").click(function(){
@@ -3032,9 +3056,21 @@ $(document ).ready(function() {
 		if(this.checked == true){
 			$('#step-8-google-display-network').val("true");
 			$( "#step-8" ).append( '<input type="hidden" id="step83"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="google-display-network">');
+			if(($("#option-a").is(':checked')) == true){
+				$("#google-display-network-option-a-input").prop( "disabled", false );
+			} else {
+				$("#google-display-network-option-a-input").prop( "disabled", true );
+			}
+			if(($("#option-b").is(':checked')) == true){
+				$("#google-display-network-option-b-input").prop( "disabled", false );
+			} else {
+				$("#google-display-network-option-b-input").prop( "disabled", true );
+			}
 		} else{
 			$('#step-8-google-display-network').val("false");
 			$("#step83").remove();
+			$("#google-display-network-option-a-input").prop( "disabled", true );
+			$("#google-display-network-option-b-input").prop( "disabled", true );
 		}
 	});
 	$("#step-8-yahoo-search").click(function(){
@@ -3042,9 +3078,21 @@ $(document ).ready(function() {
 		if(this.checked == true){
 			$('#step-8-yahoo-search').val("true");
 			$( "#step-8" ).append( '<input type="hidden" id="step84"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="yahoo-search">');
+			if(($("#option-a").is(':checked')) == true){
+				$("#yahoo-search-option-a-input").prop( "disabled", false );
+			} else {
+				$("#yahoo-search-option-a-input").prop( "disabled", true );
+			}
+			if(($("#option-b").is(':checked')) == true){
+				$("#yahoo-search-option-b-input").prop( "disabled", false );
+			} else {
+				$("#yahoo-search-option-b-input").prop( "disabled", true );
+			}
 		} else{
 			$('#step-8-yahoo-search').val("false");
 			$("#step84").remove();
+			$("#yahoo-search-option-a-input").prop( "disabled", true );
+			$("#yahoo-search-option-b-input").prop( "disabled", true );
 		}
 	});
 	$("#step-8-yahoo-display").click(function(){
@@ -3052,9 +3100,21 @@ $(document ).ready(function() {
 		if(this.checked == true){
 			$('#step-8-yahoo-display').val("true");
 			$( "#step-8" ).append( '<input type="hidden" id="step85"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="yahoo-display">');
+			if(($("#option-a").is(':checked')) == true){
+				$("#yahoo-display-option-a-input").prop( "disabled", false );
+			} else {
+				$("#yahoo-display-option-a-input").prop( "disabled", true );
+			}
+			if(($("#option-b").is(':checked')) == true){
+				$("#yahoo-display-option-b-input").prop( "disabled", false );
+			} else {
+				$("#yahoo-display-option-b-input").prop( "disabled", true );
+			}
 		} else{
 			$('#step-8-yahoo-display').val("false");
 			$("#step85").remove();
+			$("#yahoo-display-option-a-input").prop( "disabled", true );
+			$("#yahoo-display-option-b-input").prop( "disabled", true );
 		}
 	});
 	$("#step-8-youtube-ads").click(function(){
@@ -3062,9 +3122,21 @@ $(document ).ready(function() {
 		if(this.checked == true){
 			$('#step-8-youtube-ads').val("true");
 			$( "#step-8" ).append( '<input type="hidden" id="step86"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="youtube-ads">');
+			if(($("#option-a").is(':checked')) == true){
+				$("#youtube-ads-option-a-input").prop( "disabled", false );
+			} else {
+				$("#youtube-ads-option-a-input").prop( "disabled", true );
+			}
+			if(($("#option-b").is(':checked')) == true){
+				$("#youtube-ads-option-b-input").prop( "disabled", false );
+			} else {
+				$("#youtube-ads-option-b-input").prop( "disabled", true );
+			}
 		} else{
 			$('#step-8-youtube-ads').val("false");
 			$("#step86").remove();
+			$("#youtube-ads-option-a-input").prop( "disabled", true );
+			$("#youtube-ads-option-b-input").prop( "disabled", true );
 		}
 	});
 	$("#step-8-facebook-ads").click(function(){
@@ -3072,9 +3144,27 @@ $(document ).ready(function() {
 		if(this.checked == true){
 			$('#step-8-facebook-ads').val("true");
 			$( "#step-8" ).append( '<input type="hidden" id="step87"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="facebook-ads">');
+			if(($("#option-a").is(':checked')) == true){
+				$("#facebook-ads-option-a-input").prop( "disabled", false );
+				$("#facebook-marketing-option-a-input").prop( "disabled", false );
+			} else {
+				$("#facebook-ads-option-a-input").prop( "disabled", true );
+				$("#facebook-marketing-option-a-input").prop( "disabled", true );
+			}
+			if(($("#option-b").is(':checked')) == true){
+				$("#facebook-ads-option-b-input").prop( "disabled", false );
+				$("#facebook-marketing-option-b-input").prop( "disabled", false );
+			} else {
+				$("#facebook-ads-option-b-input").prop( "disabled", true );
+				$("#facebook-marketing-option-b-input").prop( "disabled", true );
+			}
 		} else{
 			$('#step-8-facebook-ads').val("false");
 			$("#step87").remove();
+			$("#facebook-ads-option-a-input").prop( "disabled", true );
+			$("#facebook-marketing-option-a-input").prop( "disabled", true );
+			$("#facebook-ads-option-b-input").prop( "disabled", true );
+			$("#facebook-marketing-option-b-input").prop( "disabled", true );
 		}
 	});
 	$("#step-8-pan-360").click(function(){
@@ -3082,9 +3172,21 @@ $(document ).ready(function() {
 		if(this.checked == true){
 			$('#step-8-pan-360').val("true");
 			$( "#step-8" ).append( '<input type="hidden" id="step88"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="pan-360">');
+			if(($("#option-a").is(':checked')) == true){
+				$("#pan-360-option-a-input").prop( "disabled", false );
+			} else {
+				$("#pan-360-option-a-input").prop( "disabled", true );
+			}
+			if(($("#option-b").is(':checked')) == true){
+				$("#pan-360-option-b-input").prop( "disabled", false );
+			} else {
+				$("#pan-360-option-b-input").prop( "disabled", true );
+			}
 		} else{
 			$('#step-8-pan-360').val("false");
 			$("#step88").remove();
+			$("#pan-360-option-a-input").prop( "disabled", true );
+			$("#pan-360-option-b-input").prop( "disabled", true );
 		}  
 	});
 	$("#step-8-alibaba-com").click(function(){
@@ -3092,9 +3194,21 @@ $(document ).ready(function() {
 		if(this.checked == true){
 			$('#step-8-alibaba-com').val("true");
 			$( "#step-8" ).append( '<input type="hidden" id="step89"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="alibaba-com">');
+			if(($("#option-a").is(':checked')) == true){
+				$("#alibaba-com-option-a-input").prop( "disabled", false );
+			} else {
+				$("#alibaba-com-option-a-input").prop( "disabled", true );
+			}
+			if(($("#option-b").is(':checked')) == true){
+				$("#alibaba-com-option-b-input").prop( "disabled", false );
+			} else {
+				$("#alibaba-com-option-b-input").prop( "disabled", true );
+			}
 		} else{
 			$('#step-8-alibaba-com').val("false");
 			$("#step89").remove();
+			$("#alibaba-com-option-a-input").prop( "disabled", true );
+			$("#alibaba-com-option-b-input").prop( "disabled", true );
 		}	     
 	});
 	$("#step-8-super-pages").click(function(){
@@ -3102,9 +3216,21 @@ $(document ).ready(function() {
 		if(this.checked == true){
 			$('#step-8-super-pages').val("true");
 			$( "#step-8" ).append( '<input type="hidden" id="step810"'+' name="fields['+"'advertising-solution-recommend'"+']"'+' value="super-pages">');
+			if(($("#option-a").is(':checked')) == true){
+				$("#super-pages-option-a-input").prop( "disabled", false );
+			} else {
+				$("#super-pages-option-a-input").prop( "disabled", true );
+			}
+			if(($("#option-b").is(':checked')) == true){
+				$("#super-pages-option-b-input").prop( "disabled", false );
+			} else {
+				$("#super-pages-option-b-input").prop( "disabled", true );
+			}
 		} else{
 			$('#step-8-super-pages').val("false");
 			$("#step810").remove();
+			$("#super-pages-option-a-input").prop( "disabled", true );
+			$("#super-pages-option-b-input").prop( "disabled", true );
 		}     
 	});
 	
@@ -3363,17 +3489,61 @@ $(document ).ready(function() {
 	
 	if(($("#option-a").is(':checked')) == true){
 		$('#option-a').val("true");
-		$("#panpages-option-a-input").prop( "disabled", false );
-		$("#google-search-mobile-option-a-input").prop( "disabled", false );
-		$("#google-display-network-option-a-input").prop( "disabled", false );
-		$("#yahoo-search-option-a-input").prop( "disabled", false );
-		$("#yahoo-display-option-a-input").prop( "disabled", false );
-		$("#youtube-ads-option-a-input").prop( "disabled", false );
-		$("#facebook-ads-option-a-input").prop( "disabled", false );
-		$("#facebook-marketing-option-a-input").prop( "disabled", false );
-		$("#pan-360-option-a-input").prop( "disabled", false );
-		$("#alibaba-com-option-a-input").prop( "disabled", false );
-		$("#super-pages-option-a-input").prop( "disabled", false );
+		if(($("#step-8-panpages").is(':checked')) == true){
+			$("#panpages-option-a-input").prop( "disabled", false );
+		} else {
+			$("#panpages-option-a-input").prop( "disabled", true );
+		}
+		if(($("#step-8-google-adwords-search-mobile").is(':checked')) == true){
+			$("#google-search-mobile-option-a-input").prop( "disabled", false );
+		} else {
+			$("#google-search-mobile-option-a-input").prop( "disabled", true );
+		}
+		if(($("#step-8-google-display-network").is(':checked')) == true){
+			$("#google-display-network-option-a-input").prop( "disabled", false );
+		} else {
+			$("#google-display-network-option-a-input").prop( "disabled", true );
+		}
+		if(($("#step-8-yahoo-search").is(':checked')) == true){
+			$("#yahoo-search-option-a-input").prop( "disabled", false );
+		} else {
+			$("#yahoo-search-option-a-input").prop( "disabled", true );
+		}
+		if(($("#step-8-yahoo-display").is(':checked')) == true){
+			$("#yahoo-display-option-a-input").prop( "disabled", false );
+		} else {
+			$("#yahoo-display-option-a-input").prop( "disabled", true );
+		}
+		if(($("#step-8-youtube-ads").is(':checked')) == true){
+			$("#youtube-ads-option-a-input").prop( "disabled", false );
+		} else {
+			$("#youtube-ads-option-a-input").prop( "disabled", true );
+		}
+		if(($("#step-8-facebook-ads").is(':checked')) == true){
+			$("#facebook-ads-option-a-input").prop( "disabled", false );
+		} else {
+			$("#facebook-ads-option-a-input").prop( "disabled", true );
+		}
+		if(($("#step-8-facebook-ads").is(':checked')) == true){
+			$("#facebook-marketing-option-a-input").prop( "disabled", false );
+		} else {
+			$("#facebook-marketing-option-a-input").prop( "disabled", true );
+		}
+		if(($("#step-8-pan-360").is(':checked')) == true){
+			$("#pan-360-option-a-input").prop( "disabled", false );
+		} else {
+			$("#pan-360-option-a-input").prop( "disabled", true );
+		}
+		if(($("#step-8-alibaba-com").is(':checked')) == true){
+			$("#alibaba-com-option-a-input").prop( "disabled", false );
+		} else {
+			$("#alibaba-com-option-a-input").prop( "disabled", true );
+		}
+		if(($("#step-8-super-pages").is(':checked')) == true){
+			$("#super-pages-option-a-input").prop( "disabled", false );
+		} else {
+			$("#super-pages-option-a-input").prop( "disabled", true );
+		}
 		$("#others-option-A-input").prop( "disabled", false );
 		
 		$("#management-fee-option-a").prop( "disabled", true );
@@ -3404,17 +3574,61 @@ $(document ).ready(function() {
 	$("#option-a").click(function(){
 		if(($("#option-a").is(':checked')) == true){
 			$('#option-a').val("true");
-			$("#panpages-option-a-input").prop( "disabled", false );
-			$("#google-search-mobile-option-a-input").prop( "disabled", false );
-			$("#google-display-network-option-a-input").prop( "disabled", false );
-			$("#yahoo-search-option-a-input").prop( "disabled", false );
-			$("#yahoo-display-option-a-input").prop( "disabled", false );
-			$("#youtube-ads-option-a-input").prop( "disabled", false );
-			$("#facebook-ads-option-a-input").prop( "disabled", false );
-			$("#facebook-marketing-option-a-input").prop( "disabled", false );
-			$("#pan-360-option-a-input").prop( "disabled", false );
-			$("#alibaba-com-option-a-input").prop( "disabled", false );
-			$("#super-pages-option-a-input").prop( "disabled", false );
+			if(($("#step-8-panpages").is(':checked')) == true){
+				$("#panpages-option-a-input").prop( "disabled", false );
+			} else {
+				$("#panpages-option-a-input").prop( "disabled", true );
+			}
+			if(($("#step-8-google-adwords-search-mobile").is(':checked')) == true){
+				$("#google-search-mobile-option-a-input").prop( "disabled", false );
+			} else {
+				$("#google-search-mobile-option-a-input").prop( "disabled", true );
+			}
+			if(($("#step-8-google-display-network").is(':checked')) == true){
+				$("#google-display-network-option-a-input").prop( "disabled", false );
+			} else {
+				$("#google-display-network-option-a-input").prop( "disabled", true );
+			}
+			if(($("#step-8-yahoo-search").is(':checked')) == true){
+				$("#yahoo-search-option-a-input").prop( "disabled", false );
+			} else {
+				$("#yahoo-search-option-a-input").prop( "disabled", true );
+			}
+			if(($("#step-8-yahoo-display").is(':checked')) == true){
+				$("#yahoo-display-option-a-input").prop( "disabled", false );
+			} else {
+				$("#yahoo-display-option-a-input").prop( "disabled", true );
+			}
+			if(($("#step-8-youtube-ads").is(':checked')) == true){
+				$("#youtube-ads-option-a-input").prop( "disabled", false );
+			} else {
+				$("#youtube-ads-option-a-input").prop( "disabled", true );
+			}
+			if(($("#step-8-facebook-ads").is(':checked')) == true){
+				$("#facebook-ads-option-a-input").prop( "disabled", false );
+			} else {
+				$("#facebook-ads-option-a-input").prop( "disabled", true );
+			}
+			if(($("#step-8-facebook-ads").is(':checked')) == true){
+				$("#facebook-marketing-option-a-input").prop( "disabled", false );
+			} else {
+				$("#facebook-marketing-option-a-input").prop( "disabled", true );
+			}
+			if(($("#step-8-pan-360").is(':checked')) == true){
+				$("#pan-360-option-a-input").prop( "disabled", false );
+			} else {
+				$("#pan-360-option-a-input").prop( "disabled", true );
+			}
+			if(($("#step-8-alibaba-com").is(':checked')) == true){
+				$("#alibaba-com-option-a-input").prop( "disabled", false );
+			} else {
+				$("#alibaba-com-option-a-input").prop( "disabled", true );
+			}
+			if(($("#step-8-super-pages").is(':checked')) == true){
+				$("#super-pages-option-a-input").prop( "disabled", false );
+			} else {
+				$("#super-pages-option-a-input").prop( "disabled", true );
+			}
 			$("#others-option-A-input").prop( "disabled", false );
 			
 			$("#management-fee-option-a").prop( "disabled", true );
@@ -3745,17 +3959,61 @@ $(document ).ready(function() {
 	
 	if(($("#option-b").is(':checked')) == true){
 		$('#option-b').val("true");
-		$("#panpages-option-b-input").prop( "disabled", false );
-		$("#google-search-mobile-option-b-input").prop( "disabled", false );
-		$("#google-display-network-option-b-input").prop( "disabled", false );
-		$("#yahoo-search-option-b-input").prop( "disabled", false );
-		$("#yahoo-display-option-b-input").prop( "disabled", false );
-		$("#youtube-ads-option-b-input").prop( "disabled", false );
-		$("#facebook-ads-option-b-input").prop( "disabled", false );
-		$("#facebook-marketing-option-b-input").prop( "disabled", false );
-		$("#pan-360-option-b-input").prop( "disabled", false );
-		$("#alibaba-com-option-b-input").prop( "disabled", false );
-		$("#super-pages-option-b-input").prop( "disabled", false );
+		if(($("#step-8-panpages").is(':checked')) == true){
+			$("#panpages-option-b-input").prop( "disabled", false );
+		} else {
+			$("#panpages-option-b-input").prop( "disabled", true );
+		}
+		if(($("#step-8-google-adwords-search-mobile").is(':checked')) == true){
+			$("#google-search-mobile-option-b-input").prop( "disabled", false );
+		} else {
+			$("#google-search-mobile-option-b-input").prop( "disabled", true );
+		}
+		if(($("#step-8-google-display-network").is(':checked')) == true){
+			$("#google-display-network-option-b-input").prop( "disabled", false );
+		} else {
+			$("#google-display-network-option-b-input").prop( "disabled", true );
+		}
+		if(($("#step-8-yahoo-search").is(':checked')) == true){
+			$("#yahoo-search-option-b-input").prop( "disabled", false );
+		} else {
+			$("#yahoo-search-option-b-input").prop( "disabled", true );
+		}
+		if(($("#step-8-yahoo-display").is(':checked')) == true){
+			$("#yahoo-display-option-b-input").prop( "disabled", false );
+		} else {
+			$("#yahoo-display-option-b-input").prop( "disabled", true );
+		}
+		if(($("#step-8-youtube-ads").is(':checked')) == true){
+			$("#youtube-ads-option-b-input").prop( "disabled", false );
+		} else {
+			$("#youtube-ads-option-b-input").prop( "disabled", true );
+		}
+		if(($("#step-8-facebook-ads").is(':checked')) == true){
+			$("#facebook-ads-option-b-input").prop( "disabled", false );
+		} else {
+			$("#facebook-ads-option-b-input").prop( "disabled", true );
+		}
+		if(($("#step-8-facebook-ads").is(':checked')) == true){
+			$("#facebook-marketing-option-b-input").prop( "disabled", false );
+		} else {
+			$("#facebook-marketing-option-b-input").prop( "disabled", true );
+		}
+		if(($("#step-8-pan-360").is(':checked')) == true){
+			$("#pan-360-option-b-input").prop( "disabled", false );
+		} else {
+			$("#pan-360-option-b-input").prop( "disabled", true );
+		}
+		if(($("#step-8-alibaba-com").is(':checked')) == true){
+			$("#alibaba-com-option-b-input").prop( "disabled", false );
+		} else {
+			$("#alibaba-com-option-b-input").prop( "disabled", true );
+		}
+		if(($("#step-8-super-pages").is(':checked')) == true){
+			$("#super-pages-option-b-input").prop( "disabled", false );
+		} else {
+			$("#super-pages-option-b-input").prop( "disabled", true );
+		}
 		$("#others-option-b-input").prop( "disabled", false );
 		
 		$("#management-fee-option-b").prop( "disabled", true );
@@ -3787,17 +4045,61 @@ $(document ).ready(function() {
 		$('#option-b').val(this.checked);
 		if(($("#option-b").is(':checked')) == true){
 			$('#option-b').val("true");
-			$("#panpages-option-b-input").prop( "disabled", false );
-			$("#google-search-mobile-option-b-input").prop( "disabled", false );
-			$("#google-display-network-option-b-input").prop( "disabled", false );
-			$("#yahoo-search-option-b-input").prop( "disabled", false );
-			$("#yahoo-display-option-b-input").prop( "disabled", false );
-			$("#youtube-ads-option-b-input").prop( "disabled", false );
-			$("#facebook-ads-option-b-input").prop( "disabled", false );
-			$("#facebook-marketing-option-b-input").prop( "disabled", false );
-			$("#pan-360-option-b-input").prop( "disabled", false );
-			$("#alibaba-com-option-b-input").prop( "disabled", false );
-			$("#super-pages-option-b-input").prop( "disabled", false );
+			if(($("#step-8-panpages").is(':checked')) == true){
+				$("#panpages-option-b-input").prop( "disabled", false );
+			} else {
+				$("#panpages-option-b-input").prop( "disabled", true );
+			}
+			if(($("#step-8-google-adwords-search-mobile").is(':checked')) == true){
+				$("#google-search-mobile-option-b-input").prop( "disabled", false );
+			} else {
+				$("#google-search-mobile-option-b-input").prop( "disabled", true );
+			}
+			if(($("#step-8-google-display-network").is(':checked')) == true){
+				$("#google-display-network-option-b-input").prop( "disabled", false );
+			} else {
+				$("#google-display-network-option-b-input").prop( "disabled", true );
+			}
+			if(($("#step-8-yahoo-search").is(':checked')) == true){
+				$("#yahoo-search-option-b-input").prop( "disabled", false );
+			} else {
+				$("#yahoo-search-option-b-input").prop( "disabled", true );
+			}
+			if(($("#step-8-yahoo-display").is(':checked')) == true){
+				$("#yahoo-display-option-b-input").prop( "disabled", false );
+			} else {
+				$("#yahoo-display-option-b-input").prop( "disabled", true );
+			}
+			if(($("#step-8-youtube-ads").is(':checked')) == true){
+				$("#youtube-ads-option-b-input").prop( "disabled", false );
+			} else {
+				$("#youtube-ads-option-b-input").prop( "disabled", true );
+			}
+			if(($("#step-8-facebook-ads").is(':checked')) == true){
+				$("#facebook-ads-option-b-input").prop( "disabled", false );
+			} else {
+				$("#facebook-ads-option-b-input").prop( "disabled", true );
+			}
+			if(($("#step-8-facebook-ads").is(':checked')) == true){
+				$("#facebook-marketing-option-b-input").prop( "disabled", false );
+			} else {
+				$("#facebook-marketing-option-b-input").prop( "disabled", true );
+			}
+			if(($("#step-8-pan-360").is(':checked')) == true){
+				$("#pan-360-option-b-input").prop( "disabled", false );
+			} else {
+				$("#pan-360-option-b-input").prop( "disabled", true );
+			}
+			if(($("#step-8-alibaba-com").is(':checked')) == true){
+				$("#alibaba-com-option-b-input").prop( "disabled", false );
+			} else {
+				$("#alibaba-com-option-b-input").prop( "disabled", true );
+			}
+			if(($("#step-8-super-pages").is(':checked')) == true){
+				$("#super-pages-option-b-input").prop( "disabled", false );
+			} else {
+				$("#super-pages-option-b-input").prop( "disabled", true );
+			}
 			$("#others-option-b-input").prop( "disabled", false );
 			
 			$("#management-fee-option-b").prop( "disabled", true );
