@@ -207,9 +207,9 @@ table, th, td{
 	  	margin: -1px;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 400px) {
 	.currencyinput2 input {
-		width: 83%;
+		width: 70%;
 	  	margin: -1px;
 	}
 }
