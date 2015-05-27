@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_4" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="90167ed5-0c7a-4203-aa33-cf24b0c47bbb">
 	<property name="ireport.zoom" value="1.1000000000000012"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="386"/>
+	<property name="ireport.y" value="338"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["H:\\workspace\\BOW\\report\\templates\\template_3\\"]]></defaultValueExpression>
 	</parameter>
@@ -67,7 +67,8 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="Open Sans" size="11"/>
 				</textElement>
-				<text><![CDATA[Your expected revenue increased via your advertising plan is:]]></text>
+				<text><![CDATA[Average spending of your customer is:
+]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="96" y="287" width="174" height="23" isPrintWhenDetailOverflows="true" uuid="d21a315b-2a22-4343-bba6-8b6a51e3235c"/>
@@ -82,7 +83,8 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="Open Sans" size="11"/>
 				</textElement>
-				<text><![CDATA[Average spending of your customer is:]]></text>
+				<text><![CDATA[For every new enquiry, your chances of closing the deal is:
+]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="96" y="371" width="174" height="23" isPrintWhenDetailOverflows="true" uuid="f882871d-bb43-454f-ac6b-27c51a6ecbdd"/>
@@ -97,7 +99,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="Open Sans" size="11"/>
 				</textElement>
-				<text><![CDATA[For every new enquiry, your chances of closing the deal is:]]></text>
+				<text><![CDATA[You intend to run your Google AdWords Campaign for:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="15" y="427" width="562" height="42" isPrintWhenDetailOverflows="true" backcolor="#CCCCFF" uuid="acd626b4-7f5c-4693-8ffc-7c0498774461"/>
@@ -120,7 +122,7 @@
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_3/clickAds.png"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="34" y="525" width="134" height="20" isPrintWhenDetailOverflows="true" uuid="d9adfc76-264b-45da-8feb-ff7820aec7eb"/>
+				<reportElement x="36" y="525" width="134" height="20" isPrintWhenDetailOverflows="true" uuid="d9adfc76-264b-45da-8feb-ff7820aec7eb"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Open Sans" size="11"/>
 				</textElement>
@@ -148,7 +150,7 @@
 				<textFieldExpression><![CDATA[3]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement x="57" y="505" width="138" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" forecolor="#0000CC" uuid="5139d434-e465-484b-9295-981afead0e77"/>
+				<reportElement x="34" y="505" width="138" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" forecolor="#0000CC" uuid="5139d434-e465-484b-9295-981afead0e77"/>
 				<box leftPadding="5" rightPadding="0">
 					<pen lineWidth="0.0"/>
 					<topPen lineWidth="0.0"/>
