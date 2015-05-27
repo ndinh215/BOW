@@ -572,7 +572,7 @@ $(document ).ready(function() {
 								numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
 								if(!numberRegex.test(A))
 								{
-									$("#step-5-a-error").text("Please fill specify a number in the field!");
+									$("#step-5-a-error").text("Please fill a number in the field!");
 									allels[i].focus();
 									validated = false;
 									break; 
@@ -594,7 +594,7 @@ $(document ).ready(function() {
 								numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
 								if(!numberRegex.test(B))
 								{
-									$("#step-5-b-error").text("Please fill specify a number in the field!");
+									$("#step-5-b-error").text("Please fill a number in the field!");
 									allels[i].focus();
 									validated = false;
 									break; 
@@ -616,7 +616,7 @@ $(document ).ready(function() {
 								numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
 								if(!numberRegex.test(D))
 								{
-									$("#step-5-d-error").text("Please fill specify a number in the field!");
+									$("#step-5-d-error").text("Please fill a number in the field!");
 									allels[i].focus();
 									validated = false;
 									break; 
@@ -638,7 +638,7 @@ $(document ).ready(function() {
 								numberRegex = /^[+-]?\d+(\.\d+)?([eE][+-]?\d+)?$/;
 								if(!numberRegex.test(H))
 								{
-									$("#step-5-h-error").text("Please fill specify a number in the field!");
+									$("#step-5-h-error").text("Please fill a number in the field!");
 									allels[i].focus();
 									validated = false;
 									break; 
