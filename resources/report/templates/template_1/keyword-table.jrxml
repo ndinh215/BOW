@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PROPOSED KEYWORDS" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="10" bottomMargin="0" uuid="14c4eb3b-0b8d-4fbe-b849-cf639ae67fb0">
 	<property name="ireport.zoom" value="1.3636363636363638"/>
-	<property name="ireport.x" value="49"/>
+	<property name="ireport.x" value="15"/>
 	<property name="ireport.y" value="0"/>
 	<queryString>
 		<![CDATA[]]>
@@ -74,4 +74,11 @@
 			</textField>
 		</band>
 	</detail>
+	<lastPageFooter>
+		<band height="30">
+			<line>
+				<reportElement x="25" y="0" width="545" height="1" uuid="9e01df76-8d04-4dc5-a3b8-562757353432"/>
+			</line>
+		</band>
+	</lastPageFooter>
 </jasperReport>

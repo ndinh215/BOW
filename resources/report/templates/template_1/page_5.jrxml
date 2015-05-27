@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="page_5" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="d678d0b9-ab96-4489-adb0-502e4744b263">
 	<property name="ireport.zoom" value="1.2100000000000006"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="402"/>
+	<property name="ireport.y" value="0"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
 	<parameter name="sections" class="java.util.List"/>
 	<background>
@@ -11,30 +11,30 @@
 	<summary>
 		<band height="842" splitType="Stretch">
 			<staticText>
-				<reportElement x="15" y="68" width="555" height="37" uuid="a644fd58-9e39-4c71-a44e-3d18f37f2f43"/>
+				<reportElement x="15" y="68" width="565" height="37" uuid="a644fd58-9e39-4c71-a44e-3d18f37f2f43"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12"/>
+					<font fontName="Open Sans" size="11"/>
 				</textElement>
 				<text><![CDATA[Based on your previous advertising performance and your keyword(s) list, we will suggest you to explore the below channel(s):]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="15" y="328" width="555" height="24" uuid="a19e468e-b1d1-460c-98ea-1cf82f472fad"/>
+				<reportElement x="15" y="328" width="565" height="24" uuid="a19e468e-b1d1-460c-98ea-1cf82f472fad"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12"/>
+					<font fontName="Open Sans" size="11"/>
 				</textElement>
 				<text><![CDATA[The propose budget that we recommend for our suggested channel(s) as below:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="680" width="23" height="20" uuid="e622d9ce-5394-4804-b30c-801ad2898bdd"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="480" width="23" height="20" uuid="dd64820a-f438-4174-9413-68d60c5b83af"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -69,7 +69,7 @@
 			<staticText>
 				<reportElement x="181" y="600" width="23" height="20" uuid="ab3bab94-abe7-4903-a9ab-c9a1c14f89a1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -104,14 +104,14 @@
 			<staticText>
 				<reportElement x="181" y="459" width="23" height="20" uuid="8178f69d-149c-4cc1-8e56-c756a3d0323d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="520" width="23" height="20" uuid="0d3ea642-21cb-41e1-a89a-befc21ccd5cc"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -139,14 +139,14 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Subtotal]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="620" width="23" height="20" uuid="e63fe277-0b60-4242-a852-4faf440ed668"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -209,7 +209,7 @@
 			<staticText>
 				<reportElement x="181" y="660" width="23" height="20" uuid="7b62f912-cf2a-4634-92f3-101c286e6227"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -223,14 +223,14 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[6% Gov. Tax]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="419" width="23" height="20" uuid="8b8edb7e-6d90-478f-a8d8-0145a0f84c3e"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -251,7 +251,7 @@
 			<staticText>
 				<reportElement x="181" y="439" width="23" height="20" uuid="c2c0ad6c-150a-48a3-9170-6b785babca7c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -307,7 +307,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Management Fee]]></text>
 			</staticText>
@@ -384,14 +384,14 @@
 			<staticText>
 				<reportElement x="181" y="640" width="23" height="20" uuid="9a800af3-a032-45dd-8785-873076d1a70f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="500" width="23" height="20" uuid="9cbeb0a8-579b-44a0-89f6-6abd8c811add"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -426,7 +426,7 @@
 			<staticText>
 				<reportElement x="181" y="400" width="23" height="20" uuid="88f050e2-0479-4f95-9237-8a6277744b26"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -468,7 +468,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Grand Total]]></text>
 			</staticText>
@@ -487,23 +487,23 @@
 				<text><![CDATA[Google Search & Mobile]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="115" y="353" width="80" height="20" uuid="e01274d9-8604-416c-baaf-05c77cf92fb6"/>
+				<reportElement x="15" y="360" width="51" height="20" uuid="e01274d9-8604-416c-baaf-05c77cf92fb6"/>
 				<box>
-					<pen lineWidth="1.0"/>
-					<topPen lineWidth="1.0"/>
-					<leftPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="13"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Open Sans" size="11"/>
 				</textElement>
 				<text><![CDATA[Option A]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="181" y="560" width="23" height="20" uuid="113cb3e1-f60e-44a5-b86d-e7762d4432d4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -552,7 +552,7 @@
 			<staticText>
 				<reportElement x="181" y="700" width="23" height="20" uuid="169110a2-c40a-4870-b4a0-50abd27fec4d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -587,7 +587,7 @@
 			<staticText>
 				<reportElement x="181" y="580" width="23" height="20" uuid="78c57b9f-c22d-4e67-bc33-5a4ef06b9321"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -622,7 +622,7 @@
 			<staticText>
 				<reportElement x="484" y="459" width="23" height="20" uuid="3f85a9dd-5cac-45c3-b938-f279bc0e648f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -657,35 +657,35 @@
 			<staticText>
 				<reportElement x="484" y="620" width="23" height="20" uuid="42f7284b-2c80-4e5d-81bf-9290c3f638e9"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="640" width="23" height="20" uuid="87ebb5d8-4c32-44a0-a857-45f261bad433"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="560" width="23" height="20" uuid="661defc3-d4bc-4b3a-be37-99fc7a99b91c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="500" width="23" height="20" uuid="b1d326f1-4934-4b87-9c9a-e5e50454f703"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="439" width="23" height="20" uuid="355c6b1f-d1db-4aa3-8238-048567728be7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -699,7 +699,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Subtotal]]></text>
 			</staticText>
@@ -748,7 +748,7 @@
 			<staticText>
 				<reportElement x="484" y="520" width="23" height="20" uuid="46e38b33-8c5d-41a9-b6de-c4ec57e95b1d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -769,7 +769,7 @@
 			<staticText>
 				<reportElement x="484" y="680" width="23" height="20" uuid="90b2400a-c23a-497c-8fc7-94b0b1023c63"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -839,7 +839,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[6% Gov. Tax]]></text>
 			</staticText>
@@ -888,7 +888,7 @@
 			<staticText>
 				<reportElement x="484" y="660" width="23" height="20" uuid="d8909302-b2a0-4f68-8e86-ce729b241c38"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -951,7 +951,7 @@
 			<staticText>
 				<reportElement x="484" y="400" width="23" height="20" uuid="8ca1c038-9f54-4f6e-8bc7-b49df98f96de"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -986,21 +986,21 @@
 			<staticText>
 				<reportElement x="484" y="600" width="23" height="20" uuid="ca3028f1-421a-4d9a-b551-5ad2f34bddd4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="700" width="23" height="20" uuid="c00c00a3-9202-48c5-94df-22a154bce163"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="484" y="419" width="23" height="20" uuid="c063af9a-3adb-4134-a7cd-4897823a2946"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -1028,7 +1028,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Management Fee]]></text>
 			</staticText>
@@ -1042,7 +1042,7 @@
 					<rightPen lineWidth="0.75"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="11" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Grand Total]]></text>
 			</staticText>
@@ -1063,7 +1063,7 @@
 			<staticText>
 				<reportElement x="484" y="480" width="23" height="20" uuid="e141da2d-26e6-42ca-bd4f-9e7a74f8e4f1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -1084,7 +1084,7 @@
 			<staticText>
 				<reportElement x="484" y="580" width="23" height="20" uuid="4781f8d3-40eb-4f8f-a8ca-6f52568ef044"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -1145,16 +1145,16 @@
 				<textFieldExpression><![CDATA[((com.panpages.bow.model.Field)com.panpages.bow.model.utils.SurveyUtils.findFieldWithFieldTemplateSlugName("grand-total-option-b", (java.util.List)((com.panpages.bow.model.Section)com.panpages.bow.model.utils.SurveyUtils.findSectionWithSectionTemplateSlugName("section-10",$P{sections})).getFields())).getValue()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="427" y="352" width="80" height="20" uuid="6095aac4-bce4-4114-a45e-604d8b4a3272"/>
+				<reportElement x="318" y="360" width="80" height="20" uuid="6095aac4-bce4-4114-a45e-604d8b4a3272"/>
 				<box>
-					<pen lineWidth="1.0"/>
-					<topPen lineWidth="1.0"/>
-					<leftPen lineWidth="1.0"/>
-					<bottomPen lineWidth="1.0"/>
-					<rightPen lineWidth="1.0"/>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
 				</box>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="13"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Open Sans" size="11"/>
 				</textElement>
 				<text><![CDATA[Option B]]></text>
 			</staticText>
@@ -1189,7 +1189,7 @@
 			<staticText>
 				<reportElement x="181" y="540" width="23" height="20" uuid="5ea86b4c-77ed-4bc6-8f7a-6ba1fedcdee7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -1224,7 +1224,7 @@
 			<staticText>
 				<reportElement x="484" y="540" width="23" height="20" uuid="e17fdf6a-fdda-44e3-b0cc-bacc8d1c3f37"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="12" isBold="true"/>
+					<font fontName="Open Sans" size="12" isBold="false"/>
 				</textElement>
 				<text><![CDATA[RM]]></text>
 			</staticText>
@@ -1245,23 +1245,23 @@
 			<staticText>
 				<reportElement x="209" y="12" width="252" height="50" uuid="7cf122f1-7c9d-4133-9949-f05fa652af3f"/>
 				<textElement verticalAlignment="Middle">
-					<font fontName="Open Sans" size="25"/>
+					<font fontName="Open Sans" size="18" isBold="false"/>
 				</textElement>
 				<text><![CDATA[Advertising Planner]]></text>
 			</staticText>
 			<image>
-				<reportElement x="15" y="12" width="190" height="50" uuid="da4083be-4c89-45d6-ae7b-a276d83303ca"/>
+				<reportElement x="15" y="12" width="185" height="45" uuid="da4083be-4c89-45d6-ae7b-a276d83303ca"/>
 				<imageExpression><![CDATA[$P{SUBREPORT_DIR} + "/images/page_5/TMPanPanpages.jpg"]]></imageExpression>
 			</image>
 			<textField>
-				<reportElement mode="Opaque" x="521" y="12" width="74" height="50" forecolor="#FFFFFF" backcolor="#CC0033" uuid="934ee2eb-979b-47fe-8ab2-77dbe5e4820d"/>
+				<reportElement mode="Opaque" x="545" y="15" width="50" height="35" forecolor="#FFFFFF" backcolor="#CC0033" uuid="934ee2eb-979b-47fe-8ab2-77dbe5e4820d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Open Sans" size="32"/>
+					<font fontName="Open Sans" size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA[4]]></textFieldExpression>
 			</textField>
 			<subreport>
-				<reportElement x="15" y="105" width="555" height="204" uuid="575f0dae-c003-4738-beef-3132854e7995"/>
+				<reportElement x="15" y="105" width="565" height="204" uuid="575f0dae-c003-4738-beef-3132854e7995"/>
 				<subreportParameter name="SUBREPORT_DIR">
 					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
 				</subreportParameter>
@@ -1279,6 +1279,20 @@
 )]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "/recommended_ads.jasper"]]></subreportExpression>
 			</subreport>
+			<staticText>
+				<reportElement x="66" y="360" width="134" height="20" uuid="30be060b-ac46-4504-9200-eff26b64e441"/>
+				<box>
+					<pen lineWidth="0.0"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Open Sans" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(Recommended)]]></text>
+			</staticText>
 		</band>
 	</summary>
 </jasperReport>

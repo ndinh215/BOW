@@ -62,7 +62,7 @@ $(document ).ready(function() {
 	$('#Calculation-Code-L-OptionB').text(budgetOptionB);
 	var totalGoogleBudget = $('#total-google-budget').val();
 	$('#google-search-mobile-option-a-input').val(parseFloat(totalGoogleBudget).toFixed(2));
-	$('#google-search-mobile-option-b-input').val(parseFloat(totalGoogleBudget).toFixed(2));
+	$('#google-search-mobile-option-b-input').val(parseFloat(totalGoogleBudget).toFixed(2) * 0.5);
 	
 	if ($('#uploaded-file-name').val().length > 0) {
 		$('#progress .progress-bar-success').css("width", "100%");
@@ -87,7 +87,7 @@ $(document ).ready(function() {
         		// Set google budget
         		$('#total-google-budget').val(parseFloat(totalGoogleBudget).toFixed(2));
         		$('#google-search-mobile-option-a-input').val(parseFloat(totalGoogleBudget).toFixed(2));
-        		$('#google-search-mobile-option-b-input').val(parseFloat(totalGoogleBudget).toFixed(2));
+        		$('#google-search-mobile-option-b-input').val(parseFloat(totalGoogleBudget).toFixed(2) * 0.5);
         		// Set uploaded file name
         		var uploadedFileName = data.response().result['uploaded-file-name'];
         		$('#uploaded-file-name').val(uploadedFileName);
